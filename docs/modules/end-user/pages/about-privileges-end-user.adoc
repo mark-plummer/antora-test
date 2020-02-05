@@ -1,4 +1,4 @@
-= ["Understanding privileges"]
+= Understanding privileges
 :last_updated: 07/31/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

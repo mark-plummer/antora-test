@@ -1,4 +1,4 @@
-= ["Copy a pinboard"]
+= Copy a pinboard
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

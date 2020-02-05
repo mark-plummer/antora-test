@@ -1,4 +1,4 @@
-= ["Search actions within a pinboard"]
+= Search actions within a pinboard
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

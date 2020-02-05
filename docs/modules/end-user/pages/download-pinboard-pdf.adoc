@@ -1,4 +1,4 @@
-= ["Download a pinboard as PDF"]
+= Download a pinboard as PDF
 :last_updated: 10/07/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

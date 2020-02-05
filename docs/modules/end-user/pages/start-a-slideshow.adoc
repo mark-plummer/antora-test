@@ -1,4 +1,4 @@
-= ["Present a pinboard as a slideshow"]
+= Present a pinboard as a slideshow
 :last_updated: 6/30/19
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

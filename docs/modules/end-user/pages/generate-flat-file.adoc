@@ -1,4 +1,4 @@
-= ["Create and load a CSV file"]
+= Create and load a CSV file
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

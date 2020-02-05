@@ -1,4 +1,4 @@
-= ["Basic pinboard usage"]
+= Basic pinboard usage
 :experimental:
 :last_updated: 6/30/2019
 :permalink: /:collection/:path.html

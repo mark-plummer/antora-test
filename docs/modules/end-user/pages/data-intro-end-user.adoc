@@ -1,4 +1,4 @@
-= ["Understand data sources"]
+= Understand data sources
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

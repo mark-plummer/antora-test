@@ -1,4 +1,4 @@
-= ["Share uploaded data"]
+= Share uploaded data
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

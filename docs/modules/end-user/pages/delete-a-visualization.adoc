@@ -1,4 +1,4 @@
-= ["Delete a visualization"]
+= Delete a visualization
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["Edit the layout of a pinboard"]
+= Edit the layout of a pinboard
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
