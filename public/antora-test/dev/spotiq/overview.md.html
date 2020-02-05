@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>["SpotIQ 101: Load and analyze data"] :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">ThoughtSpot Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="antora-test" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About this release</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/notes.adoc">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/downloads.adoc">Downloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ThoughtSpot Documentation</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Documentation</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ThoughtSpot Documentation</a></li>
+    <li><a href="overview.md.html">["SpotIQ 101: Load and analyze data"]</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/spotiq/pages/overview.md.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<h1 class="page">["SpotIQ 101: Load and analyze data"]</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This 101 walks you through a few simple, SpotIQ workflows.
+When you have completed the walkthrough, you will be able to use the core features of SpotIQ in your ThoughtSpot installation.</p>
+</div>
+<div class="paragraph">
+<p>If you want a detailed overview of what SpotIQ does before you try it out, first link:{{ site.baseurl }}/spotiq/whatisspotiq.html[read the introduction to SpotIQ].</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before you begin, make sure you can sign in to the ThoughtSpot application.
+To complete this tutorial, you need the ability to upload a CSV file and use the SpotIQ application.
+These features require that your user account has the following privileges:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Can upload user data</strong></p>
+</li>
+<li>
+<p><strong>Has Spot IQ privilege</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your ThoughtSpot administrator can give you these privileges.
+If you can see the SpotIQ option on your ThoughtSpot dashboard, you have access to SpotIQ:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/spotiq-is-on.png" alt="spotiq is on">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_get_the_sample_data_and_some_insights"><a class="anchor" href="#_get_the_sample_data_and_some_insights"></a>Get the sample data and some insights</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use SpotIQ with any of the data in your system.</p>
+</div>
+<div class="paragraph">
+<p>This tutorial uses a dataset containing a list of sales and movement data by item and department.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download the link:{{ site.baseurl }}/downloads/FoodDollarDataReal.csv[FoodDollarDataReal] CSV file.</p>
+</li>
+<li>
+<p>Save or move the file to a place on your local drive.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_upload_the_data"><a class="anchor" href="#_upload_the_data"></a>Upload the data</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If you haven&#8217;t already, sign in to the ThoughtSpot application and click the <strong>Data</strong> tab.</p>
+</li>
+<li>
+<p>Click the ellipses icon <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/icon-ellipses.png" alt="more options menu icon"></span>, and select <strong>Upload data</strong>.</p>
+</li>
+<li>
+<p>Browse to the sample data file you downloaded or drag the file into the upload area.</p>
+</li>
+<li>
+<p>Choose <code>Yes</code> for the <strong>Are the column names already defined in the file header?</strong> setting.</p>
+</li>
+<li>
+<p>Choose <code>Comma</code> for the <strong>Are the files separated by?</strong> setting.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/spotiq-download.png" alt="spotiq download">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong>Next</strong> to go to the <strong>Set column names</strong> page.</p>
+</li>
+<li>
+<p>Set the <strong>category_num</strong> column to <strong>TEXT</strong> on the <strong>Set column types</strong> page.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/spotiq-set-column-types.png" alt="spotiq set column types">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong>Upload</strong>.</p>
+<div class="paragraph">
+<p>ThoughtSpot presents you with a few choices.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/spotiq-choice.png" alt="spotiq choice">
+</div>
+</div>
+</li>
+<li>
+<p>Choose <strong>SpotIQ Auto Analyze</strong> to build SpotIQ insights.</p>
+<div class="paragraph">
+<p>Building insights can take time.
+How long depends on the data you are analyzing.
+The ThoughtSpot application displays an informational message.
+The message disappears after a moment.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/spotiq-processing.png" alt="spotiq processing">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_work_with_the_insights_list"><a class="anchor" href="#_work_with_the_insights_list"></a>Work with the INSIGHTS list</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Each time SpotIQ does an analysis, it generates a set of results.
+ThoughtSpots keeps the results until the user that requested the analysis (or an admin), deletes them.
+You can run SpotIQ on the same object multiple times.
+Each analysis generates new results.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To check for the results of your analysis, go to the <strong>SpotIQ</strong> page.</p>
+<div class="paragraph">
+<p>The <strong>SpotIQ</strong> page allows you to see all results with data you have permission for.
+So the results lists shows <strong>All</strong> results or just <strong>Yours</strong>.</p>
+</div>
+</li>
+<li>
+<p>Select <strong>Yours</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/spotiq-insights.png" alt="spotiq insights">
+</div>
+</div>
+</li>
+<li>
+<p>Look for results from your <strong>FoodDollarDataReal</strong> data.</p>
+<div class="paragraph">
+<p>SpotIQ labels each result with a <strong>NAME</strong>, <strong>DESCRIPTION</strong>, <strong>STICKERS</strong>,  and <strong>MODIFIED</strong>.
+The <strong>NAME</strong> comes from the object that was analyzed which  is referenced again in the <strong>DESCRIPTION</strong>.
+The combination of <strong>NAME</strong>,  <strong>DESCRIPTION</strong>, and <strong>MODIFIED</strong> is unique.</p>
+</div>
+</li>
+<li>
+<p>Take a minute and review the <strong>DESCRIPTION</strong> and <strong>MODIFIED</strong> time.</p>
+<div class="paragraph">
+<p>Not every SpotIQ analysis creates results.
+You can see information about each analysis as well as the results.</p>
+</div>
+</li>
+<li>
+<p>Click the <strong>Analyses</strong> tab at the top of the page.</p>
+<div class="paragraph">
+<p>Check the <strong>STATUS</strong> and also how long the <strong>RESULT</strong> took to generate.
+Since you got results, you can see that the analysis succeeded.</p>
+</div>
+</li>
+<li>
+<p>Select the <strong>Analysis for FoodDollarDataReal</strong> and choose <strong>Delete</strong>.</p>
+<div class="paragraph">
+<p>The information disappears from the <strong>Analyses</strong> list.</p>
+</div>
+</li>
+<li>
+<p>Choose <strong>Results</strong>.</p>
+<div class="paragraph">
+<p>You should still see the results for your <strong>FoodDollarDataReal</strong> run.
+Deleting information about an analysis run does not delete the actual results.
+You must delete each individually.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_where_to_go_next"><a class="anchor" href="#_where_to_go_next"></a>Where to go next</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>At this point, you&#8217;ve created a set of insights using SpotIQ, in the next section you link:{{ site.baseurl }}/spotiq/work-with-insights.html[Review insights] you created.</p>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
