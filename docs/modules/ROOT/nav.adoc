@@ -5,7 +5,7 @@
 ** xref:end-user:introduction.adoc[Introduction]
 ** Getting Started
 *** xref:end-user:introductionabout-navigation-thoughtspot.adoc[Finding your way around]
-*** xref:end-user/accessing.adoc[ThoughSpot browser access]
+*** xref:end-user:accessing.adoc[ThoughSpot browser access]
 *** xref:end-user/introduction/getting-started.adoc[The Getting Started sidebar]
 *** xref:end-user/introduction/about-user.adoc[Your user preferences]
 *** xref:end-user/introduction/about-privileges-end-user.adoc[Understanding privileges]
@@ -100,7 +100,7 @@
 *** xref:end-user:generate-flat-file.adoc[Create and load CSV files]
 *** xref:admin/loading/append-data-from-a-web-browser.adoc[Append data through the UI]
 *** xref:admin/loading/view-your-data-profile.adoc[View a data profile]
-*** xref:end-user/locale.adoc[Date and currency format settings]
+*** xref:end-user:  locale.adoc[Date and currency format settings]
 *** SpotIQ
 **** xref:spotiq/whatisspotiq.adoc[What is SpotIQ]
 **** xref:spotiq/overview.adoc[101:Load and analyze data]
