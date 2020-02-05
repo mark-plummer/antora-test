@@ -1,0 +1,58 @@
+= ["Prerequisites"]
+:last_updated: ["12/17/2019"]
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Complete these prerequisites before installing your ThoughtSpot clusters on the SMC appliance.
+
+[#installation-prerequisites]
+== Installation Prerequisites
+
+Ensure that you have the following items, information, and understanding of policies before you begin deploying ThoughtSpot on your SMC appliance.
+
+[cols=2*]
+|===
+| &#10063;
+| link:/appliance/hardware/connect-appliance-smc.html#haswell-port-location[Appliance Port Location], to locate data and IPMI ports.
+
+| &#10063;
+| Data center with proper environment controls, such as cooling.
+
+| &#10063;
+| AC power
+
+| &#10063;
+| 10GbE switch, with enabled IPv6 broadcast and multicast.
+You need one for each node.
+
+| &#10063;
+| 10GbE network cables, either direct attach copper (DAC) or fiber.
+Refer to the link:cable-networking.html[Cable reference] for more information to decide between the two types.
+
+| &#10063;
+| 100Mbps or 1Gbps switch for IPMI, for Out of Band Management.
+You need one for each node.
+
+| &#10063;
+| Cat5 network cables.
+You need one for each node.
+
+| &#10063;
+| Rack space of 2U or 3.5 inches for each appliance, and a power strip
+
+| &#10063;
+| Monitor and keyboard
+
+| &#10063;
+| 10G connection: SFP+ for the switch side
+
+| &#10063;
+| Networking information: for data, management IPs, DNS, timezone, and default gateway IP.
+Contact your network administrator for this information, and fill out the ThoughtSpot site survey so that you have a quick reference before beginning the install process.
+
+| &#10063;
+| link:/appliance/firewall-ports.html[Network policies], to determine the ports you need to have open for your cluster.
+|===
+
+== Review hardware requirements
+
+Next, link:{{ site.baseurl }}/appliance/hardware/hardware-requirements-smc.html[review hardware requirements].

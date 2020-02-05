@@ -1,0 +1,44 @@
+'''
+
+title: [Create a formula in a worksheet]
+
+last_updated: tbd summary: "You can define formulas and use them to create derived columns in worksheets.
+" sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You create formulas by combining standard functions and operators, column names, and constant values.
+
+Anyone who can create a worksheet can add a formula to it.
+Formulas are not reusable;
+the formula you create is associated only with the worksheet it belongs to.
+A complete list of available formulas and examples of each is available in the link:{{ site.baseurl }}/reference/formula-reference.html#[Formula function reference].
+
+You can create a formula in a worksheet by using the Formula Builder.
+When you do this, the result of the formula gets added to the worksheet as a column.
+Use these steps to create a formula:
+
+. Create a new worksheet, or edit an existing one.
+. Click the *+* button next to *Formulas*.
++
+image:{{ site.baseurl }}/images/create_formula.png[]d
+
+. Type your formula in the Formula Builder.
++
+image::{{ site.baseurl }}/images/formula_builder.png[]
++
+NOTE: Formulas elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black).
+
+. If you want to change what your formula returns, use the *Advanced settings*.
++
+Depending on your formula, you may be able to change:
+
+ ** Data type
+ ** ATTRIBUTE or MEASURE
+ ** Aggregation type
+
++
+image::{{ site.baseurl }}/images/formula_advanced_settings.png[]
+
+. You can see a list of formula operators with examples by clicking on *Formula Assistant.*
++
+image::{{ site.baseurl }}/images/formula_assistant.png[]
+
+. Name the formula by clicking on its title and typing the new name.
+Click *Save*.

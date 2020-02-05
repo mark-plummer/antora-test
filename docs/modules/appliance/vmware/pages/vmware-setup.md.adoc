@@ -1,0 +1,145 @@
+= ["Set up ThoughtSpot in VMware"]
+:experimental:
+:last_updated: tbd
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
+
+This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment.
+For each hardware node, you must:
+
+* Complete the prerequisites
+* Use the ThoughtSpot Open Virtualization Format (OVF) file to create a virtual machine (VM)
+* Add hard disks to the VM
+
+== Prerequisites
+
+This installation process assumes you have already acquired your host machines.
+You can install on a cluster with any number of nodes.
+A one node cluster is suitable for a sandbox environment but is insufficient for a production environment.
+You need at least three nodes for high availability (HA), but there is no limit on the number of nodes.
+
+. Make sure you have installed the Hypervisor on each of your nodes.
++
+The VM template, by default, captures a 72-core configuration.
+If your physical host has more than 72 cores, you may want to edit VM to have (`n-2`) cores (for a physical host with n cores) to fully take advantage of computing power of the physical host.
+Extra cores help performance.
++
+You should aim to allocate 490 GB or more RAM.
+
+. Create datastores for all solid-state drive (SSD) and hard drive devices.
+
+== Use the OVF to Create a VM
+
+. *https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/[Download]* the `ThoughtSpot OVF` to a location on an accessible disk.
+. Log into the ESXi web portal.
++
+image::{{ site.baseurl }}/images/vmware-login.png[]
+
+. Select menu:Virtual Machines[Create/Register VM].
++
+The system displays the dialog for selecting an OVF template.
++
+image::{{ site.baseurl }}/images/vmware-ovf.png[]
+
+. Choose the OVF template and click *Next*.
++
+The system prompts you to select a storage.
+
+. Choose the SSD as the destination and click *Next*.
++
+The system displays the *Deployment Options* dialog.
+
+. Enter the options and click *Next*.
++
+|===
+| Setting | Value
+
+| *Network mappings*
+| Select the correct network for your installation.
+
+| *Disk provisioning*
+| Choose Thin.
+
+| *Power on automatically*
+| Check this box.
+|===
+
+. Review your selection and click *Finish*.
++
+image::{{ site.baseurl }}/images/vmware-complete.png[]
+
+. Wait for the template to be loaded.
++
+Depending on your network speed, loading can take several minutes.
++
+image::{{ site.baseurl }}/images/vmware-loading.png[]
+
+. Make sure that VM is powered off.
+
+== Add hard disks to the VM
+
+|===
+| Use Case | HDFS Disk Requirements
+
+| POC
+| 2 x 1 TB on HDD
+
+| Production
+| 3 x 2 TB on HDD
+|===
+
+For a proof of concept (POC), follow these steps to create two 1TB HDFS disks on HDD storage, as shown here (2 x 1TB).
+
+For production deployments, ThoughtSpot requires you to have three 2TB HDFS disks on HDD (3 x 2TB).
+For this use case, follow these same steps to create the additional, larger capacity disks.
+
+. Edit the VM you just created.
++
+image::{{ site.baseurl }}/images/vmware-add-disk0.png[]
+
+. Select menu:Add hard disk[New hard disk].
++
+image::{{ site.baseurl }}/images/vmware-adddisk1.png[]
++
+The new disk appears as a new row under the only existing SSD row.
+
+. Click the *New Hard disk* to expand the detailed configuration options.
+. For a proof of concept, set the options as follows.
+(For production deployments, set the size to 2TB.)+++<table>++++++<colgroup>++++++<col width="50%">++++++</col>+++
+ +++<col width="50%">++++++</col>++++++</colgroup>+++
+ +++<tr>++++++<th>+++Setting+++</th>+++
+  +++<th>+++Value+++</th>++++++</tr>+++
+ +++<tr>++++++<td>+++size+++</td>+++
+  +++<td>+++1 TB+++</td>++++++</tr>+++
+ +++<tr>++++++<th>+++Location+++</th>+++
+  +++<td>+++Use the +++<strong>+++Browse+++</strong>+++ button to select the hard disk store.
+  +++<br>++++++</br>+++
+  <img src="{{ "/images/vmware-adddisk3.png "| prepend: site.baseurl  }}" />+++</td>++++++</tr>+++
+ +++<tr>++++++<th>+++Thin provisioned+++</th>+++
+  +++<td>+++Check this box.+++</td>++++++</tr>++++++</table>+++
++
+You should see something similar to the following:
++
+image::{{ site.baseurl }}/images/vmware-adddisk2-1TB.png[]
+. Save your changes.
+. Repeat steps 1-5 to create more hard disks.
+. Power on the VM
+. After the VM is online, run the following command to prepare the HDFS disks:
++
+[source,shell]
+----
+ sudo /usr/local/scaligent/bin/prepare_disks.sh
+----
+
+== Next steps
+
+There is no network at this point on your VMs.
+As a prerequisite:
+
+. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
+. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
+. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
+
+After you finish, go to the http://support.thoughtspot.com[ThoughtSpot Support website] and use the support ticket for installation tasks.
+If necessary, create a new ticket.

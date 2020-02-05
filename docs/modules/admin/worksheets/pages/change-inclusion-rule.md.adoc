@@ -1,0 +1,35 @@
+'''
+
+title: ["Change the join rule or RLS setting for a worksheet"]
+
+last_updated: tbd
+
+summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different join or RLS rule." toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+
+If you find that the charts and tables built on a worksheet contain a large number of null values (which display as `+{blank}+` in the web browser), you can fix this by changing the link:mod-ws-internal-joins.html#[internal joins] for the worksheet.
+
+If you have the *Can administer ThoughtSpot* privilege or the *Can manage data* plus edit privilege on a worksheet, you can edit the worksheet and change its RLS or other key settings.
+
+== Change/configure a worksheet
+
+Before working through this procedure, make sure you are familiar with how the following affect data:
+
+* link:mod-ws-internal-joins.html#[internal worksheet joins]
+* link:progressive-joins.html#[worksheet join rule]
+* link:{{ site.baseurl }}/admin/data-security/set-rls.html#[row level security (RLS)]
+
+To configure these values for a worksheet:
+
+. Click *Data* on the top navigation bar and then on *Worksheets*.
+. Click the name of the worksheet you want to edit from the list.
+. Click the *Edit Worksheet* button in the upper right hand side of the screen.
+. Click the *+ icon* next to *Sources*.
+. Scroll to the bottom of the page.
+. Configure the worksheet join rule and RLS setting as needed.
++
+image::{{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png[]
+
+. Click *CLOSE*.
+. Click the the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Save*.
++
+image::{{ site.baseurl }}/images/action_save_worksheet.png[]

@@ -1,0 +1,26 @@
+'''
+
+title: [Zoom into a chart]
+
+last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can zoom into your chart by selecting an area with your mouse.
+To zoom into a chart:
+
+. While viewing your answer as a chart, click *Edit chart style* on the right.
++
+image::{{ site.baseurl }}/images/edit_chart_configuration_line_stacked.png[]
+
+. Click *Select an area*.
++
+image::{{ site.baseurl }}/images/select_area_to_zoom.png[]
+
+. Select an area on your chart to zoom into by clicking and dragging your mouse.
++
+image::{{ site.baseurl }}/images/zoom_into_an_area.png[]
++
+Your chart will be reconfigured to only show the selected area.
++
+image::{{ site.baseurl }}/images/zoomed_in_area.png[]
+
+. If you would like to return to the original chart view, click *Reset zoom*.
++
+image::{{ site.baseurl }}/images/zoom%20out.png[]

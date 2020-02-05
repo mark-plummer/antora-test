@@ -1,0 +1,26 @@
+'''
+
+title: [Add a filter to a chart]
+
+last_updated: tbd summary: "You can add a simple filter from a chart axis while viewing your answer as a chart." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can filter a chart in two ways:
+
+. Click the legend labels to toggle the values on or off.
+. Follow the steps shown here to filter on the axis values.
+
+To add a filter from the chart axes:
+
+. While viewing your answer as a chart, click the chart axis you want to filter on, and select *Filter...*.
++
+image::{{ site.baseurl }}/images/filter_by_chart_axis.png[]
+
+. Select the values you would like to include in your answer.
++
+image::{{ site.baseurl }}/images/filter_menu_chart_axis.png[]
+
+. If you want to exclude values, click *Exclude* and choose values to exclude.
++
+image::{{ site.baseurl }}/images/filter_chart_exclude.png[]
+
+. Click *DONE*.
+
+If there are too many values, you can use the filter search bar to find the ones you want.

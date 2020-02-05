@@ -1,0 +1,7 @@
+= ["Share a pinboard"]
+:last_updated: tbd
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Whenever you view a pinboard you have the option of sharing it with others.
+
+{% include content/share-pinboard.md %}

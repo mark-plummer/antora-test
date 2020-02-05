@@ -1,0 +1,32 @@
+'''
+
+title: [Delete a relationship]
+
+last_updated: tbd summary: "You can delete relationship (link) between tables through the application or TQL." toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You must have either the link:{{ site.baseurl }}/admin/users-groups/about-users-groups.html[*Can administrator ThoughtSpot* or the *Can manage data* privilege] to delete a relationship.
+If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
+
+If you created a relationship (join or link) between tables using the Web interface, you can also delete it from the Web interface.
+But if the relationship was created using TQL, you must also use TQL to delete it.
+
+link:{{ site.baseurl }}/admin/loading/change-schema.html[To delete a relationship using TQL], use an `+ALTER TABLE...DROP CONSTRAINT...+` or `+ALTER TABLE...DROP RELATIONSHIP...+` statement.
+
+To delete a relationship from the Web interface:
+
+. Click *Data* on the top navigation bar.
+. Click the name of the data source you from which you want to remove the relationship.
+. Click *Schema*.
+You will see the list showing existing joins.
++
+If this is a worksheet, you must click *Joins within worksheets* and choose *Joins between worksheets*.
++
+image::{{ site.baseurl }}/images/worksheet-join-chooser-between.png[]
+
+. Find the relationship you want to delete, and click the *Delete icon*.
++
+image::{{ site.baseurl }}/images/relationship_delete.png[]
+
+. Repeat these steps until all the joins you want to remove have been deleted.
+
+== Related Information
+
+* link:{{ site.baseurl }}/admin/loading/constraints.html[Constraints]

@@ -1,0 +1,3 @@
+* About this release
+** xref:release/notes.adoc[Release notes]
+** xref:release/downloads.adoc[Downloads]

@@ -1,0 +1,6 @@
+= ["Revoke access (unshare)"]
+:last_updated: tbd
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+
+{% include content/revoke-access.md %}

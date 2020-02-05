@@ -1,0 +1,34 @@
+'''
+
+title: [Add a filter to a worksheet]
+
+last_updated: 11/3/2018 summary: "You can add a filters to a worksheet to limit the data users can access from the worksheet." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Beginning in ThoughtSpot version 5.0, you can add filters to a worksheet to limit the data it contains.
+This is useful when you have underlying tables that store more data than is necessary for the types of analyses the worksheet is intended for.
+You can also use worksheet filters to provide data security, when you want different groups of users to be able to see different data without relying on row level security.
+
+To add a filter to a worksheet:
+
+. Click *Data* in the top menu bar, find your worksheet, and click its name.
+. Click the *Edit Worksheet* button.
++
+image::{{ site.baseurl }}/images/edit_worksheet.png[]
+
+. Click *Filters* on the left menu and click *+*.
++
+image::{{ site.baseurl }}/images/plus_worksheet_filter.png[]
+
+. Choose the column you want to filter on.
++
+image::{{ site.baseurl }}/images/ws-filter-choose-column.png[]
+
+. Select the values to include in your answer.
++
+image::{{ site.baseurl }}/images/column_filter.png[]
+
+. If you want to exclude values, click *Exclude* and choose values to exclude.
++
+image::{{ site.baseurl }}/images/exclude_nulls.png[]
+
+. Click *ADD FILTER*.
++
+If there are too many values, you can use the filter search bar to find the ones you want.
