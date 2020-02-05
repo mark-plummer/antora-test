@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">ThoughtSpot Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="antora-test" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About this release</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/notes.adoc">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/downloads.adoc">Downloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ThoughtSpot Documentation</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Documentation</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/complex-search/pages/aggregation-formulas.md.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<hr>
+<div class="paragraph">
+<p>title: [Overview of aggregate formulas]</p>
+</div>
+<div class="paragraph">
+<p>last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html&#8201;&#8212;&#8201;When working with formulas, it is useful to understand the difference between regular (or row-wise) formulas and aggregation formulas.</p>
+</div>
+<div class="sect1">
+<h2 id="_standard_and_aggregation_formulas"><a class="anchor" href="#_standard_and_aggregation_formulas"></a>Standard and aggregation formulas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Formulas can be broken down into two types standard and aggregation formulas.
+Standard formulas act on individual rows and returns one result per row.
+Standard formulas use functions like:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>add</code></p>
+</li>
+<li>
+<p><code>subtract</code></p>
+</li>
+<li>
+<p><code>multiply</code></p>
+</li>
+<li>
+<p><code>divide</code></p>
+</li>
+<li>
+<p><code>contains</code></p>
+</li>
+<li>
+<p><code>if...then...else</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Aggregation formulas combine rows together and returns a single result for a group of rows.
+Aggregation formulas use functions, some examples of functions you find in aggregation formulas are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>average</code></p>
+</li>
+<li>
+<p><code>cumulative_sum</code></p>
+</li>
+<li>
+<p><code>moving_average</code></p>
+</li>
+<li>
+<p><code>stddev</code> (standard deviation)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can tell which formulas are aggregation formulas by looking at the function list in the <strong>Formula Assistant</strong>.
+Aggregation functions have their own section.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/formula_asst_aggregate.png" alt="formula asst aggregate">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_aggregation_functions"><a class="anchor" href="#_advanced_aggregation_functions"></a>Advanced aggregation functions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some more advanced aggregation functions are widely used in business intelligence, since they provide better insight into data.
+Some of the more advanced aggregation functions are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="about-pinned-measures.html#">Group aggregation functions</a> apply a specific aggregate to a value, and group the results by an attribute in the data.</p>
+</li>
+<li>
+<p><a href="about-cumulative-formulas.html#">Cumulative functions</a> measure from the start of your data to the current point.
+They&#8217;re often applied on time-based data.</p>
+</li>
+<li>
+<p><a href="about-moving-formulas.html#">Moving formulas</a> measure within a window (usually time-based) that you define.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Data from any rows that are not included in the search result will not be incorporated, and you cannot create a filter on aggregated data.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_flexible_aggregation"><a class="anchor" href="#_flexible_aggregation"></a>Flexible aggregation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>group_aggregate</code> function makes it possible to aggregate measures at granularities that are different from the dimensions or column groupings used in the search.</p>
+</div>
+<div class="paragraph">
+<p>See <a href="aggregation-flexible.html#">Flexible aggregation</a> to learn more about working with this formula.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_division_with_aggregation_in_a_search"><a class="anchor" href="#_using_division_with_aggregation_in_a_search"></a>Using division with aggregation in a search</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Whenever your search result combines rows, your formula will get aggregated automatically.
+For example, if your search contains words like "region", "monthly", or "department", the results will be grouped (aggregated) by that category.
+The administrator can change the default aggregation that gets applied through a configuration, and you can also change it using the dropdown list in the column header of the search result.</p>
+</div>
+<div class="paragraph">
+<p>For example, this search would typically return a sum of total sales by department:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sum sales department</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This search would return an average of sales by month:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>average sales monthly</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you&#8217;re using division in your formula, and the search is aggregated like this, you may have to change the order of operations to get the result you expect.
+This is best understood by using a real world example.</p>
+</div>
+<div class="paragraph">
+<p>Suppose you want to calculate the gross margin by department for a grocery store.
+The formula for gross margin is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>profit / sales</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>But if you use that as your formula, you won&#8217;t get the expected calculation.
+Why?
+It&#8217;s because the formula will be evaluated in this order: For each row, divide profit by sales and then total up all the results.
+As you can see, the results do not look like gross margin values, which should be between 0 and 1.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/formula_gross_margin_no_sum.png" alt="formula gross margin no sum">
+</div>
+</div>
+<div class="paragraph">
+<p>Instead, you&#8217;d need to use a formula that uses the order of operations you want:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sum (profit) / sum (sales)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now the result is as expected, because the formula totals the profits for all rows, and then divides that by the total of sales for all rows, returning an average gross margin:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/formula_gross_margin_sum.png" alt="formula gross margin sum">
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

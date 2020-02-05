@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>["Understand formulas in searches"] :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">ThoughtSpot Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="antora-test" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About this release</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/notes.adoc">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/downloads.adoc">Downloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ThoughtSpot Documentation</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Documentation</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ThoughtSpot Documentation</a></li>
+    <li><a href="add-formula-to-search.md.html">["Understand formulas in searches"]</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/complex-search/pages/add-formula-to-search.md.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<h1 class="page">["Understand formulas in searches"]</h1>
+<div class="paragraph">
+<p>The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.</p>
+</div>
+<div class="paragraph">
+<p>You can create a formula from directly within a search.
+If you have the privilege that allows you to create or edit worksheets, you can also create a formula within a worksheet.
+Formulas in worksheets act as derived columns, so that anyone who uses the worksheet as a data source will see the formula as just another column.</p>
+</div>
+<div class="paragraph">
+<p>Adding a formula within a search works much the same way as adding a formula to a worksheet.
+However, you will be able to edit the formula directly from within the answer.
+If you add the answer to a pinboard and share it with the <strong>Edit</strong> privilege, other people can see the formula results, too.
+To make edits to the formula, they also need to have the <strong>Edit</strong> privilege on the underlying data.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>link:{{ site.baseurl }}/complex-search/how-to-add-formula.html[Add a formula to a search]</strong> + You can add a formula directly within a search.
+Some common reasons for using a formula in a search are to perform mathematical functions, check for and replace null values, or add if&#8230;&#8203;then&#8230;&#8203;else logic.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/complex-search/edit-formula-in-answer.html[View or edit a formula in a search]</strong> + You can always go back and view or edit a formula that has been added to a search.
+Do this by clicking the edit icon next to its name in the <strong>Columns</strong> listing.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/complex-search/aggregation-formulas.html[About aggregate formulas]</strong> + When working with formulas, it is useful to understand the difference between regular (or row-wise) formulas and aggregation formulas.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/complex-search/conversion-formulas.html[About conversion formulas]</strong> + Some formulas require the input to be of a particular data type.
+If you find that you want to pass a value to the function, but it is of the wrong data type, you can convert it using a conversion formula.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/advanced-search/formulas/date-formulas.html[About date formulas]</strong> + Date formulas allow you to apply date related functions to your formulas.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/advanced-search/formulas/percent-calculations.html[About percent (simple number) calculations]</strong> + You can use simple number functions to perform useful percent calculations.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/advanced-search/formulas/conditional-sum.html[About conditional formulas (operators)]</strong> + Conditional formulas, or operators, allow you to apply <code>if</code>/<code>then</code>/<code>else</code> conditions in your formulas.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/complex-search/about-nested-formulas.html[About nested formulas]</strong> + Nested formulas, or formula on formula, allow you to reference a formula within another formula.</p>
+</li>
+<li>
+<p><strong>link:{{ site.baseurl }}/complex-search/about-formula-support-for-chasm-trap-schemas.html[About formula support for chasm trap schemas]</strong> + You can create a formula that involves aggregated measures coming from multiple fact tables of a chasm trap.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Text formulas are also available.
+These are covered in the comprehensive <strong>link:{{ site.baseurl }}/reference/formula-reference.html[Formula function reference]</strong>, which provides brief descriptions and examples for all types of formulas.
+The above topics explain concepts and give step-by-step instructions of how to work with formulas, whereas the reference is a quick cheat sheet.</p>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

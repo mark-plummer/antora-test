@@ -1,5 +1,5 @@
 name: antora-test
 version: dev
-title: ThoughtSpot Documentation
+title: 
 nav:
 - modules/ROOT/nav.adoc

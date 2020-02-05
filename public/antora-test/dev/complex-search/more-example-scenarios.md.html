@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">ThoughtSpot Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="antora-test" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About this release</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/notes.adoc">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/downloads.adoc">Downloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ThoughtSpot Documentation</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Documentation</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/complex-search/pages/more-example-scenarios.md.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<hr>
+<div class="paragraph">
+<p>title: [View example scenarios]</p>
+</div>
+<div class="paragraph">
+<p>last_updated: 11/2/2018 summary: "It&#8217;s not always easy to know when you need to use a view, but these are some common scenarios." sidebar: mydoc_sidebar permalink: /:collection/:path.html&#8201;&#8212;&#8201;Here are three common examples of when you would want to use a view.</p>
+</div>
+<div class="sect1">
+<h2 id="_example_1"><a class="anchor" href="#_example_1"></a>Example 1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Search a filtered subset</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s say you have a table with all the sales transactions for each customer.
+You want to find high value customers (those who have spent a certain amount of money in the last year).
+Then you want to do some further analysis on these high value customers, like the count by region.
+Here you essentially need to sum up the sales per customer, filter by that sum to get the top customers, and then do a count, making it two levels of aggregation.
+A single search can do only one level of aggregation.</p>
+</div>
+<div class="paragraph">
+<p>However, a search can calculate the initial sum and filter within it to get the highest value customers.
+Then you can save that result as a view.
+Joining the view to some other tables, like the customer dimension, allows you to do the count and other similar analyses using the view along with the other tables.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_2"><a class="anchor" href="#_example_2"></a>Example 2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cohort analysis</p>
+</div>
+<div class="paragraph">
+<p>This example is similar to the previous example, except that it involves a more complex filter, called a cohort.
+You might create a search to find customers who bought product A, but did not buy product B.</p>
+</div>
+<div class="paragraph">
+<p>First, you would have to perform searches for total sales by customer for both A and B, and create views for both.
+Then join these two views back in an outer join looking for conditions where the A and B join values are null.</p>
+</div>
+<div class="paragraph">
+<p>This example could also be solved in a single search by using link:{{ site.baseurl }}/advanced-search/formulas/conditional-sum.html#[conditional formulas] to determine the desired group (or cohort) of customers as defined by their buying behavior, and then doing the analysis on this group.
+But the performance will be better if you do this using a view, and then link:{{ site.baseurl }}/admin/loading/materialized-views.html#[materialize the view].</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_3"><a class="anchor" href="#_example_3"></a>Example 3</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Combining aggregated sources</p>
+</div>
+<div class="paragraph">
+<p>If you do a lot of your analysis in the aggregate, like at the quarterly level, you may be challenged when trying to combine this aggregated data from different sources.
+For example, you may want to combine three different quarterly views from SalesForce - Pipeline, Bookings, and Sales Activity to create a comprehensive analysis of each region&#8217;s performance.
+Joining the quarterly views together in a worksheet enables you to do this type of analysis easily.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_4"><a class="anchor" href="#_example_4"></a>Example 4</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lightweight data transformation</p>
+</div>
+<div class="paragraph">
+<p>You may have a table with separate columns for people&#8217;s first name and last name.
+You could use a concat formula to create a single column with first name, a space, and last name.
+But using this formula could make performance slow, since that column would always be calculated on the fly when searching.
+In this case, creating a view using the concatenate formula and materializing it will improve performance when searching this data.</p>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

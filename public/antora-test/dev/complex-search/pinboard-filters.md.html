@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">ThoughtSpot Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="antora-test" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About this release</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/notes.adoc">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#release/downloads.adoc">Downloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ThoughtSpot Documentation</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Documentation</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/complex-search/pages/pinboard-filters.md.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<hr>
+<div class="paragraph">
+<p>title: [Pinboard filters]</p>
+</div>
+<div class="paragraph">
+<p>last_updated: tbd toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html&#8201;&#8212;&#8201;Filters, including bulk filters and exclude fiters, can be applied to pinboards just as with tables and charts.
+These kinds of filters apply to an entire pinboard, making it easy to see only the data that you are interested in across the tables and charts within a pinboard.</p>
+</div>
+<div class="sect1">
+<h2 id="_when_to_use_a_pinboard_filter"><a class="anchor" href="#_when_to_use_a_pinboard_filter"></a>When to use a pinboard filter</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pinboard filters can be very useful when you want to apply the same filters to more than one related visualization.
+You can narrow the focus of your pinboard for specific purposes or audiences.</p>
+</div>
+<div class="paragraph">
+<p>When you apply a filter, the pinboard is not automatically saved with your filter applied.
+This is to encourage ad hoc filtering.
+Therefore, people with read-only access can create pinboard filters.
+You must have edit access to the pinboard, and view access (or higher) to the underlying data source in order save a pinboard filter.</p>
+</div>
+<div class="paragraph">
+<p>Note that pinboard filters only apply to the tables and charts that are based on worksheets.
+If a pinboard also includes tables and charts that were created from underlying tables or on user uploaded data, the filters don&#8217;t apply to them.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_a_pinboard_filter"><a class="anchor" href="#_create_a_pinboard_filter"></a>Create a pinboard filter</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can create a filter in the pinboard view for any pinboard.
+This allows you to easily manipulate the visualizations and view the modified presentation in one place.</p>
+</div>
+<div class="paragraph">
+<p>Here is an example that shows you how to add a single filter to a pinboard.
+To create a pinboard filter:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the ellipses icon <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/icon-ellipses.png" alt="more options menu icon"></span>, and select <strong>Add filters</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/add_pinboard_filters.png" alt="add pinboard filters">
+</div>
+</div>
+</li>
+<li>
+<p>In the populated columns menu, click the <strong>Add filter</strong> icon next to the column you would like to filter on.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/add_filters_menu.png" alt="add filters menu">
+</div>
+</div>
+</li>
+<li>
+<p>Select the values to include in your answer.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/column_filter.png" alt="column filter">
+</div>
+</div>
+</li>
+<li>
+<p>If you want to exclude values, click <strong>Exclude</strong> and choose values to exclude.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/exclude_nulls.png" alt="exclude nulls">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong>Done</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>When you apply a filter, the pinboard is not automatically saved with your   filter applied to every object in the pinboard that was created from a   worksheet.
+Pinboard filters do not apply to tables and charts built directly on   top of base tables.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_edit_a_filter_from_the_answer"><a class="anchor" href="#_edit_a_filter_from_the_answer"></a>Edit a filter from the answer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your applied filter will sit at the top of the pinboard, where you can edit it in place:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/select_filters.png" alt="select filters">
+</div>
+</div>
+<div class="paragraph">
+<p>Or delete it:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/filter_appears.png" alt="filter appears">
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
