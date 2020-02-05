@@ -87,7 +87,7 @@
 *** xref:complex-search/more-example-scenarios.adoc[Worksheet example scenarios]
 ** Use pinboards
 *** xref:end-user:about-pinboards.adoc[Basic pinboard usage]
-*** xref:end-user:edit-the-layout-of-pinboard.adoc[Edit a pinboard]
+*** xref:end-user:edit-the-layout-of-a-pinboard.adoc[Edit a pinboard]
 *** xref:complex-search/pinboard-filters.adoc[Pinboard filters]
 *** xref:admin/manage-jobs/schedule-a-pinboard-job.adoc[Schedule a pinboard job]
 *** xref:end-user:about-showing-underlying-data-from-within-a-pinboard.adoc[Search actions within a pinboard]
