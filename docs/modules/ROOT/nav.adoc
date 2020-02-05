@@ -2,7 +2,7 @@
 ** xref:release:notes.adoc[Release notes]
 ** xref:release:downloads.adoc[Downloads]
 * Users
-** xref:end-user:introduction#introduction.adoc[Introduction]
+** xref:end-user:introduction.adoc[Introduction]
 ** Getting Started
 *** xref:end-user:introductionabout-navigation-thoughtspot.adoc[Finding your way around]
 *** xref:end-user/accessing.adoc[ThoughSpot browser access]
