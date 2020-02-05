@@ -1,4 +1,4 @@
-= ["Downloads for ThoughtSpot"]
+= Downloads for ThoughtSpot
 :last_updated: 07/12/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

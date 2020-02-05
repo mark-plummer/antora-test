@@ -1,4 +1,4 @@
-= ["6.0 Release Notes"]
+= 6.0 Release Notes
 :last_updated: December, 2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
