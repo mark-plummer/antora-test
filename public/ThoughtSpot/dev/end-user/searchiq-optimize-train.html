@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Train SearchIQ :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">ThoughtSpot Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ThoughtSpot" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About this release</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../release/notes.html">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../release/downloads.html">Downloads</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Users</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Getting Started</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user:about-navigation-thoughtspot.adoc">Finding your way around</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="accessing.html">ThoughSpot browser access</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user:getting-started.adoc">The Getting Started sidebar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-user.html">Your user preferences</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-privileges-end-user.html">Understanding privileges</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user/stickers.adoc">Use stickers to organize</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use Search</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user/search/about-starting-a-new-search.adoc">What are searches and answers?</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Search basics</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/start-a-new-search.adoc">Start a new search</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-choosing-sources.adoc">Choose a data source</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-the-search-bar.adoc">Search bar features</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/recent-searches.adoc">Search suggestions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-attributes-and-measures.adoc">Search results and column types</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/data-refresh-time.adoc">Last data refresh time</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/work-with-answers.adoc">Work with answers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user/search/about-tables.adoc">Results that are tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use keywords in search</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/about-keyword-searches.adoc">Overview of keyword searches</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/period-searches.adoc">Time series analysis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/search-using-growth-over-time.adoc">Search using growth over time</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#admin/features/proximity-search.adoc">Proximity searches "near" and "farther than"</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with filters</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/about-filters.adoc">Understand filters</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/filter-from-column-headers.adoc">Add a filter to a table</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/filter-from-chart-axes.adoc">Add a filter to a chart</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/create-bulk-filter.adoc">Create a bulk filter</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/delete-a-filter.adoc">Delete a filter</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/about-filters-for-null.adoc">Filter on null, blank, or empty values</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Other search actions</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/change-the-view.adoc">Change result display options</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/show-underlying-data.adoc">Show underlying data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/drill-down.adoc">See the search behind the result</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/apply-conditional-formatting.adoc">Apply conditional formatting to a table</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#complex-search/download-your-search.adoc">Download your search</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/replay-search.adoc">Replay search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user/search/about-charts.adoc">Understand charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chart types</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-column-charts.adoc">Column charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-bar-charts.adoc">Bar charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-line-charts.adoc">Line charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/pie-charts.adoc">Pie charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/area-charts.adoc">Area charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-scatter-charts.adoc">Scatter charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-bubble-charts.adoc">Bubble charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-pareto-charts.adoc">Pareto charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-waterfall-charts.adoc">Waterfall charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-treemap-charts.adoc">Treemap charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/line-column-charts.adoc">Line column charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-funnel-charts.adoc">Funnel charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-geo-charts.adoc">Geo charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-pivoting-a-table.adoc">Pivot table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Changing a chart</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/reorder-values-on-the-x-axis.adoc">Reorder the labels</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/set-the-y-axis-scale.adoc">Set the y-axis range</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/hide-and-show-values.adoc">Hide and show values</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/change-chart-colors.adoc">Change chart colors</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/show-data-labels.adoc">Additional chart options</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/zoom-into-a-chart.adoc">Zoom into a chart</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with formulas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/add-a-formula-to-search.adoc">Understand formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/how-to-add-formula.adoc">Add a formula to a search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/edit-formula-in-answer.adoc">View or edit a formula in search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Aggregate formulas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/aggregation-formulas.adoc">Overivew of aggregate formulas</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-cumulative-formulas.adoc">Cumulative functions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-pinned-measures.adoc">Grouping functions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/about-moving-formulas.adoc">Moving functions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#end-user/search/filtered-agg-forms.adoc">Filtered aggregation functions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/conversion-formulas.adoc">Conversion functions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#advanced-search/formulas/date-formulas.adoc">Date functions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#advanced-search/formulas/percent-calculations.adoc">Percent (simple number) calculations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#advanced-search/formulas/conditional-sum.adoc">Formula operators</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/about-nested-formulas.adoc">Nested formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/about-formula-support-for-chasm-trap-schemas.adoc">Formulas for chasm traps</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with worksheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/about-query-on-query.adoc">Understand worksheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/create-aggregated-worksheet.adoc">Save a search as a worksheet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/do-query-on-query.adoc">Create a search from a worksheet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/more-example-scenarios.adoc">Worksheet example scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use pinboards</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-pinboards.html">Basic pinboard usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user:edit-the-layout-of-pinboard.adoc">Edit a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#complex-search/pinboard-filters.adoc">Pinboard filters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#admin/manage-jobs/schedule-a-pinboard-job.adoc">Schedule a pinboard job</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="copy-a-pinboard.html">Copy a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reset-a-visualization.html">Reset a pinboard or visualization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="start-a-slideshow.html">Start a slideshow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user:data-into-end-user.adoc">Understand data sources</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="generate-flat-file.html">Create and load CSV files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#admin/loading/append-data-from-a-web-browser.adoc">Append data through the UI</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#admin/loading/view-your-data-profile.adoc">View a data profile</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user:  locale.adoc">Date and currency format settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SpotIQ</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#spotiq/whatisspotiq.adoc">What is SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#spotiq/overview.adoc">101:Load and analyze data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#spotiq/work-with-insights.adoc">101:Review and save insights</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#spotiq/spotiq-customize.adoc">101:Do more with SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#spotiq/special-topics.adoc">Best SpotIQ Practices</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#spotiq/customization.adoc">Custom SpotIQ analysis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#spotiq/adv-customize-withr.adoc">Advanced R Customizations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Share your work</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sharing-for-end-users.html">About sharing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="share-pinboards.html">Share pinboards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="share-answers.html">Share answers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="share-user-imported-data.html">Share uploaded data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="unshare.html">Revoke access (unshare)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Slack and ThoughtSpot</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user/slack/intro.adoc">Slack and Spot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#end-user/slack/use-spot.adoc">How to use Spot</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#end-user/help-center/what-you-can-find-in-the-help-center.adoc">More help and support</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ThoughtSpot</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ThoughtSpot</a></li>
+    <li><a href="searchiq-optimize-train.html">Train SearchIQ</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/end-user/pages/searchiq-optimize-train.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc">
+<h1 class="page">Train SearchIQ</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>SearchIQ is in Beta.</strong></p>
+</div>
+<div class="paragraph">
+<p>{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you.
+SearchIQ is only available in English." %}</p>
+</div>
+<div class="paragraph">
+<p>There are two complementary paths for optimizing SearchIQ to understand natural language search, <a href="#data-modeling">Data Modeling</a> and <a href="#language">Language Modeling</a>.
+Also, consider the the <a href="#training-examples">Training Examples</a><div id="data-modeling"></div></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_modeling_settings"><a class="anchor" href="#_data_modeling_settings"></a>Data modeling settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>link:{{ site.baseurl }}/admin/data-modeling/add-expert.html[Add experts to the data source] to enable the link:{{ site.baseurl }}/end-user/search/ask-an-expert.html[Ask an Expert] workflow.
+This supplies users with another path to getting an answer when they get stuck.<div id="language-modeling"></div></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_language_modeling"><a class="anchor" href="#_language_modeling"></a>Language modeling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We bundle SearchIQ with a set of pre-defined templates that help it understand natural language, and return the best possible answers.
+You can also add your own templates for each data source, and teach it new language interpretations:</p>
+</div>
+<div class="sect2">
+<h3 id="_teach_searchiq_using_a_saved_searchiq_answer"><a class="anchor" href="#_teach_searchiq_using_a_saved_searchiq_answer"></a>Teach SearchIQ using a saved SearchIQ answer</h3>
+<div class="paragraph">
+<p>See link:{{ site.baseurl }}/end-user/search/teach-searchiq.html[Teach SearchIQ your language].</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select a saved answer.</p>
+</li>
+<li>
+<p>Click one of the drop-down phrases that shows how SearchIQ interprets the search terms, and click <strong>Teach</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_new_searches_to_teach_searchiq"><a class="anchor" href="#_use_new_searches_to_teach_searchiq"></a>Use new searches to teach SearchIQ</h3>
+<div class="paragraph">
+<p>We recommend that you train SearchIQ by performing at least 50 natural language searches.
+This teaches SearchIQ how to map common questions to relevant entities.
+Use points described in link:{{ site.baseurl }}/end-user/search/teach-searchiq.html[Teach SearchIQ] for any unexpected answers.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For best results, use simple and short queries.</p>
+</li>
+<li>
+<p>Ask questions that contain only exact column names or their synonyms.</p>
+</li>
+<li>
+<p>Use exact values for filtering.</p>
+</li>
+<li>
+<p>Use keywords.
+See link:{{ site.baseurl }}/reference/keywords.html[Keywords].</p>
+</li>
+<li>
+<p>Use stopwords.
+See link:{{ site.baseurl }}/reference/stop-words.html[Stop Words].</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When SearchIQ returns a satisfactory table or chart, remember to click the <strong>Looks Good</strong> button to provide the necessary feedback.<div id="training-examples"></div></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_training_examples_for_searchiq"><a class="anchor" href="#_training_examples_for_searchiq"></a>Training Examples for SearchIQ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Example 1: where are the best sales</strong></p>
+</div>
+<div class="paragraph">
+<p>In this example, the query returned a very good answer, by interpreting <em>where</em> as <em>Store City</em> and <em>best</em> as <em>sort by Sales</em>.
+The chart <strong>Looks Good</strong>, and this is valuable feedback for training SearchIQ.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/worksheet-searchiq-training-example1.png" alt="worksheet searchiq training example1">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Example 2: which state has the lowest volume</strong></p>
+</div>
+<div class="paragraph">
+<p>In this example, the query returned a very good answer, by inerpreting <em>lowest</em> as <em>sort by Quantity</em> and <em>volume</em> as <em>Quantity</em>.
+This chart also <strong>Looks Good</strong>, and provides valuable feedback for training SearchIQ.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/worksheet-searchiq-training-example2.png" alt="worksheet searchiq training example2">
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
