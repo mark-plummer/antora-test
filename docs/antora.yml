@@ -1,5 +1,5 @@
-name: antora-test
+name: 
 version: dev
-title: 
+title:
 nav:
 - modules/ROOT/nav.adoc
