@@ -1,6 +1,4 @@
-'''
-
-title: [Search suggestions]
+= Search suggestions
 
 last_updated: tbd summary: "How ThoughtSpot learns from your searches and helps you." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Search suggestions include complete recent searches that are similar to the search you are constructing.
 

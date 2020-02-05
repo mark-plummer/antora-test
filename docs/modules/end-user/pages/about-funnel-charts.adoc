@@ -1,6 +1,4 @@
-'''
-
-title: [Funnel charts]
+= Funnel charts
 
 last_updated: tbd summary: "The funnel chart shows a process with progressively decreasing proportions amounting to 100 percent in total." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- A funnel chart is similar to a stacked percent column chart, and is often used to represent stages in a sales process.
 You can visualize the progression of data as it passes from one phase to another.

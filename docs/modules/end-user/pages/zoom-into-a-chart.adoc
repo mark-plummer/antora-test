@@ -1,6 +1,4 @@
-'''
-
-title: [Zoom into a chart]
+= Zoom into a chart
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can zoom into your chart by selecting an area with your mouse.
 To zoom into a chart:

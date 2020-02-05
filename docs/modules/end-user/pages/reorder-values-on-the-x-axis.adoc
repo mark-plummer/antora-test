@@ -1,6 +1,4 @@
-'''
-
-title: [Reorder labels on the axis or legend]
+= Reorder labels on the axis or legend
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- When there are multiple columns on the x- or y-axis or legend of a chart, you can reorder them by using the *Configure Chart* icon.
 

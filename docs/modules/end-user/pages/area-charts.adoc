@@ -1,6 +1,4 @@
-'''
-
-title: [Area Charts]
+= Area Charts
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The area chart is based on the line chart, but has filled in regions.
 

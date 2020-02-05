@@ -1,6 +1,4 @@
-'''
-
-title: [Search bar features]
+= Search bar features
 
 last_updated: tbd summary: "The search bar is designed to make it easy for you to identify your search terms.
 " sidebar: mydoc_sidebar permalink: /:collection/:path.html -- A lot of work has gone into making ThoughtSpot's search bar intuitive and easy to use.

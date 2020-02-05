@@ -1,6 +1,4 @@
-'''
-
-title: Answer an expert question
+= Answer an expert question
 
 last_updated: 4/16/2019 summary: "You're the expert.
 Now what?

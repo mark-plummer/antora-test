@@ -1,6 +1,4 @@
-'''
-
-title: [Apply conditional formatting]
+= Apply conditional formatting
 
 last_updated: tbd summary: "Use conditional formatting to make portiosn of your results stand  out" sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 

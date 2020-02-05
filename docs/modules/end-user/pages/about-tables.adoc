@@ -1,6 +1,4 @@
-'''
-
-title: [Results that are tables]
+= Results that are tables
 
 last_updated: tbd summary: "Tables display your answer in a format similar to an Excel spreadsheet." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Your search results are not limited by the number of attributes or columns in order to be presented as a table.
 You can have a table with just one attribute or measure.

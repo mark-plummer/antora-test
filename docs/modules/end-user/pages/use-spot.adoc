@@ -1,6 +1,4 @@
-'''
-
-title: [How to use Spot]
+= How to use Spot
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 

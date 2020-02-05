@@ -1,6 +1,4 @@
-'''
-
-title: [Work with Answers]
+= Work with Answers
 
 last_updated: tbd summary: "Answers are the saved results of a search.
 " sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can save the results of any search and share these with other people.

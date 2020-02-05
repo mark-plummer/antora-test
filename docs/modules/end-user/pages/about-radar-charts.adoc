@@ -1,7 +1,4 @@
-'''
-
-title: [Radar charts;
-spiderweb charts]
+= Radar charts
 
 last_updated: tbd summary: "The Radar (or spiderweb) chart contains both columns and a special type of line chart.
 " sidebar: mydoc_sidebar permalink: /:collection/:path.html -- A Spiderweb chart displays data in the form of a two-dimensional chart of three or more qualities, represented on axes starting from the same point.

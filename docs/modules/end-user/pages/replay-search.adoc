@@ -1,6 +1,4 @@
-'''
-
-title: [Replay search]
+= Replay search
 
 last_updated: tbd summary: "You can instantly generate a step-by-step replay showing the creation of a table or chart." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The replay feature shows how to create the chart or table you are viewing.
 Use it to teach yourself, or take a screen recording of it and create your own ThoughtSpot training for your team.

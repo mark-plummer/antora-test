@@ -1,6 +1,4 @@
-'''
-
-title: [Hide and show values]
+= Hide and show values
 
 last_updated: tbd summary: "You can hide and show values on the chart using the legend." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Clicking on a legend item will hide it from the chart.
 You can click it again to show it.

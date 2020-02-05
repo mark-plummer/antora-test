@@ -1,6 +1,4 @@
-'''
-
-title: [Additional chart options]
+= Additional chart options
 
 last_updated: tbd summary: "On charts, you can configure data labels, grid lines, regression lines, legends, values for x or y axis, and lock or unlock." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Some charts have additional options under *Chart Styles* and *Configuration Options* that are covered in each chart type topic.
 

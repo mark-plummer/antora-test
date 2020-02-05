@@ -1,6 +1,4 @@
-'''
-
-title: [Change chart colors]
+= Change chart colors
 
 last_updated: tbd summary: "You can change the colors used in a chart." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- To change the colors used in a chart, use the color picker on the chart styles panel.
 You can set colors for:

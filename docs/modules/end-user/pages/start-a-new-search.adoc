@@ -1,6 +1,4 @@
-'''
-
-title: [Start a new search]
+= Start a new search
 
 last_updated: tbd summary: "Starting a new ThoughtSpot search is simple, like starting a new Google search." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- To start a new search:
 
