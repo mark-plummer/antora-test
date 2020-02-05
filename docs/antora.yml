@@ -1,4 +1,4 @@
-name: test-site
+name: antora-test
 version: dev
 title: ThoughtSpot Documentation
 nav:
