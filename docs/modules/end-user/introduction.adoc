@@ -1,7 +1,4 @@
-= ["Introduction to the User Guide"]
-:last_updated: tbd
-:permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
+= Introduction to the User Guide
 
 This ThoughtSpot User Guide contains information on navigating and searching data with ThoughtSpot.
 It assists you with starting new searches, managing your pinboards, and troubleshooting.

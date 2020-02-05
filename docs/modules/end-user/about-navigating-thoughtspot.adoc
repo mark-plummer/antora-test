@@ -1,9 +1,4 @@
-= ["Finding your way around"]
-:last_updated: 09/23/2009
-:permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
-:summary: ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar.
-:toc: false
+= Finding your way around
 
 These are the different sections in ThoughtSpot:
 
