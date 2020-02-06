@@ -7,4 +7,4 @@ If you find that you want to pass a value to the function, but it is of the wron
 
 The following are the conversion formulas:
 
-{% include content/conversion-func.md %}
+include::partial$conversion-func.adoc[]
