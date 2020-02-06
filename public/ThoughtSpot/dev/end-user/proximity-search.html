@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Set your display language (locale) :: ThoughtSpot Demo Site</title>
+    <title>Proximity searches "near" and "farther than" :: ThoughtSpot Demo Site</title>
     <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
   </head>
@@ -157,7 +157,7 @@
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="search-using-growth-over-time.html">Search using growth over time</a>
   </li>
-  <li class="nav-item" data-depth="4">
+  <li class="nav-item is-current-page" data-depth="4">
     <a class="nav-link" href="proximity-search.html">Proximity searches "near" and "farther than"</a>
   </li>
 </ul>
@@ -414,7 +414,7 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="view-your-data-profile.html">View a data profile</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="locale.html">Date and currency format settings</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -512,19 +512,104 @@
   <ul>
     <li><a href="../index.html">ThoughtSpot</a></li>
     <li>Users</li>
-    <li>Work with data</li>
-    <li><a href="locale.html">Date and currency format settings</a></li>
+    <li>Use Search</li>
+    <li>Use keywords in search</li>
+    <li><a href="proximity-search.html">Proximity searches "near" and "farther than"</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/end-user/pages/locale.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/end-user/pages/proximity-search.adoc">Edit this Page</a></div>
   </div>
 <article class="doc">
-<h1 class="page">Set your display language (locale)</h1>
+<h1 class="page">Proximity searches "near" and "farther than"</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html&#8201;&#8212;&#8201;</p>
+<p>last_updated: tbd summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location." toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html&#8201;&#8212;&#8201;Proximity keywords allow you to search and show the results on a map.
+Using proximity keywords causes ThoughtSpot to display a circle that represents your set distance on the geo charts.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/geospatial_search.png" alt="geospatial search">
+</div>
 </div>
 <div class="paragraph">
-<p>{% include content/set_locale.md %}</p>
+<p>The proximity keywords are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>near</code></p>
+</li>
+<li>
+<p></p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>near…within n miles</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>km</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>meters</code></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p></p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>farther than n miles</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>km</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>meters from</code></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The distance is calculated as a straight-line distance (not road distance) radius using miles, kilometers, or meters from the central point.
+If you do not specify a distance, the system uses 10 km as the default.</p>
+</div>
+<div class="paragraph">
+<p>Given a latitude, a longitude, and an optional distance, the search returns all instances of a geotype column that falls within the parameters.
+These keywords are limited to 33 latitude/longitude pairs.
+They work on duplicate counties.
+Finally, you can filter on them.
+Some examples of valid searches are:</p>
+</div>
+<div class="paragraph">
+<p><code>landings</code> <em>`latitude longitude city`</em> <code>near tokyo</code></p>
+</div>
+<div class="paragraph">
+<p><code>landings</code> <em>`latitude longitude city`</em> <code>near tokyo within 50 miles</code></p>
+</div>
+<div class="paragraph">
+<p>You can bracket your search only with actual values found in the data.
+So  "longitude between <code>-125.000000</code> and <code>-115.316670</code> worked for me, but not  <code>longitude between -125 and -115</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_proximity_search_configuration_requirements"><a class="anchor" href="#_proximity_search_configuration_requirements"></a>Proximity search configuration requirements</h3>
+<div class="paragraph">
+<p>All your data must be in the same set.
+The worksheet or one of the tables must contain a column of type <code>longitude</code> and a column of type <code>latitude</code>.
+The latitude and longitude data have to be on the same base tables for the feature to work.
+You can&#8217;t, for instance, have a dimension table with all your cities and their associated geo coordinates and join to it from your fact table and expect proximity search to work.</p>
+</div>
+<div class="paragraph">
+<p>Also, your administrators must have configured these columns using the appropriate GeoType.</p>
+</div>
 </div>
 </article>
 </main>

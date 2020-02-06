@@ -42,7 +42,7 @@ Some examples of valid searches are:
 You can bracket your search only with actual values found in the data.
 So  "longitude between `-125.000000` and `-115.316670` worked for me, but not  `longitude between -125 and -115`.
 
-=== Proximity search configuration requirements
+== Proximity search configuration requirements
 
 All your data must be in the same set.
 The worksheet or one of the tables must contain a column of type `longitude` and a column of type `latitude`.
