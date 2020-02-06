@@ -25,7 +25,7 @@
 **** xref:end-user:about-keyword-searches.adoc[Overview of keyword searches]
 **** xref:end-user:period-searches.adoc[Time series analysis]
 **** xref:end-user:search-using-growth-over-time.adoc[Search using growth over time]
-**** xref:admin/features/proximity-search.adoc[Proximity searches "near" and "farther than"]
+**** xref:admin:proximity-search.adoc[Proximity searches "near" and "farther than"]
 *** Work with filters
 **** xref:end-user:about-filters.adoc[Understand filters]
 **** xref:end-user:filter-from-column-headers.adoc[Add a filter to a table]

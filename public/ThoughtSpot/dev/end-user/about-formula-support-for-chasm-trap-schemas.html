@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Use SearchIQ :: ThoughtSpot Demo Site</title>
+    <title>Untitled :: ThoughtSpot Demo Site</title>
     <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
   </head>
@@ -167,7 +167,7 @@
     <span class="nav-text">Work with filters</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="#end-user:about-filters.adoc">Understand filters</a>
+    <a class="nav-link" href="about-filters.html">Understand filters</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="filter-from-column-headers.html">Add a filter to a table</a>
@@ -342,8 +342,8 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="about-nested-formulas.html">Nested formulas</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#end-user:about-formula-support-for-chasm-trap-schemas.adoc">Formulas for chasm traps</a>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a>
   </li>
 </ul>
   </li>
@@ -511,138 +511,29 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">ThoughtSpot</a></li>
-    <li><a href="use-searchiq.md.html">Use SearchIQ</a></li>
+    <li>Users</li>
+    <li>Work with formulas</li>
+    <li><a href="about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/end-user/pages/use-searchiq.md.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/end-user/pages/about-formula-support-for-chasm-trap-schemas.adoc">Edit this Page</a></div>
   </div>
 <article class="doc">
-<h1 class="page">Use SearchIQ</h1>
-<div id="preamble">
-<div class="sectionbody">
+<hr>
 <div class="paragraph">
-<p><strong>SearchIQ is in Beta.</strong></p>
+<p>title: [Formula support for chasm trap schemas]</p>
 </div>
 <div class="paragraph">
-<p>{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you.
-SearchIQ is only available in English." %}</p>
+<p>last_updated: tbd toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html&#8201;&#8212;&#8201;You can create a formula that involves aggregated measures coming from multiple fact tables of a chasm trap.</p>
 </div>
-<div class="paragraph">
-<p>To search using SearchIQ, follow these steps:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Click the ThoughtSpot search bar on the homepage or select <strong>Search</strong> from the top menu.</p>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/top_navigation_bar.png" alt="top navigation bar">
-</div>
-</div>
-</li>
-<li>
-<p>Click the SearchIQ toggle button to go into SearchIQ mode.</p>
-<div class="imageblock">
-<div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/choose_searchiq_on.png" alt="choose searchiq on">
+<img src="_images/{{%20site.baseurl%20}}/images/chasm_trap_formulas.png" alt="chasm trap formulas">
 </div>
 </div>
 <div class="paragraph">
-<p>If you later decide to go back to the classic search mode, you can click the SearchIQ toggle button to turn it off again.</p>
-</div>
-</li>
-<li>
-<p>Choose the data you want to search using the selector in the left panel.</p>
-<div class="imageblock">
-<div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/searchiq_select_data_source.png" alt="searchiq select data source">
-</div>
-</div>
-</li>
-<li>
-<p>Type your search in the search bar using plain language.</p>
-<div class="paragraph">
-<p>If you see a microphone icon in the search bar, that means your operating system and browser are enabled for speech-to-text.
-In this case, you can click the microphone and speak your search instead of typing.</p>
-</div>
-</li>
-<li>
-<p>Press the <strong>Enter</strong> key when your search is complete.</p>
-</li>
-<li>
-<p>When your answer appears, you may also see one or more of these messages:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Interpretation: You can see how different words you typed were understood.</p>
-<div class="imageblock">
-<div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/searchiq_interpreted.png" alt="searchiq interpreted">
-</div>
-</div>
-</li>
-<li>
-<p>Ignored words: These words were not needed in order to create the answer, so they are ignored.</p>
-<div class="imageblock">
-<div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/searchiq_ignored_words.png" alt="searchiq ignored words">
-</div>
-</div>
-</li>
-<li>
-<p>Ambiguous words: These are words that could have more than one meaning in the context of the search.</p>
-<div class="imageblock">
-<div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/searchiq_ambiguous.png" alt="searchiq ambiguous">
-</div>
-</div>
-<div class="paragraph">
-<p>You can clarify by choosing what you meant from the possible meanings shown.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/searchiq_disambiguate.png" alt="searchiq disambiguate">
-</div>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>If you want to see details of how your search was computed, click the <strong>Details</strong> link to the right of the search terms.</p>
-<div class="imageblock">
-<div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/searchiq_details.png" alt="searchiq details">
-</div>
-</div>
-</li>
-<li>
-<p>If the answer isn&#8217;t what you were expecting, you can refine your answer by link:{{ site.baseurl }}/end-user/search/teach-searchiq.html[teaching SearchIQ your language].</p>
-</li>
-<li>
-<p>If you need help, use link:{{ site.baseurl }}/end-user/search/ask-an-expert.html[Ask an expert].</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_related_information"><a class="anchor" href="#_related_information"></a>Related information</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>link:{{ site.baseurl }}/end-user/search/about-searchiq.html[About SearchIQ]</p>
-</li>
-<li>
-<p>link:{{ site.baseurl }}/end-user/search/teach-searchiq.html[Teach SearchIQ your language]</p>
-</li>
-<li>
-<p>link:{{ site.baseurl }}/end-user/search/ask-an-expert.html[Ask an expert]</p>
-</li>
-</ul>
-</div>
-</div>
+<p>Just as you would create any other formula, you can create a formula that spans across a chasm trap.
+The Formula Builder will provide column suggestions for formulas that span across chasm traps.</p>
 </div>
 </article>
 </main>
