@@ -4,7 +4,7 @@
 * Users
 ** xref:end-user:introduction.adoc[Introduction]
 ** Getting Started
-*** xref:end-user:about-navigation-thoughtspot.adoc[Finding your way around]
+*** xref:end-user:about-navigating-thoughtspot.adoc[Finding your way around]
 *** xref:end-user:accessing.adoc[ThoughSpot browser access]
 *** xref:end-user:getting-started.adoc[The Getting Started sidebar]
 *** xref:end-user:about-user.adoc[Your user preferences]
