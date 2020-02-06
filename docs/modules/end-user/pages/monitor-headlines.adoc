@@ -1,4 +1,4 @@
-= ["Monitor headlines with SpotIQ"]
+= Monitor headlines with SpotIQ
 :last_updated: 11/09/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

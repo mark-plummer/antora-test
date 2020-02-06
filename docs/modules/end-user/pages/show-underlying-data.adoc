@@ -1,6 +1,4 @@
-'''
-
-title: [Show underlying data]
+= Show underlying data
 
 last_updated: tbd summary: "Viewing the underlying data of your answer gives you an un-aggregated view of the underlying data." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can see the most granular details of a given result set, i.e.
 it shows the un-aggregated view.

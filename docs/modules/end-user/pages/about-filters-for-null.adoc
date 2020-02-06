@@ -1,6 +1,4 @@
-'''
-
-title: ["Filter on null, blank, or empty values"]
+= Filter on null, blank, or empty values
 
 last_updated: tbd summary: "Filtering on NULL and empty values is a special case.
 " sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Filtering on null, blank, or empty values can be tricky if your data contains both of these.

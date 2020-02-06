@@ -1,6 +1,4 @@
-'''
-
-title: [Calculate percentages]
+= Calculate percentages
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Calculating percentages is useful when you want to see, for example, the percentage revenue generated from each channel (online, stores, partner, etc.).
 

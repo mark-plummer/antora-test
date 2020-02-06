@@ -534,7 +534,48 @@ If you find that you want to pass a value to the function, but it is of the wron
 <p>The following are the conversion formulas:</p>
 </div>
 <div class="paragraph">
-<p>{% include content/conversion-func.md %}</p>
+<p>&lt;table&gt;
+&lt;colgroup&gt;
+   &lt;col style="width:15%" /&gt;
+   &lt;col style="width:50%" /&gt;
+   &lt;col style="width:35%" /&gt;
+&lt;/colgroup&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Function&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Examples&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;to_bool&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns the input as a boolean (true or false).&lt;/td&gt;
+      &lt;td&gt;&lt;code class="highlighter-rouge"&gt;to_bool (0) = false&lt;/code&gt;&lt;br&gt;&lt;code class="highlighter-rouge"&gt;to_bool (married)&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;to_date&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Accepts a date represented as an integer or text string, and a second string parameter that can include strptime date formatting elements. Replaces all the valid strptime date formatting elements with their string counterparts and returns the result. Does not accept epoch formatted dates as input.&lt;/td&gt;
+      &lt;td&gt;&lt;code class="highlighter-rouge"&gt;to_date (date_sold, '%Y-%m-%d')&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;to_double&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns the input as a double.&lt;/td&gt;
+      &lt;td&gt;&lt;code class="highlighter-rouge"&gt;to_double ('3.14') = 3.14&lt;/code&gt;&lt;br&gt;&lt;code class="highlighter-rouge"&gt;to_double (revenue * .01)&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;to_integer&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns the input as an integer.&lt;/td&gt;
+      &lt;td&gt;&lt;code class="highlighter-rouge"&gt;to_integer ('45') + 1 = 46&lt;/code&gt;&lt;br&gt;&lt;code class="highlighter-rouge"&gt;to_integer (price + tax - cost)&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;to_string&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns the input as a text string.&lt;/td&gt;
+      &lt;td&gt;&lt;code class="highlighter-rouge"&gt;to_string (45 + 1) = '46'&lt;/code&gt;
+      &lt;br&gt;&lt;code class="highlighter-rouge"&gt;to_string (revenue - cost)&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</p>
 </div>
 </article>
 </main>

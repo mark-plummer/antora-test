@@ -1,4 +1,4 @@
-= ["Best SpotIQ Practices"]
+= Best SpotIQ Practices
 :experimental:
 :last_updated: tbd
 :permalink: /:collection/:path.html

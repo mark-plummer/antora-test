@@ -1,6 +1,4 @@
-'''
-
-title: [Percent (simple number) calculations]
+= Percent (simple number) calculations
 
 last_updated: tbd toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can use simple number functions to perform useful percent calculations.
 Simple number functions include addition, subtraction, multiplication, and division.+++<table>++++++<colgroup>++++++<col style="width:10%">++++++</col>+++

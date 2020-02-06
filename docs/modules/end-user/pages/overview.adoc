@@ -1,4 +1,4 @@
-= ["SpotIQ 101: Load and analyze data"]
+= SpotIQ 101: Load and analyze data
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

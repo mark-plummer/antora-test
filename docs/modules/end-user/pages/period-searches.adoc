@@ -1,6 +1,4 @@
-'''
-
-title: [Time series analysis]
+= Time series analysis
 
 last_updated: tbd summary: "You can compare across time periods without using a formula." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- A _time series_ is a set of data points ordered by time.
 For example, within the same week a sale on Tuesday comes before a sale on Wednesday in such a data set.

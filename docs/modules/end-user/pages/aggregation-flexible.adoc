@@ -1,4 +1,4 @@
-= ["Flexible aggregation functions"]
+= Flexible aggregation functions
 :last_updated: 11/05/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

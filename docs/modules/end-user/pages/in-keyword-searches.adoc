@@ -1,6 +1,4 @@
-'''
-
-title: [Using the in keyword for nested searches]
+= Using the in keyword for nested searches
 
 last_updated: tbd summary: "You can use the in keyword to do a search on the result of another search." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search.
 You can use the "in" keyword instead.

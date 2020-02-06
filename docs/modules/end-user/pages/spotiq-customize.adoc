@@ -1,4 +1,4 @@
-= ["SpotIQ 101: Do more with SpotIQ"]
+= SpotIQ 101: Do more with SpotIQ
 :experimental:
 :last_updated: tbd
 :permalink: /:collection/:path.html

@@ -1,6 +1,4 @@
-'''
-
-title: [About date formulas]
+= About date formulas
 
 last_updated: tbd toc: true sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Date functions are useful when you want to compare data collected between two date periods.
 Date formulas allow you to apply date related functions to your formulas.

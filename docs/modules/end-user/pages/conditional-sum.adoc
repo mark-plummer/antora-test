@@ -1,6 +1,4 @@
-'''
-
-title: [Formula operators]
+= Formula operators
 
 last_updated: tbd toc: true sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Formula operators allow you to apply `if`/`then`/`else` conditions in your formulas.
 You can leverage operators in your formulas to have them return true, false, or a predetermined value.

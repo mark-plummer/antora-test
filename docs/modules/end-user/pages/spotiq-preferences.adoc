@@ -1,4 +1,4 @@
-= ["SpotIQ preferences"]
+= SpotIQ preferences
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

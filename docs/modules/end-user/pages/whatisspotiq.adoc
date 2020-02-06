@@ -1,4 +1,4 @@
-= ["What is SpotIQ?"]
+= What is SpotIQ?
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

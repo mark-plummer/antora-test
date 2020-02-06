@@ -1,6 +1,4 @@
-'''
-
-title: [Understand filters]
+= Understand filters
 
 last_updated: tbd summary: "Filters narrow down the search result to only include the data you want to see." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- When you add a value to your search, it becomes a filter.
 You can define filters on tables, views and worksheets.

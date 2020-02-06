@@ -1,4 +1,4 @@
-= ["Advanced R Customizations"]
+= Advanced R Customizations
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,6 +1,4 @@
-'''
-
-title: [Create a bulk filter]
+= Create a bulk filter
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can create a bulk filter on a saved search.
 You create the filter by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box.

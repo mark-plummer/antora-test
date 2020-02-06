@@ -1,6 +1,4 @@
-'''
-
-title: [View a data profile]
+= View a data profile
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 

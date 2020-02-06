@@ -1,4 +1,4 @@
-= ["Custom SpotIQ analysis"]
+= Custom SpotIQ analysis
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
