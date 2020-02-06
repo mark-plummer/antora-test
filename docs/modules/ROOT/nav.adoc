@@ -65,7 +65,7 @@
 **** xref:end-user:show-data-labels.adoc[Additional chart options]
 **** xref:end-user:zoom-into-a-chart.adoc[Zoom into a chart]
 ** Work with formulas
-*** xref:end-user:add-a-formula-to-search.adoc[Understand formulas]
+*** xref:end-user:add-formula-to-search.adoc[Understand formulas]
 *** xref:end-user:how-to-add-formula.adoc[Add a formula to a search]
 *** xref:end-user:edit-formula-in-answer.adoc[View or edit a formula in search]
 *** Aggregate formulas
