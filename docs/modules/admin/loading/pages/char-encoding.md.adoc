@@ -10,11 +10,11 @@ Some examples of characters that can appear incorrectly are: æ, ñ, ä, í, ö.
 
 If this happens, your data will look like this:
 
-image::{{ site.baseurl }}/images/bad_chars.png[]
+image::bad_chars.png[]
 
 Instead of displaying correctly like this:
 
-image::{{ site.baseurl }}/images/good_chars.png[]
+image::good_chars.png[]
 
 To encode your data as UTF-8:
 

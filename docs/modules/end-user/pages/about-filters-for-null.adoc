@@ -44,4 +44,4 @@ Use the filter you created instead of the original text column in your search to
 After creating formula for what you want to do, you can filter on the formula column you created in the search bar by typing the value *\{blank}*, which will act as a filter.
 Or you can filter by left-clicking on a *\{blank}* value in your search result table, then right-clicking and selecting *Show only "\{Blank}"*.
 
-image::{{ site.baseurl }}/images/formula_null_empty_merge.png[]
+image::formula_null_empty_merge.png[]

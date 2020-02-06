@@ -15,7 +15,7 @@ Before writing your TQL script, you need to understand some basic ThoughtSpot co
 ThoughtSpot organizes objects in a hierarchical namespace.
 Databases contain schemas, which contain tables.
 
-image::{{ site.baseurl }}/images/namespace.png[]
+image::namespace.png[]
 
 ThoughtSpot can contain one or more databases, and each database can have multiple schemas.
 If you do not specify a schema, the default schema (`falcon_default_schema`) is used automatically.

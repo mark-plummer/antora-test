@@ -23,20 +23,20 @@ To apply conditional formatting to a table:
 
 . In the column header of your table for the column you want to apply formatting to, click the three-dot *Change Configuration* icon.
 +
-image::{{ site.baseurl }}/images/conditional_formatting_table_1.png[]
+image::conditional_formatting_table_1.png[]
 
 . Select *Conditional Formatting*.
 . Click *+ ADD FORMATTING* in the *Conditional Formatting* window.
 +
-image::{{ site.baseurl }}/images/conditional_formatting_table_2.png[]
+image::conditional_formatting_table_2.png[]
 
 . Define the sets of values and the color to use for each set.
 +
-image::{{ site.baseurl }}/images/conditional_formatting_table_3.png[]
+image::conditional_formatting_table_3.png[]
 
 . Click *Done* after defining all of your conditional formatting sets.
 +
-image::{{ site.baseurl }}/images/conditional_formatting_table_4.png[]
+image::conditional_formatting_table_4.png[]
 
 NOTE: If you change to a chart type, you must apply conditional formatting again.
 Conditional formatting is tied to the specific visualization.
@@ -51,16 +51,16 @@ To apply conditional formatting to a chart:
 Select *Conditional Formatting*.
 . Click *+ ADD FORMATTING* in the Conditional Formatting window.
 +
-image::{{ site.baseurl }}/images/conditional_formatting_menu%20copy.png[]
+image::conditional_formatting_menu%20copy.png[]
 
 . Define the ranges of values and the color to use for each range you want to track.
 To add another range, click the *+* icon and repeat.
 +
-image::{{ site.baseurl }}/images/set_conditional_formatting.png[]
+image::set_conditional_formatting.png[]
 
 . Click *Done* after defining all of your conditional formatting ranges.
 +
-image::{{ site.baseurl }}/images/conditional_formatting_chart.png[]
+image::conditional_formatting_chart.png[]
 
 NOTE: If you change the chart type, you must apply conditional formatting again.
 It is tied to the specific visualization.

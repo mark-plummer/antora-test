@@ -46,7 +46,7 @@ Use 1-3 for low priority columns.
 SpotIQ uses measures for correlations.
 For trendlines and outliers, if SpotIQ has a measure, it then drills by attributes in turn.
 
-image::{{ site.baseurl }}/images/atts-measurs.png[]
+image::atts-measurs.png[]
 
 You should also set *AGGREGATION* on your columns.
 SpotIQ applies the default aggregations from your data when it pulls measures for analysis.
@@ -64,7 +64,7 @@ You can set preferences for SpotIQ in your user profile.
 These preferences allow you to control how you receive analysis notifications.
 They also allow you to exclude nulls or zero value measures from analysis.
 
-image::{{ site.baseurl }}/images/spotiq-prefs.png[]
+image::spotiq-prefs.png[]
 
 The exclusions impact each SpotIQ analysis.
 It eliminates points with such values during statistical calculations for example, for mean, standard deviation SpotIQ excludes values from any equation and uses only the remaining points.

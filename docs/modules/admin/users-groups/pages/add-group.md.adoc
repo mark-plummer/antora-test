@@ -15,23 +15,23 @@ To create a group and add privileges for the group, follow these steps:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* icon, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-admin.png[Admin tab]
+image::click-admin.png[Admin tab]
 
 . In the *Admin* panel, click *User Management*.
 +
-image::{{ site.baseurl }}/images/admin-user-management.png[Admin > User Management]
+image::admin-user-management.png[Admin > User Management]
 
 . In the *User Management* section, click *Groups*.
 +
-image::{{ site.baseurl }}/images/admin-user-management-groups.png[Manage Groups]
+image::admin-user-management-groups.png[Manage Groups]
 
 . Click the *+ Add Group* button on the upper right-hand side of the list of groups.
 +
-image::{{ site.baseurl }}/images/admin-user-management-add-group.png[Add a new Group]
+image::admin-user-management-add-group.png[Add a new Group]
 
 . In the *Add a new group* modal, enter the details for the new group:
 +
-image::{{ site.baseurl }}/images/add-group.png[Enter details for the new group]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
+image::add-group.png[Enter details for the new group]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
  +++<col width="80%">++++++</col>++++++</colgroup>+++
   +++<tr>++++++<th>+++Field+++</th>+++
     +++<th>+++Description+++</th>++++++</tr>+++
@@ -59,7 +59,7 @@ You cannot add default Pinboards to a new user group.
 You must create it first, and then edit it to add default Pinboards.
 See *<<change-default-pinboards,Edit a group > Default Pinboards>>*.
 
-image::{{ site.baseurl }}/images/add-group-pinboards.png[Add a new group > Default Pinboards]
+image::add-group-pinboards.png[Add a new group > Default Pinboards]
 
 [#add-groups]
 === Groups
@@ -70,7 +70,7 @@ Follow these steps to assign subgroups to the group:
 . Select the groups you want to add in the list by clicking the box next to the group name.
 . You can also use *Search* to find groups by name.
 
-image::{{ site.baseurl }}/images/add-group-groups.png[Add a new group > Groups]
+image::add-group-groups.png[Add a new group > Groups]
 
 [#add-users]
 === Users
@@ -81,7 +81,7 @@ Follow these steps to assign users to the group:
 . Select the users you want to add in the list by clicking the box next to the user name.
 . You can also use *Search* to find users by name.
 
-image::{{ site.baseurl }}/images/add-group-groups.png[Add a new group > Users]
+image::add-group-groups.png[Add a new group > Users]
 
 [#edit-group]
 == Edit a group
@@ -94,27 +94,27 @@ To edit an existing group, follow these steps:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* icon, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-admin.png[Admin tab]
+image::click-admin.png[Admin tab]
 
 . In the *Admin* panel, click *User Management*.
 +
-image::{{ site.baseurl }}/images/admin-user-management.png[Admin > User Management]
+image::admin-user-management.png[Admin > User Management]
 
 . In the *User Management* section, click *Groups*.
 +
-image::{{ site.baseurl }}/images/admin-user-management-groups.png[Manage Groups]
+image::admin-user-management-groups.png[Manage Groups]
 
 . Find the group you want to edit in the list, and click its name.
 +
 If you don't immediately see the name of the group, try searching for it.
 +
-image::{{ site.baseurl }}/images/edit-group-search.png[Search Groups]
+image::edit-group-search.png[Search Groups]
 
 . You can change the _<<group-name,Group name>>_, _<<display-name,Display name>>_, _<<sharing-visibility,Sharing visibility>>_, _<<description,Description>>_, and the selected _<<privileges,Privileges>>_.
 +
 Here, we added the _Can manage data_ privilege.
 +
-image::{{ site.baseurl }}/images/edit-group.png[Change the details for the group]
+image::edit-group.png[Change the details for the group]
 +
 You can also make changes to the _<<change-default-pinboards,Default Pinboards>>_, _<<change-groups,Groups>>_ (these would be the subgroups of the group you are editing), _<<change-users,Users>>_, or _<<change-email,Email>>_.
 
@@ -151,7 +151,7 @@ Follow these steps to change subgroups of the group:
 . Deselect the groups you want to remove from the list by clearing the box next to the group name.
 . Click *Update* to save changes.
 
-image::{{ site.baseurl }}/images/edit-group-groups.png[Change a group > Groups]
+image::edit-group-groups.png[Change a group > Groups]
 
 [#change-users]
 === Users
@@ -164,7 +164,7 @@ Follow these steps to change the users of the group:
 . Deselect the users you want to remove from the list by clearing the box next to the user name.
 . Click *Update* to save changes.
 
-image::{{ site.baseurl }}/images/edit-group-users.png[Change a group > Users]
+image::edit-group-users.png[Change a group > Users]
 
 [#change-email]
 === Email
@@ -181,7 +181,7 @@ Here, we added "Welcome!"
 . To test the email, click "Test welcome email"
 . Click *Update* to save changes.
 
-image::{{ site.baseurl }}/images/edit-group-email.png[Email for group > Email]
+image::edit-group-email.png[Email for group > Email]
 
 [#delete-group]
 == Deleting groups
@@ -191,25 +191,25 @@ To delete existing groups, follow these steps:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* icon, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-admin.png[Admin tab]
+image::click-admin.png[Admin tab]
 
 . In the *Admin* panel, click *User Management*.
 +
-image::{{ site.baseurl }}/images/admin-user-management.png[Admin > User Management]
+image::admin-user-management.png[Admin > User Management]
 
 . In the *User Management* section, click *Groups*.
 +
-image::{{ site.baseurl }}/images/admin-user-management-groups.png[Manage Groups]
+image::admin-user-management-groups.png[Manage Groups]
 
 . Select the groups you plan to delete by clicking the box next to the group name.
 +
 If you don't immediately see the name of the group, try searching for it.
 +
-image::{{ site.baseurl }}/images/edit-group-search.png[Search Groups]
+image::edit-group-search.png[Search Groups]
 
 . Click *Delete*.
 +
-image::{{ site.baseurl }}/images/delete-group.png[Delete Groups]
+image::delete-group.png[Delete Groups]
 
 [#list-group-members]
 == List group members
@@ -226,27 +226,27 @@ Follow these steps:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* icon, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-admin.png[Admin tab]
+image::click-admin.png[Admin tab]
 
 . In the *Admin* panel, click *User Management*.
 +
-image::{{ site.baseurl }}/images/admin-user-management.png[Admin > User Management]
+image::admin-user-management.png[Admin > User Management]
 
 . In the *User Management* section, click *Users*.
 +
-image::{{ site.baseurl }}/images/admin-user-management-users.png[Manage Users]
+image::admin-user-management-users.png[Manage Users]
 
 . Select the names of users you plan to add to groups by clicking the box next to the user name.
 +
 If you don't immediately see the user name, try searching for it.
 +
-image::{{ site.baseurl }}/images/edit-user-search.png[Search Users]
+image::edit-user-search.png[Search Users]
 
 . Click the *Add Users to Groups* button on the top of the list of users.
 +
-image::{{ site.baseurl }}/images/add-many-users.png[Add Users to Groups]
+image::add-many-users.png[Add Users to Groups]
 
 . In the *Add Users to Groups* interface, select the groups by clicking the box next to the group name.
 . Click *Add*.
 +
-image::{{ site.baseurl }}/images/add-users-to-groups.png[Choose Groups]
+image::add-users-to-groups.png[Choose Groups]

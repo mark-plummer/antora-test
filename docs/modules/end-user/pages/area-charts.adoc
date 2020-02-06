@@ -7,7 +7,7 @@ last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- T
 Area charts display quantitative data graphically.
 The area between the x-axis and the line are colored in to help you compare different portions of the chart.
 
-image::{{ site.baseurl }}/images/area_chart_example.png[]
+image::area_chart_example.png[]
 
 Your search needs at least one attribute and one measure to be represented as an area chart.
 
@@ -21,8 +21,8 @@ Stacked area charts show the relative contribution to the accumulated total of a
 Stacked area charts plot the y-axis as a percentage by default.
 You can choose to toggle *Show Y-Axis as %* on or off in the *Configuration Options* to create your own mountain-style charts.
 
-image::{{ site.baseurl }}/images/stacked_area_chart_off_example.png[]
+image::stacked_area_chart_off_example.png[]
 
-image::{{ site.baseurl }}/images/stacked_area_chart_on_example.png[]
+image::stacked_area_chart_on_example.png[]
 
 Your search needs at least two attributes and one measure to be represented as a stacked area chart.

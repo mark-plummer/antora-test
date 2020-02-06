@@ -4,7 +4,7 @@ last_updated: tbd summary: "Use keywords when asking a question to narrow and fu
 You can access a list of keywords and other reference materials in the link:{{ site.baseurl }}/reference/keywords.html#[reference] section or in the help.
 Open the help by selecting *Help* from the top navigation bar.
 
-image::{{ site.baseurl }}/images/help_center_keywords.png[]
+image::help_center_keywords.png[]
 
 Within the help center, you'll find videos and documentation that pertain to the current version of ThoughtSpot.
 Here is where you can also find a list of keywords.
@@ -17,7 +17,7 @@ By using one keyword, you can greatly simplify your searches.
 The top keyword is one such keyword.
 Its syntax looks like top n for each x.
 
-image::{{ site.baseurl }}/images/top_fruit.png[]
+image::top_fruit.png[]
 
 Some common search examples it can simplify are finding the:
 

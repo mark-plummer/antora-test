@@ -60,11 +60,11 @@ To use the moving function in a search:
 
 . Start a new search.
 +
-image::{{ site.baseurl }}/images/aggregation_answer.png[]
+image::aggregation_answer.png[]
 
-. In the upper-right side of the table, click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Add formula*.
+. In the upper-right side of the table, click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Add formula*.
 +
-image::{{ site.baseurl }}/images/create_formula_in_answer.png[]
+image::create_formula_in_answer.png[]
 
 . Enter the moving_average formula, providing a measure, a window, and one or more attributes.
 +
@@ -75,13 +75,13 @@ The window is (current - Num1...Current + Num2) with both end points being inclu
 For example, "1,1" will have a window size of 3.
 To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(sales, 1, -1, date)".
 +
-image::{{ site.baseurl }}/images/moving_average_formula.png[]
+image::moving_average_formula.png[]
 
 . Name the formula by entering a title in the top field, and then click *Save*.
 +
 The formula will appear in the search bar and in the table as its own column.
 +
-image::{{ site.baseurl }}/images/moving_average_table.png[]
+image::moving_average_table.png[]
 +
 A box displaying the moving average within the entire table will appear at the bottom.
 

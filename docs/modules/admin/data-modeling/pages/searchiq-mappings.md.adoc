@@ -58,7 +58,7 @@ To delete a mapping:
 +
 If you are using Excel, you may see a warning message similar to this.
 +
-image::{{ site.baseurl }}/images/warning_open_model_excel.png[]
+image::warning_open_model_excel.png[]
 +
 Click `YES` to proceed.
 
@@ -70,7 +70,7 @@ Click `YES` to proceed.
 If you are using Excel, you will see a message similar to this one.
 Click `YES` to save the file.
 +
-image::{{ site.baseurl }}/images/warning_save_model_excel.png[]
+image::warning_save_model_excel.png[]
 +
 The mapping file must be saved as UTF-8 encoded.
 If your mapping file includes  multi-byte characters, edit the file using vi or vim to ensure the file is  saved in the correct format.

@@ -9,7 +9,7 @@ If you don't supply a `SCHEMA`, you get an error indicating that the schema coul
 The default schema name in ThoughtSpot is `falcon_default_schema`.
 To set the `SCHEMA` on Windows, adding a custom property with the key `SCHEMA` and the value `falcon_default_schema`.
 
-image::{{ site.baseurl }}/images/ODBC_add_schema.png[]
+image::ODBC_add_schema.png[]
 
 On Linux, you can edit the properties in the `odbc.ini` file for the driver you are using:
 

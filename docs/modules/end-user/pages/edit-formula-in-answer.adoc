@@ -10,15 +10,15 @@ To view or edit an existing formula in an answer:
 You will see a data source called *Formulas*.
 . Expand *Formulas*, and you can see a list of all the formulas in this answer.
 +
-image::{{ site.baseurl }}/images/edit_formula_in_answer.png[]
+image::edit_formula_in_answer.png[]
 
 . Click the edit icon next to the formula name.
 +
-image::{{ site.baseurl }}/images/formula_edit_icon.png[]
+image::formula_edit_icon.png[]
 
 . View or edit your formula in the Formula Builder.
 +
-image::{{ site.baseurl }}/images/formula_builder_2.png[]
+image::formula_builder_2.png[]
 +
 {% include note.html content="Formulas elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black)." %}
 

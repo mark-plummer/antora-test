@@ -8,8 +8,8 @@ To drill down:
 
 . Right-click the visualization or table cell of interest, and select *Drill down*.
 +
-image::{{ site.baseurl }}/images/drill_down.png[]
+image::drill_down.png[]
 
 . Click any of the listed data to recreate the search with that data included.
 +
-image::{{ site.baseurl }}/images/drill_down_list.png[]
+image::drill_down_list.png[]

@@ -22,21 +22,21 @@ To manually create a backup using the admin UI:
 1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/admin.png)
+[](admin.png)
 
    This opens the ThoughtSpot Management Console.
 3. Click **Settings** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/settings.png)
+[](settings.png)
 
 4. In the Settings panel, click **Backup** and then  **Configure** option.
 
-[]({{ site.baseurl }}/images/backup.png)
+[](backup.png)
 
 
 5. Enter the backup configuration details:
 
-[]({{ site.baseurl }}/images/backup-create.png)
+[](backup-create.png)
 
    <table>
    <colgroup>

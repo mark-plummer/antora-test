@@ -2,7 +2,7 @@
 
 These are the different sections in ThoughtSpot:
 
-image::{{ site.baseurl }}/images/top_navigation_bar.png[]
+image::top_navigation_bar.png[]
 
 == Home
 

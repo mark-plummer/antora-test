@@ -14,7 +14,7 @@ To perform your own R analysis, start with a simple search and click the R icon 
 
 Use the *Custom R Script* dialog and settings to enter your script, set which columns to include for analysis, and indicate what output data to expect from your script (PNG or CSV).
 
-image::{{ site.baseurl }}/images/r-script-dialog.png[]
+image::r-script-dialog.png[]
 
 ThoughtSpot also supports the sharing of scripts among users to enable you to share your powerful R analyses across the system, and allow others to run your scripts on different search results.
 
@@ -28,7 +28,7 @@ ThoughtSpot auto generates objects with variable names by which you can refer to
 You can refer to the data in the selected columns by using vectors that ThoughtSpot generates for these before the script is run.
 The first column you select has the variable name `.param0`, the second column you select has the variable name `.param1`, and so on.
 This naming scheme continues if there are more columns.
-(You can click the question mark icon image:{{ site.baseurl }}/images/r-icon-question-mark.png[question icon] next to "*Select columns for R analysis*" to get a visual mapping of how the columns are bound to variables in R.)
+(You can click the question mark icon image:r-icon-question-mark.png[question icon] next to "*Select columns for R analysis*" to get a visual mapping of how the columns are bound to variables in R.)
 
 ThoughtSpot also provides an automatically-generated _data frame_ object, `df`, that contains all selected column vectors.
 The data frame is R's representation of a table (a 2D data structure containing rows and columns).
@@ -39,13 +39,13 @@ As we demonstrate in the following examples, you can chain R analyses together b
 
 == Write a custom script
 
-To add a custom R script, start by running a search, then click the *R* icon image:{{ site.baseurl }}/images/r-icon-inline.png[R icon] on the toolbar.
+To add a custom R script, start by running a search, then click the *R* icon image:r-icon-inline.png[R icon] on the toolbar.
 
-image::{{ site.baseurl }}/images/r-icon.png[]
+image::r-icon.png[]
 
 Add your script into the *Custom R Script* dialog, and set the <<column-bindings,column bindings>> and <<output-file-type,output type>> appropriately, as shown in the following examples.
 
-image::{{ site.baseurl }}/images/r-png-basic.png[]
+image::r-png-basic.png[]
 
 For an R script to produce a meaningful output in ThoughtSpot, the script should generate a CSV or PNG file.
 Output should be written to the token `#output_file#`.
@@ -62,11 +62,11 @@ write.csv(df,  #output_file#)
 
 The generated data is displayed back as a table when you run the analysis:
 
-image::{{ site.baseurl }}/images/r-csv-basic.png[]
+image::r-csv-basic.png[]
 
 This basic script returns the exact same table results as if you did the query directly in ThoughtSpot and selected the table view, barring some additional formatting you get for free on the search.
 
-image::{{ site.baseurl }}/images/r-basic-table-search-result.png[]
+image::r-basic-table-search-result.png[]
 
 == Basic R script to generate a PNG graphic
 
@@ -79,7 +79,7 @@ plot(.param0, .param1)
 
 The generated data is displayed back as a static PNG when you run the analysis:
 
-image::{{ site.baseurl }}/images/r-png-basic.png[]
+image::r-png-basic.png[]
 
 == Column bindings and output file type
 
@@ -96,10 +96,10 @@ Reordering the columns changes the column bindings/params.
 
 You can click these icons in the R script dialog to get more options:
 
-* The R script information icon image:{{ site.baseurl }}/images/r-icon-i.png[more options menu icon] provides a basic reference guide for creating an R analysis in ThoughtSpot.
-* The ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] provides a menu with options to save or load a previously saved R script, as well as share your R script with other users in the system.
-* The arrow at the top right of the script dialog image:{{ site.baseurl }}/images/r-icon-popout-arrow.png[popout arrow] opens a popout editor that gives you a larger space in which to view and edit your R script.
-* The question mark icon image:{{ site.baseurl }}/images/r-icon-question-mark.png[question icon] next to "*Select column(s) for R analysis*" provides a visual mapping of how the columns are bound to variables in R.
+* The R script information icon image:r-icon-i.png[more options menu icon] provides a basic reference guide for creating an R analysis in ThoughtSpot.
+* The ellipses icon image:icon-ellipses.png[more options menu icon] provides a menu with options to save or load a previously saved R script, as well as share your R script with other users in the system.
+* The arrow at the top right of the script dialog image:r-icon-popout-arrow.png[popout arrow] opens a popout editor that gives you a larger space in which to view and edit your R script.
+* The question mark icon image:r-icon-question-mark.png[question icon] next to "*Select column(s) for R analysis*" provides a visual mapping of how the columns are bound to variables in R.
 
 == K-Means clustering example scripts
 
@@ -116,7 +116,7 @@ print(ggplot(df, aes(.param0, .param1, color = kmeansOutput$cluster)) + geom_poi
 
 When you run this script on the results of the original `sales date` search, you get the following visualization as a PNG.
 
-image::{{ site.baseurl }}/images/r-custom-script-png.png[]
+image::r-custom-script-png.png[]
 
 You can run another R script directly on this result to get CSV results:
 
@@ -128,18 +128,18 @@ write.csv(df, file=#output_file#, row.names=FALSE);
 
 The script for CSV output generates a table:
 
-image::{{ site.baseurl }}/images/r-custom-script-csv.png[]
+image::r-custom-script-csv.png[]
 
 == Save and share your script
 
-To save a script, choose *Save as* from the options menu image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] of the script.
+To save a script, choose *Save as* from the options menu image:icon-ellipses.png[more options menu icon] of the script.
 After you name and save it, your script will show in the *Load* scripts dialog.
 
-image::{{ site.baseurl }}/images/r-save-script.png[]
+image::r-save-script.png[]
 
-To share a script, choose *Share* from the options menu image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon].
+To share a script, choose *Share* from the options menu image:icon-ellipses.png[more options menu icon].
 
-image::{{ site.baseurl }}/images/r-share-script.png[]
+image::r-share-script.png[]
 
 == More script examples
 
@@ -151,7 +151,7 @@ For some more example scripts, check out the blog post on https://www.thoughtspo
 * Time Series Outlier Detection
 * Time Series Forecast
 
-image::{{ site.baseurl }}/images/r-script-load-prebuilt.png[]
+image::r-script-load-prebuilt.png[]
 
 == Related information
 

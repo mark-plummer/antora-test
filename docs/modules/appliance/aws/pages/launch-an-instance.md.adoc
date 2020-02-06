@@ -163,14 +163,14 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 . On the AWS website, navigate to the EC2 service dashboard by clicking *Services*, then *EC2*.
 +
-image::{{ site.baseurl }}/images/navigate_to_ec2_dashboard.png[]
+image::navigate_to_ec2_dashboard.png[]
 
 . Make sure your selected region is correct in the top-right corner of the dashboard.
 If not, select your region.
 Let ThoughtSpot support know if you change your region.
 . Start the process of launching a VM by clicking *Launch Instance*.
 +
-image::{{ site.baseurl }}/images/launch_instance.png[]
+image::launch_instance.png[]
 
 . Click the *My AMIs* tab and search *ThoughtSpot* to find the ThoughtSpot AMI.
 . Click *Select*.

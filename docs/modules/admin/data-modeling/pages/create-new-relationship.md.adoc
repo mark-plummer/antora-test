@@ -24,16 +24,16 @@ To create a relationship through the Web interface:
 You will see the list showing existing joins.
 . Click the *+ Add Join* button on the upper right side of the screen.
 +
-image::{{ site.baseurl }}/images/table-add-join.png[]
+image::table-add-join.png[]
 
 . Use the *Map source to destination* dialog to choose the destination table, view, or worksheet you want to join to.
 +
-image::{{ site.baseurl }}/images/table-join-select-destination.png[]
+image::table-join-select-destination.png[]
 
 . Choose the columns you want to join on from the table or view (source) and destination table, view, or worksheet.
 Click *Next*.
 +
-image::{{ site.baseurl }}/images/table-join-select-col.png[]
+image::table-join-select-col.png[]
 
 . Give your join a name and description and click *ADD JOIN*.
 . Repeat these steps until all the joins you want to make have been created.

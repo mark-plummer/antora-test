@@ -27,7 +27,7 @@ For information these settings, see link:change-aggreg-additive.html[Set ADDITIV
 . Find the *GEO CONFIG* for the column that contains the geographical data.
 . Select the column to display the *Specify Geographic Configuration* dialog.
 +
-image::{{ site.baseurl }}/images/set_geo_config.png[]
+image::set_geo_config.png[]
 
 . Change the value to the appropriate *GEO CONFIG*, depending on the kind of geo data the column contains.
 +

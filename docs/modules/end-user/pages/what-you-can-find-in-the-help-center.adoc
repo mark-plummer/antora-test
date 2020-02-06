@@ -23,7 +23,7 @@ You can see the documentation for the latest version of the product.
 You can navigate to this documentation from inside the ThoughtSpot application as well.
 In this case, the application links directly to the documentation version that matches your product version.
 
-image::{{ site.baseurl }}/images/help-menu.png[]
+image::help-menu.png[]
 
 From this dialog you can get to the following:+++<table>++++++<colgroup>++++++<col style="width:25%">++++++</col>+++
    +++<col style="width:75%">++++++</col>++++++</colgroup>+++
@@ -59,11 +59,11 @@ To add a replay, do the following:
 The system lists the pinboards you can pin to.
 . Select *Learn how to use ThoughtSpot* pinboard.
 +
-image::{{ site.baseurl }}/images/learn-save.png[]
+image::learn-save.png[]
 
 . Navigate to the _Learn_ center to replay your search.
 +
-image::{{ site.baseurl }}/images/learn-replay.png[]
+image::learn-replay.png[]
 
 ////
 ## Search the help in search bar
@@ -80,4 +80,4 @@ allows you to jump directly into a product workflow.
 
 If you still can't find what you're looking for, you can contact support.
 
-image::{{ site.baseurl }}/images/help_center_support_contact.png[]
+image::help_center_support_contact.png[]

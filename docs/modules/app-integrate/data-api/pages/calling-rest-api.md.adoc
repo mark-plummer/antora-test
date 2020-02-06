@@ -26,7 +26,7 @@ The URL encoding for open bracket is `%5B`, and the URL encoding for close brack
 When you parse the returned JSON data you can see that there is one object for every viz on the pinboard.
 The objects are named according to the corresponding vizid.
 
-image::{{ site.baseurl }}/images/parsed_json_data.png[]
+image::parsed_json_data.png[]
 
 If you make a call to a specific viz on a pinboard, it will return just one object.
 The JSON object format for the data that is returned from ThoughtSpot is:
@@ -58,7 +58,7 @@ The `columnNames` array contains a list of all column headers.
 And the `data` array contains a list of other arrays.
 Each sub array represents a new row of data.
 
-image::{{ site.baseurl }}/images/columnnames_and_data_arrays.png[]
+image::columnnames_and_data_arrays.png[]
 
 The REST API supports filtering the data returned through parameters that you pass within the URL.
 These are called link:{{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#[Runtime Filters].

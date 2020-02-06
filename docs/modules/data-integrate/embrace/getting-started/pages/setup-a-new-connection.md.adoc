@@ -14,21 +14,21 @@ To add a new connection:
 . Click *Data* in the top navigation bar.
 . Click the *Connections* tab at the top of the page, and click *+ Add connection* at the upper-right-hand side of the page.
 +
-image::{{ site.baseurl }}/images/new-connection.png[]
+image::new-connection.png[]
 
 . Create a name for your connection, a description (optional), then select a connection type, and click *Next*.
 +
-image::{{ site.baseurl }}/images/select-new-connection.png[]
+image::select-new-connection.png[]
 
 . Enter the connection details for your external data source, and click *Next*.
 +
-image::{{ site.baseurl }}/images/new-connection-creds.png[]
+image::new-connection-creds.png[]
 +
 Refer to the link:{{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html#[Embrace connectors] for more information on each of the specific attributes you must enter for your connection.
 
 . Select tables (on the left) and the columns from each table (on the right), and then click *Create connection*.
 +
-image::{{ site.baseurl }}/images/create-connection.png[]
+image::create-connection.png[]
 +
 Once the connection is added, the "Connection created" screen appears.
 From there, you can do any of the following:

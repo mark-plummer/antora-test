@@ -19,11 +19,11 @@ You will see the list showing existing joins.
 +
 If this is a worksheet, you must click *Joins within worksheets* and choose *Joins between worksheets*.
 +
-image::{{ site.baseurl }}/images/worksheet-join-chooser-between.png[]
+image::worksheet-join-chooser-between.png[]
 
 . Find the relationship you want to delete, and click the *Delete icon*.
 +
-image::{{ site.baseurl }}/images/relationship_delete.png[]
+image::relationship_delete.png[]
 
 . Repeat these steps until all the joins you want to remove have been deleted.
 

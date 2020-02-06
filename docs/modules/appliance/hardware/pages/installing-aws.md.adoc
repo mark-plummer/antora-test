@@ -234,7 +234,7 @@ Follow these steps:
 . In the link:{{ site.baseurl }}/appliance/hardware/installing-aws.html#ts-login[ThoughtSpot login window], enter admin credentials, and click *Sign in*.
 ThoughtSpot recommends changing the default admin password.
 
-image::{{ site.baseurl }}/images/ts-login-page.png[ThoughtSpot's login window]
+image::ts-login-page.png[ThoughtSpot's login window]
 
 == Related information
 

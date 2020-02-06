@@ -18,20 +18,20 @@ Let's try to dig deeper into that.
 . Select the first insight.
 . Choose the menu and select *Auto Analyze*.
 +
-image::{{ site.baseurl }}/images/spotiq-auto-again.png[]
+image::spotiq-auto-again.png[]
 +
 The system responds by starting a new insight run based on the single chart.
 Each time you request a change to the analysis settings, it starts another run.
 +
-image::{{ site.baseurl }}/images/spotiq-kickoff.png[]
+image::spotiq-kickoff.png[]
 
 . Return to the SpotIQ page and select your new analysis.
 +
-image::{{ site.baseurl }}/images/spotiq-new-analysis.png[]
+image::spotiq-new-analysis.png[]
 
 . Open the analysis and review the analysis details.
 +
-image::{{ site.baseurl }}/images/spotiq-details-too.png[]
+image::spotiq-details-too.png[]
 +
 If you recall, the first run against this data SpotIQ ran through 20 combinations and discovered 14 insights.
 In this second run against one table, SpotIQ ran 49 combinations and developed 17 insights.
@@ -58,7 +58,7 @@ Notice that the new analysis has the same name as the last one you ran.
 The new results include an outlier, and a cross-correlation.
 These new charts show a definite outlier, `6/30/2005`.
 +
-image::{{ site.baseurl }}/images/spotiq-definite-outlier.png[]
+image::spotiq-definite-outlier.png[]
 
 The changes you make in this step persist on the underlying data for all your future analyses.
 You can unset these values by going back into the dialog and removing what you set.
@@ -69,7 +69,7 @@ Finally, you might have noticed the thumbs at the bottom of each insight.
 Use the thumbs up to tell SpotIQ you like the data insight.
 Clicking thumb's down display an *Improve Analysis* dialog:
 
-image::{{ site.baseurl }}/images/spotiq-thumbs-down.png[]
+image::spotiq-thumbs-down.png[]
 
 You can exclude a value from this individual analysis and rerun the analysis.
 Unlike the *Customize Analysis* action, this action works only on this analysis and does not persist.
@@ -86,7 +86,7 @@ Try this now.
 . Select the menu on the *Total imports, Total value_added by year* chart.
 . Click the chart menu and choose *Edit*.
 +
-image::{{ site.baseurl }}/images/spotiq-edit-chart.png[]
+image::spotiq-edit-chart.png[]
 +
 The *Edit Visualization* appears.
 The layout is familiar to any user that has run a ThoughtSpot search or worked with a result.
@@ -97,11 +97,11 @@ You can use this dialog to do all the things you would normally do with a search
 +
 The `table_num` isn't strictly necessary in the data.
 +
-image::{{ site.baseurl }}/images/spotiq-rm-tablenum.png[]
+image::spotiq-rm-tablenum.png[]
 
 . Select the chart icon and choose *Line Column* to change the visualization.
 +
-image::{{ site.baseurl }}/images/spotiq-line-column.png[]
+image::spotiq-line-column.png[]
 
 . Choose menu:Actions[Update].
 . Close the dialog by pressing the *Close*.
@@ -109,7 +109,7 @@ image::{{ site.baseurl }}/images/spotiq-line-column.png[]
 The chart with your changes now appears in the *SpotIQ* list.
 The outlier  stands out very clearly now in both charts.
 +
-image::{{ site.baseurl }}/images/spotiq-new-look.png[]
+image::spotiq-new-look.png[]
 
 == Present your insights
 
@@ -130,9 +130,9 @@ You can use the *Present* action to view visualizations that appear in a carouse
 . Scroll down to the first carousel with your new charts.
 . Roll over the right corner of the menu to reveal the menu.
 +
-image::{{ site.baseurl }}/images/spotiq-carousel.png[]
+image::spotiq-carousel.png[]
 
-. Choose *Present* from the menu.+++<video src="{{ site.baseurl }}/images/spotiq-present.mp4" width="600" controls="" preload="">++++++</video>+++
+. Choose *Present* from the menu.+++<video src="spotiq-present.mp4" width="600" controls="" preload="">++++++</video>+++
 +
 Click through the carousel with the next / previous arrow buttons, or use  the left side menu of chart names.
 
@@ -147,18 +147,18 @@ This is a good thing to do of course as, in a business, data changes all the tim
 . Go to the *SpotIQ* page.
 . Choose the *Analysis* tab.
 +
-image::{{ site.baseurl }}/images/spotiq-analysis-check.png[]
+image::spotiq-analysis-check.png[]
 
 . Click the latest *Total imports by CATEGORY_DESC* analysis.
 +
 The *Customize Analysis* dialog appears.
 +
-image::{{ site.baseurl }}/images/spotiq-custom-analysis.png[]
+image::spotiq-custom-analysis.png[]
 
 . Choose the *Job Schedule* option.
 . Fill out the schedule to run the job *Monthly*.
 +
-image::{{ site.baseurl }}/images/spotiq-schedule.png[]
+image::spotiq-schedule.png[]
 +
 Every month SpotIQ will update your analysis with new data.
 
@@ -170,7 +170,7 @@ Now that you know how to schedule a job, it isn't needed anymore.
 . Click the checkbox for the job you just scheduled.
 . Click *Delete* to remove it.
 +
-image::{{ site.baseurl }}/images/spotiq-rm-job.png[]
+image::spotiq-rm-job.png[]
 
 == Congratulations!
 

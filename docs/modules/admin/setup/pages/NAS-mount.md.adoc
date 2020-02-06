@@ -33,21 +33,21 @@ To mount a NAS file system using the admin UI:
 1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/admin.png)
+[](admin.png)
 
    This opens the ThoughtSpot Management Console.
 3. Click **Settings** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/settings.png)
+[](settings.png)
 
 4. In the Settings panel, click **NAS Mount** and then  **Configure** option.
 
-[]({{ site.baseurl }}/images/nas.png)
+[](nas.png)
 
 
 5. Enter the mount point details:
 
-[]({{ site.baseurl }}/images/nas-mount.png)
+[](nas-mount.png)
 
    <table>
    <colgroup>

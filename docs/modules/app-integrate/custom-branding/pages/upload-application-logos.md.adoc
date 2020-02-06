@@ -6,7 +6,7 @@ last_updated: tbd summary: "You can replace the ThoughtSpot logo, wherever it ap
 
 . Click the default icon under *Application Logo (Default)* to browse for and select your own default logo.
 +
-image::{{ site.baseurl }}/images/application_logo_default.png[]
+image::application_logo_default.png[]
 +
 Your icon image should be a square, and the recommended size is 140px by 140px.
 The accepted file formats are jpg, jpeg, and png.
@@ -14,7 +14,7 @@ This logo will appear on the top left of the interface.
 
 . Next click the wide icon under *Application Logo (Wide)* to browse for and select your own wide logo.
 +
-image::{{ site.baseurl }}/images/application_logo_wide.png[]
+image::application_logo_wide.png[]
 +
 The recommended size is 440px by 100px.
 The accepted file formats are jpg, jpeg, and png.

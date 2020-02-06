@@ -17,11 +17,11 @@ Use these steps to create a formula:
 . Create a new worksheet, or edit an existing one.
 . Click the *+* button next to *Formulas*.
 +
-image:{{ site.baseurl }}/images/create_formula.png[]d
+image:create_formula.png[]d
 
 . Type your formula in the Formula Builder.
 +
-image::{{ site.baseurl }}/images/formula_builder.png[]
+image::formula_builder.png[]
 +
 NOTE: Formulas elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black).
 
@@ -34,11 +34,11 @@ Depending on your formula, you may be able to change:
  ** Aggregation type
 
 +
-image::{{ site.baseurl }}/images/formula_advanced_settings.png[]
+image::formula_advanced_settings.png[]
 
 . You can see a list of formula operators with examples by clicking on *Formula Assistant.*
 +
-image::{{ site.baseurl }}/images/formula_assistant.png[]
+image::formula_assistant.png[]
 
 . Name the formula by clicking on its title and typing the new name.
 Click *Save*.

@@ -62,6 +62,6 @@ The chassis appear fully populated (4-nodes).
 Your appliance may be populated with 1-4 nodes, depending on the ordered configuration.
 If less than 4-nodes were ordered, the empty slot will be filled with a filler panel.
 
-image::{{ site.baseurl }}/images/ivy_bridge_chassis_views.png[]
+image::ivy_bridge_chassis_views.png[]
 
-image::{{ site.baseurl }}/images/haswell_chassis_views.png[]
+image::haswell_chassis_views.png[]

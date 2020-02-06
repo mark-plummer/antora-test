@@ -18,13 +18,13 @@ Learn about the basic types of analysis SpotIQ runs on data.
 . Look for results from your *FoodDollarDataReal* analysis and click the *NAME*.
 The application opens the SpotIQ insights.
 +
-image::{{ site.baseurl }}/images/spotiq-in-sights.png[]
+image::spotiq-in-sights.png[]
 +
 The first panel provides information about the analysis.
 
-. Click the information icon image:{{ site.baseurl }}/images/icon-info.png[information icon] at the top of the page to see a summary of the SpotIQ analysis.
+. Click the information icon image:icon-info.png[information icon] at the top of the page to see a summary of the SpotIQ analysis.
 +
-image::{{ site.baseurl }}/images/spotiq-details.png[]
+image::spotiq-details.png[]
 +
 You can tell that SpotIQ ran through 20 combinations and discovered 14 insights.
 The first looked for an insight in a combination of the `table_num` and `year` columns in the *FoodDollarDataReal* data and discovered one insight.
@@ -47,7 +47,7 @@ Learn the answer to that later.
 
 Notice that when you first look at an insight there is an expiration date in the upper right corner:
 
-image::{{ site.baseurl }}/images/spotiq-expiration.png[]
+image::spotiq-expiration.png[]
 
 If the expiration time elapses, ThoughtSpot automatically removes the reports.
 
@@ -61,9 +61,9 @@ Any particular set of insights are valid for data during a specific period of ti
 This doesn't mean old insights can't provide information you can use, just that you are unlikely to get the same insight twice.
 
 If a set of insights look good, you can *Save* them and they are not removed when they expire.
-Do this now, click image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] > *Save*:
+Do this now, click image:icon-ellipses.png[more options menu icon] > *Save*:
 
-image::{{ site.baseurl }}/images/spotiq-save.png[]
+image::spotiq-save.png[]
 
 Now your insights won't expire as you work with them!
 
@@ -85,7 +85,7 @@ You can use the arrows  attached to a carousel to "page" through its contents.
 +
 You should see that SpotIQ found two outliers.
 +
-image::{{ site.baseurl }}/images/spotiq-outliers.png[]
+image::spotiq-outliers.png[]
 +
 In this case, SpotIQ is indicating that the *Total Imports* value is  significantly higher than the other values in your set.
 +
@@ -110,7 +110,7 @@ The range is -1 to 1, the closer the cross-correlation value is to 1, the more c
 . Scroll down your insight page, till you find the correlation results:
 . Page through the correlation category to the third insight:
 +
-image::{{ site.baseurl }}/images/spotiq-correlations.png[]
+image::spotiq-correlations.png[]
 +
 You can see that the over all total and the total category number values  correlate very strongly.
 The correlation also looks for a _lag_ value.
@@ -131,7 +131,7 @@ Are sales are climbing or are customers are declining over time?
 . Scroll down to the *Insights from Trend Analysis* section.
 . Look for the *Total imports by year* result.
 +
-image::{{ site.baseurl }}/images/spotiq-trend.png[]
+image::spotiq-trend.png[]
 
 At this point, you may have noticed that SpotIQ grouped each type of insights.
 Outliers, correlations, and this last one, trendlines.

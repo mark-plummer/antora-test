@@ -18,7 +18,7 @@ In that case, link:edit-model-file.html#[using the model file] is recommended.
 . Click *Data* on the top navigation bar.
 . Click a data source you own or can edit.
 +
-image::{{ site.baseurl }}/images/data_management_select_data_source.png[]
+image::data_management_select_data_source.png[]
 +
 This brings up the *Columns* screen, where you can make your modeling settings.
 
@@ -28,7 +28,7 @@ Descriptions of the possible settings are listed in link:data-modeling-settings.
 
 . Save your changes.
 +
-image::{{ site.baseurl }}/images/modeling_columns_screen.png[]
+image::modeling_columns_screen.png[]
 
 . To check your changes, use the *SEARCH* page to search for across the changed data.
 

@@ -43,7 +43,7 @@ Headlines display summary information of a table result.
 Headlines contain summary information for each column of a table.
 They appear at the bottom of the table in individual boxes.
 
-image::{{ site.baseurl }}/images/headlines.png[]
+image::headlines.png[]
 
 ThoughtSpot automatically creates up to 20 headlines for each table.
 Your ThoughtSpot configuration can be changed to accommodate more if needed.
@@ -54,7 +54,7 @@ There are also unique count and total count values available for the appropriate
 
 To add a headline to a pinboard, hover over the headline and click the *Pin* icon.
 
-image::{{ site.baseurl }}/images/pin_headline.png[]
+image::pin_headline.png[]
 
 You can decide whether or not to display headlines in your table results.
 To  customize headlines, choose *...
@@ -70,4 +70,4 @@ In the following example, the table aggregate is shown as a result of the Averag
 Table Aggregate, recalculates that function for the entire table taking the sum total profits of all ship modes and dividing it by the sum total count of all ship modes, providing a table aggregate average profit of 181.
 This a more useful result compared to the Avg headline option which would simply sum the the average profit for all ship modes and divide it by the number of ship modes (3), providing an average of 187.
 
-image::{{ site.baseurl }}/images/headlines_table_agg.png[]
+image::headlines_table_agg.png[]

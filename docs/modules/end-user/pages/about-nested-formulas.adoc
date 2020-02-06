@@ -3,7 +3,7 @@
 last_updated: tbd toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Nested formulas, or formula on formula, allow you to reference a formula within another formula.
 This graphic illustrates how you would define a formula and then reference it from another:
 
-image::{{ site.baseurl }}/images/nested_formulas_example.png[]
+image::nested_formulas_example.png[]
 
 These formulas become columns, and are even suggested within the Formula Builder.
 There is no limit to the nesting depth you can create.

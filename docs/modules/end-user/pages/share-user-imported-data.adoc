@@ -23,11 +23,11 @@ Share uploaded data by following these steps:
 . Click the name of the uploaded data you want to share.
 . Click the *Share* icon.
 +
-image::{{ site.baseurl }}/images/share_tables.png[]
+image::share_tables.png[]
 
 . Select *Entire Table* or *Specific Columns*.
 +
-image::{{ site.baseurl }}/images/share_table_with_users.png[]
+image::share_table_with_users.png[]
 
 . If you selected *Specific Columns*, select the column(s) to share.
 . Click *+* and select the users and groups with whom you want to share.

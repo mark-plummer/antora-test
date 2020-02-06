@@ -17,15 +17,15 @@ If the pinboard or visualization doesn't exist, create it now before continuing.
 . Open a pinboard.
 . Copy the URL for the entire pinboard and for a single visualization.
 +
-If the object is a pinboard, click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] >  *Copy Link*.
+If the object is a pinboard, click the ellipses icon image:icon-ellipses.png[more options menu icon] >  *Copy Link*.
 +
-image::{{ site.baseurl }}/images/embed-link-1.png[]
+image::embed-link-1.png[]
 +
 The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 +
-For a vizualization in a pinboard, click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] >  *Copy Link*.
+For a vizualization in a pinboard, click the ellipses icon image:icon-ellipses.png[more options menu icon] >  *Copy Link*.
 +
-image::{{ site.baseurl }}/images/embed-link-2.png[]
+image::embed-link-2.png[]
 +
 The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>/<vizualizationId>`
 
@@ -119,7 +119,7 @@ Your browser has this information and so when you load the `test.html` page in a
 +
 You should see something similar to the following:
 +
-image::{{ site.baseurl }}/images/embed-3.png[]
+image::embed-3.png[]
 
 . Check the browser console.
 +

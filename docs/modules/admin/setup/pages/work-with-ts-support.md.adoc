@@ -23,21 +23,21 @@ Please contact ThoughtSpot Support, if you want to try it." %}
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* menu on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/admin.png[]
+image::admin.png[]
 +
 This opens the ThoughtSpot Management Console.
 
 . Click *Settings* menu on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/settings.png[]
+image::settings.png[]
 
 . In the Settings panel, click *Reverse SSH Tunnel* and then  *Edit* option.
 +
-image::{{ site.baseurl }}/images/ssh.png[]
+image::ssh.png[]
 
 . Enter the reverse tunnel details:
 +
-image::{{ site.baseurl }}/images/ssh-configure.png[]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
+image::ssh-configure.png[]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
    +++<col width="80%">++++++</col>++++++</colgroup>+++
    +++<tr>++++++<th>+++Field+++</th>+++
    +++<th>+++Description+++</th>++++++</tr>+++
@@ -209,8 +209,8 @@ After you set the custom support contact information, your users can see it in t
 
 * In the Help Center, when a user selects *Contact Support*.
 +
-image::{{ site.baseurl }}/images/help_center_support_contact.png[]
+image::help_center_support_contact.png[]
 
 * In error messages, when a user selects *What Happened?*
 +
-// []({{ site.baseurl }}/images/trace_log.png "Error message support contact")
+// [](trace_log.png "Error message support contact")

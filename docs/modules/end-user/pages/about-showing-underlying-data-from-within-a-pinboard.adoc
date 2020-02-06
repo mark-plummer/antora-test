@@ -10,6 +10,6 @@ These search actions include the following:
 * Editing a search - You can edit the original search and reconfigure the answer.
 Click the three-dot *Actions* button to the upper-right of your visualization and select *Edit*.
 +
-image::{{ site.baseurl }}/images/edit_a_pinboard_visualization.png[]
+image::edit_a_pinboard_visualization.png[]
 +
 You will now be in edit mode, where you can link:{{ site.baseurl }}/end-user/search/about-choosing-sources.html#[view and change sources], link:{{ site.baseurl }}/end-user/search/about-the-search-bar.html#[search different columns], link:{{ site.baseurl }}/complex-search/change-the-view.html#[change the view], link:{{ site.baseurl }}/complex-search/about-query-on-query.html[save the answer as a worksheet], link:{{ site.baseurl }}/complex-search/add-formula-to-search.html#[add a formula], and link:{{ site.baseurl }}/end-user/search/change-the-chart.html#[change the chart].

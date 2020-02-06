@@ -68,14 +68,14 @@ For more information, see link:{{ site.baseurl }}/spotiq/monitor-headlines.html[
 
 * To monitor headlines, click the *Follow* icon in the top right corner of the insight.
 +
-image::{{ site.baseurl }}/images/follow.png[Monitor headlines with Follow]
+image::follow.png[Monitor headlines with Follow]
 
 * The *SpotIQ Follow* interface lists all the headlines you follow, and the changes from last run.
-image:{{ site.baseurl }}/images/spotiq-monitor.png[SpotIQ Follow management interface]
+image:spotiq-monitor.png[SpotIQ Follow management interface]
 * Click each headline to see the detailed performance over time, examine each interval, all at the time scale you choose.
 And you can change to table view, or to another chart type to better visualize your changing metric.
 +
-image::{{ site.baseurl }}/images/spotiq-monitor-detail.png[Metric performance over time]
+image::spotiq-monitor-detail.png[Metric performance over time]
 
 === Chart Configuration
 

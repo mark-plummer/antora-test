@@ -5,15 +5,15 @@ last_updated: tbd summary: "Starting a new ThoughtSpot search is simple, like st
 . Click *Search +* on the top navigation bar.
 You can also click *Search your data* at the top of the home page.
 +
-image::{{ site.baseurl }}/images/start_a_new_search.png[]
+image::start_a_new_search.png[]
 
 . Click the Data button, to the left of the search field.
 +
-image::{{ site.baseurl }}/images/start_a_new_search_data.png[]
+image::start_a_new_search_data.png[]
 
 . Choose your sources by clicking *Choose Sources*.
 +
-image:{{ site.baseurl }}/images/choose_sources.png[]   +   image:{{ site.baseurl }}/images/choose_sources_2.png[]
+image:choose_sources.png[]   +   image:choose_sources_2.png[]
 +
 To see details of all of the data, click *EXPLORE ALL DATA*.
 
@@ -26,7 +26,7 @@ To see details of all of the data, click *EXPLORE ALL DATA*.
 The columns listed in the left panel are grouped together by data sources for discoverability and ease of access.
 You can also add multiple columns by clicking each column to select it, and then clicking *+ Add Columns*.
 +
-image::{{ site.baseurl }}/images/add_multiple_columns.png[]
+image::add_multiple_columns.png[]
 
 Your search is given an automatic title based on your search columns, and is displayed as either a table or chart, depending on how it is best represented.
 You can link:{{ site.baseurl }}/complex-search/change-the-view.html#[change the view] to fit your needs.

@@ -28,17 +28,17 @@ Clicking on any term brings up the menu where you can change how ThoughtSpot und
 . Click any term you want SearchIQ to ignore in the future, and choose *Ignore*.
 . Click any term you wish SearchIQ had interpreted differently, and choose *Teach*.
 +
-image::{{ site.baseurl }}/images/searchiq_teach.png[]
+image::searchiq_teach.png[]
 
 . When you see the teaching dialog box, 1) use the handles on the search diagram to select a term for which you want to change the mapping.
 Then 2) select a column name to map it to, or type your mapping in the search bar below the diagram.
 3) You may need to select what you mean from the search suggestions.
 +
-image::{{ site.baseurl }}/images/searchiq_teach_mapper.png[]
+image::searchiq_teach_mapper.png[]
 
 . Choose *CONFIRM* to see the new search result.
 +
-image::{{ site.baseurl }}/images/searchiq_after_mapping.png[]
+image::searchiq_after_mapping.png[]
 
 . Repeat these steps until SearchIQ understands how to interpret your search.
 +

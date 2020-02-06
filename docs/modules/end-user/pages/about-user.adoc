@@ -6,11 +6,11 @@
 
 To view the user actions, click your user icon on the top right corner of the page.
 
-image::{{ site.baseurl }}/images/user-info.png[Click User icon]
+image::user-info.png[Click User icon]
 
 Click *Profile* to navigate to your profile, where you can change your icon, password, email, locale, and other  preferences.
 
-image::{{ site.baseurl }}/images/user-profile.png[Click Profile]
+image::user-profile.png[Click Profile]
 
 Notice that you can now see the *My Profile* interface.
 
@@ -22,11 +22,11 @@ You can change your profile picture clicking the user profile in the top right o
 You can use any a `*.png` or `*.jpg` file.
 Image files cannot exceed 4MB.
 
-image::{{ site.baseurl }}/images/user-upload-picture.png[Upload user profile image]
+image::user-upload-picture.png[Upload user profile image]
 
 You can also make this change within the *User Profile*, under *Information*.
 
-image::{{ site.baseurl }}/images/user-upload-picture-alternative.png[Upload user profile image]
+image::user-upload-picture-alternative.png[Upload user profile image]
 
 [#email]
 == Update your email
@@ -34,7 +34,7 @@ image::{{ site.baseurl }}/images/user-upload-picture-alternative.png[Upload user
 To change your email, navigate to *My Profile*.
 Under *Information*, enter an alternate email, and click Add.
 
-image::{{ site.baseurl }}/images/user-profile-email.png[Update email]
+image::user-profile-email.png[Update email]
 
 [#language]
 == Change language and data format settings
@@ -42,7 +42,7 @@ image::{{ site.baseurl }}/images/user-profile-email.png[Update email]
 To change your language, navigate to *My Profile*.
 Under *Preferences*, see the *Language* option to set the language.
 
-image::{{ site.baseurl }}/images/profile-locale.png[Specify language]
+image::profile-locale.png[Specify language]
 
 {% include content/set_locale.md %}
 
@@ -53,7 +53,7 @@ Under *Preferences*, see the *Notifications* option.
 
 Select *Email me sharing notifications* to receive emails whenever another user shares pinboards with you.
 
-image::{{ site.baseurl }}/images/profile-email-notifications.png[]
+image::profile-email-notifications.png[]
 
 [#onboarding]
 == Revisit user onboarding
@@ -64,7 +64,7 @@ Whenever you need a refresh, navigate to *My Profile*.
 Under *Preferences*, see the *New user onboarding* option.
 Click *Revisit*, and ThoughtSpot guides you through onboarding again.
 
-image::{{ site.baseurl }}/images/onboarding-revisit.png[]
+image::onboarding-revisit.png[]
 
 [#password]
 == Change Password
@@ -80,11 +80,11 @@ Your password must be at least eight characters long." %}
 
 Click *Update*.
 
-image::{{ site.baseurl }}/images/update-password.png[]
+image::update-password.png[]
 
 [#sign-out]
 == Signing out
 
 To sign out of your ThoughtSpot account, click the user profile in the top right of the interface, and choose *Sign out*.
 
-image::{{ site.baseurl }}/images/user-sign-out.png[Sign out]
+image::user-sign-out.png[Sign out]

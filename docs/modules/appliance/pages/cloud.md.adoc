@@ -28,7 +28,7 @@ S3 + Elastic Block Storage
 | Zonal SSD persistent disk
 |===
 
-image::{{ site.baseurl }}/images/cloud-vm-storage.svg[]
+image::cloud-vm-storage.svg[]
 
 To determine the number of instances and the persistent storage requirements to provision your cluster, please refer to the available instance types for your cloud service provider in the next section.
 

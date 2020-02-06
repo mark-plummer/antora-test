@@ -18,15 +18,15 @@ To show underlying data:
 . Right-click the visualization or table cell of interest
 . Select *Show underlying data*.
 +
-image::{{ site.baseurl }}/images/show_underlying_data.png[]
+image::show_underlying_data.png[]
 +
 A new window opens that displays a summary and the underlying data.
 
 . Optionally, choose to *+ ADD COLUMNS* to add additional data.
 +
-image::{{ site.baseurl }}/images/add_columns_underlying_data.png[]
+image::add_columns_underlying_data.png[]
 
 . Click *CONFIRM CHANGES*.
 . Click *DOWNLOAD* to download a CSV file of the data.
 +
-image::{{ site.baseurl }}/images/showing_underlying_data.png[]
+image::showing_underlying_data.png[]

@@ -21,18 +21,18 @@ Your onboarding experience begins when you login for the first time.
 + Watch the video, and click *Continue*.
 + Alternatively, you can click *Exit to homepage* at the top right corner of the screen, and end the onboarding process.
 This option appears at this and every subsequent step.
-image:{{ site.baseurl }}/images/onboard-user-experience-1.png[]
+image:onboard-user-experience-1.png[]
 . *Step 2: Recommended data source* + This screen introduces the primary data source for onboarding.
 The administrator selects this source before you begin.
 Click *Continue*.
-+   image:{{ site.baseurl }}/images/onboard-user-experience-2.png[]
++   image:onboard-user-experience-2.png[]
 . *Step 3: Select a pinboard* + Consider which of the initial pinboards to explore first, and click on it.
-image:{{ site.baseurl }}/images/onboard-user-experience-3.png[]
+image:onboard-user-experience-3.png[]
 . *Step 4: View your insights* + Examine the pinboard you selected, and learn what insights it provides.
 +
 Click *Follow* to receive periodic emails about this pinboard.
 +
-image::{{ site.baseurl }}/images/onboard-user-experience-4.png[]
+image::onboard-user-experience-4.png[]
 
 == Repeating the onboarding process
 

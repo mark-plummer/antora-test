@@ -45,7 +45,7 @@ See link:{{ site.baseurl }}/end-user/search/searchiq-optimize-train.html[Train S
 
 After you finish training SearchIQ on your data source, click the *Data* tab, navigate to the data source, select its  *SearchIQ* tab, scroll to the bottom left corner, and finally turn on the setting for *SearchIQ Optimized*.
 
-image::{{ site.baseurl }}/images/worksheet-searchiq-optimized.png[]
+image::worksheet-searchiq-optimized.png[]
 
 == How does SearchIQ work for end Users
 

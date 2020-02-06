@@ -15,7 +15,7 @@ To add a filter from the search bar:
 +
 Typing a value in the search bar acts as a filter.
 +
-image::{{ site.baseurl }}/images/filter_from_the_search_bar.png[]
+image::filter_from_the_search_bar.png[]
 +
 You can also use keywords like `yesterday`, `after`, and `next month` to  filter your search.
 To see more keywords, refer to the link:{{ site.baseurl }}/reference/keywords.html#[keyword  reference].
@@ -29,12 +29,12 @@ You can find out more about link:{{ site.baseurl }}/complex-search/pinboard-filt
 
 As you have seen with search, filters appear in grey boxes in the search bar.
 
-image::{{ site.baseurl }}/images/search_bar_with_phrases_boxed.png[]
+image::search_bar_with_phrases_boxed.png[]
 
 In an answer or a pinboard, filters appear just under the title.
 For pinboards, your filters apply to all worksheet-based visualizations in the pinboard.
 
-image::{{ site.baseurl }}/images/filter_appears.png[]
+image::filter_appears.png[]
 
 If you ever find that your search or pinboard does not appear to contain all the data you want to see, check for any existing filters and remove them by clicking the *X* to see all the data.
 
@@ -48,7 +48,7 @@ You can use the search bar or choose *Filter* from the column header or axis lab
 You can apply simple filters to your search, whether it shows a table or a chart.
 Your filters remain part of the search even when you change the visualization type.
 
-When adding a filter from the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], in the column header or by clicking on a chart axis, numeric columns and text columns provide you with the ability to include or exclude values, and a checkbox selector for the values.
+When adding a filter from the ellipses icon image:icon-ellipses.png[more options menu icon], in the column header or by clicking on a chart axis, numeric columns and text columns provide you with the ability to include or exclude values, and a checkbox selector for the values.
 If the column contains a date, you can see a calendar selector when applying a filter.
 This is also where you can apply bulk filters.
 

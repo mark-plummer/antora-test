@@ -22,7 +22,7 @@ The previous OS image on a node gets replaced by the new image carried in the re
 {% include note.html content="The Management Console is now available in **beta** for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
 ThoughtSpot now comes with a brand new Management Console that allows you to upgrade a cluster. When a new release or a patch is available for update, it appears under the **Update** menu in the Management Console as seen below:
-[]({{ site.baseurl }}/images/update-available.png "cluster update")
+[](update-available.png "cluster update")
 
 Upgrading a cluster typically involves three steps:
 - **Download release**:This option allows you to download a valid release tarball from an available list.
@@ -35,16 +35,16 @@ To update a cluster:
 1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/admin.png)
+[](admin.png)
 
    This opens the ThoughtSpot Management Console.
 3. Click **Update** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/update1.png)
+[](update1.png)
 
 4. Expand the update you wish to use from the **Available Updates** list. This takes you to three-step process as explained above:
 
-[]({{ site.baseurl }}/images/update-steps.png)
+[](update-steps.png)
 
     - Click **Download** in the Download release section to download a new release tarball from the ThoughtSpot release server. Wait for the download to complete.
     - Click **Pre-Update** in the Pre-update checks section to run a series of health tests. Wait for the checks to complete.

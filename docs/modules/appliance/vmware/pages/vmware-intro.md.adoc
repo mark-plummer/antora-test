@@ -11,7 +11,7 @@ The VMware virtualization platform provides highly scalable and efficient memory
 Additionally, the VMware virtualization environment is an easy transition between development and production environments.
 The following diagram shows the components of a VMware and ThoughtSpot architecture:
 
-image::{{ site.baseurl }}/images/vmware-components.png[]
+image::vmware-components.png[]
 
 {% include note.html content="This is a generic representation;
 Only CentOS-based virtual machines are supported with ThoughtSpot." %}

@@ -7,11 +7,11 @@ You can specify email notifications behavior along with exclude parameters and t
 
 You can change your link:{{ site.baseurl }}/spotiq/overview.html[SpotIQ] basic preferences by checking or unchecking the email and data preferences for analyses.
 
-image::{{ site.baseurl }}/images/update_preferences.png[]
+image::update_preferences.png[]
 
 Under Parameters for analysis, you can further refine parameters SpotIQ will use.
 
-image::{{ site.baseurl }}/images/update_preferences_spotiq_thresholds.png[]
+image::update_preferences_spotiq_thresholds.png[]
 
 These parameters and threshold settings are a subset of those available on the  link:{{ site.baseurl }}/spotiq/customization.html[SpotIQ Customize analysis] dialog.
 If you set them here, the settings will persist for all your SpotIQ analyses including  when you run custom analyses, unless you explicitly reset options for a custom analysis.

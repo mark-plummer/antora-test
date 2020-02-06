@@ -10,7 +10,7 @@ In this way, the user need only authenticate one time, with the trusted authenti
 
 In the following scenario, the trust authenticator forwards requests for ThoughtSpot data from client applications to ThoughtSpot.
 
-image::{{ site.baseurl }}/images/authentication.png[]
+image::authentication.png[]
 
 A user already logged into client-application interacts with a ThoughtSpot embed point which launches the following sequence:
 

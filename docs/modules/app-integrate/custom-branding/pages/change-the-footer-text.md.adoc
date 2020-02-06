@@ -16,10 +16,10 @@ To change the footer text:
 . Click the text box under *Footer text*.
 . Enter your new text message.
 +
-image::{{ site.baseurl }}/images/style_footer_text.png[]
+image::style_footer_text.png[]
 +
 Your new text message will automatically be displayed in the footer.
 +
-image::{{ site.baseurl }}/images/footer_text_result.png[]
+image::footer_text_result.png[]
 
 . Click the *Reset* button on the upper right hand side of the section if you would like to bring back the default footer text.

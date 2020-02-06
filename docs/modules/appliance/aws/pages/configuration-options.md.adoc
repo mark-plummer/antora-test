@@ -31,7 +31,7 @@ If you were deploying EBS-only data volumes, you would need 2x1 TB data volumes 
 [#vm-ebs-only-persistent-storage]
 === VMs with EBS-only persistent storage
 
-image::{{ site.baseurl }}/images/persistent-storage-ebs.svg[]
+image::persistent-storage-ebs.svg[]
 
 |===
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume
@@ -65,7 +65,7 @@ image::{{ site.baseurl }}/images/persistent-storage-ebs.svg[]
 [#vm-ebs-s3-persistent-storage]
 === VMs with EBS and S3 persistent storage
 
-image::{{ site.baseurl }}/images/persistent-storage-ebs-s3.svg[]
+image::persistent-storage-ebs-s3.svg[]
 
 |===
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume

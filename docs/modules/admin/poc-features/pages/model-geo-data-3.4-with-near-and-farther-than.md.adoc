@@ -32,7 +32,7 @@ This lets you search based on spherical distance.
 The distance is calculated as a straight-line distance (not road distance) radius using miles, kilometers, or meters from the central point.
 If not specified, the default is 10 km.
 
-image::{{ site.baseurl }}/images/geospatial_search.png[]
+image::geospatial_search.png[]
 
 NOTE: These keywords have the following properties:
 

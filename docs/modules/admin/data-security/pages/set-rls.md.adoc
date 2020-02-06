@@ -18,11 +18,11 @@ To set up rule-based row level security, do the following:
 . Click *Row security*.
 . Click *+ Add row security*.
 +
-image::{{ site.baseurl }}/images/add_row_security.png[]
+image::add_row_security.png[]
 +
 The system displays the Rule Builder.
 +
-image::{{ site.baseurl }}/images/rls_rule_builder.png[]
+image::rls_rule_builder.png[]
 +
 You define row level security by creating an expression that gets evaluated  for every row and group combination.
 This powerful feature can be used with  up to thousands of groups.
@@ -35,11 +35,11 @@ The rule gets evaluated against an authenticated user for every row and group co
 If the rule evaluates to true, the user can't see that row's data.
 Use the variable *ts_groups* to refer to the group name.
 +
-image::{{ site.baseurl }}/images/rls_enter_expression.png[]
+image::rls_enter_expression.png[]
 +
 You can see a list of available operators by clicking on *Rule Assistant*.
 +
-image::{{ site.baseurl }}/images/rls_rule_assistant.png[]
+image::rls_rule_assistant.png[]
 +
 As you type, ThoughtSpot suggests formula syntax, variables, and column  names.
 If you can't remember the exact column name or variable you want to  use, the suggestions can help.

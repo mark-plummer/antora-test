@@ -22,13 +22,13 @@ This topic explains how to use R in ThoughtSpot both from an end user and script
 
 == How to access R scripts
 
-Users with R script privileges can click the *R* icon image:{{ site.baseurl }}/images/r-icon-inline.png[R icon] on the toolbar for any search result (answer).
+Users with R script privileges can click the *R* icon image:r-icon-inline.png[R icon] on the toolbar for any search result (answer).
 
-image::{{ site.baseurl }}/images/r-icon.png[]
+image::r-icon.png[]
 
 From here, you have options to write a custom script, or load a pre-built or ThoughtSpot provided script.
 
-image::{{ site.baseurl }}/images/r-load-or-write-script.png[]
+image::r-load-or-write-script.png[]
 
 == Run pre-built R scripts
 
@@ -46,7 +46,7 @@ Start with the topic on how to link:{{ site.baseurl }}/end-user/r-scripts/create
 To learn more about R programming in general, a good place to start is https://www.r-project.org/[R Project for Statistical Computing].
 Also, Anthony Chen's blog post on https://www.thoughtspot.com/codex/using-r-analysis-thoughtspot-time-series-forecasting[Using R Analysis in ThoughtSpot for Time Series Forecasting] is a nice introduction to writing R scripts in ThoughtSpot.
 
-image::{{ site.baseurl }}/images/r-pinboard-examples.png[]
+image::r-pinboard-examples.png[]
 
 == Related information
 

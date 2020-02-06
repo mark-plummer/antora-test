@@ -33,17 +33,17 @@ This menu item will appear under the three dot menu of a search result.
  ** Window size: The size of the window that will display the external web page or application in ThoughtSpot.
 
 +
-image::{{ site.baseurl }}/images/create_custom_action.png[]
+image::create_custom_action.png[]
 . Now when a user is viewing a search result, they'll have the option to use the Custom Action you created.
-To initiate the action, they'll click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Your Action Name*.
+To initiate the action, they'll click the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Your Action Name*.
 Notice a *Custom* tag next to your action name;
 it indicates that this is something custom built, and not a ThoughtSpot action.
 +
-image::{{ site.baseurl }}/images/initiate_custom_action.png[]
+image::initiate_custom_action.png[]
 
 . When a user clicks your action, they'll see the web page you entered as the URL for your custom action.
 +
-image::{{ site.baseurl }}/images/custom_action_response.png[]
+image::custom_action_response.png[]
 
 {% include note.html content="In order for your action to work correctly, the answer from which the user selected the action needs to have the correct search terms which your application or web page is expecting to receive.
 There is no way to guarantee this, other to train your users on the purpose of your action, and what's required for it to run." %}

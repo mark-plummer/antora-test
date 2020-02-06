@@ -9,7 +9,7 @@ To search using growth over time:
 
 . Type `growth of` into the search bar, and choose a measure you're interested in seeing the growth of.
 +
-image::{{ site.baseurl }}/images/growth_of_suggestions.png[]
+image::growth_of_suggestions.png[]
 +
 You will see a list of suggestions to choose from based on your sources.
 You  can also type a different column name containing numeric data to compare.
@@ -19,14 +19,14 @@ You  can also type a different column name containing numeric data to compare.
 The growth is calculated as a positive or negative percentage, for each  period relative to the last period in the series.
 A line chart is a good  way to display your data, but the waterfall chart is especially effective  to show growth.
 +
-image::{{ site.baseurl }}/images/growth_of_waterfall_chart.png[]
+image::growth_of_waterfall_chart.png[]
 
 . You can also do year-over-year analysis, which compares each time period to the corresponding time period in the prior year.
 +
 This type of growth analysis is more common in retail and other seasonal  businesses.
 To do this, type monthly year-over-year after your growth of phrase  in the search bar.
 +
-image::{{ site.baseurl }}/images/growth_of_year_over_year.png[]
+image::growth_of_year_over_year.png[]
 +
 This compares data between the same month from different years.
 For example,  it will allow you to compare sales from June of this year to the sales from  June of last year.
@@ -36,7 +36,7 @@ Add an attribute to your search see the breakdown of how each grouping of  the a
 
 . Click *Configure Chart* and add your attribute to the Legend field.
 +
-image::{{ site.baseurl }}/images/growth_of_attribute_breakdown.png[]
+image::growth_of_attribute_breakdown.png[]
 +
 It looks like Q4, FY 15 was a much more productive period for a number of  categories compared to a year ago.
 
@@ -90,4 +90,4 @@ This table shows the possible buckets and the period-over keywords you can combi
 
 For example, the following query `growth of sales by date daily month-over-month`:
 
-image::{{ site.baseurl }}/images/date-period-over-period.png[]
+image::date-period-over-period.png[]

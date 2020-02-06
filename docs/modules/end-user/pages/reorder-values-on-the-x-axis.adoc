@@ -11,11 +11,11 @@ This example shows you how to reorder the x-axis columns.
 
 . While viewing your answer as a chart, click *Edit chart configuration* near the top right.
 +
-image::{{ site.baseurl }}/images/edit_chart_configuration_bar.png[]
+image::edit_chart_configuration_bar.png[]
 
 . In the X-Axis box, delete the values.
 Then re-add them in the new preferred order.
 +
-image::{{ site.baseurl }}/images/x-axis_column_order.png[]
+image::x-axis_column_order.png[]
 +
 Your chart reorganizes itself to reflect the new label order.

@@ -10,7 +10,7 @@ Your experience may differ depending on your environment and preference.
 
 The following shows a network architectural diagram which includes a load balancer for ThoughtSpot nodes.
 
-image::{{ site.baseurl }}/images/network_architectural_diagram.png[]
+image::network_architectural_diagram.png[]
 
 The load balancer is an appliance in your infrastructure that routes traffic automatically to nodes to provide failover.
 You can also place a load balancer or proxy in front of the ThoughtSpot appliance if you'd like external network users to access the system.

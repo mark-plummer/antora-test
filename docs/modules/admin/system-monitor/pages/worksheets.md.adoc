@@ -14,7 +14,7 @@ To list the system worksheets:
 . Choose *All* and *Worksheets*.
 . Enter `TS: ` in the search field.
 +
-image::{{ site.baseurl }}/images/su-worksheets.png[]
+image::su-worksheets.png[]
 
 == Summary of the worksheets+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
    +++<col style="width:65%">++++++</col>++++++</colgroup>+++

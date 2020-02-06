@@ -27,7 +27,7 @@ Clicking on the search bar on your homepage, or clicking *Search* in the top men
 
 From here, if SearchIQ is enabled for you by your administrator, you can see a *SearchIQ* toggle button to the right of the search bar.
 
-image::{{ site.baseurl }}/images/choose_searchiq.png[]
+image::choose_searchiq.png[]
 
 Switch it to the on position.
 This puts the search into SearchIQ mode, and you can now type in a search using plain, speech-like language.

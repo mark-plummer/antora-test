@@ -23,21 +23,21 @@ When saving, you can type in a different name for your copy.
 
 . Click *Answers*, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/answers_icon.png[]
+image::answers_icon.png[]
 
 . On the answer list page, click the answer you would like to edit a copy of.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Copy and edit*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Copy and edit*.
 +
-image::{{ site.baseurl }}/images/copy_an_answer.png[]
+image::copy_an_answer.png[]
 +
 A copy of the answer is displayed with "`Copy of`" added to the beginning of the title.
 
 . Make any changes you want to the answer.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Save*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Save*.
 +
 The Save Answer dialog box appears.
 +
-image::{{ site.baseurl }}/images/name_your_pinboard_copy.png[]
+image::name_your_pinboard_copy.png[]
 
 . Change the name and description, as needed, and click *SAVE*.
 +
@@ -48,7 +48,7 @@ When you navigate back to the Answers page, your edited Answer will appear in th
 At the bottom of the *Answers* page, you can an additional area, called *SpotIQ Insights*.
 This area is derived from your original answer and you can select any of the insights to deepen your search.
 
-image::{{ site.baseurl }}/images/other-answers.png[]
+image::other-answers.png[]
 
 The *SpotIQ Insights* section is only visible to users with the *Has SpotIQ* privilege.
 After you expand an insight on this list, an *Edit* button allows you modify the insight and make it your own.
@@ -61,14 +61,14 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 When saving, you can type in a different name for your copy.
 
 . Find the SpotIQ insight you want to edit and click it to open it as an answer.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Copy and edit*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Copy and edit*.
 +
-image::{{ site.baseurl }}/images/copy_an_edit_spiq.png[]
+image::copy_an_edit_spiq.png[]
 +
 A copy of the answer is displayed with "`Copy of`" added to the beginning of the title.
 
 . Make any changes you want to the answer.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Save*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Save*.
 +
 The Save Answer dialog box appears.
 

@@ -15,7 +15,7 @@ Tue Feb 20 09:07:04 PST 2018
 
 To see the current timezone used by the ThoughtSpot application, choose menu:Admin[Cluster Manager] and review the *Cluster Details*:
 
-image::{{ site.baseurl }}/images/app-timezone.png[]
+image::app-timezone.png[]
 
 The timezones should match.
 

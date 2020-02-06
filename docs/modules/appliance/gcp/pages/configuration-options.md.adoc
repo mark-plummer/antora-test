@@ -20,7 +20,7 @@ For more information, see https://cloud.google.com/compute/docs/regions-zones/[R
 
 === VMs with Persistent Disk-only storage
 
-image::{{ site.baseurl }}/images/persistent-storage-ssd.svg[]
+image::persistent-storage-ssd.svg[]
 
 |===
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM + Zonal Persistent SSD Disk volume
@@ -53,7 +53,7 @@ image::{{ site.baseurl }}/images/persistent-storage-ssd.svg[]
 
 === VMs with Persistent Disk and Google Cloud storage
 
-image::{{ site.baseurl }}/images/persistent-storage-ssd-gcs.svg[]
+image::persistent-storage-ssd-gcs.svg[]
 
 |===
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM + Zonal Persistent SSD Disk volume

@@ -36,7 +36,7 @@ sum(group_aggregate(if(sum(# trades tendered ) > 1) then 1 else 0,
                     query_filters())) 
 ....
 
-image::{{ site.baseurl }}/images/supplier-tender-job-1.png[Supplier tendering by job, aggregated result]
+image::supplier-tender-job-1.png[Supplier tendering by job, aggregated result]
 
 === Resolution
 
@@ -76,7 +76,7 @@ sum(if(group_aggregate (sum (# trades tendered),
                               query_filters ( ) )>1) then 1 else 0)
 ....
 
-image::{{ site.baseurl }}/images/supplier-tender-job-2.png[Supplier tendering by job, non-aggregated result]
+image::supplier-tender-job-2.png[Supplier tendering by job, non-aggregated result]
 
 [#average-rates-exchange]
 == Scenario 2: Average rates of exchange
@@ -118,7 +118,7 @@ The `$ Loans Avg.
 Rate`  calculates the average rate of exchange for the entire period.
 The `$ Loans Spot Rate` applies the rate of exchange on the day of the transaction.
 
-image::{{ site.baseurl }}/images/average-rate-exchange-1.png[Average rates of exchange, aggregated result]
+image::average-rate-exchange-1.png[Average rates of exchange, aggregated result]
 
 === Resolution
 
@@ -160,7 +160,7 @@ group_aggregate (sum(loans )*average (rate ),
                  query_filters())
 ----
 
-image::{{ site.baseurl }}/images/average-rate-exchange-2.png[Average rates of exchange, non-aggregated result]
+image::average-rate-exchange-2.png[Average rates of exchange, non-aggregated result]
 
 [#average-period-value-semi-additive-numbers-1]
 == Scenario 3: Average period value for semi-additive numbers I
@@ -179,7 +179,7 @@ average(group_aggregate(sum(loan balance),
                         query_filters())) 
 ----
 
-image::{{ site.baseurl }}/images/avg-period-non-additive-1-1.png[Average period value semi-additive numbers, aggregated result]
+image::avg-period-non-additive-1-1.png[Average period value semi-additive numbers, aggregated result]
 
 === Resolution
 

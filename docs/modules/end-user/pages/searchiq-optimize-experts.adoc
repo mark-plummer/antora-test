@@ -18,13 +18,13 @@ To specify the experts for the datasource, follow these steps:
 
 . Click the ellipsis icon at the top right corner, and select *Manage Experts*.
 +
-image::{{ site.baseurl }}/images/manage-experts-searchiq.png[]
+image::manage-experts-searchiq.png[]
 
 . In the *Manage Experts* window modal, you may see existing experts.
 Add more users and groups, and click *Add*.
 +
-image::{{ site.baseurl }}/images/add-experts.png[]
+image::add-experts.png[]
 
 . After you finish adding experts, click *Done*.
 +
-image::{{ site.baseurl }}/images/add-experts-done.png[]
+image::add-experts-done.png[]

@@ -25,7 +25,7 @@ Click that if you're stuck and need help.
 . The search you were working on is captured and shown back to you, with a text box for your message.
 Send a message describing what you were looking for, along with any information that makes it easy for the expert to understand what problem you were having.
 
-image::{{ site.baseurl }}/images/ask_an_expert_form.png[]
+image::ask_an_expert_form.png[]
 
 An example would be:
 

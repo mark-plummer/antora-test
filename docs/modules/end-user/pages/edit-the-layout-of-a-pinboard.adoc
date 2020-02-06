@@ -16,17 +16,17 @@ One row of the pinboard can hold a predetermined number of visualizations of eac
 
 . Click *Pinboards*, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-pinboards.png[]
+image::click-pinboards.png[]
 
 . On the pinboards page, click the pinboard you would like to edit.
 . Drag and drop your visualizations on the layout grid to reorder your pinboard.
-Resize a visualization by choosing a predetermined size under the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] for the visualization.
+Resize a visualization by choosing a predetermined size under the ellipses icon image:icon-ellipses.png[more options menu icon] for the visualization.
 +
-image::{{ site.baseurl }}/images/resize_pinboard_visualization.png[]
+image::resize_pinboard_visualization.png[]
 
-. Save your pinboard by clicking the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and selecting *Save*.
+. Save your pinboard by clicking the ellipses icon image:icon-ellipses.png[more options menu icon] and selecting *Save*.
 +
-image::{{ site.baseurl }}/images/save_a_pinboard.png[]
+image::save_a_pinboard.png[]
 
 == Change the orientation of a chart or table
 
@@ -34,16 +34,16 @@ You can change the orientation of a chart or table on a pinboard.
 To do this:
 
 . Navigate to the chart or table.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] for the chart or table.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] for the chart or table.
 +
 ThoughtSpot displays the drop-down menu.
 +
-image::{{ site.baseurl }}/images/size_pinboard_item.png[]
+image::size_pinboard_item.png[]
 +
 The last item shows different possible orientations, with the current orientation selected.
 
 . Select a new orientation.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Save*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Save*.
 
 == Delete a visualization from your pinboard
 
@@ -51,16 +51,16 @@ To delete a visualization:
 
 . Click *Pinboards*, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-pinboards.png[]
+image::click-pinboards.png[]
 
 . On the pinboard list page, click the pinboard that contains the visualization you would like to delete.
-. In the upper-right corner of the visualization, click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Delete*.
+. In the upper-right corner of the visualization, click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Delete*.
 +
-image::{{ site.baseurl }}/images/detele_a_pinboard_visualization.png[]
+image::detele_a_pinboard_visualization.png[]
 
-. Save your pinboard by clicking the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and selecting *Save*.
+. Save your pinboard by clicking the ellipses icon image:icon-ellipses.png[more options menu icon] and selecting *Save*.
 +
-image::{{ site.baseurl }}/images/save_a_pinboard.png[]
+image::save_a_pinboard.png[]
 
 == Copy and edit a visualization from your pinboard
 
@@ -68,22 +68,22 @@ To edit a copy of a visualization:
 
 . Click *Pinboards*, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-pinboards.png[]
+image::click-pinboards.png[]
 
 . On the pinboard list page, click the pinboard that contains the visualization you would like to edit a copy of.
 . Find a visualization in the pinboard you want to edit.
-. In the upper-right corner of the visualization, click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Copy and edit*.
+. In the upper-right corner of the visualization, click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Copy and edit*.
 +
-image::{{ site.baseurl }}/images/make_a_copy_of_a_pinboard_viz.png[]
+image::make_a_copy_of_a_pinboard_viz.png[]
 +
 A copy of the answer that was used to create the visualization is displayed with "`Copy of`" added to the beginning of the title.
 
 . Make any changes you want to the visualization.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Save*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Save*.
 +
 The Save Answer dialog box appears.
 +
-image::{{ site.baseurl }}/images/name_your_pinboard_copy.png[]
+image::name_your_pinboard_copy.png[]
 
 . Change the name and description, as needed, and click *SAVE*.
 +
@@ -92,12 +92,12 @@ When you navigate back to the Answers page, your edited Answer will appear in th
 == Other pinboard edits
 
 Other pinboard actions include actions you normally perform on your search as well as actions that you can only perform on a pinboard.
-Most of these actions are found under the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon].
+Most of these actions are found under the ellipses icon image:icon-ellipses.png[more options menu icon].
 
-image::{{ site.baseurl }}/images/pinboard_actions.png[]
+image::pinboard_actions.png[]
 
 Other actions are available on a pinboard display itself.
 Some actions are static others appear only when you over over specific locations of the pinboard.
 This diagram displays active action areas on a pinboard.
 
-image::{{ site.baseurl }}/images/pinboard-controls.png[]
+image::pinboard-controls.png[]

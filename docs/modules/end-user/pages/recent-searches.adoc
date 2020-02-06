@@ -2,7 +2,7 @@
 
 last_updated: tbd summary: "How ThoughtSpot learns from your searches and helps you." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Search suggestions include complete recent searches that are similar to the search you are constructing.
 
-image::{{ site.baseurl }}/images/search_history.png[]
+image::search_history.png[]
 
 == Usage-based ranking (UBR)
 
@@ -32,7 +32,7 @@ When there are more than one possible meaning for a search term, you can provide
 Now, your choice is sticky.
 That means you won't have to select it again, in the scope of the current search.
 
-image::{{ site.baseurl }}/images/disambiguation.png[]
+image::disambiguation.png[]
 
 == Out of scope columns
 

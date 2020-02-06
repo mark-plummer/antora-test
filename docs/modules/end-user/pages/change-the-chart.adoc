@@ -6,13 +6,13 @@
 
 To make changes to the chart configuration, click the gear icon in the top right corner of the visualization.
 
-image::{{ site.baseurl }}/images/edit-chart-configuration.png[Edit chart configuration]
+image::edit-chart-configuration.png[Edit chart configuration]
 
-// ![]({{ site.baseurl }}/images/configure_chart_icons.png "Configure chart icons")
+// ![](configure_chart_icons.png "Configure chart icons")
 
 This opens the *Customize* menu for the chart.
 
-image::{{ site.baseurl }}/images/customize-chart.png[Customize chart configuration]
+image::customize-chart.png[Customize chart configuration]
 
 You can edit some of the elements of the chart directly, by clicking on them.
 For example, you can change the appearance of a chart link:{{ site.baseurl }}/end-user/search/chart-axes-options.html[axis] by clicking it and making selections in the available options.

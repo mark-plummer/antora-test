@@ -14,7 +14,7 @@ This page introduces these features and directs you towards more detailed inform
 The ThoughtSpot application includes a *System Health* center, for easy monitoring of usage, alerts, events and general cluster health.
 You view the System Health Center by choosing the *Admin* icon and then selecting *System Health*.
 
-image::{{ site.baseurl }}/images/control_center_overview.png[]
+image::control_center_overview.png[]
 
 Only users with administrative privileges can view the *System Health* center.
 However, administrative users can present to others the information that displays in the *System Health* center.

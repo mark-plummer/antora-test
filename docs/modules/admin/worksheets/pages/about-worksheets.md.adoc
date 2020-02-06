@@ -30,7 +30,7 @@ Each of these fact tables shares common dimensions like date, region, and store.
 In this scenario, you would create two worksheets: sales and inventory.
 The following diagram depicts the workflow for creating the sales worksheet.
 
-image::{{ site.baseurl }}/images/workflow_create_worksheet.png[]
+image::workflow_create_worksheet.png[]
 
 The process for creating a worksheet is:
 
@@ -53,9 +53,9 @@ This process includes adding a new worksheet, after which you will choose the da
 To create a new worksheet:
 
 . Click *Data*, on the top navigation bar.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Create worksheet*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Create worksheet*.
 +
-image::{{ site.baseurl }}/images/worksheet_create_icon.png[]
+image::worksheet_create_icon.png[]
 
 == Add sources and columns to a worksheet
 
@@ -67,13 +67,13 @@ To add the sources to the worksheet:
 
 . Click the *+* icon.
 +
-image::{{ site.baseurl }}/images/worksheet_add_sources_link.png[]
+image::worksheet_add_sources_link.png[]
 
 . Check the box next to each of the sources you want to include in the worksheet.
 +
 Note that the list of sources only shows the data sources on which you have view or edit privileges.
 +
-image::{{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png[]
+image::worksheet_choose_sources_from_2.5.png[]
 
 . If you want to see what the data inside the sources looks like, click *Explore all data*.
 . Choose the link:progressive-joins.html#[worksheet join rule].
@@ -90,17 +90,17 @@ If you are working with two tables that should be related, but are not, you can 
 . (Optional) link:mod-ws-internal-joins.html#[modify the join types] within the worksheet.
 . (Optional) link:create-formula.html#[create formulas].
 . (Optional) link:create-ws-filter.html#[create worksheet filters].
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Save*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Save*.
 . In the Save Worksheet window, enter a name and description for your worksheet and click *SAVE*.
 . (Optional) Click each column name and enter a more user-friendly name for searching.
 You can tab through the list of columns to rename them quickly.
 . (Optional) If you want to add a prefix to the name of several columns, select them, click the *Add prefix* button, and type in the prefix.
 +
-image::{{ site.baseurl }}/images/worksheet_add_col_prefix.png[]
+image::worksheet_add_col_prefix.png[]
 
-. Click the the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Save*.
+. Click the the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Save*.
 +
-image::{{ site.baseurl }}/images/action_save_worksheet.png[]
+image::action_save_worksheet.png[]
 
 . link:{{ site.baseurl }}/admin/data-security/share-worksheets.html#[Share your worksheet], if you want other people to be able to use it.
 

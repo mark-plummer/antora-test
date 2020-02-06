@@ -21,15 +21,15 @@ To edit a connection:
 . Click the *Connections* tab at the top of the page.
 . Click the name of the connection you want to edit.
 +
-image::{{ site.baseurl }}/images/select-connection.png[]
+image::select-connection.png[]
 
 . Click *Edit connection* at the upper-right-hand side of the page.
 +
-image::{{ site.baseurl }}/images/edit-connection.png[]
+image::edit-connection.png[]
 
 . Expand the database table drop-down menu, and select the tables and columns you want to add.
 +
-image::{{ site.baseurl }}/images/connection-update.png[]
+image::connection-update.png[]
 
 . Click *Update* to save the connection details.
 
@@ -48,19 +48,19 @@ To remap a connection:
 . Click the *Connections* tab at the top of the page.
 . Click the name of the connection you want to remap.
 +
-image::{{ site.baseurl }}/images/select-connection.png[]
+image::select-connection.png[]
 
-. Click the More Info icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and select *Remapping* on the upper-right-hand side of the page.
+. Click the More Info icon image:icon-ellipses.png[more options menu icon] and select *Remapping* on the upper-right-hand side of the page.
 +
-image::{{ site.baseurl }}/images/embrace-remapping.png[]
+image::embrace-remapping.png[]
 
 . Click *Download* to download the source mapping file.
 +
-image::{{ site.baseurl }}/images/embrace-remapping-download.png[]
+image::embrace-remapping-download.png[]
 
 . Edit and update the file as required.
 +
-image::{{ site.baseurl }}/images/embrace-yaml.png[]
+image::embrace-yaml.png[]
 
 . Finally, click *Browse your files*, and upload your edited mapping file to update the mapping of your connection.
 
@@ -76,12 +76,12 @@ To delete a table:
 . Click the *Connections* tab at the top of the page.
 . Click the name of the connection that contains the table you want to delete.
 +
-image::{{ site.baseurl }}/images/select-connection.png[]
+image::select-connection.png[]
 
 . Find the table you want to delete in the list, and check the box next to its name.
 . Click *Delete*.
 +
-image::{{ site.baseurl }}/images/delete-table.png[]
+image::delete-table.png[]
 +
 {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked.
 A warning appears, with a list of links to dependent objects." %}
@@ -90,7 +90,7 @@ A warning appears, with a list of links to dependent objects." %}
 +
 When all dependencies are removed, you can delete the table.
 +
-image::{{ site.baseurl }}/images/delete-warning.png[]
+image::delete-warning.png[]
 
 You can also click the name of a table and then click the linked objects to see a list of dependent objects with links.
 The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table.
@@ -109,11 +109,11 @@ To delete a connection:
 . Check the box next to the connection you want to delete.
 . Click *Delete*.
 +
-image::{{ site.baseurl }}/images/delete-a-connection.png[]
+image::delete-a-connection.png[]
 +
 If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 +
-image::{{ site.baseurl }}/images/connection-delete-warning.png[]
+image::connection-delete-warning.png[]
 
 . If the "Cannot delete" warning appears, click the link for each object to delete it, and then click *Ok*.
 Otherwise, go to the next step.

@@ -11,23 +11,23 @@ To add a filter to a worksheet:
 . Click *Data* in the top menu bar, find your worksheet, and click its name.
 . Click the *Edit Worksheet* button.
 +
-image::{{ site.baseurl }}/images/edit_worksheet.png[]
+image::edit_worksheet.png[]
 
 . Click *Filters* on the left menu and click *+*.
 +
-image::{{ site.baseurl }}/images/plus_worksheet_filter.png[]
+image::plus_worksheet_filter.png[]
 
 . Choose the column you want to filter on.
 +
-image::{{ site.baseurl }}/images/ws-filter-choose-column.png[]
+image::ws-filter-choose-column.png[]
 
 . Select the values to include in your answer.
 +
-image::{{ site.baseurl }}/images/column_filter.png[]
+image::column_filter.png[]
 
 . If you want to exclude values, click *Exclude* and choose values to exclude.
 +
-image::{{ site.baseurl }}/images/exclude_nulls.png[]
+image::exclude_nulls.png[]
 
 . Click *ADD FILTER*.
 +

@@ -64,9 +64,9 @@ This example uses *Sporting Goods Retail Worksheet* data.
 +
 If your source contains the proper data, you should see something similar to the following:
 +
-image::{{ site.baseurl }}/images/spotiq-r1.png[]
+image::spotiq-r1.png[]
 
-. Click the *View R analysis* icon image:{{ site.baseurl }}/images/r-icon-inline-2.png[View R Analysis icon].
+. Click the *View R analysis* icon image:r-icon-inline-2.png[View R Analysis icon].
 . Enter this sample script in the field.
 +
 ----
@@ -92,7 +92,7 @@ SpotIQ runs your analysis in the background.
 
 . When the analysis is completed, you should see the results in PNG format similar to the following:
 +
-image::{{ site.baseurl }}/images/spotiq-r6.png[]
+image::spotiq-r6.png[]
 
 You can run another R script directly on this result to get CSV results.
 Try this on your own.
@@ -113,7 +113,7 @@ write.csv(df, file=#output_file#, row.names=FALSE);
 
 Use the *i* icon to see help for the R syntax.
 
-image::{{ site.baseurl }}/images/spotiq-help.png[]
+image::spotiq-help.png[]
 
 == Related information
 

@@ -20,11 +20,11 @@ Make sure your Windows workstation is equipped with a tool https://www.putty.org
 The ODBC driver for Windows requires Visual C{pp} Redistributable for Visual Studio 2013.
 You are prompted to install it during installation of the driver if it isn't already installed.
 
-image::{{ site.baseurl }}/images/windows-odbc-cplusplus.png[]
+image::windows-odbc-cplusplus.png[]
 
 To check if this Microsoft tool is already installed, search for it on your workstation.
 
-image::{{ site.baseurl }}/images/odbc-windows-search-0.png[]
+image::odbc-windows-search-0.png[]
 
 If it isn't installed, make sure you https://www.microsoft.com/en-us/download/details.aspx?id=40784[download and install it] before continuing.
 
@@ -40,7 +40,7 @@ On the workstation where you want to connect from, do the following:
 . Download the *ODBC Driver for Windows*.
 . Unzip the file you downloaded at a convenient location on your workstation.
 +
-image::{{ site.baseurl }}/images/odbc-windows-extract.png[]
+image::odbc-windows-extract.png[]
 
 . Take a moment to examine the contents of the new directory.
 +
@@ -57,16 +57,16 @@ You use this software to configure the driver.
 . Launch the installer for your version of Windows.
 . Click *Next* to continue.
 +
-image::{{ site.baseurl }}/images/odbc_install_1.png[]
+image::odbc_install_1.png[]
 
 . Accept the End User License Agreement (EULA), and click *Next*.
 . Specify the destination folder where the driver will be installed.
 +
-image::{{ site.baseurl }}/images/odbc_install_3.png[]
+image::odbc_install_3.png[]
 
 . Enter the ThoughtSpot server details, and click *Next*.
 +
-image::{{ site.baseurl }}/images/odbc_install_4.png[]
+image::odbc_install_4.png[]
 
  ** For *Server(s)*, provide a comma separated list of the IP addresses of each node on the ThoughtSpot instance.
  ** For *Database*, optionally specify the database to use.
@@ -75,13 +75,13 @@ If you skip this entry, you must provide the database each time you connect usin
 . Confirm that the install can begin by clicking *Install*.
 . You may see a security warning.
 +
-image::{{ site.baseurl }}/images/windows_ODBC_install.png[]
+image::windows_ODBC_install.png[]
 
 . Click *Yes* to continue.
 +
 A confirmation message appears when the installation is complete.
 +
-image::{{ site.baseurl }}/images/odbc_install_6_install_completed.png[]
+image::odbc_install_6_install_completed.png[]
 
 . Click *Finish*.
 
@@ -102,15 +102,15 @@ Typically, this user is a user with data management or administrative privileges
 . Return to your workstation.
 . Locate and open the *ODBC Data Source Administrator (64-bit)* application.
 +
-image::{{ site.baseurl }}/images/odbc-windows-search.png[]
+image::odbc-windows-search.png[]
 
 . Click the *System DSN* tab.
 +
-image::{{ site.baseurl }}/images/odbc-system-dsn.png[]
+image::odbc-system-dsn.png[]
 
 . Select *ThoughtSpot* and click *Configure...*
 +
-image::{{ site.baseurl }}/images/odbc-configure-dialog.png[]
+image::odbc-configure-dialog.png[]
 
 . Click *Options...*
 . Ensure you have the following *Custom Property* values set:
@@ -139,12 +139,12 @@ If you  don't add them, you are prompted to supply them each time you connect.
 +
 When you are done, your options should look similar to the following:
 +
-image::{{ site.baseurl }}/images/windows-odbc-options.png[]
+image::windows-odbc-options.png[]
 
 . When you are done, click *OK* to save your new properties.
 . Click *Test Connection* to test your database connection.
 +
-image::{{ site.baseurl }}/images/windows-odbc-success.png[]
+image::windows-odbc-success.png[]
 
 . Click *Cancel* to close the *DSN Configuration* dialog.
 . Click *OK* to close the *Client Configuration Dialog* the dialog.

@@ -23,22 +23,22 @@ To authenticate users using ThoughtSpot internal who are not available in the LD
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* menu on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/admin.png[]
+image::admin.png[]
 +
 This opens the ThoughtSpot Management Console.
 
 . Click *Settings* menu on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/settings.png[]
+image::settings.png[]
 
 . In the Settings panel, click *Authentication: Internal* and then  *Configure* option.
 +
-image::{{ site.baseurl }}/images/internal-auth.png[]
+image::internal-auth.png[]
 
 . Choose *Enable* under Authentication: Internal option.
 If you want to disable the internal authentication, configure AD or LDAP first, and then select *Disable* and save  the  configuration.
 +
-image::{{ site.baseurl }}/images/internal-auth-configure.png[]
+image::internal-auth-configure.png[]
 
 . Click *Save* to configure the internal authentication.
 -->

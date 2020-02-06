@@ -44,15 +44,15 @@ You can add the UID and password by clicking on *Options*.
 . Select the *Integration Services* tab under menu:Installed[Templates > Business Intelligence].
 . Enter a name in the *Name* field and click *OK*.
 +
-image::{{ site.baseurl }}/images/ssis_integration_services.png[]
+image::ssis_integration_services.png[]
 
 . Select the *SSIS Toolbox* tab on the left hand side of the platform, and drag and drop *Data Flow Task* to the main window.
 +
-image::{{ site.baseurl }}/images/ssis_data_flow_task.png[]
+image::ssis_data_flow_task.png[]
 
 . Double click the *Data Flow Task* icon when it appears in the center of the page.
 +
-image::{{ site.baseurl }}/images/ssis_data_flow_task_icon.png[]
+image::ssis_data_flow_task_icon.png[]
 
 . Navigate back to the *SSIS Toolbox* tab.
 You now want to create sources and destinations.
@@ -64,19 +64,19 @@ You now want to create sources and destinations.
 . Select a new OLE DB connection manager by clicking *New*.
 . In the Configure OLE DB Connection Manager window, select your *Data connection* and click *OK*.
 +
-image::{{ site.baseurl }}/images/ssis_ole_db_connection_manager.png[]
+image::ssis_ole_db_connection_manager.png[]
 +
 If you do not see your data connection, you will have to create a new one   in the Connection Manager by clicking *New*.
 
 . Back in the OLE DB Source Editor, select the *Name of the table or the view*, and click *OK*.
 +
-image::{{ site.baseurl }}/images/ssis_name_of_table.png[]
+image::ssis_name_of_table.png[]
 
 . Select the table, and see what columns are in it.
 +
 In this example, a single column, `c1`, is selected.
 +
-image::{{ site.baseurl }}/images/ssis_table_column.png[]
+image::ssis_table_column.png[]
 
 == Configure the ODBC Data Source Administrator
 
@@ -86,7 +86,7 @@ The ODBC Data Source Administrator has to be configured to connect to ThoughtSpo
 . Click the *System DSN* tab and select *ThoughtSpot_32*.
 . Click *Configure*.
 +
-image::{{ site.baseurl }}/images/ssis_system_dsn.png[]
+image::ssis_system_dsn.png[]
 
 . In the Client Configuration Dialog, enter the *Server IP* and *Server Port*.
 +
@@ -98,7 +98,7 @@ Comma separated values are not supported.
 
 . Click *OK* twice to close the Client Configuration Dialog and the ODBC Data Source Administrator.
 +
-image::{{ site.baseurl }}/images/ssis_client_configuration_dialog.png[]
+image::ssis_client_configuration_dialog.png[]
 
 == Create a file to take the feed
 
@@ -114,12 +114,12 @@ Use the one you created and named in the ODBC Data Source Administrator.
 . Drag the *blue arrow* to connect the OLE DB Source icon to the ODBC Destination icon.
 . Double click the *ODBC Destination* icon.
 +
-image::{{ site.baseurl }}/images/ssis_drag_connector.png[]
+image::ssis_drag_connector.png[]
 
 . Use ODBC Destination to set the *Batch size* for the connection in the Connection Manager tab.
 You can set the size to be up to 10,000.
 +
-image::{{ site.baseurl }}/images/ssis_batch_size.png[]
+image::ssis_batch_size.png[]
 +
 If the load fails, the entire batch will be lost, and you will have to start that load over again.
 
@@ -137,15 +137,15 @@ In Pentaho, the transaction size  setting is called Commit Size.
 You can have different column names in each database if you map them.
 Of course, they must be of the same or compatible datatype.
 +
-image::{{ site.baseurl }}/images/ssis_mappings.png[]
+image::ssis_mappings.png[]
 
 . Start the import job by clicking the *Start* button.
 +
 You should see an animation indicating that the data is transferring over.
 When the import is complete, the number of successfully transferred rows is displayed.
 +
-image::{{ site.baseurl }}/images/ssis_start.png[]
+image::ssis_start.png[]
 +
-image::{{ site.baseurl }}/images/ssis_success.png[]
+image::ssis_success.png[]
 
 You can validate the import using TQL or from the *Data* screen.

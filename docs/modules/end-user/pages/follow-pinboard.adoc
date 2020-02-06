@@ -14,19 +14,19 @@ Complete the following steps to follow a Pinboard:
 
 . Click *Pinboards* on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-pinboards.png[]
+image::click-pinboards.png[]
 
 . On the Pinboard list page, select a Pinboard by clicking on it.
 . Click *Follow* at the top right corner of the Pinboard.
 +
-image::{{ site.baseurl }}/images/follow-pinboard.png[Follow Pinboard]
+image::follow-pinboard.png[Follow Pinboard]
 +
 This action opens the scheduler.
 See <<pinboard-follow-schedule,Schedule Pinboard reports>>.
 
 Notice that after you configure the schedule, the Pinboard appears as *Following*.
 
-image::{{ site.baseurl }}/images/followed-pinboard.png[Followed Pinboard]
+image::followed-pinboard.png[Followed Pinboard]
 
 [#pinboard-follow-schedule]
 == Schedule Pinboard reports
@@ -34,17 +34,17 @@ image::{{ site.baseurl }}/images/followed-pinboard.png[Followed Pinboard]
 In the *Follow* scheduler, specify the email schedule by marking the appropriate options in the pulldown menus.
 The default schedule is weekly, on the day and time when you configure the schedule.
 
-// ![Schedule the notifications]({{ site.baseurl }}/images/follow-schedule.png "Schedule the notifications")
+// ![Schedule the notifications](follow-schedule.png "Schedule the notifications")
 
-// ![Schedule the notifications]({{ site.baseurl }}/images/pinboard-follow-schedule.png "Schedule the notifications")
+// ![Schedule the notifications](pinboard-follow-schedule.png "Schedule the notifications")
 
 {% include content/schedule-details.md %}
 
-image::{{ site.baseurl }}/images/pinboard-follow-schedule-weekly.png[Schedule weekly Pinboard notifications]
+image::pinboard-follow-schedule-weekly.png[Schedule weekly Pinboard notifications]
 
-image::{{ site.baseurl }}/images/pinboard-follow-schedule-daily.png[Schedule daily Pinboard notifications]
+image::pinboard-follow-schedule-daily.png[Schedule daily Pinboard notifications]
 
-image::{{ site.baseurl }}/images/pinboard-follow-schedule-monthly.png[Schedule monthly Pinboard notifications]
+image::pinboard-follow-schedule-monthly.png[Schedule monthly Pinboard notifications]
 
 Click *Save*.
 
@@ -64,4 +64,4 @@ To stop following a Pinboard, click *Following* in the top right corner.
 
 When the scheduling interface appears, click *Unfollow*.
 
-image::{{ site.baseurl }}/images/pinboard-unfollow.png[Unfollow Pinboard]
+image::pinboard-unfollow.png[Unfollow Pinboard]

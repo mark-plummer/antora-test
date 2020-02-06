@@ -38,7 +38,7 @@ To download related logs, click *Download Trace*.
 Send the logs as an email attachment to the support contact that is provided.
 Clicking *Report Problem* will also send the logs as an email attachment to your administrator.
 +
-image::{{ site.baseurl }}/images/trace_log.png[]
+image::trace_log.png[]
 
 * You can generate a log bundle using the `tscli` command `tscli logs collect` if you are comfortable with Linux.
 The command lets you specify which logs to collect and from what time periods.

@@ -12,7 +12,7 @@ However, increasing this value even higher should help improve throughput of the
 
 {% include warning.html content="A high transaction size may slow down the ThoughtSpot system." %}
 
-image::{{ site.baseurl }}/images/transaction_size_troubleshooting.png[]
+image::transaction_size_troubleshooting.png[]
 
 This is where the transaction size field exists for SSIS.
 Clicking on the ODBC destination reveals the properties on the right hand side, where the *Transaction Size* can be found.

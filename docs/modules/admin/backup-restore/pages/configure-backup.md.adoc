@@ -88,21 +88,21 @@ To configure periodic backups using the admin UI:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* menu on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/admin.png[]
+image::admin.png[]
 +
 This opens the ThoughtSpot Management Console.
 
 . Click *Settings* menu on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/settings.png[]
+image::settings.png[]
 
 . In the Settings panel, click *Backup Policy* and then *Configure* option.
 +
-image::{{ site.baseurl }}/images/backup-policy.png[]
+image::backup-policy.png[]
 
 . Update the backup policy details:
 +
-image::{{ site.baseurl }}/images/backup-policy-configure.png[]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
+image::backup-policy-configure.png[]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
 +++<col width="80%">++++++</col>++++++</colgroup>+++
 +++<tr>++++++<th>+++Field+++</th>+++
 +++<th>+++Description+++</th>++++++</tr>+++

@@ -18,7 +18,7 @@ This means SpotIQ is for everyone.
 
 If you can see the *SpotIQ* on your ThoughtSpot dashboard, you have access to SpotIQ:
 
-image::{{ site.baseurl }}/images/spotiq-is-on.png[]
+image::spotiq-is-on.png[]
 
 If you can't see this option, ask your ThoughtSpot Administrator to give you the *Has Spot IQ* privilege.
 
@@ -34,4 +34,4 @@ You can create your own results from several different locations in your system:
 
 The menu items that use SpotIQ have a label that indicates this:
 
-image::{{ site.baseurl }}/images/spotiq-menu-items.png[]
+image::spotiq-menu-items.png[]

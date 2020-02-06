@@ -8,11 +8,11 @@ To change axis, you can click the axis itself.
 
 Here, we demonstrate the various options for axis configuration using a visualization "Sales by Department"
 
-image::{{ site.baseurl }}/images/edit-axis.png[Change axis]
+image::edit-axis.png[Change axis]
 
 This opens the detail axis customization menu in the chart.
 
-image::{{ site.baseurl }}/images/edit-axis-detail.png[Change axis detail]
+image::edit-axis-detail.png[Change axis detail]
 
 You can make the following changes to the axis:
 
@@ -33,7 +33,7 @@ To change the axis aggregate, click the *Aggregate* option in the axis menu, and
 
 Depending on the type of data type and other settings, the aggregation options include _Total_, _Avg_, _Min_, _Max_, _Total Count_, _Unique Count_, _Std Deviation_, and _Variance_.
 
-image::{{ site.baseurl }}/images/edit-axis-aggregate.png[Change axis aggregate]
+image::edit-axis-aggregate.png[Change axis aggregate]
 
 [#filter]
 == Add, Change, and Remove Filters
@@ -42,11 +42,11 @@ To manage the filters applied to the axis (in this example, _Total Sales_), foll
 
 . Click the *Filters* option in the axis menu.
 +
-image::{{ site.baseurl }}/images/edit-axis-filter.png[Change axis filter]
+image::edit-axis-filter.png[Change axis filter]
 
 . In the window modal, click *+ add a condition*.
 +
-image::{{ site.baseurl }}/images/edit-axis-filter-1.png[Add a condition to axis]
+image::edit-axis-filter-1.png[Add a condition to axis]
 
 . Select the comparison option.
 +
@@ -54,36 +54,36 @@ Here, the options include _is greater than_, _is greater than or equal to_, _is 
 +
 In this example, select _is greater than or equal to_.
 +
-image::{{ site.baseurl }}/images/edit-axis-filter-2.png[Set filter comparison operation]
+image::edit-axis-filter-2.png[Set filter comparison operation]
 
 . Set the relevant numerical limits.
 +
 Here, enter the maximum of `1000000`.
 +
-image::{{ site.baseurl }}/images/edit-axis-filter-3.png[Set filter numerical limit]
+image::edit-axis-filter-3.png[Set filter numerical limit]
 +
 Note that if you select the _is between_ comparison operator, you must set two limits: minimum and maximum.
 Similarly, _is in_ and _is not in_ operators require a list of values separated by ";".
 
 . To add another filter condition, click *+add another*.
 +
-image::{{ site.baseurl }}/images/edit-axis-filter-4.png[Add another filter condition]
+image::edit-axis-filter-4.png[Add another filter condition]
 
 . To remove a filter condition, click the delete icon (*x*) next to its definition.
 +
-image::{{ site.baseurl }}/images/edit-axis-filter-5.png[Remove filter condition]
+image::edit-axis-filter-5.png[Remove filter condition]
 
 . Click *Done*.
 +
-image::{{ site.baseurl }}/images/edit-axis-filter-6.png[Complete filter on axis]
+image::edit-axis-filter-6.png[Complete filter on axis]
 
 Here, you can see differences between the original chart and the one with the filter applied: Three (3) of the departments had sales under $1,000,000, and they don't appear on the newer chart.
 
-image::{{ site.baseurl }}/images/edit-axis-filter-applied.png[Chart with filter applied]
+image::edit-axis-filter-applied.png[Chart with filter applied]
 
 To remove a filter from the chart, click the *x* icon on the filter tile.
 
-image::{{ site.baseurl }}/images/edit-axis-filter-remove.png[Remove filter from a chart]
+image::edit-axis-filter-remove.png[Remove filter from a chart]
 
 [#conditional-formatting]
 == Apply conditional formatting
@@ -92,15 +92,15 @@ To apply conditional formatting to the axis (in this example, _Total Sales_), fo
 
 . Click the *Conditional formatting* option in the axis menu.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting.png[Add conditional formatting]
+image::edit-axis-conditional-formatting.png[Add conditional formatting]
 
 . The *Conditional formatting* window modal appears.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-1.png[Conditional formatting interface]
+image::edit-axis-conditional-formatting-1.png[Conditional formatting interface]
 
 . In the window modal, click *+ add formatting*.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-2.png[Add a format]
+image::edit-axis-conditional-formatting-2.png[Add a format]
 
 . Select the conditional range.
 +
@@ -114,46 +114,46 @@ And the text area on the right specifies the upper limit of the condition, so th
 +
 Here, we apply conditional formatting to values between `5,500,000` and `8,000,000`.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-3.png[Add conditional format range]
+image::edit-axis-conditional-formatting-3.png[Add conditional format range]
 
 . To specify a different color of the conditional format, select the new color from the color selector.
 +
 This option draws upper and lower limit lines on the chart, and colors the chart elements that meet the conditional requirements.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-4.png[Change conditional format color]
+image::edit-axis-conditional-formatting-4.png[Change conditional format color]
 +
 Alternatively, you can place a range band on the chart.
 Select the *Fill chart* option.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-8.png[Add conditional format band]
+image::edit-axis-conditional-formatting-8.png[Add conditional format band]
 
 . To add another condition, click *+add formatting*.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-5.png[Add another conditional format]
+image::edit-axis-conditional-formatting-5.png[Add another conditional format]
 
 . To remove a defined conditional format, click the delete icon (*x*) next to its definition.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-6.png[Remove conditional format]
+image::edit-axis-conditional-formatting-6.png[Remove conditional format]
 
 . Click *Done*.
 +
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-7.png[Complete conditional format]
+image::edit-axis-conditional-formatting-7.png[Complete conditional format]
 
 Here, you can see a chart that highlights elements with conditional  formatting on some elements.
 You can also see how the same chart appears with a background chart band.
 
-image::{{ site.baseurl }}/images/edit-axis-conditional-formatting-applied-comparison.png[Conditional formatting applied, two options]
+image::edit-axis-conditional-formatting-applied-comparison.png[Conditional formatting applied, two options]
 
 [#sort]
 == Change the Sort
 
 To change the sorting of a measurement on an axis, click the *Sort* option in the axis menu, and select an alternative from the list of options: _Ascending_ or _Descending_.
 
-image::{{ site.baseurl }}/images/edit-axis-sort.png[Change axis sort]
+image::edit-axis-sort.png[Change axis sort]
 
 Here, you can compare the original chart that was not sorted on the _Total Sales_ axis with the chart that uses descending sort.
 
-image::{{ site.baseurl }}/images/edit-axis-sort-applied.png[Compare unsorted chart and chart sorted in Descending order]
+image::edit-axis-sort-applied.png[Compare unsorted chart and chart sorted in Descending order]
 
 [#position]
 == Change the Postion of the axis
@@ -165,11 +165,11 @@ To change the position of an axis, select the *Position* option in the axis menu
 
 Here, we move the _Item Price_ axis from the right side of the chart to the left side.
 
-image::{{ site.baseurl }}/images/edit-axis-position.png[Change axis position]
+image::edit-axis-position.png[Change axis position]
 
 You can compare the original chart with the one where the _Total Sales_ axis is on the right, while _Item Cost_ and _Item Price_ both appear on the left.
 
-image::{{ site.baseurl }}/images/edit-axis-position-applied.png[Compare charts with different position assignments]
+image::edit-axis-position-applied.png[Compare charts with different position assignments]
 
 [#grouping]
 == Change the Grouping
@@ -180,16 +180,16 @@ To change the grouping on an axis, click the *Group* option in the axis menu, an
 
 Here, we change the _Item Price_ axis by grouping it with _Item Cost_.
 
-image::{{ site.baseurl }}/images/edit-axis-group.png[Group two axes]
+image::edit-axis-group.png[Group two axes]
 
 Compare the original chart with one that groups _Item Price_ and _Item Cost_ as _Item Price & Item Cost_.
 The chart looks cleaner, and clearly communicates the distinct information on each of the two measurements.
 
-image::{{ site.baseurl }}/images/edit-axis-group-applied.png[Compare ungrouped chart and chart that groups similar measures]
+image::edit-axis-group-applied.png[Compare ungrouped chart and chart that groups similar measures]
 
 Notice that the *Customize* menu shows a linkage between the two grouped axes.
 
-image::{{ site.baseurl }}/images/edit-axis-group-menu.png[Grouped axes]
+image::edit-axis-group-menu.png[Grouped axes]
 
 [#rename]
 == Rename an axis
@@ -200,4 +200,4 @@ In our example, it makes sense to rename the axis created from grouping as _Item
 
 To rename an axis, select the *Rename* option in the axis menu, type the new name, and either click out or hit *Enter/Return* on your keyboard.
 
-image::{{ site.baseurl }}/images/edit-axis-rename.png[Rename axis]
+image::edit-axis-rename.png[Rename axis]

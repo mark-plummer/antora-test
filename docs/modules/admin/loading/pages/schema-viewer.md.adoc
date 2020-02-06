@@ -14,15 +14,15 @@ You must have *Admin* privileges to use the *Schema Viewer*.
 
 . Click the *Data* tab in the top menu.
 +
-image::{{ site.baseurl }}/images/click-data.png[]
+image::click-data.png[]
 
-. Click the ellipses icon,  image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *View Schema*.
+. Click the ellipses icon,  image:icon-ellipses.png[more options menu icon], and select *View Schema*.
 
-image::{{ site.baseurl }}/images/access_schema_viewer.png[]
+image::access_schema_viewer.png[]
 
 . When the schema appears, you can see that you can control the visible part of the schema.
 
-image::{{ site.baseurl }}/images/schema_viewer.png[]
+image::schema_viewer.png[]
 
 |===
 | Legend | Action
@@ -49,11 +49,11 @@ You can now see the schema for each object for tables, worksheets, or views.
 
 . Click the *Data* tab in the top menu.
 +
-image::{{ site.baseurl }}/images/click-data.png[]
+image::click-data.png[]
 
 . Select from the list of the possible objects:
 +
-image::{{ site.baseurl }}/images/select-tables.png[]
+image::select-tables.png[]
 +
 |===
 | Legend | Action
@@ -72,11 +72,11 @@ image::{{ site.baseurl }}/images/select-tables.png[]
 Here, we selected the worksheet _West Regional Sales_.
 . At the top of the worksheet, click the *Schema* tab.
 +
-image::{{ site.baseurl }}/images/select-worksheet-schema.png[]
+image::select-worksheet-schema.png[]
 
 . The join information and the schema for the worksheet appear.
 +
-image::{{ site.baseurl }}/images/worksheet-join-schema.png[]
+image::worksheet-join-schema.png[]
 
 == Why use the Schema Viewer
 
@@ -119,7 +119,7 @@ The worksheet schema will show schemas for the tables behind the worksheet, as w
 Click a worksheet, to see it in the Schema Viewer.
 If the schema view is not showing the schema behind the worksheet, double click the tab on the top right of the worksheet object.
 
-image::{{ site.baseurl }}/images/worksheet_viewer_schema.png[]
+image::worksheet_viewer_schema.png[]
 
 The worksheet view shows the following information:
 
@@ -130,7 +130,7 @@ The worksheet view shows the following information:
 * Correct join paths for newly created chasm trap worksheets.
 Chasm trap worksheets created prior to ThoughtSpot version 4.4 do not show the correct join paths.
 
-image::{{ site.baseurl }}/images/worksheet_viewer.png[]
+image::worksheet_viewer.png[]
 
 == Related Information
 

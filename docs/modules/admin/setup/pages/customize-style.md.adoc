@@ -13,7 +13,7 @@ Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/cont
 
 A user with administrative rights can view and access the customization on the *Admin* page.
 
-image::{{ site.baseurl }}/images/custom-style.png[]
+image::custom-style.png[]
 
 Use the *Style Customization* page to access the configuration settings.
 
@@ -22,7 +22,7 @@ Use the *Style Customization* page to access the configuration settings.
 Your changes take effect either immediately or with browser refresh.
 You can revert your changes by using the *Reset* button which displays when your cursor moves to the right of any setting.
 
-image::{{ site.baseurl }}/images/custom-style-reset.png[]
+image::custom-style-reset.png[]
 
 The following table lists the style customizations you can configure.+++<table>++++++<tr>++++++<th>+++Setting+++</th>+++
     +++<th>+++Description+++</th>++++++</tr>+++
@@ -55,7 +55,7 @@ Users cannot configure their own defaults.
 
 To set a new font:
 
-image::{{ site.baseurl }}/images/custom-style-font.png[]
+image::custom-style-font.png[]
 
 . Make sure you have a WOFF file available for your font.
 . Select the label you want to change.

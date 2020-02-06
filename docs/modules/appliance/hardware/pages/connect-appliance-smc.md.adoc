@@ -70,9 +70,9 @@ There is one power button for each node.
 |===
 | Haswell Appliance | &#32; &#32; &#32; | Skylake Appliance
 
-| image:{{ site.baseurl }}/images/smc-haswell-power-button-new.png[The power button is at the front of the Haswell appliance.]
+| image:smc-haswell-power-button-new.png[The power button is at the front of the Haswell appliance.]
 | &#32;
-| image:{{ site.baseurl }}/images/smc-appliance-skylake-power-button.png[The power button is at the front of the Skylake appliance]
+| image:smc-appliance-skylake-power-button.png[The power button is at the front of the Skylake appliance]
 |===
 
 [#appliance-step-4]

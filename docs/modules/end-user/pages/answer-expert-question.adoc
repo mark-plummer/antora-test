@@ -20,7 +20,7 @@ You can see a listing of all requests for help.
 You are now in "expert mode".
 If the user provided an explanation of what they were looking for, you can see that under the visualization.
 
-image::{{ site.baseurl }}/images/ask_an_expert_request.png[]
+image::ask_an_expert_request.png[]
 
 . Work on the answer until it looks like what the user wanted to see.
 Then click *Close*.
@@ -28,7 +28,7 @@ Then click *Close*.
 If not, you must share a link to the answer with them using email or a direct message.
 A link to the answer is provided, so you can easily share the answer.
 
-image::{{ site.baseurl }}/images/ask_an_expert_share.png[]
+image::ask_an_expert_share.png[]
 
 . When you've answered the question (and copied the link, if needed), you can mark the request answered by clicking *Mark as Answered*.
 . If you want to see the answer again, you can find it listed along with the other answers.

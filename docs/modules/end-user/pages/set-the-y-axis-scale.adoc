@@ -10,7 +10,7 @@ To set the y-axis range:
 
 . While viewing your answer as a chart, click *Edit chart styles*.
 +
-image::{{ site.baseurl }}/images/y_axis_range_select_styles.png[]
+image::y_axis_range_select_styles.png[]
 
 . Under *Y-Axis Range* enter your preferred start and end values.
 +
@@ -19,7 +19,7 @@ We can enter a y-axis range of `5000000` to `9000000` to  show only sales betwee
 +
 The chart will reorganize itself to reflect the new y-axis range.
 +
-image::{{ site.baseurl }}/images/y_axis_range.png[]
+image::y_axis_range.png[]
 
 == Create charts with multiple measures on the y-axis
 

@@ -78,7 +78,7 @@ If you are using a data-modeling file you must upload the new file to your insta
 Number formatting is set by default based on your ThoughtSpot profile's *Preferred locale* setting.
 You can set this value to accommodate your geographic locations.
 
-image::{{ site.baseurl }}/images/profile-locale.png[]
+image::profile-locale.png[]
 
 For example, if you are using ThoughtSpot in the US, the number formatting should look like this: `xxx,xxx.xx`.
 And in Europe, it should look like this: `xxx.xxx,xx`.
@@ -121,7 +121,7 @@ See the ThoughtSpot Application Integration Guide for more information on the AP
 . Find the *Currency Type* for the column whose display format you want to change.
 . Click it to open the *Specify Currency Type* menu.
 +
-image::{{ site.baseurl }}/images/specify_currency_type.png[]
+image::specify_currency_type.png[]
 
 . Select one of the following ways you would like to change the format.
 +

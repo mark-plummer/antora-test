@@ -45,7 +45,7 @@ In a browser, go to http://azure.microsoft.com, and log into your Azure account.
 +
 Specify a name, subscription type, and the region in which you are creating your VMs.
 +
-image::{{ site.baseurl }}/images/azure_create_resource_group.png[]
+image::azure_create_resource_group.png[]
 
 . Next, create a resource based on the ThoughtSpot Virtual Machine.
 +
@@ -56,12 +56,12 @@ If you already have a resource within your company, use that one.
 b.
 Search the https://azuremarketplace.microsoft.com/en-us/marketplace/[Marketplace] for the ThoughtSpot Virtual Machine, and select it.
 +
-image::{{ site.baseurl }}/images/azure_choose_ts_in_marketplace.png[]
+image::azure_choose_ts_in_marketplace.png[]
 +
 b.
 On the ThoughtSpot Virtual Machine page, click *Create*.
 +
-image::{{ site.baseurl }}/images/azure_create_ts_vm.png[]
+image::azure_create_ts_vm.png[]
 
 === Configure basic settings
 
@@ -81,14 +81,14 @@ ThoughtSpot recommends the Premium SSD disks.
 . Select a location.
 . Click *OK* to save the Basics, which should look similar to the following example.
 +
-image::{{ site.baseurl }}/images/azure-createvmbasics.png[]
+image::azure-createvmbasics.png[]
 
 === Choose a machine size
 
 Under *Choose a size*, select `E64S_V3 standard`.
 For more information, refer to link:{{ site.baseurl }}/appliance/azure/configuration-options.html[Azure configuration options].
 
-image::{{ site.baseurl }}/images/azure_choose_disk_size.png[]
+image::azure_choose_disk_size.png[]
 
 === Configure network settings, storage, and other options
 
@@ -141,7 +141,7 @@ Refer to link:{{ site.baseurl }}/appliance/firewall-ports.html[network policies]
 . Configure `auto shutdown`, `monitoring`, `guest OS diagnostics`, and any other settings to your preference.
 If you have no preference, you can leave them on their default settings.
 +
-image::{{ site.baseurl }}/images/azure_network_settings.png[]
+image::azure_network_settings.png[]
 
 . Click *OK*.
 +

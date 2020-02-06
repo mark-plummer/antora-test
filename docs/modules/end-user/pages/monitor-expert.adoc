@@ -8,10 +8,10 @@ Within ThoughtSpot, you can keep track of your *Ask an Expert* requests.
 
 Follow these steps to the request monitoring interface:
 
-. In the top right corner of the ThoughtSpot interface, click the image:{{ site.baseurl }}/images/icon-help-20px.png[help menu icon] (help) icon menu.
+. In the top right corner of the ThoughtSpot interface, click the image:icon-help-20px.png[help menu icon] (help) icon menu.
 . In the drop-down, select *Expert Requests*.
 +
-image::{{ site.baseurl }}/images/ask-expert-requests.png[]
+image::ask-expert-requests.png[]
 
 . The *Expert* interface appears, with information for you both as a *Requester*, and as an *Expert*.
 
@@ -19,7 +19,7 @@ image::{{ site.baseurl }}/images/ask-expert-requests.png[]
 
 This is what you see when you are a requester:
 
-image::{{ site.baseurl }}/images/ask-expert-manage-requester.png[]
+image::ask-expert-manage-requester.png[]
 
 Note these features of the interface:
 
@@ -61,7 +61,7 @@ Note these features of the interface:
 
 This is what you see when you are an expert:
 
-image::{{ site.baseurl }}/images/ask-expert-manage-expert.png[]
+image::ask-expert-manage-expert.png[]
 
 Note these features of the interface:
 

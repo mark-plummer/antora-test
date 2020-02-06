@@ -16,7 +16,7 @@ There are a few basic things you should understand before starting a new Thought
 
 You've probably seen one of these before:
 
-image::{{ site.baseurl }}/images/search_bar_blank.png[]
+image::search_bar_blank.png[]
 
 Click in the box and start typing some letters.
 As soon as you begin typing, ThoughtSpot suggests some search terms Type slowly and use the suggestions to find what you're looking for.

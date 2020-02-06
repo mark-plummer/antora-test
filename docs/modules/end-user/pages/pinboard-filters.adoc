@@ -24,21 +24,21 @@ This allows you to easily manipulate the visualizations and view the modified pr
 Here is an example that shows you how to add a single filter to a pinboard.
 To create a pinboard filter:
 
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Add filters*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Add filters*.
 +
-image::{{ site.baseurl }}/images/add_pinboard_filters.png[]
+image::add_pinboard_filters.png[]
 
 . In the populated columns menu, click the *Add filter* icon next to the column you would like to filter on.
 +
-image::{{ site.baseurl }}/images/add_filters_menu.png[]
+image::add_filters_menu.png[]
 
 . Select the values to include in your answer.
 +
-image::{{ site.baseurl }}/images/column_filter.png[]
+image::column_filter.png[]
 
 . If you want to exclude values, click *Exclude* and choose values to exclude.
 +
-image::{{ site.baseurl }}/images/exclude_nulls.png[]
+image::exclude_nulls.png[]
 
 . Click *Done*.
 
@@ -49,8 +49,8 @@ Pinboard filters do not apply to tables and charts built directly on   top of ba
 
 Your applied filter will sit at the top of the pinboard, where you can edit it in place:
 
-image::{{ site.baseurl }}/images/select_filters.png[]
+image::select_filters.png[]
 
 Or delete it:
 
-image::{{ site.baseurl }}/images/filter_appears.png[]
+image::filter_appears.png[]

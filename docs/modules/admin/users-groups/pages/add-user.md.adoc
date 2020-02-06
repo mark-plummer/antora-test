@@ -22,23 +22,23 @@ To create a new user and assign that user to groups, follow these steps:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* icon, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-admin.png[Admin tab]
+image::click-admin.png[Admin tab]
 
 . In the *Admin* panel, click *User Management*.
 +
-image::{{ site.baseurl }}/images/admin-user-management.png[Admin > User Management]
+image::admin-user-management.png[Admin > User Management]
 
 . In the *User Management* section, click *Users*.
 +
-image::{{ site.baseurl }}/images/admin-user-management-users.png[Manage Groups]
+image::admin-user-management-users.png[Manage Groups]
 
 . Click the *+ Add User* button on the upper right-hand side of the list of users.
 +
-image::{{ site.baseurl }}/images/admin-user-management-add-user.png[Add a new User]
+image::admin-user-management-add-user.png[Add a new User]
 
 . In the *Add a new user* interface, enter the details for the new user:
 +
-image::{{ site.baseurl }}/images/add-user.png[Add a new User]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
+image::add-user.png[Add a new User]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
    +++<col width="10%">++++++</col>+++
    +++<col width="70%">++++++</col>++++++</colgroup>+++
   +++<tr>++++++<th>+++Field+++</th>+++
@@ -96,27 +96,27 @@ To edit an existing user, follow these steps:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* icon, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-admin.png[Admin tab]
+image::click-admin.png[Admin tab]
 
 . In the *Admin* panel, click *User Management*.
 +
-image::{{ site.baseurl }}/images/admin-user-management.png[Admin > User Management]
+image::admin-user-management.png[Admin > User Management]
 
 . In the *User Management* section, click *Users*.
 +
-image::{{ site.baseurl }}/images/admin-user-management-users.png[Manage Groups]
+image::admin-user-management-users.png[Manage Groups]
 
 . Click the username in the list to open the *Edit User* interface.
 +
 If you don't immediately see the username you plan to edit, try searching for it.
 +
-image::{{ site.baseurl }}/images/edit-user-search.png[Search Users]
+image::edit-user-search.png[Search Users]
 
 . In the *Edit User* interface, edit the basic user information.
 +
 You can change the _<<username,username>>_, _<<display-name,display name>>_, _<<sharing-visibility,sharing visibility>>_, _<<password,passwords>>_, and _<<email,user's email>>_.
 +
-image::{{ site.baseurl }}/images/edit-user.png[Edit User]
+image::edit-user.png[Edit User]
 +
 You can also <<edit-user-preview-onboarding,Preview onboarding>>, and make changes to the _<<edit-user-groups,Groups>>_ assigned to the user.
 // , and check _[Email](#edit-user-email)_ options.
@@ -129,7 +129,7 @@ You can also <<edit-user-preview-onboarding,Preview onboarding>>, and make chang
 You can click *Preview onboarding* to evaluate this user's first experience with ThoughtSpot.
 After previewing the user's default data source and Pinboards, you may choose to change the *link:*change-groups[Group]* assignments.
 
-image::{{ site.baseurl }}/images/edit-user-preview-onboarding.png[Preview onboarding experience]
+image::edit-user-preview-onboarding.png[Preview onboarding experience]
 
 [#edit-user-groups]
 === Groups
@@ -142,7 +142,7 @@ Follow these steps to change the user's groups:
 . Deselect the groups you want to remove from the list by clearing the box next to the group name.
 . Click *Update* to save changes.
 
-image::{{ site.baseurl }}/images/edit-user-groups.png[Edit User Grouops]
+image::edit-user-groups.png[Edit User Grouops]
 
 ////
 {: id="edit-user-email"}
@@ -167,7 +167,7 @@ Follow these steps to configure group-wide emails:
 
 6. Click **Update** to save changes.
 
-![Edit User Email]({{ site.baseurl }}/images/edit-user-email.png "Edit User Email")
+![Edit User Email](edit-user-email.png "Edit User Email")
 ////
 
 [#delete-user]
@@ -178,22 +178,22 @@ To delete users, follow these steps:
 . Log into ThoughtSpot from a browser.
 . Click the *Admin* icon, on the top navigation bar.
 +
-image::{{ site.baseurl }}/images/click-admin.png[Admin tab]
+image::click-admin.png[Admin tab]
 
 . In the *Admin* panel, click *User Management*.
 +
-image::{{ site.baseurl }}/images/admin-user-management.png[Admin > User Management]
+image::admin-user-management.png[Admin > User Management]
 
 . In the *User Management* section, click *Users*.
 +
-image::{{ site.baseurl }}/images/admin-user-management-users.png[Manage Groups]
+image::admin-user-management-users.png[Manage Groups]
 
 . Select the users you plan to delete by clicking the box next to the username.
 +
 If you don't immediately see the username you plan to delete, try searching for it.
 +
-image::{{ site.baseurl }}/images/edit-user-search.png[Search Users]
+image::edit-user-search.png[Search Users]
 
 . Click *Delete*.
 +
-image::{{ site.baseurl }}/images/delete-users.png[Delete Users]
+image::delete-users.png[Delete Users]

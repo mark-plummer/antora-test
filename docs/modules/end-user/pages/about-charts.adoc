@@ -73,7 +73,7 @@ A single 'candlestick' shows the _open_, _high_, _low_, and _close_ prices for t
 
 You can have multiple measures on the y-axis of many charts, which is a great additional way of presenting information in a chart.
 
-image::{{ site.baseurl }}/images/stacked_column_chart_multi_y_axis.png[]
+image::stacked_column_chart_multi_y_axis.png[]
 
 Example of multiple measures on the y-axis of a stacked column chart.
 

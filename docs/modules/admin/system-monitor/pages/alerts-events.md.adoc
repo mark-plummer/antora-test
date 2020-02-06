@@ -8,7 +8,7 @@ toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 
 The *Alerts and Events* section shows notifications, alerts, and an audit trail of cluster configuration changes.
 
-image::{{ site.baseurl }}/images/contro_center_configuration_events.png[]
+image::contro_center_configuration_events.png[]
 
 == Alerts
 

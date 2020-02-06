@@ -9,14 +9,14 @@ The customized analysis can be a one-time customization or can apply to all futu
 == Finding customization controls
 
 Every menu or location where you can run *SpotIQ analyze*, you can customize your analysis.
-You access it using the lightbulb button image:{{ site.baseurl }}/images/icon-lightbulb.png[more options menu icon] or the ellipses menu image:{{ site.baseurl }}/images/icon-ellipses.png[SpotIQ analyze icon].
+You access it using the lightbulb button image:icon-lightbulb.png[more options menu icon] or the ellipses menu image:icon-ellipses.png[SpotIQ analyze icon].
 
-image::{{ site.baseurl }}/images/spotiq-where-customize.png[]
+image::spotiq-where-customize.png[]
 
 Regardless of where you run *SpotIQ analyze* in ThoughtSpot, the *SpotIQ* window has the same layout.
 The columns displayed, though, are specific to the data from which you run *SpotIQ analyze*.
 
-image::{{ site.baseurl }}/images/spotiq-customize-analysis-include.png[]
+image::spotiq-customize-analysis-include.png[]
 
 This window has two tabs:
 
@@ -27,15 +27,15 @@ This window has two tabs:
 The *Advanced* tab has many options.
 The panel scrolls, so more algorithms are available than appear in the following image
 
-image::{{ site.baseurl }}/images/spotiq-customize-algorithms.png[]
+image::spotiq-customize-algorithms.png[]
 
 The *SpotIQ* insights page has an option to open this window to customize a single analysis.
 
-image::{{ site.baseurl }}/images/spotiq-customize-locations.png[]
+image::spotiq-customize-locations.png[]
 
 The *Tell us more* window provides information on how to exclude a value from all future analysis.
 
-image::{{ site.baseurl }}/images/spotiq-customize-improve-analysis.png[]
+image::spotiq-customize-improve-analysis.png[]
 
 You can set SpotIQ customization parameters in your link:{{ site.baseurl }}/_spotiq/spotiq-preferences.html[SpotIQ preferences], along with options for email notifications when analyses run.
 
@@ -88,11 +88,11 @@ Your SpotIQ analysis may not provide you as many insights as you think it should
 
 When SpotIQ finds insights with anomaly points, you have the option to run the Explain Insight command to have SpotIQ do further analysis on the anomaly points.
 
-image::{{ site.baseurl }}/images/spotiq-explain-insight-1.png[]
+image::spotiq-explain-insight-1.png[]
 
 To explain an insight, do the following:
 
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] for the insight you want to explain and select *Explain insight*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon] for the insight you want to explain and select *Explain insight*.
 . In the SpotIQ window, click *Analyze*.
 +
 Analysis begins.
@@ -103,6 +103,6 @@ Analysis begins.
 +
 The results of your insight analysis explaining your anomaly points appear.
 
-image::{{ site.baseurl }}/images/spotiq-explain-insight-2.png[]
+image::spotiq-explain-insight-2.png[]
 
 {% include note.html content="*Explain insight* does not work with Trend Analysis or Cross Correlation Analysis." %}

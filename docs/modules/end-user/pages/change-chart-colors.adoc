@@ -17,19 +17,19 @@ For example, when doing a search on revenue by state, each state will keep its c
 
 == Set colors on a chart
 
-. While viewing your search or answer as a chart, click *Edit chart styles* (image:{{ site.baseurl }}/images/icon-paintbrush.png[paintbrush icon]) to open the Styles panel.
+. While viewing your search or answer as a chart, click *Edit chart styles* (image:icon-paintbrush.png[paintbrush icon]) to open the Styles panel.
 +
-image::{{ site.baseurl }}/images/edit_chart_colors_styles.png[]
+image::edit_chart_colors_styles.png[]
 
 . On the chart, click the color icon of the label or legend value you would like to change the color of.
 +
-image::{{ site.baseurl }}/images/legend.png[]
+image::legend.png[]
 
 . Use the color picker to choose a new color to represent that value.
 +
 You can also enter a HEX value directly.
 +
-image::{{ site.baseurl }}/images/color_picker.png[]
+image::color_picker.png[]
 +
 Your changes are saved immediately.
 
@@ -39,12 +39,12 @@ Your changes are saved immediately.
 
 To customize the colors of each slice in a pie chart.
 
-. While viewing your search or answer as a pie chart, click *Edit chart styles* (image:{{ site.baseurl }}/images/icon-paintbrush.png[paintbrush icon]) to open the Styles panel.
+. While viewing your search or answer as a pie chart, click *Edit chart styles* (image:icon-paintbrush.png[paintbrush icon]) to open the Styles panel.
 . Assign a color of your choice to each pie slice.
 
-image::{{ site.baseurl }}/images/pie-chart-custom-colors.png[]
+image::pie-chart-custom-colors.png[]
 
-. Click image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] and choose *Update* to save the changes.
+. Click image:icon-ellipses.png[more options menu icon] and choose *Update* to save the changes.
 . Click Close.
 
 Optionally, you can click *Reset* to use the default colors.

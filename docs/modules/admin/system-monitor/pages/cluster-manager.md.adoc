@@ -6,7 +6,7 @@ toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 
 The *Cluster Manager* section show detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs.
 
-image::{{ site.baseurl }}/images/control_center_cluster_mgmt.png[]
+image::control_center_cluster_mgmt.png[]
 
 Only the *Average Latency Last 2 Weeks (sec)* panel contains a standard ThoughtSpot visualization.
 The other visualizations rely on internal queries that are not accessible.

@@ -26,13 +26,13 @@ To find out how a particular answer was created, do the following:
 
 . Select *Edit* from the panel menu.
 +
-image::{{ site.baseurl }}/images/panel-data.png[]
+image::panel-data.png[]
 +
 This displays a *Search* bar.
 
 . Investigate the components of the search as you would normally.
 +
-image::{{ site.baseurl }}/images/admin-panel-details.png[]
+image::admin-panel-details.png[]
 
 == Cluster Summary
 
@@ -164,7 +164,7 @@ For a full reference, see the link:{{ site.baseurl }}/reference/alerts-reference
 The *Space Utilization* chart is one of the available charts for you to use when checking the cluster overview.
 This line chart displays the total capacity and estimated used capacity over time.
 
-image::{{ site.baseurl }}/images/memory_usage_chart.png[]
+image::memory_usage_chart.png[]
 
 The x-axis is by time and the y-axis measures the size in GB.
 You can zoom in and see daily or hourly utilization data.

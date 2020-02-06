@@ -21,18 +21,18 @@ To export a worksheet, follow these steps:
 
 . Click *Data* on the top navigation bar.
 . Click the name of the worksheet you want to edit.
-. Click the ellipses image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu] (more options) menu in the upper-right side of the screen.
+. Click the ellipses image:icon-ellipses.png[more options menu] (more options) menu in the upper-right side of the screen.
 . From the menu, select *Export Worksheet*.
 +
 Here, we are downloading the _Sales_ worksheet.
 +
-image::{{ site.baseurl }}/images/worksheet-export.png[Export Worksheet]
+image::worksheet-export.png[Export Worksheet]
 
 . The worksheet downloads into your default directory.
 +
 You can access the downloaded `*.yaml` file, named for your worksheet either through the file system manager, or by clicking on the name of the downloaded file in the left bottom corner of your Internet browser.
 +
-image::{{ site.baseurl }}/images/worksheet-export-complete.png[Open downloaded worksheet file]
+image::worksheet-export-complete.png[Open downloaded worksheet file]
 
 == Working with the Worksheet yaml file
 
@@ -45,26 +45,26 @@ To update an existing worksheet, follow these steps:
 
 . Click *Data* on the top navigation bar.
 . Click the name of the worksheet you want to edit.
-. Click the ellipses image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu] (more options) menu in the upper-right side of the screen.
+. Click the ellipses image:icon-ellipses.png[more options menu] (more options) menu in the upper-right side of the screen.
 . From the menu, select *Update Worksheet from file*.
 +
 Here, we are uploading the edited _Sales_ worksheet.
 +
-image::{{ site.baseurl }}/images/worksheet-update-from-file.png[Start Worksheet update from file]
+image::worksheet-update-from-file.png[Start Worksheet update from file]
 
 . In the upload interface, click *Browse your files*.
 +
-image::{{ site.baseurl }}/images/worksheet-update-browse.png[Find the Worksheet YAML file]
+image::worksheet-update-browse.png[Find the Worksheet YAML file]
 
 . In your file system, find and select the YAML file.
 . In the *Update worksheet* interface, click *Upload*.
 +
-image::{{ site.baseurl }}/images/worksheet-update-upload.png[Upload the Worksheet]
+image::worksheet-update-upload.png[Upload the Worksheet]
 
 . If you constructed the Worksheet file correctly, the *Upload Worksheet* interface displays an _Upload successfull_ message.
 . To examine the updated Worksheet, click *Go to Worksheet*.
 +
-image::{{ site.baseurl }}/images/worksheet-update-success.png[Go to updated Worksheet]
+image::worksheet-update-success.png[Go to updated Worksheet]
 
 == Related Information
 

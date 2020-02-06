@@ -13,9 +13,9 @@ To edit a worksheet:
 . Click the name of the worksheet you want to edit.
 . Click the *Edit* button in the upper-right side of the screen.
 . Make your changes to the worksheet.
-. Click the the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Save*.
+. Click the the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Save*.
 +
-image::{{ site.baseurl }}/images/action_save_worksheet.png[]
+image::action_save_worksheet.png[]
 
 == Rename a worksheet or table
 

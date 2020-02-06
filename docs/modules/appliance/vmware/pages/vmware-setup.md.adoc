@@ -34,13 +34,13 @@ You should aim to allocate 490 GB or more RAM.
 . *https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/[Download]* the `ThoughtSpot OVF` to a location on an accessible disk.
 . Log into the ESXi web portal.
 +
-image::{{ site.baseurl }}/images/vmware-login.png[]
+image::vmware-login.png[]
 
 . Select menu:Virtual Machines[Create/Register VM].
 +
 The system displays the dialog for selecting an OVF template.
 +
-image::{{ site.baseurl }}/images/vmware-ovf.png[]
+image::vmware-ovf.png[]
 
 . Choose the OVF template and click *Next*.
 +
@@ -67,13 +67,13 @@ The system displays the *Deployment Options* dialog.
 
 . Review your selection and click *Finish*.
 +
-image::{{ site.baseurl }}/images/vmware-complete.png[]
+image::vmware-complete.png[]
 
 . Wait for the template to be loaded.
 +
 Depending on your network speed, loading can take several minutes.
 +
-image::{{ site.baseurl }}/images/vmware-loading.png[]
+image::vmware-loading.png[]
 
 . Make sure that VM is powered off.
 
@@ -96,11 +96,11 @@ For this use case, follow these same steps to create the additional, larger capa
 
 . Edit the VM you just created.
 +
-image::{{ site.baseurl }}/images/vmware-add-disk0.png[]
+image::vmware-add-disk0.png[]
 
 . Select menu:Add hard disk[New hard disk].
 +
-image::{{ site.baseurl }}/images/vmware-adddisk1.png[]
+image::vmware-adddisk1.png[]
 +
 The new disk appears as a new row under the only existing SSD row.
 
@@ -121,7 +121,7 @@ The new disk appears as a new row under the only existing SSD row.
 +
 You should see something similar to the following:
 +
-image::{{ site.baseurl }}/images/vmware-adddisk2-1TB.png[]
+image::vmware-adddisk2-1TB.png[]
 . Save your changes.
 . Repeat steps 1-5 to create more hard disks.
 . Power on the VM

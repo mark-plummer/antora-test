@@ -7,7 +7,7 @@ You can select specific jobs and choose to pause, resume, edit, or delete them.
 You can have up to 50 scheduled jobs on your cluster at time.
 Contact ThoughtSpot Support if you'd like to increase this limit.
 
-image::{{ site.baseurl }}/images/jobs_management.png[]
+image::jobs_management.png[]
 
 == Bulk actions
 
@@ -20,9 +20,9 @@ Clicking on the row of a job will open a detailed view of every generated update
 You can see the start and end times of the job, as well as the status.
 Clicking on a job will show more information about the status updates.
 
-image::{{ site.baseurl }}/images/success_pinboard_schedule.png[]
+image::success_pinboard_schedule.png[]
 
-image::{{ site.baseurl }}/images/failed_pinboard_schedule.png[]
+image::failed_pinboard_schedule.png[]
 
 == Pinboard links
 

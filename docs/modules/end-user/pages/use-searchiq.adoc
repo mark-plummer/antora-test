@@ -13,17 +13,17 @@ To search using SearchIQ, follow these steps:
 
 . Click the ThoughtSpot search bar on the homepage or select *Search* from the top menu.
 +
-image::{{ site.baseurl }}/images/top_navigation_bar.png[]
+image::top_navigation_bar.png[]
 
 . Click the SearchIQ toggle button to go into SearchIQ mode.
 +
-image::{{ site.baseurl }}/images/choose_searchiq_on.png[]
+image::choose_searchiq_on.png[]
 +
 If you later decide to go back to the classic search mode, you can click the SearchIQ toggle button to turn it off again.
 
 . Choose the data you want to search using the selector in the left panel.
 +
-image::{{ site.baseurl }}/images/searchiq_select_data_source.png[]
+image::searchiq_select_data_source.png[]
 
 . Type your search in the search bar using plain language.
 +
@@ -34,22 +34,22 @@ In this case, you can click the microphone and speak your search instead of typi
 . When your answer appears, you may also see one or more of these messages:
  ** Interpretation: You can see how different words you typed were understood.
 +
-image::{{ site.baseurl }}/images/searchiq_interpreted.png[]
+image::searchiq_interpreted.png[]
 
  ** Ignored words: These words were not needed in order to create the answer, so they are ignored.
 +
-image::{{ site.baseurl }}/images/searchiq_ignored_words.png[]
+image::searchiq_ignored_words.png[]
 
  ** Ambiguous words: These are words that could have more than one meaning in the context of the search.
 +
-image::{{ site.baseurl }}/images/searchiq_ambiguous.png[]
+image::searchiq_ambiguous.png[]
 +
 You can clarify by choosing what you meant from the possible meanings shown.
 +
-image::{{ site.baseurl }}/images/searchiq_disambiguate.png[]
+image::searchiq_disambiguate.png[]
 . If you want to see details of how your search was computed, click the *Details* link to the right of the search terms.
 +
-image::{{ site.baseurl }}/images/searchiq_details.png[]
+image::searchiq_details.png[]
 
 . If the answer isn't what you were expecting, you can refine your answer by link:{{ site.baseurl }}/end-user/search/teach-searchiq.html[teaching SearchIQ your language].
 . If you need help, use link:{{ site.baseurl }}/end-user/search/ask-an-expert.html[Ask an expert].

@@ -20,7 +20,7 @@ These features require that your user account has the following privileges:
 Your ThoughtSpot administrator can give you these privileges.
 If you can see the SpotIQ option on your ThoughtSpot dashboard, you have access to SpotIQ:
 
-image::{{ site.baseurl }}/images/spotiq-is-on.png[]
+image::spotiq-is-on.png[]
 
 == Get the sample data and some insights
 
@@ -34,23 +34,23 @@ This tutorial uses a dataset containing a list of sales and movement data by ite
 == Upload the data
 
 . If you haven't already, sign in to the ThoughtSpot application and click the *Data* tab.
-. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Upload data*.
+. Click the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Upload data*.
 . Browse to the sample data file you downloaded or drag the file into the upload area.
 . Choose `Yes` for the *Are the column names already defined in the file header?* setting.
 . Choose `Comma` for the *Are the files separated by?* setting.
 +
-image::{{ site.baseurl }}/images/spotiq-download.png[]
+image::spotiq-download.png[]
 
 . Click *Next* to go to the *Set column names* page.
 . Set the *category_num* column to *TEXT* on the *Set column types* page.
 +
-image::{{ site.baseurl }}/images/spotiq-set-column-types.png[]
+image::spotiq-set-column-types.png[]
 
 . Click *Upload*.
 +
 ThoughtSpot presents you with a few choices.
 +
-image::{{ site.baseurl }}/images/spotiq-choice.png[]
+image::spotiq-choice.png[]
 
 . Choose *SpotIQ Auto Analyze* to build SpotIQ insights.
 +
@@ -59,7 +59,7 @@ How long depends on the data you are analyzing.
 The ThoughtSpot application displays an informational message.
 The message disappears after a moment.
 +
-image::{{ site.baseurl }}/images/spotiq-processing.png[]
+image::spotiq-processing.png[]
 
 == Work with the INSIGHTS list
 
@@ -75,7 +75,7 @@ So the results lists shows *All* results or just *Yours*.
 
 . Select *Yours*.
 +
-image::{{ site.baseurl }}/images/spotiq-insights.png[]
+image::spotiq-insights.png[]
 
 . Look for results from your *FoodDollarDataReal* data.
 +

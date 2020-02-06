@@ -32,21 +32,21 @@ To manually create a snapshot using the Admin UI, follow these steps:
 
 2. Click the **Admin** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/admin.png)
+[](admin.png)
 
    This opens the Management Console.
 
 3. Click the **Settings** menu on the top navigation bar.
 
-[]({{ site.baseurl }}/images/settings.png)
+[](settings.png)
 
 4. In the **Settings** panel, click **Snapshot**, and select the   **Configure** option.
 
-[]({{ site.baseurl }}/images/snapshot.png)
+[](snapshot.png)
 
 5. Enter the snapshot configuration details:
 
-[]({{ site.baseurl }}/images/snapshot-create.png)
+[](snapshot-create.png)
 
    | Field | Description |
    | --- | --- |

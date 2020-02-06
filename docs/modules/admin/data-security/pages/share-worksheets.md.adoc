@@ -14,11 +14,11 @@ To share a pinboard:
 . Click *Data* on the top navigation bar and choose *Worksheets*.
 . Select one or more worksheets to share, and click the *Share* icon.
 +
-image::{{ site.baseurl }}/images/share_worksheets.png[]
+image::share_worksheets.png[]
 
 . Click *+ Add users or groups* and select users or groups that you want to share with.
 +
-image::{{ site.baseurl }}/images/share_worksheet.png[]
+image::share_worksheet.png[]
 
 . Configure the level of access by selecting from the dropdown list.
 You can select:

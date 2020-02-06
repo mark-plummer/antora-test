@@ -15,16 +15,16 @@ You could also get a list of text values from another application such as an ema
 . In table view, select multiple cells by clicking and dragging.
 . Right-click and choose *Copy to clipboard*.
 +
-image::{{ site.baseurl }}/images/bulk_filter_copy_to_clipboard.png[]
+image::bulk_filter_copy_to_clipboard.png[]
 
 . Hover over the column header you want to filter, and click the *three-dot icon (ellipses)* icon.
 . Choose whether you want your bulk filter to *Include* or *Exclude* values.
 . Click *Add values in bulk*:
 +
-image::{{ site.baseurl }}/images/bulk_filter_add_values_in_bulk.png[]
+image::bulk_filter_add_values_in_bulk.png[]
 
 . Paste the values into the bulk filter box.
 +
-image::{{ site.baseurl }}/images/bulk_filter_paste_values.png[]
+image::bulk_filter_paste_values.png[]
 
 . Click *Done*.

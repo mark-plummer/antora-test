@@ -10,7 +10,7 @@ The search bar shows boxes around each search phrase, so you can easily see wher
 Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed.
 Search phrases have blue boxes, and link:{{ site.baseurl }}/complex-search/about-filters.html#[filters] have white boxes.
 
-image::{{ site.baseurl }}/images/search_bar_with_phrases_boxed.png[]
+image::search_bar_with_phrases_boxed.png[]
 
 == Editing a search
 
@@ -55,7 +55,7 @@ You can still find the answer in many cases, if you type a word with the same me
 If you type an unrecognized search term, you will be offered tips on searching.
 The search help appears when you type a term that isn't understood by ThoughtSpot and then press the Enter key.
 
-image::{{ site.baseurl }}/images/search_help.png[]
+image::search_help.png[]
 
 == Related searches
 

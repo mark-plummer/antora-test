@@ -17,7 +17,7 @@ Version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for clusters with 
 
 [cols=2*]
 |===
-| image:{{ site.baseurl }}/images/v1_mobile.gif[]
+| image:v1_mobile.gif[]
 | {blank} +  + *Home Pinboard* + Add charts and tables to a customizable Home Pinboard.
 +  + *Quick Share* + Share KPIs and charts using iMessage, email, and Slack.
 +  + *Offline Exploration* + Access your Home Pinboard even when you are offline.

@@ -30,19 +30,19 @@ To enable ODBC logs on Windows:
 . Open the *ODBC Data Source Administrator* and select the *System DSN* tab.
 . Select your ThoughtSpot data source and click *Configure*.
 +
-image::{{ site.baseurl }}/images/odbc_logs_1.png[]
+image::odbc_logs_1.png[]
 
 . In the Client Configuration Dialog, click *Logging*.
 +
-image::{{ site.baseurl }}/images/odbc_logs_2.png[]
+image::odbc_logs_2.png[]
 
 . Choose a *Log Level*, depending on what level of verbosity you want to show in the logs.
 +
-image::{{ site.baseurl }}/images/odbc_logs_3.png[]
+image::odbc_logs_3.png[]
 
 . For *Log Directory:*, type in the fully qualified path where you want the logs to be saved.
 +
-image::{{ site.baseurl }}/images/odbc_logs_4.png[]
+image::odbc_logs_4.png[]
 
 . Click *OK* to save your settings, and *OK* again, to dismiss the ODBC Data Source Administrator.
 . Run the ODBC load.

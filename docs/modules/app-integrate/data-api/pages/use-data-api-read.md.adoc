@@ -14,13 +14,13 @@ Use this procedure to construct the URL you will use to call the Data REST API:
 If it doesn't exist yet, create it now.
 . Find the ID number of the object you want to get the data from.
 If the object is:
- ** A pinboard, click ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] the and select *Copy Link*.
+ ** A pinboard, click ellipses icon image:icon-ellipses.png[more options menu icon] the and select *Copy Link*.
 +
-image::{{ site.baseurl }}/images/copy_pinboard_link.png[]
+image::copy_pinboard_link.png[]
 
  ** A visualization, click the *Copy Link* icon in the upper right corner of the table or chart.
 +
-image::{{ site.baseurl }}/images/copy_link.png[]
+image::copy_link.png[]
 . Copy the ID number from the link shown.
 Paste it somewhere so that you can use it later to construct the URL to use when calling the REST API.
 +
@@ -29,12 +29,12 @@ If the object is:
  ** A pinboard, copy the identifier that appears after "viz/".
 Omit the trailing "/".
 +
-image::{{ site.baseurl }}/images/copy_link_pinboard.png[]
+image::copy_link_pinboard.png[]
 
  ** A visualization (table or chart), copy the identifier that appears after "viz/".
 This is the visualization ID.
 +
-image::{{ site.baseurl }}/images/copy_link_viz_pinboard_part.png[]
+image::copy_link_viz_pinboard_part.png[]
 
 . Construct the URL as follows: For a pinboard, the URL takes the form:
 +
