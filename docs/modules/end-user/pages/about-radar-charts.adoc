@@ -11,7 +11,7 @@ The measure values move from smallest to the outer edge of the web.
 Each spoke of the web is reserved for one of the variables.
 The points where each value lies on the web are connected.
 
-image::{{ site.baseurl }}/images/Spiderweb.png[]
+image::Spiderweb.png[]
 
 The link:{{ site.baseurl}}/downloads/Austin_Animal_Center_Outcomes.csv[Austin Animal Center Outcomes] data shows the outcome of processing.
 The measure is the count of total animals.

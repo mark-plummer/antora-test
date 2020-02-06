@@ -4,6 +4,6 @@ last_updated: tbd summary: "The scatter chart is useful for finding correlations
 Each point is plotted based on its own axes values.
 This helps you determine if there is a relationship between your searched columns.
 
-image::{{ site.baseurl }}/images/scatter_chart_example.png[]
+image::scatter_chart_example.png[]
 
 Your search needs at least one attribute and one measure to be represented as a scatter chart.

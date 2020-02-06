@@ -5,6 +5,6 @@ last_updated: tbd summary: "The pareto chart is a type of chart that contains bo
 The y-axis on the left is paired with the columns, while the y-axis on the right is paired with the line.
 By the end of the line, the cumulative percent total reaches 100 percent.
 
-image::{{ site.baseurl }}/images/pareto_chart_example.png[]
+image::pareto_chart_example.png[]
 
 Your search needs at least one attribute and one measure to be represented as a pareto chart.
