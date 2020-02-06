@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Search results and column types :: ThoughtSpot Demo Site</title>
+    <title>["SpotIQ preferences"] :: ThoughtSpot Demo Site</title>
     <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
   </head>
@@ -130,7 +130,7 @@
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="recent-searches.html">Search suggestions</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="4">
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="about-attributes-and-measures.html">Search results and column types</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -511,62 +511,35 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">ThoughtSpot</a></li>
-    <li>Users</li>
-    <li>Use Search</li>
-    <li>Search basics</li>
-    <li><a href="about-attributes-and-measures.html">Search results and column types</a></li>
+    <li><a href="spotiq-preferences.md.html">["SpotIQ preferences"]</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/end-user/pages/about-attributes-and-measures.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/docs/modules/end-user/pages/spotiq-preferences.md.adoc">Edit this Page</a></div>
   </div>
 <article class="doc">
-<h1 class="page">Search results and column types</h1>
-<div id="preamble">
-<div class="sectionbody">
+<h1 class="page">["SpotIQ preferences"]</h1>
 <div class="paragraph">
-<p>ThoughtSpot identifies search columns (<code>sales</code>, <code>customer_name</code>, <code>total_sale</code>) as either attributes or measures.
-The columns you choose impact your search results.
-That&#8217;s because several chart types expect that your search contains a certain number of attributes and a certain number of measures.</p>
+<p>You can specify email notifications behavior along with exclude parameters and threshold settings used for your SpotIQ analyses.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_attributes"><a class="anchor" href="#_attributes"></a>Attributes</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>Attribute are primarily text or date values.
-Attributes make up the x-axis of your chart most of time.
-Some examples of attributes in terms of a person include name, eye color, occupation, social security number, address, employee ID, and phone number.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_measures"><a class="anchor" href="#_measures"></a>Measures</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Measures are numeric values you can do math on, with meaningful results.
-You will most likely find your measures on the y-axis of your chart.
-Some examples of measures in terms of a person are age, height, and weight.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_query_details"><a class="anchor" href="#_query_details"></a>Query details</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>After, or while completing a search, you can see how ThoughtSpot displayed the answer.
-Click the <strong>Query details</strong> button on the right-hand side of the screen to open the <strong>Query details</strong> panel.</p>
+<p>You can change your link:{{ site.baseurl }}/spotiq/overview.html[SpotIQ] basic preferences by checking or unchecking the email and data preferences for analyses.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/what_am_i_looking_at.png" alt="what am i looking at">
+<img src="_images/{{%20site.baseurl%20}}/images/update_preferences.png" alt="update preferences">
 </div>
 </div>
 <div class="paragraph">
-<p>This panel shows the measures that ThoughtSpot computed, for each combination of attributes.
-Choose <strong>Query visualizer</strong> to see search filters and how the tables were linked and used.</p>
+<p>Under Parameters for analysis, you can further refine parameters SpotIQ will use.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/{{%20site.baseurl%20}}/images/update_preferences_spotiq_thresholds.png" alt="update preferences spotiq thresholds">
 </div>
 </div>
+<div class="paragraph">
+<p>These parameters and threshold settings are a subset of those available on the  link:{{ site.baseurl }}/spotiq/customization.html[SpotIQ Customize analysis] dialog.
+If you set them here, the settings will persist for all your SpotIQ analyses including  when you run custom analyses, unless you explicitly reset options for a custom analysis.</p>
 </div>
 </article>
 </main>
