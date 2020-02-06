@@ -25,7 +25,7 @@
 **** xref:end-user:about-keyword-searches.adoc[Overview of keyword searches]
 **** xref:end-user:period-searches.adoc[Time series analysis]
 **** xref:end-user:search-using-growth-over-time.adoc[Search using growth over time]
-**** xref:admin:proximity-search.adoc[Proximity searches "near" and "farther than"]
+**** xref:end-user:proximity-search.adoc[Proximity searches "near" and "farther than"]
 *** Work with filters
 **** xref:end-user:about-filters.adoc[Understand filters]
 **** xref:end-user:filter-from-column-headers.adoc[Add a filter to a table]
@@ -89,7 +89,7 @@
 *** xref:end-user:about-pinboards.adoc[Basic pinboard usage]
 *** xref:end-user:edit-the-layout-of-a-pinboard.adoc[Edit a pinboard]
 *** xref:end-user:pinboard-filters.adoc[Pinboard filters]
-*** xref:admin/manage-jobs/schedule-a-pinboard-job.adoc[Schedule a pinboard job]
+*** xref:end-user:schedule-a-pinboard-job.adoc[Schedule a pinboard job]
 *** xref:end-user:about-showing-underlying-data-from-within-a-pinboard.adoc[Search actions within a pinboard]
 *** xref:end-user:copy-a-pinboard.adoc[Copy a pinboard]
 *** xref:end-user:copy-link-for-a-pinboard.adoc[Copy a pinboard or visualization link]
@@ -98,9 +98,9 @@
 ** Work with data
 *** xref:end-user:data-into-end-user.adoc[Understand data sources]
 *** xref:end-user:generate-flat-file.adoc[Create and load CSV files]
-*** xref:admin/loading/append-data-from-a-web-browser.adoc[Append data through the UI]
-*** xref:admin/loading/view-your-data-profile.adoc[View a data profile]
-*** xref:end-user:  locale.adoc[Date and currency format settings]
+*** xref:end-user:append-data-from-a-web-browser.adoc[Append data through the UI]
+*** xref:end-user:view-your-data-profile.adoc[View a data profile]
+*** xref:end-user:locale.adoc[Date and currency format settings]
 *** SpotIQ
 **** xref:end-user:whatisspotiq.adoc[What is SpotIQ]
 **** xref:end-user:overview.adoc[101:Load and analyze data]
