@@ -537,7 +537,7 @@ To perform your own R analysis, start with a simple search and click the R icon 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-script-dialog.png" alt="r script dialog">
+<img src="_images/r-script-dialog.png" alt="r script dialog">
 </div>
 </div>
 <div class="paragraph">
@@ -559,7 +559,7 @@ You can select all columns used in the original search or a subset of those colu
 <p>You can refer to the data in the selected columns by using vectors that ThoughtSpot generates for these before the script is run.
 The first column you select has the variable name <code>.param0</code>, the second column you select has the variable name <code>.param1</code>, and so on.
 This naming scheme continues if there are more columns.
-(You can click the question mark icon <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/r-icon-question-mark.png" alt="question icon"></span> next to "<strong>Select columns for R analysis</strong>" to get a visual mapping of how the columns are bound to variables in R.)</p>
+(You can click the question mark icon <span class="image"><img src="_images/r-icon-question-mark.png" alt="question icon"></span> next to "<strong>Select columns for R analysis</strong>" to get a visual mapping of how the columns are bound to variables in R.)</p>
 </div>
 <div class="paragraph">
 <p>ThoughtSpot also provides an automatically-generated <em>data frame</em> object, <code>df</code>, that contains all selected column vectors.
@@ -577,11 +577,11 @@ The data frame is R&#8217;s representation of a table (a 2D data structure conta
 <h2 id="_write_a_custom_script"><a class="anchor" href="#_write_a_custom_script"></a>Write a custom script</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To add a custom R script, start by running a search, then click the <strong>R</strong> icon <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/r-icon-inline.png" alt="R icon"></span> on the toolbar.</p>
+<p>To add a custom R script, start by running a search, then click the <strong>R</strong> icon <span class="image"><img src="_images/r-icon-inline.png" alt="R icon"></span> on the toolbar.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-icon.png" alt="r icon">
+<img src="_images/r-icon.png" alt="r icon">
 </div>
 </div>
 <div class="paragraph">
@@ -589,7 +589,7 @@ The data frame is R&#8217;s representation of a table (a 2D data structure conta
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-png-basic.png" alt="r png basic">
+<img src="_images/r-png-basic.png" alt="r png basic">
 </div>
 </div>
 <div class="paragraph">
@@ -616,7 +616,7 @@ CSV output is rendered back as a simple table in ThoughtSpot, PNG output is rend
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-csv-basic.png" alt="r csv basic">
+<img src="_images/r-csv-basic.png" alt="r csv basic">
 </div>
 </div>
 <div class="paragraph">
@@ -624,7 +624,7 @@ CSV output is rendered back as a simple table in ThoughtSpot, PNG output is rend
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-basic-table-search-result.png" alt="r basic table search result">
+<img src="_images/r-basic-table-search-result.png" alt="r basic table search result">
 </div>
 </div>
 </div>
@@ -646,7 +646,7 @@ plot(.param0, .param1)</pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-png-basic.png" alt="r png basic">
+<img src="_images/r-png-basic.png" alt="r png basic">
 </div>
 </div>
 </div>
@@ -681,16 +681,16 @@ Reordering the columns changes the column bindings/params.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>The R script information icon <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/r-icon-i.png" alt="more options menu icon"></span> provides a basic reference guide for creating an R analysis in ThoughtSpot.</p>
+<p>The R script information icon <span class="image"><img src="_images/r-icon-i.png" alt="more options menu icon"></span> provides a basic reference guide for creating an R analysis in ThoughtSpot.</p>
 </li>
 <li>
-<p>The ellipses icon <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/icon-ellipses.png" alt="more options menu icon"></span> provides a menu with options to save or load a previously saved R script, as well as share your R script with other users in the system.</p>
+<p>The ellipses icon <span class="image"><img src="_images/icon-ellipses.png" alt="more options menu icon"></span> provides a menu with options to save or load a previously saved R script, as well as share your R script with other users in the system.</p>
 </li>
 <li>
-<p>The arrow at the top right of the script dialog <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/r-icon-popout-arrow.png" alt="popout arrow"></span> opens a popout editor that gives you a larger space in which to view and edit your R script.</p>
+<p>The arrow at the top right of the script dialog <span class="image"><img src="_images/r-icon-popout-arrow.png" alt="popout arrow"></span> opens a popout editor that gives you a larger space in which to view and edit your R script.</p>
 </li>
 <li>
-<p>The question mark icon <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/r-icon-question-mark.png" alt="question icon"></span> next to "<strong>Select column(s) for R analysis</strong>" provides a visual mapping of how the columns are bound to variables in R.</p>
+<p>The question mark icon <span class="image"><img src="_images/r-icon-question-mark.png" alt="question icon"></span> next to "<strong>Select column(s) for R analysis</strong>" provides a visual mapping of how the columns are bound to variables in R.</p>
 </li>
 </ul>
 </div>
@@ -717,7 +717,7 @@ print(ggplot(df, aes(.param0, .param1, color = kmeansOutput$cluster)) + geom_poi
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-custom-script-png.png" alt="r custom script png">
+<img src="_images/r-custom-script-png.png" alt="r custom script png">
 </div>
 </div>
 <div class="paragraph">
@@ -735,7 +735,7 @@ write.csv(df, file=#output_file#, row.names=FALSE);</pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-custom-script-csv.png" alt="r custom script csv">
+<img src="_images/r-custom-script-csv.png" alt="r custom script csv">
 </div>
 </div>
 </div>
@@ -744,20 +744,20 @@ write.csv(df, file=#output_file#, row.names=FALSE);</pre>
 <h2 id="_save_and_share_your_script"><a class="anchor" href="#_save_and_share_your_script"></a>Save and share your script</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To save a script, choose <strong>Save as</strong> from the options menu <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/icon-ellipses.png" alt="more options menu icon"></span> of the script.
+<p>To save a script, choose <strong>Save as</strong> from the options menu <span class="image"><img src="_images/icon-ellipses.png" alt="more options menu icon"></span> of the script.
 After you name and save it, your script will show in the <strong>Load</strong> scripts dialog.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-save-script.png" alt="r save script">
+<img src="_images/r-save-script.png" alt="r save script">
 </div>
 </div>
 <div class="paragraph">
-<p>To share a script, choose <strong>Share</strong> from the options menu <span class="image"><img src="_images/{{%20site.baseurl%20}}/images/icon-ellipses.png" alt="more options menu icon"></span>.</p>
+<p>To share a script, choose <strong>Share</strong> from the options menu <span class="image"><img src="_images/icon-ellipses.png" alt="more options menu icon"></span>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-share-script.png" alt="r share script">
+<img src="_images/r-share-script.png" alt="r share script">
 </div>
 </div>
 </div>
@@ -789,7 +789,7 @@ After you name and save it, your script will show in the <strong>Load</strong> s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/{{%20site.baseurl%20}}/images/r-script-load-prebuilt.png" alt="r script load prebuilt">
+<img src="_images/r-script-load-prebuilt.png" alt="r script load prebuilt">
 </div>
 </div>
 </div>

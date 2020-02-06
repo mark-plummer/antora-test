@@ -44,7 +44,7 @@ image::pinboard-present-controls.png[]
 
 While in presentation mode, you can easily explore each visualization.
 
-image::pinboard-present-actions.png[]
+image::pinboard-present-actions.png[] 
 
 Consider the following actions on pinboards:
 

@@ -6,7 +6,7 @@ To do a search on the view, along with any data sources you linked:
 . Click the search icon, and select *Data Source*.
 Choose your linked sources.
 +
-image::select_sources_view.png[]
+image::select_sources_view.png[] 
 
 . Do a search using columns from the linked sources.
 . Test the result, to make sure it's what you expect.

@@ -24,7 +24,7 @@ To change the chart type of your answer:
 
 . Click *Change visualization* to get a palette of charts, maps, pivot table, and so on (scroll down to see more.)
 +
-image::chart_type_icons_change_viz.png[]
+image::chart_type_icons_change_viz.png[] 
 
 . Click a different chart or visualization type.
 +
