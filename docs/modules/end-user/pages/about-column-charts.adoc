@@ -10,7 +10,9 @@ More often than not, the column chart will be chosen as your default chart type.
 Column charts are vertical bar charts that display your data using rectangular bars.
 The length of the bar is proportional to the data value.
 
-image::{{ site.baseurl }}/images/column_chart_example.png[]
+image::column_chart_example.png[]
+
+
 
 Your search needs at least one attribute and one measure to be represented as a column chart.
 
@@ -27,8 +29,12 @@ It is important to note that stacked column charts plot the y-axis as a percenta
 You can choose to toggle *Show Y-Axis as %* on or off in the Configuration Options.
 This feature is also available for stacked area charts.
 
-image::{{ site.baseurl }}/images/stacked_column_chart_off_example.png[]
+image::stacked_column_chart_off_example.png[]
 
-image::{{ site.baseurl }}/images/stacked_column_chart_on_example.png[]
+
+
+image::stacked_column_chart_on_example.png[]
+
+
 
 Your search needs at least two attributes and one measure to be represented as a stacked column chart.
