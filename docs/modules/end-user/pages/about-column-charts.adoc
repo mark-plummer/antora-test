@@ -10,7 +10,7 @@ More often than not, the column chart will be chosen as your default chart type.
 Column charts are vertical bar charts that display your data using rectangular bars.
 The length of the bar is proportional to the data value.
 
-image::column_chart_example.png[Column chart example,100,100,float="right",align="left"]  
+image::column_chart_example.png[Column chart example,982,515,float="left",align="left"]  
 
 Your search needs at least one attribute and one measure to be represented as a column chart.
 
