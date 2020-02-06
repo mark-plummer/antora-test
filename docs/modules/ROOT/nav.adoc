@@ -56,7 +56,7 @@
 **** xref:end-user:line-column-charts.adoc[Line column charts]
 **** xref:end-user:about-funnel-charts.adoc[Funnel charts]
 **** xref:end-user:about-geo-charts.adoc[Geo charts]
-**** xref:end-user:about-pivoting-a-table.adoc  [Pivot table]
+**** xref:end-user:about-pivoting-a-table.adoc[Pivot table]
 *** Changing a chart
 **** xref:end-user:reorder-values-on-the-x-axis.adoc[Reorder the labels]
 **** xref:end-user:set-the-y-axis-scale.adoc[Set the y-axis range]
@@ -76,8 +76,8 @@
 **** xref:end-user:filtered-agg-forms.adoc[Filtered aggregation functions]
 *** xref:end-user:conversion-formulas.adoc[Conversion functions]
 *** xref:end-user:date-formulas.adoc[Date functions]
-*** xref:end-user:formulas/percent-calculations.adoc[Percent (simple number) calculations]
-*** xref:end-user:formulas/conditional-sum.adoc[Formula operators]
+*** xref:end-user:percent-calculations.adoc[Percent (simple number) calculations]
+*** xref:end-user:conditional-sum.adoc[Formula operators]
 *** xref:end-user:about-nested-formulas.adoc[Nested formulas]
 *** xref:end-user:about-formula-support-for-chasm-trap-schemas.adoc[Formulas for chasm traps]
 ** Work with worksheets
@@ -96,7 +96,7 @@
 *** xref:end-user:reset-a-visualization.adoc[Reset a pinboard or visualization]
 *** xref:end-user:start-a-slideshow.adoc[Start a slideshow]
 ** Work with data
-*** xref:end-user:data-into-end-user.adoc[Understand data sources]
+*** xref:end-user:data-intro-end-user.adoc[Understand data sources]
 *** xref:end-user:generate-flat-file.adoc[Create and load CSV files]
 *** xref:end-user:append-data-from-a-web-browser.adoc[Append data through the UI]
 *** xref:end-user:view-your-data-profile.adoc[View a data profile]
@@ -108,13 +108,13 @@
 **** xref:end-user:spotiq-customize.adoc[101:Do more with SpotIQ]
 **** xref:end-user:special-topics.adoc[Best SpotIQ Practices]
 **** xref:end-user:customization.adoc[Custom SpotIQ analysis]
-**** xref:send-user:adv-customize-withr.adoc[Advanced R Customizations]
+**** xref:end-user:adv-customize-withr.adoc[Advanced R Customizations]
 *** Share your work
-*** xref:end-user:sharing-for-end-users.adoc[About sharing]
-*** xref:end-user:share-pinboards.adoc[Share pinboards]
-*** xref:end-user:share-answers.adoc[Share answers]
-*** xref:end-user:share-user-imported-data.adoc[Share uploaded data]
-*** xref:end-user:unshare.adoc[Revoke access (unshare)]
+**** xref:end-user:sharing-for-end-users.adoc[About sharing]
+**** xref:end-user:share-pinboards.adoc[Share pinboards]
+**** xref:end-user:share-answers.adoc[Share answers]
+**** xref:end-user:share-user-imported-data.adoc[Share uploaded data]
+**** xref:end-user:unshare.adoc[Revoke access (unshare)]
 ** Slack and ThoughtSpot
 *** xref:end-user:intro.adoc[Slack and Spot]
 *** xref:end-user:use-spot.adoc[How to use Spot]
