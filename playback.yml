@@ -8,7 +8,8 @@ content:
     start_path: /docs
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://github.com/mark-plummer/antora-ui.git/build/ui-bundle.zip
     snapshot: true
 output:
   clean: true
