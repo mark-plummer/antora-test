@@ -18,6 +18,6 @@ ui:
 
 output:
   clean: true
-  dir: public
+  dir: gh-pages
 runtime:
   fetch: true
