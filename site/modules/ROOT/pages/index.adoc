@@ -3,7 +3,7 @@
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
-:toc: false
+:toc: ~
 
 Welcome to ThoughtSpot documentation!!!!
 

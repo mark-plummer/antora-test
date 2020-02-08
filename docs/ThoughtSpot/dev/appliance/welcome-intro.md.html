@@ -515,7 +515,7 @@
 </nav>
   <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/site/modules/appliance/pages/welcome-intro.md.adoc">Edit this Page</a></div>
   </div>
-<article class="doc">
+<article class="doc"><a name="section-top"></a>
 <hr>
 <div class="paragraph">
 <p>title: [Overview]</p>
@@ -551,6 +551,10 @@ You can, however, have a cloud cluster for development and use an appliance for 
 <div class="paragraph">
 <p>After you configure your nodes, you can contact link:{{ site.baseurl }}/appliance/contact.html[ThoughtSpot Support] by phone, mail, email, or by filing a support ticket.</p>
 </div>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">On this page</h3>
+  <div id="article-toc"></div>
+</aside>
 </article>
 </main>
 </div>
@@ -558,7 +562,27 @@ You can, however, have a cloud cluster for development and use an appliance for 
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
+<!-- original scripts-->
+<!--<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script> -->
+<!-- new scripts to add right-hand page TOC -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
 <script src="../../../_/js/site.js"></script>
-<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+<script>
+  tocbot.init( {
+                  tocSelector: '#article-toc',
+                  contentSelector: 'article',
+                  headingSelector: 'h2, h3, h4, h5, h6',
+                  collapseDepth: 6,
+                  positionFixedSelector: '#article-toc',
+                  scrollSmooth: false
+                } );
+  var tocList = document.getElementById( 'article-toc' ).getElementsByClassName( 'toc-list' );
+  if ( tocList && tocList.length > 0 && tocList[0].childNodes.length > 0 ) {
+    document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
+  }
+</script>
   </body>
 </html>
