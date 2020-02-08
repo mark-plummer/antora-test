@@ -574,11 +574,11 @@ Ask your administrator to see if you can get one.</p>
 </div>
 </div>
 </div>
+</article>
 <aside class="article-aside hidden" role="navigation">
   <h3 class="toc-title">On this page</h3>
   <div id="article-toc"></div>
 </aside>
-</article>
 </main>
 </div>
 <footer class="footer">
@@ -586,8 +586,8 @@ Ask your administrator to see if you can get one.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
 <!-- original scripts-->
-<!--<script src="../../../_/js/site.js"></script>
-<script async src="../../../_/js/vendor/highlight.js"></script> -->
+<!--<script src="../../../_/js/site.js"></script> -->
+<!-- <script async src="../../../_/js/vendor/highlight.js"></script> -->
 <!-- new scripts to add right-hand page TOC -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
 <script src="../../../_/js/site.js"></script>
@@ -595,13 +595,13 @@ Ask your administrator to see if you can get one.</p>
 <script>hljs.initHighlighting()</script>
 <script>
   tocbot.init( {
-                  tocSelector: '#article-toc',
-                  contentSelector: 'article',
-                  headingSelector: 'h2, h3, h4, h5, h6',
-                  collapseDepth: 6,
-                  positionFixedSelector: '#article-toc',
-                  scrollSmooth: false
-                } );
+                 tocSelector: '#article-toc',
+                 contentSelector: 'article',
+                 headingSelector: 'h2, h3, h4',
+                 collapseDepth: 3,
+                 positionFixedSelector: '#article-toc',
+                 scrollSmooth: false
+               } );
   var tocList = document.getElementById( 'article-toc' ).getElementsByClassName( 'toc-list' );
   if ( tocList && tocList.length > 0 && tocList[0].childNodes.length > 0 ) {
     document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
