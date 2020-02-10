@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create a search from a view :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="_images/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ThoughtSpot" data-version="4.5">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About this release</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../release/notes.html">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../release/downloads.html">Downloads</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Users</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Getting Started</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-navigating-thoughtspot.html">Finding your way around</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="accessing.html">ThoughSpot browser access</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-user.html">Your user preferences</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-privileges-end-user.html">Understanding privileges</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="stickers.html">Use stickers to organize</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use Search</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-starting-a-new-search.html">What are searches and answers?</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Search basics</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="start-a-new-search.html">Start a new search</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-choosing-sources.html">Choose a data source</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-the-search-bar.html">Search bar features</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="recent-searches.html">Search suggestions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-attributes-and-measures.html">Search results and column types</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="data-refresh-time.html">Last data refresh time</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="work-with-answers.html">Work with answers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-tables.html">Results that are tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use keywords in search</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-keyword-searches.html">Overview of keyword searches</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="period-searches.html">Time series analysis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="search-using-growth-over-time.html">Search using growth over time</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="proximity-search.html">Proximity searches "near" and "farther than"</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with filters</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-filters.html">Understand filters</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="filter-from-column-headers.html">Add a filter to a table</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="filter-from-chart-axes.html">Add a filter to a chart</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="create-bulk-filter.html">Create a bulk filter</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="delete-a-filter.html">Delete a filter</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-filters-for-null.html">Filter on null, blank, or empty values</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Other search actions</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="change-the-view.html">Change result display options</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="show-underlying-data.html">Show underlying data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="drill-down.html">See the search behind the result</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="apply-conditional-formatting.html">Apply conditional formatting to a table</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="download-your-search.html">Download your search</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="replay-search.html">Replay search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-charts.html">Understand charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chart types</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-column-charts.html">Column charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-bar-charts.html">Bar charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-line-charts.html">Line charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="pie-charts.html">Pie charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="area-charts.html">Area charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-scatter-charts.html">Scatter charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-bubble-charts.html">Bubble charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-pareto-charts.html">Pareto charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-waterfall-charts.html">Waterfall charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-treemap-charts.html">Treemap charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="line-column-charts.html">Line column charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-funnel-charts.html">Funnel charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-geo-charts.html">Geo charts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-pivoting-a-table.html">Pivot table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Changing a chart</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="reorder-values-on-the-x-axis.html">Reorder the labels</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="set-the-y-axis-scale.html">Set the y-axis range</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="hide-and-show-values.html">Hide and show values</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="change-chart-colors.html">Change chart colors</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="show-data-labels.html">Additional chart options</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="zoom-into-a-chart.html">Zoom into a chart</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with formulas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="add-formula-to-search.html">Understand formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="how-to-add-formula.html">Add a formula to a search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edit-formula-in-answer.html">View or edit a formula in search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Aggregate formulas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="aggregation-formulas.html">Overivew of aggregate formulas</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-cumulative-formulas.html">Cumulative functions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-pinned-measures.html">Grouping functions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="about-moving-formulas.html">Moving functions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="filtered-agg-forms.html">Filtered aggregation functions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="conversion-formulas.html">Conversion functions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="date-formulas.html">Date functions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="percent-calculations.html">Percent (simple number) calculations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="conditional-sum.html">Formula operators</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-nested-formulas.html">Nested formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with worksheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-query-on-query.html">Understand worksheets</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="create-aggregated-worksheet.html">Save a search as a worksheet</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="do-query-on-query.html">Create a search from a worksheet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="more-example-scenarios.html">Worksheet example scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use pinboards</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-pinboards.html">Basic pinboard usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edit-the-layout-of-a-pinboard.html">Edit a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pinboard-filters.html">Pinboard filters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="schedule-a-pinboard-job.html">Schedule a pinboard job</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="copy-a-pinboard.html">Copy a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reset-a-visualization.html">Reset a pinboard or visualization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="start-a-slideshow.html">Start a slideshow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="data-intro-end-user.html">Understand data sources</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="generate-flat-file.html">Create and load CSV files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="append-data-from-a-web-browser.html">Append data through the UI</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="view-your-data-profile.html">View a data profile</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="locale.html">Date and currency format settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SpotIQ</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="whatisspotiq.html">What is SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="overview.html">101:Load and analyze data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="work-with-insights.html">101:Review and save insights</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="spotiq-customize.html">101:Do more with SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="special-topics.html">Best SpotIQ Practices</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="customization.html">Custom SpotIQ analysis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adv-customize-withr.html">Advanced R Customizations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Share your work</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="sharing-for-end-users.html">About sharing</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="share-pinboards.html">Share pinboards</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="share-answers.html">Share answers</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="share-user-imported-data.html">Share uploaded data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="unshare.html">Revoke access (unshare)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Slack and ThoughtSpot</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="intro.html">Slack and Spot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="use-spot.html">How to use Spot</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="what-you-can-find-in-the-help-center.html">More help and support</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ThoughtSpot</span>
+    <span class="version">4.5</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../5.0/index.html">5.0</a>
+        </li>
+        <li class="version is-current">
+          <a href="../index.html">4.5</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ThoughtSpot</a></li>
+    <li>Users</li>
+    <li>Work with worksheets</li>
+    <li><a href="do-query-on-query.html">Create a search from a worksheet</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">4.5</button>
+  <div class="version-menu">
+    <a class="version" href="../../5.0/end-user/do-query-on-query.html">5.0</a>
+    <a class="version is-current" href="do-query-on-query.html">4.5</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/mark-plummer/antora-test/edit/master/site/modules/end-user/pages/do-query-on-query.adoc">Edit this Page</a></div>
+  </div>
+<article class="doc"><a name="section-top"></a>
+<h1 class="page">Create a search from a view</h1>
+<div class="paragraph">
+<p>last_updated: 11/1/2018 summary: "After creating a view, you can select it and search its data." sidebar: mydoc_sidebar permalink: /:collection/:path.html&#8201;&#8212;&#8201;After creating a view and linking it to related data, you&#8217;re ready to create your new search.
+To do a search on the view, along with any data sources you linked:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the search icon, and select <strong>Data Source</strong>.
+Choose your linked sources.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/select_sources_view.png" alt="select sources view">
+</div>
+</div>
+</li>
+<li>
+<p>Do a search using columns from the linked sources.</p>
+</li>
+<li>
+<p>Test the result, to make sure it&#8217;s what you expect.</p>
+<div class="paragraph">
+<p>If your search shows no data found or doesn&#8217;t look right to you, it is possible that one of the links between your sources was made on the incorrect column.
+Check the relationships you created and try linking using a different column, to see if that gives the expected search results.</p>
+</div>
+</li>
+<li>
+<p>When you have the expected answer, you can create a worksheet to make it easier for you and other people to use.
+To do this, click <strong>Data</strong>.</p>
+</li>
+<li>
+<p>Click the ellipses icon <span class="image"><img src="_images/icon-ellipses.png" alt="more options menu icon"></span>, and select <strong>Create worksheet</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/worksheet_create_icon.png" alt="worksheet create icon">
+</div>
+</div>
+</li>
+<li>
+<p>Choose your view and any other tables it is linked to using <strong>Choose Sources</strong>.</p>
+</li>
+<li>
+<p>You may need to rename some columns appropriately for searching.</p>
+</li>
+<li>
+<p>Save the worksheet and share it with the appropriate users and groups.</p>
+</li>
+</ol>
+</div>
+</article>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">On this page</h3>
+  <div id="article-toc"></div>
+</aside>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<!-- original scripts-->
+<!--<script src="../../../_/js/site.js"></script> -->
+<!-- <script async src="../../../_/js/vendor/highlight.js"></script> -->
+<!-- new scripts to add right-hand page TOC -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
+<script src="../../../_/js/site.js"></script>
+<script src="../../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+<script>
+  tocbot.init( {
+                 tocSelector: '#article-toc',
+                 contentSelector: 'article',
+                 headingSelector: 'h2, h3, h4',
+                 collapseDepth: 3,
+                 positionFixedSelector: '#article-toc',
+                 scrollSmooth: false
+               } );
+  var tocList = document.getElementById( 'article-toc' ).getElementsByClassName( 'toc-list' );
+  if ( tocList && tocList.length > 0 && tocList[0].childNodes.length > 0 ) {
+    document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
+  }
+</script>
+  </body>
+</html>
