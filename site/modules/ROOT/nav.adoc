@@ -6,7 +6,6 @@
 ** Getting Started
 *** xref:end-user:about-navigating-thoughtspot.adoc[Finding your way around]
 *** xref:end-user:accessing.adoc[ThoughSpot browser access]
-*** xref:end-user:getting-started.adoc[The Getting Started sidebar]
 *** xref:end-user:about-user.adoc[Your user preferences]
 *** xref:end-user:about-privileges-end-user.adoc[Understanding privileges]
 *** xref:end-user:stickers.adoc[Use stickers to organize]

@@ -1,8 +1,4 @@
-= 6.0 Release Notes
-:last_updated: December, 2019
-:permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
-:toc: false
+= 4.5 Release Notes
 
 ThoughtSpot version 6.0.1 is now available.
 These release notes include information about new features, fixed issues from the previous releases, and any known issues.
