@@ -5,6 +5,7 @@ content:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
   - url: git@github.com:mark-plummer/antora-test.git
     branches: [master, '5.0']
+    start_page: docs::index.adoc
     start_path: /site
 ui:
   bundle:
