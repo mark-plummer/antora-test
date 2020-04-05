@@ -5,6 +5,9 @@ site:
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
+  - url: .
+    branches: HEAD
+    start_path: home
   - url: git@github.com:mark-plummer/antora-test.git
     branches: [master, '5.0']
     start_path: home
