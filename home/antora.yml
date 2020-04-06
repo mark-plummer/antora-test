@@ -1,6 +1,5 @@
 name: home
-version:
 title: Home
-version: home
+version: master
 nav:
 - modules/ROOT/nav.adoc
