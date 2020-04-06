@@ -1,6 +1,0 @@
-= ["Glossary"]
-:permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
-:toc: false
-
-{% assign projectTags = site.data.glossary.entries | sort_natural:"word"%} {% for entry in projectTags %}

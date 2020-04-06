@@ -1,5 +1,0 @@
-= ["Contact support"]
-:permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
-
-{% include content/contact-info.md %}
