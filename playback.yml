@@ -1,12 +1,12 @@
 site:
   title: ThoughtSpot Demo Site
+  url: https://docs.thoughtspot.com
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
   - url: git@github.com:mark-plummer/antora-test.git
     branches: [master, '5.0']
-    start_page: site::index.adoc
-    start_path: /site
+    start_path: site
 ui:
   bundle:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
