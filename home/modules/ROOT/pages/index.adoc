@@ -13,9 +13,9 @@ We’d love to hear from you. Feel free to use the btn:[Feedback?] button on any
 
 If you are a ThoughtSpot administrator wanting to configure, deploy, and manage the ThoughtSpot Platform
 
-* xref:5.1:end-user:follow-pinboard.adoc[Deployment Options]
-* xref:5.1:end-user:monitor-expert.adoc[Security]
-* xref:5.1:end-user:monitor-headlines.adoc[Backup and Restore]
+* xref:end-user:follow-pinboard.adoc[Deployment Options]
+* xref:end-user:spotiq-customize.adoc[Security]
+* xref:end-user:pinboard-filters.adoc[Backup and Restore]
 
 [.card]
 === Data Engineer
