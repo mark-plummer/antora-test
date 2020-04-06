@@ -1,6 +1,6 @@
 site:
   title: ThoughtSpot Demo Site
-  url: https://docs.thoughtspot.com
+  url: https://mark-plummer.github.io/antora-test/
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
