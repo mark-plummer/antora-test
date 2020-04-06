@@ -1,6 +1,6 @@
-= 5.0 Release Notes
+= 5.1 Release Notes
 
-ThoughtSpot version 5.0.1 is now available.
+ThoughtSpot version 5.1 is now available.
 These release notes include information about new features, fixed issues from the previous releases, and any known issues.
 
 * <<5-0-1-fixed,5.0.1 Fixed Issues>>
@@ -52,6 +52,10 @@ ThoughtSpot now supports the following features for linked tables:
 * Indexing of table columns
 * Remapping of tables and columns
 
+*Embrace overview*
+
+<script src="https://fast.wistia.com/embed/medias/1n7ei0tqr4.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_1n7ei0tqr4 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+
 For more information, see link:{{ site.baseurl }}/data-integrate/embrace/embrace-intro.html[Embrace overview].
 
 === Monitor headlines
@@ -77,7 +81,9 @@ image::spotiq-monitor-detail.png[Metric performance over time]
 
 This release introduces a complete new approach that makes chart configuration much easier and more intuitive.
 
-*Chart configuration overview*  + +++<script src="https://fast.wistia.com/embed/medias/v408bchsqf.jsonp" async="">++++++</script>++++++<script src="https://fast.wistia.com/assets/external/E-v1.js" async="">++++++</script>+++[.wistia_embed.wistia_async_v408bchsqf.popover=true.popoverAnimateThumbnail=true]#&nbsp;#
+*Chart configuration overview*
+
+<script src="https://fast.wistia.com/embed/medias/y633w03qzm.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_y633w03qzm popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
 
 * *Add drag-and-drop chips* automatically when adding new elements in search bar.
 These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
@@ -102,25 +108,27 @@ See link:{{ site.baseurl }}/admin/worksheets/worksheet-export.html[Migrate or re
 Administrators can configure a welcoming experience for new users.
 In addition to assigning a user to the most relevant groups and Pinboards, they can customize a Welcome email to introduce them to ThoughtSpot and help them get started.
 
-*Configure new user welcome experience and emails*  + +++<script src="https://fast.wistia.com/embed/medias/bo6xskh8x0.jsonp" async="">++++++</script>++++++<script src="https://fast.wistia.com/assets/external/E-v1.js" async="">++++++</script>+++[.wistia_embed.wistia_async_bo6xskh8x0.popover=true.popoverAnimateThumbnail=true]#&nbsp;#
+*Configure new user welcome experience and emails*
 
 === Getting started
 
 To quickly onboard new users and teach them how to effectively use ThoughtSpot, we added in-product guidance and video content.
 
-*Getting started with ThoughtSpot*  + +++<script src="https://fast.wistia.com/embed/medias/ifwwkmmtk5.jsonp" async="">++++++</script>++++++<script src="https://fast.wistia.com/assets/external/E-v1.js" async="">++++++</script>+++[.wistia_embed.wistia_async_ifwwkmmtk5.popover=true.popoverAnimateThumbnail=true]#&nbsp;#
+*Getting started with ThoughtSpot*
 
 === Sharing
 
 We improved the experience of sharing Answers and Pinboards through better email notifications, with embedded links.
 
-*Sharing Pinboards and Answers*  + +++<script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async="">++++++</script>++++++<script src="https://fast.wistia.com/assets/external/E-v1.js" async="">++++++</script>+++[.wistia_embed.wistia_async_g05dmacmng.popover=true.popoverAnimateThumbnail=true]#&nbsp;#
+*Sharing Pinboards and Answers*
+
+<script src="https://fast.wistia.com/embed/medias/7heqb1ujsx.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_7heqb1ujsx popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
 
 === Access request and grant
 
 To enhance the ease of sharing, we simplified and reinforced the workflow for access request and grant of privileges to Pinboards, Answers, and Data sources.
 
-*Requesting and granting access to Pinboards and Answers*  + +++<script src="https://fast.wistia.com/embed/medias/34nrrb385a.jsonp" async="">++++++</script>++++++<script src="https://fast.wistia.com/assets/external/E-v1.js" async="">++++++</script>+++[.wistia_embed.wistia_async_34nrrb385a.popover=true.popoverAnimateThumbnail=true]#&nbsp;#
+*Requesting and granting access to Pinboards and Answers*
 
 === Google Cloud Platform GCS persistent storage
 
@@ -138,7 +146,7 @@ For more information, see link:{{ site.baseurl }}/admin/loading/use-data-importe
 
 This release introduces Answer Explorer, which provides you with AI-guided exploration of Pinboards, at a single click.
 
-*Answer Explorer overview*+++<script src="https://fast.wistia.com/embed/medias/iu2ho8imd3.jsonp" async="">++++++</script>++++++<script src="https://fast.wistia.com/assets/external/E-v1.js" async="">++++++</script>+++
+*Answer Explorer overview*
 
 [.wistia_embed.wistia_async_iu2ho8imd3.popover=true.popoverAnimateThumbnail=true]#&nbsp;#
 
