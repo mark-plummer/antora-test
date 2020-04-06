@@ -2,29 +2,25 @@
 :page-layout: home
 :!sectids:
 
-Welcome to the new home of Couchbase documentation!
+Welcome to the new home of ThoughtSpot documentation!
 We’d love to hear from you. Feel free to use the btn:[Feedback?] button on any page to share your feedback and concerns.
-
-[.hint]
-Looking for non-documentation resources?
-Check out the https://developer.couchbase.com[Developer Portal]!
 
 [.cards.cards-4.personas.conceal-title]
 == {empty}
 
 [.card]
-=== Administrators
+=== IT Ops Engineer
 
-If you are a Couchbase administrator wanting to configure, deploy, and manage Couchbase Data Platform
+If you are a ThoughtSpot administrator wanting to configure, deploy, and manage the ThoughtSpot Platform
 
 * xref:server:install:get-started.adoc[Deployment Options]
 * xref:server:learn:security/security-overview.adoc[Security]
 * xref:server:backup-restore:backup-restore.adoc[Backup and Restore]
 
 [.card]
-=== Developers
+=== Data Engineer
 
-If you are a Couchbase user wanting to develop an application using our SDKs
+If you are a ThoughtSpot user wanting to develop an application using our SDKs
 
 * xref:java-sdk:hello-world:start-using-sdk.adoc[Quick Install]
 * xref:java-sdk:hello-world:sample-application.adoc[Sample Application]
@@ -32,18 +28,18 @@ If you are a Couchbase user wanting to develop an application using our SDKs
 * xref:tutorials::index.adoc[Tutorials]
 
 [.card]
-=== SQL Developers
+=== Business User
 
-If you are a Couchbase user wanting to understand how to develop queries
+If you are a ThoughtSpot user wanting to understand how to develop queries
 
 * xref:server:getting-started:do-a-quick-install.adoc[Quick Install]
 * xref:server:getting-started:try-a-query.adoc[Try a N1QL Query]
 * xref:server:n1ql:n1ql-language-reference/index.adoc[N1QL Language Reference]
 
 [.card]
-=== Mobile Developers
+=== Analyst User
 
-If you are a Couchbase user wanting to develop for applications on the edge
+If you are a ThoughtSpot user wanting to develop for applications on the edge
 
 * xref:sync-gateway::getting-started.adoc[Get Started: Sync Gateway]
 * xref:couchbase-lite::index.adoc[Get Started: Couchbase Lite]
