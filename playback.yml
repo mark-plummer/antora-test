@@ -9,7 +9,7 @@ content:
     branches: HEAD
     start_path: home
   - url: git@github.com:mark-plummer/antora-test.git
-    branches: ['5.0', '5.1']
+    branches: ['5.0', '5.1', '6.1']
     start_path: site
 ui:
   bundle:
