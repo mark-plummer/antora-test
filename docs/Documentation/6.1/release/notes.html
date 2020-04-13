@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>5.1 Release Notes | ThoughtSpot Demo Site</title>
+    <link rel="canonical" href="https://mark-plummer.github.io/antora-test/Documentation/6.1/release/notes.html">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
+    <meta name="dcterms.subject" content="Documentation">
+    <meta name="dcterms.identifier" content="6.1">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar" id="topbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://mark-plummer.github.io/antora-test/"><img src="../../../_/img/logo.svg" SVG width="100%" alt="ThoughtSpot"></a>
+        <button class="navbar-burger" data-target="topbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div id="topbar-menu" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown">
+              <!-- <a class="navbar-link" href="https://mark-plummer.github.io/antora-test">Docs</a> -->
+            <div class="navbar-dropdown explore">
+              <div class="title">ThoughtSpot Documentation Overview</div>
+              <div class="cols">
+                <ul>
+                  <li class="heading"><a href="#">Server</a></li>
+                  <li><a href="../../../server//n1ql/n1ql-language-reference/index.html">N1QL</a></li>
+                  <li><a href="../../../server//fts/full-text-intro.html">Full Text Search</a></li>
+                  <li><a href="../../../server//analytics/introduction.html">Analytics</a></li>
+                  <li><a href="../../../server//eventing/eventing-overview.html">Eventing</a></li>
+                  <li><a href="#">Autonomous Operator</a></li>
+                </ul>
+                <ul>
+                  <li class="heading">Mobile</li>
+                  <li><a href="#">Lite</a></li>
+                  <li><a href="#">Sync Gateway</a></li>
+                </ul>
+                <ul class="two-cols">
+                  <li class="heading"><a href="../../../server//sdk/overview.html">SDKs</a></li>
+                  <li><a href="#">C</a></li>
+                  <li><a href="#">.NET</a></li>
+                  <li><a href="#">Go</a></li>
+                  <li><a href="#">Java</a></li>
+                  <li><a href="#">Node.js</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">Scala</a></li>
+                </ul>
+                <ul>
+                  <li class="heading"><a href="../../../server//connectors/intro.html">Connectors</a></li>
+                  <li><a href="#">Elasticsearch</a></li>
+                  <li><a href="../../../server//connectors/hadoop-1.2/hadoop.html">Hadoop</a></li>
+                  <li><a href="#">Kafka</a></li>
+                  <li><a href="#">Spark</a></li>
+                  <li><a href="../../../server//connectors/odbc-jdbc-drivers.html">ODBC/JDBC</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link component" href="../index.html"><span class="title">Documentation</span> <span class="version">6.1</span></a>
+            <div class="navbar-dropdown versions">
+              <div class="cols">
+                <ul>
+                  <li class="current"><a class="navbar-item" href="notes.html">Documentation 6.1</a></li>
+                  <li><a class="navbar-item" href="../../5.1/release/notes.html">Documentation 5.1</a></li>
+                  <li><a class="navbar-item" href="../../5.0/release/notes.html">Documentation 5.0</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="btn red-btn" href="https://www.couchbase.com/downloads">Downloads</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body container">
+<nav class="nav">
+<div class="nav-menu">
+<ul class="nav-list">
+  <li class="nav-item is-active" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-path is-active" data-depth="1">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">About this release</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page is-active" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="notes.html">Release notes</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="downloads.html">Downloads</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Users</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/introduction.html">Introduction</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Getting Started</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-navigating-thoughtspot.html">Finding your way around</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/accessing.html">ThoughSpot browser access</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-user.html">Your user preferences</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-privileges-end-user.html">Understanding privileges</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/stickers.html">Use stickers to organize</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use Search</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-starting-a-new-search.html">What are searches and answers?</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Search basics</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/start-a-new-search.html">Start a new search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-choosing-sources.html">Choose a data source</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-the-search-bar.html">Search bar features</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/recent-searches.html">Search suggestions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-attributes-and-measures.html">Search results and column types</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/data-refresh-time.html">Last data refresh time</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/work-with-answers.html">Work with answers</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-tables.html">Results that are tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use keywords in search</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-keyword-searches.html">Overview of keyword searches</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/period-searches.html">Time series analysis</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/search-using-growth-over-time.html">Search using growth over time</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/proximity-search.html">Proximity searches "near" and "farther than"</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with filters</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-filters.html">Understand filters</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/filter-from-column-headers.html">Add a filter to a table</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/filter-from-chart-axes.html">Add a filter to a chart</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/create-bulk-filter.html">Create a bulk filter</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/delete-a-filter.html">Delete a filter</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-filters-for-null.html">Filter on null, blank, or empty values</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other search actions</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/change-the-view.html">Change result display options</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/show-underlying-data.html">Show underlying data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/drill-down.html">See the search behind the result</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/apply-conditional-formatting.html">Apply conditional formatting to a table</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/download-your-search.html">Download your search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/replay-search.html">Replay search</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with charts</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-charts.html">Understand charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Chart types</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-column-charts.html">Column charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-bar-charts.html">Bar charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-line-charts.html">Line charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/pie-charts.html">Pie charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/area-charts.html">Area charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-scatter-charts.html">Scatter charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-bubble-charts.html">Bubble charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pareto-charts.html">Pareto charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-waterfall-charts.html">Waterfall charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-treemap-charts.html">Treemap charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/line-column-charts.html">Line column charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-funnel-charts.html">Funnel charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-geo-charts.html">Geo charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pivoting-a-table.html">Pivot table</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Changing a chart</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/reorder-values-on-the-x-axis.html">Reorder the labels</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/set-the-y-axis-scale.html">Set the y-axis range</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/hide-and-show-values.html">Hide and show values</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/change-chart-colors.html">Change chart colors</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/show-data-labels.html">Additional chart options</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/zoom-into-a-chart.html">Zoom into a chart</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with formulas</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/add-formula-to-search.html">Understand formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/how-to-add-formula.html">Add a formula to a search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/edit-formula-in-answer.html">View or edit a formula in search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Aggregate formulas</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/aggregation-formulas.html">Overivew of aggregate formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-cumulative-formulas.html">Cumulative functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pinned-measures.html">Grouping functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-moving-formulas.html">Moving functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/filtered-agg-forms.html">Filtered aggregation functions</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/conversion-formulas.html">Conversion functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/date-formulas.html">Date functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/percent-calculations.html">Percent (simple number) calculations</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/conditional-sum.html">Formula operators</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-nested-formulas.html">Nested formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with worksheets</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-query-on-query.html">Understand worksheets</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/create-aggregated-worksheet.html">Save a search as a worksheet</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/do-query-on-query.html">Create a search from a worksheet</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/more-example-scenarios.html">Worksheet example scenarios</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use pinboards</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pinboards.html">Basic pinboard usage</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/edit-the-layout-of-a-pinboard.html">Edit a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/pinboard-filters.html">Pinboard filters</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/schedule-a-pinboard-job.html">Schedule a pinboard job</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/copy-a-pinboard.html">Copy a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/reset-a-visualization.html">Reset a pinboard or visualization</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/start-a-slideshow.html">Start a slideshow</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with data</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/data-intro-end-user.html">Understand data sources</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/generate-flat-file.html">Create and load CSV files</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/append-data-from-a-web-browser.html">Append data through the UI</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/view-your-data-profile.html">View a data profile</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/locale.html">Date and currency format settings</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">SpotIQ</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/whatisspotiq.html">What is SpotIQ</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/overview.html">101:Load and analyze data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/work-with-insights.html">101:Review and save insights</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/spotiq-customize.html">101:Do more with SpotIQ</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/special-topics.html">Best SpotIQ Practices</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/customization.html">Custom SpotIQ analysis</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/adv-customize-withr.html">Advanced R Customizations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Share your work</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/sharing-for-end-users.html">About sharing</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/share-pinboards.html">Share pinboards</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/share-answers.html">Share answers</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/share-user-imported-data.html">Share uploaded data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/unshare.html">Revoke access (unshare)</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Slack and ThoughtSpot</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/intro.html">Slack and Spot</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/use-spot.html">How to use Spot</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/what-you-can-find-in-the-help-center.html">More help and support</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+</div>
+</nav>
+<aside class="toc sidebar">
+  <div class="toc-menu"></div>
+</aside>
+<main class="article" data-ceiling="topbar">
+  <div class="article-header">
+<button class="nav-control"></button>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Documentation</a></li>
+    <li class="crumb">About this release</li>
+    <li class="crumb"><a href="notes.html">Release notes</a></li>
+  </ul>
+</nav>
+<div class="tools" role="navigation">
+  <ul>
+    <li class="tool edit"><a href="https://github.com/mark-plummer/antora-test/edit/6.1/site/modules/release/pages/notes.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+  </ul>
+</div>
+  </div>
+<article class="doc">
+<h1 class="page">5.1 Release Notes</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>ThoughtSpot version 5.1 is now available.
+These release notes include information about new features, fixed issues from the previous releases, and any known issues.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#5-0-1-fixed">5.0.1 Fixed Issues</a></p>
+</li>
+<li>
+<p><a href="#5-new">5.0 New Features</a></p>
+</li>
+<li>
+<p><a href="#5-fixed">5.0 Fixed Issues</a></p>
+</li>
+<li>
+<p><a href="#beta-program">Beta Programs</a></p>
+</li>
+<li>
+<p><a href="#upgrade-paths">Supported Upgrade Paths</a></p>
+</li>
+<li>
+<p><a href="#notes-for-older-versions">Notes from Older Versions</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="5-0-1-fixed"><a class="anchor" href="#5-0-1-fixed"></a>5.0.1 Fixed Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following issues are fixed in the 5.0.1 release:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Search autocomplete occasionally displays an error when using a bulk filter.</p>
+</li>
+<li>
+<p>In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using <code>versus</code>(example: <code>2019 vs 2018``net sales</code>).</p>
+</li>
+<li>
+<p>Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.</p>
+</li>
+<li>
+<p>A yellow bar sometimes appears during search, causing search not to work.</p>
+</li>
+<li>
+<p>Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.</p>
+</li>
+<li>
+<p>After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.</p>
+</li>
+<li>
+<p>The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.</p>
+</li>
+<li>
+<p>Common keywords, like <code>this year</code>, <code>date daily</code>,<code>last quarter</code>, and <code>week of year</code> do not reflect the settings of a custom calendar.</p>
+</li>
+<li>
+<p>The title page of an exported PDF does not display the full date.</p>
+</li>
+<li>
+<p>The <code>date</code> filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard <code>date</code> filter.</p>
+</li>
+<li>
+<p>Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="5-new"><a class="anchor" href="#5-new"></a>5.0 New Features and Functionality</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_mobile"><a class="anchor" href="#_mobile"></a>Mobile</h3>
+<div class="paragraph">
+<p>You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices.
+ThoughtSpot Mobile works for releases 5.1 and later.</p>
+</div>
+<div class="paragraph">
+<p>Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.</p>
+</div>
+<div class="paragraph">
+<p>See link:{{ site.baseurl }}/admin/mobile/use-mobile.html[Mobile].</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_embrace_for_snowflake_and_amazon_redshift"><a class="anchor" href="#_embrace_for_snowflake_and_amazon_redshift"></a>Embrace for Snowflake and Amazon Redshift</h3>
+<div class="paragraph">
+<p>In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot.
+You can then analyze this data, and create visualizations and pinboards.
+As with Snowflake, you can sync the data into ThoughtSpot later.
+<strong>Support for Amazon Redshift is in beta</strong>.</p>
+</div>
+<div class="paragraph">
+<p>ThoughtSpot now supports the following features for linked tables:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Search suggestions for column values</p>
+</li>
+<li>
+<p>Indexing of table columns</p>
+</li>
+<li>
+<p>Remapping of tables and columns</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Embrace overview</strong></p>
+</div>
+<div class="paragraph">
+<p>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/1n7ei0tqr4?videoFoam=true" title="Embrace in 6.0 Video" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+</p>
+</div>
+<div class="paragraph">
+<p>For more information, see link:{{ site.baseurl }}/data-integrate/embrace/embrace-intro.html[Embrace overview].</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_monitor_headlines"><a class="anchor" href="#_monitor_headlines"></a>Monitor headlines</h3>
+<div class="paragraph">
+<p>The Monitor feature enables you to follow headline metrics, and get daily updates in your mailbox, on your ThoughtSpot home page, and in the SpotIQ Follow management interface.</p>
+</div>
+<div class="paragraph">
+<p>For more information, see link:{{ site.baseurl }}/spotiq/monitor-headlines.html[Monitor headlines]</p>
+</div>
+<div class="paragraph">
+<p><strong>Support for Monitor is in beta</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To monitor headlines, click the <strong>Follow</strong> icon in the top right corner of the insight.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/follow.png" alt="Monitor headlines with Follow">
+</div>
+</div>
+</li>
+<li>
+<p>The <strong>SpotIQ Follow</strong> interface lists all the headlines you follow, and the changes from last run.
+<span class="image"><img src="_images/spotiq-monitor.png" alt="SpotIQ Follow management interface"></span></p>
+</li>
+<li>
+<p>Click each headline to see the detailed performance over time, examine each interval, all at the time scale you choose.
+And you can change to table view, or to another chart type to better visualize your changing metric.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-monitor-detail.png" alt="Metric performance over time">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_chart_configuration"><a class="anchor" href="#_chart_configuration"></a>Chart Configuration</h3>
+<div class="paragraph">
+<p>This release introduces a complete new approach that makes chart configuration much easier and more intuitive.</p>
+</div>
+<div class="paragraph">
+<p><strong>Chart configuration overview</strong>
+
+<script src="https://fast.wistia.com/embed/medias/y633w03qzm.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_y633w03qzm popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+
+* <strong>Add drag-and-drop chips</strong> automatically when adding new elements in search bar.
+These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
+* <strong>Improve number formatting</strong> for data labels on the chart marks (bars, bubbles, lines), and on the axes.
+Can use numbers, percentages, currencies, and specified units, "as is" (auto mode), or change to millions, trillions, and billions (K, M, B).
+Can easily specify the number of decimal places.
+* <strong>Independent control of each measure</strong> in a chart helps you reduce noise by applying labels only where you need it.
+* <strong>Simple time bucketing</strong> lets you change granularity of time series.
+* <strong>Intuitive color configuration</strong> enables you to quickly change color on the element or in the legend.
+* <strong>Column renaming</strong> for pivot tables and regular chart tables, wrapping and clipping of header text.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scriptable_worksheets"><a class="anchor" href="#_scriptable_worksheets"></a>Scriptable Worksheets</h3>
+<div class="paragraph">
+<p>You can now <strong>Export</strong> Worksheets by downloading them to a <code><strong>.yaml</code> file, make changes, and then *Update</strong> the Worksheet from the changed file either to the same cluster, or to a new cluster.</p>
+</div>
+<div class="paragraph">
+<p>Scriptable Worksheets support metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).</p>
+</div>
+<div class="paragraph">
+<p>See link:{{ site.baseurl }}/admin/worksheets/worksheet-export.html[Migrate or restore Worksheets], and link:{{ site.baseurl }}/admin/worksheets/yaml-worksheet.html[Worksheet YAML specification].</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_welcome_new_users"><a class="anchor" href="#_welcome_new_users"></a>Welcome new users</h3>
+<div class="paragraph">
+<p>Administrators can configure a welcoming experience for new users.
+In addition to assigning a user to the most relevant groups and Pinboards, they can customize a Welcome email to introduce them to ThoughtSpot and help them get started.</p>
+</div>
+<div class="paragraph">
+<p><strong>Configure new user welcome experience and emails</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getting_started"><a class="anchor" href="#_getting_started"></a>Getting started</h3>
+<div class="paragraph">
+<p>To quickly onboard new users and teach them how to effectively use ThoughtSpot, we added in-product guidance and video content.</p>
+</div>
+<div class="paragraph">
+<p><strong>Getting started with ThoughtSpot</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sharing"><a class="anchor" href="#_sharing"></a>Sharing</h3>
+<div class="paragraph">
+<p>We improved the experience of sharing Answers and Pinboards through better email notifications, with embedded links.</p>
+</div>
+<div class="paragraph">
+<p><strong>Sharing Pinboards and Answers</strong>
+
+<script src="https://fast.wistia.com/embed/medias/7heqb1ujsx.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_7heqb1ujsx popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+
+=== Access request and grant</p>
+</div>
+<div class="paragraph">
+<p>To enhance the ease of sharing, we simplified and reinforced the workflow for access request and grant of privileges to Pinboards, Answers, and Data sources.</p>
+</div>
+<div class="paragraph">
+<p><strong>Requesting and granting access to Pinboards and Answers</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_google_cloud_platform_gcs_persistent_storage"><a class="anchor" href="#_google_cloud_platform_gcs_persistent_storage"></a>Google Cloud Platform GCS persistent storage</h3>
+<div class="paragraph">
+<p>You can now reduce the cost of a GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine.
+For more information, see link:{{ site.baseurl }}/appliance/gcp/configuration-options.html[GCP configuration options].</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_streamlined_gcp_data_loading_from_a_gcs_bucket"><a class="anchor" href="#_streamlined_gcp_data_loading_from_a_gcs_bucket"></a>Streamlined GCP data loading from a GCS bucket</h3>
+<div class="paragraph">
+<p>You can now load data from a Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance.
+By assigning the <em>Compute Engine default service account</em> and the <em>Set access for each API</em> scope to your instance, you can set read-only access to your GCS bucket.
+This way, you don&#8217;t have to enter GCS credentials when loading data.
+For more information, see link:{{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket[Loading data from a GCP GCS bucket]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_answer_explorer"><a class="anchor" href="#_answer_explorer"></a>Answer Explorer</h3>
+<div class="paragraph">
+<p>This release introduces Answer Explorer, which provides you with AI-guided exploration of Pinboards, at a single click.</p>
+</div>
+<div class="paragraph">
+<p><strong>Answer Explorer overview</strong></p>
+</div>
+<div class="paragraph">
+<p>Answer Explorer includes the following features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Filters</strong> search field accepts any value, including a column name.
+After you enter your value, press <strong>Enter</strong>, or click <strong>Add</strong>.</p>
+</li>
+<li>
+<p><strong>Comparisons</strong> lets you easily perform a "versus" analysis.</p>
+</li>
+<li>
+<p><strong>Breakdowns</strong> make it easy to add a new attribute or replace an existing one, and let you change buckets for time series: monthly, weekly, daily, or quarterly.</p>
+</li>
+<li>
+<p><strong>Metrics</strong> "Also include" feature enables you to add other available metrics, and changing a column replaces a metric.</p>
+</li>
+<li>
+<p><strong>Navigation</strong>: Column names appear separately from search values.
+Undo steps back to the last change.
+Copy and edit retains all changes.
+Seamlessly switch from Answer Explorer to search.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_homepage_insights_for_everyone"><a class="anchor" href="#_homepage_insights_for_everyone"></a>Homepage Insights for everyone</h3>
+<div class="paragraph">
+<p>This release of ThoughtSpot leverages existing insights that are generated by the SpotIQ power users, and shares them with everyone on their Homepage, regardless of that person&#8217;s access to SpotIQ Analyze function.</p>
+</div>
+<div class="paragraph">
+<p>These insights are diverse, and cover a wider range of data sources and types.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ask_an_expert"><a class="anchor" href="#_ask_an_expert"></a>Ask an Expert</h3>
+<div class="paragraph">
+<p>We improved the Expert feature by adding more email notifications, enriching email content, and directly linking from emails to requests.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When a user creates a request, both that user and designated experts get an email notification.
+The <strong>Open request</strong> link in the expert&#8217;s leads directly to ThoughtSpot, to review and manage the request.</p>
+</li>
+<li>
+<p>When an expert resolves the request, both the expert and the user receive an email notification.
+The user can then follow the supplied link to navigate directly to the resolved answer.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_geomaps"><a class="anchor" href="#_geomaps"></a>GeoMaps</h3>
+<div class="paragraph">
+<p>ThoughtSpot now supports link:{{ site.baseurl }}/reference/geomap-reference.html[GeoMap] visualizations for these new locales:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Austria:</strong> State, District, and Postal</p>
+</li>
+<li>
+<p><strong>Italy:</strong> Region, Province/Territories, and Postal Code</p>
+</li>
+<li>
+<p><strong>Poland:</strong> Province/Territories, County, Postal Code</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="5-fixed"><a class="anchor" href="#5-fixed"></a>5.0 Fixed Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following issues are fixed in the 6.0 release:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>tscli cluster download-release</code> command sometimes did not work correctly.</p>
+</li>
+<li>
+<p>The date dimension attribute was removed from the query for all date aggregations, except for DETAILED.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="beta-program"><a class="anchor" href="#beta-program"></a>Beta Programs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are interested in seeing some of our newest features, we want to add you to our testing group.
+ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators, and so on.
+We like to have a diversity of experience and perspective, and want to hear from you.
+Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
+These features are currently in Beta.
+Please contact us if you are interested in participating:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="mailto:BetaProgram@thoughtspot.com?subject=Montor%20Beta%20Program%20Request">Monitor Beta Program</a> for monitoring selected metrics over time.</p>
+</li>
+<li>
+<p><a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request">Embrace Beta Program for Redshift</a> to query the new supported external database, Amazon Redshift.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrade-paths"><a class="anchor" href="#upgrade-paths"></a>Supported Upgrade Paths</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are running one of the following versions, you can upgrade to the 6.0.1 release directly:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>4.5.x to 5.0.1</p>
+</li>
+<li>
+<p>5.0.x to 5.0.1</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>(This includes any hotfixes or customer patches on these branches.)</p>
+</div>
+<div class="paragraph">
+<p>If you are running a different version, you must do a multiple pass upgrade.
+First, upgrade to version 5.0.x, and then to the 5.0.1 release.</p>
+</div>
+<div class="paragraph">
+<p>{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address.
+Without valid email addresses, the upgrade is blocked." %}</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="notes-for-older-versions"><a class="anchor" href="#notes-for-older-versions"></a>Notes for earlier releases</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/5.3/pdf/ThoughtSpot_Release_Notes_5.3.pdf">5.3 Release Notes</a></p>
+</li>
+<li>
+<p><a href="/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf">5.2 Release Notes</a></p>
+</li>
+<li>
+<p><a href="/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf">5.1 Release Notes</a></p>
+</li>
+<li>
+<p><a href="/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf">5.0 Release Notes</a></p>
+</li>
+<li>
+<p><a href="/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf">4.5 Release Notes</a></p>
+</li>
+<li>
+<p><a href="/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf">4.4 Release Notes</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <div class="footer-logo">
+          <a href="https://mark-plummer.github.io/antora-test/" class="icon">
+            <img src="../../../_/img/logo.svg" alt="Couchbase">
+          </a>
+        </div>
+        <div class="contact">
+          <p class="address">3250 Olcott Street
+Santa Clara, CA 95054
+United States</p>
+          <a href="https://www.couchbase.com/contact" class="btn white-btn">Contact Us</a>
+          <a class="tel" href="tel:1-650-417-7500">1-650-417-7500</a>
+        </div>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Company</span></li>
+          <li><a href="https://www.couchbase.com/about">About</a></li>
+          <li><a href="https://www.couchbase.com/leadership">Leadership</a></li>
+          <li><a href="https://www.couchbase.com/news-and-press-releases">News &amp; Press</a></li>
+          <li><a href="https://www.couchbase.com/careers">Careers</a></li>
+          <li><a href="https://www.couchbase.com/resources/events">Events</a></li>
+          <li><a href="https://www.couchbase.com/contact">Contact Us</a></li>
+          <li><a href="https://www.couchbase.com/request-pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Support</span></li>
+          <li><a href="https://developer.couchbase.com" target="_blank" rel="noopener">Developer Portal</a></li>
+          <li><a href="https://docs.couchbase.com" target="_blank" rel="noopener">Documentation</a></li>
+          <li><a href="https://forums.couchbase.com" target="_blank" rel="noopener">Forums</a></li>
+          <li><a href="https://www.couchbase.com/services">Professional Services</a></li>
+          <li><a href="https://support.couchbase.com" target="_blank" rel="noopener">Support Login</a></li>
+          <li><a href="https://learn.couchbase.com/store" target="_blank" rel="noopener">Training</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Quicklinks</span></li>
+          <li><a href="https://blog.couchbase.com" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="https://www.couchbase.com/downloads">Downloads</a></li>
+          <li><a href="https://www.couchbase.com/get-started-developing-nosql">Get Started</a></li>
+          <li><a href="https://learn.couchbase.com/store?utf8=%E2%9C%93&ss=1&ct=78327&commit=Filter" target="_blank" rel="noopener">Online Training</a></li>
+          <li><a href="https://www.couchbase.com/resources">Resources</a></li>
+          <li><a href="https://www.couchbase.com/nosql-resources/why-nosql">Why NoSQL</a></li>
+          <li><a href="https://www.couchbase.com/resources/security">Security</a></li>
+          <li><a href="https://www.couchbase.com/resources/gdpr">GDPR</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/Couchbase" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/couchbase" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/couchbase" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>2019 COUCHBASE All rights reserved.</span>
+      <a href="https://www.couchbase.com/privacy-policy">Privacy Policy</a>
+      <a href="https://www.couchbase.com/terms-of-use">Terms of Use</a>
+      <a href="https://www.couchbase.com/cookie-policy">Cookie Policy</a>
+      <a href="https://info.couchbase.com/unsubscribe-or-manage-preferences.html" target="_blank" rel="noopener">Marketing Preference Center</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
