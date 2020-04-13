@@ -1,5 +1,5 @@
 = ["Prerequisites"]
-:last_updated: ["12/17/2019"]
+:last_updated: ["3/3/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Complete these prerequisites before installing your ThoughtSpot clusters on the SMC appliance.
@@ -12,7 +12,7 @@ Ensure that you have the following items, information, and understanding of poli
 [cols=2*]
 |===
 | &#10063;
-| link:/appliance/hardware/connect-appliance-smc.html#haswell-port-location[Appliance Port Location], to locate data and IPMI ports.
+| link:{{ site.baseurl }}/appliance/hardware/connect-appliance-smc.html#haswell-port-location[Appliance Port Location], to locate data and IPMI ports.
 
 | &#10063;
 | Data center with proper environment controls, such as cooling.
@@ -22,35 +22,40 @@ Ensure that you have the following items, information, and understanding of poli
 
 | &#10063;
 | 10GbE switch, with enabled IPv6 broadcast and multicast.
-You need one for each node.
+You need one switch for each cluster, with one port for each node on the cluster.
 
 | &#10063;
 | 10GbE network cables, either direct attach copper (DAC) or fiber.
-Refer to the link:cable-networking.html[Cable reference] for more information to decide between the two types.
+Refer to the link:{{ site.baseurl }}/appliance/hardware/cable-networking.html[cable reference] for more information to decide between the two types.
 
 | &#10063;
 | 100Mbps or 1Gbps switch for IPMI, for Out of Band Management.
+You need one for each node in your cluster.
+
+| &#10063;
+| Cat5 network cables, for IPMI management port use.
 You need one for each node.
 
 | &#10063;
-| Cat5 network cables.
-You need one for each node.
+| Rack space of 2U or 3.5 inches for each appliance, and a power strip.
 
 | &#10063;
-| Rack space of 2U or 3.5 inches for each appliance, and a power strip
+| VGA Monitor and USB keyboard
 
 | &#10063;
-| Monitor and keyboard
+| 10G connection: You need one SFP+ for each node for the switch side, and one SFP+ for each node for the appliance side.
 
 | &#10063;
-| 10G connection: SFP+ for the switch side
+| Networking information: IP addresses for data & management NICs, for up to 2 DNS servers, up to 4 NTP servers and for the default gateway.
+Ensure that you configure only two DNS servers.
+ThoughtSpot does not support configuration of three DNS servers.
+You also need to know the timezone for your cluster.
+Typically, your timezone is where most of the people who will use the product are.
+Download and fill out the ThoughtSpot link:{{ site.baseurl }}/site-survey.pdf[site survey] so that you have a quick reference before beginning the install process.
+Ask your network administrator if you need help filling out the site survey.
 
 | &#10063;
-| Networking information: for data, management IPs, DNS, timezone, and default gateway IP.
-Contact your network administrator for this information, and fill out the ThoughtSpot site survey so that you have a quick reference before beginning the install process.
-
-| &#10063;
-| link:/appliance/firewall-ports.html[Network policies], to determine the ports you need to have open for your cluster.
+| link:{{ site.baseurl }}/appliance/firewall-ports.html[Network policies], to determine the ports you need to have open for your cluster.
 |===
 
 == Review hardware requirements

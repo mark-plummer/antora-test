@@ -2,7 +2,7 @@
 
 title: [Use the Data Push API]
 
-last_updated: 11/4/2018 summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application" sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The Data Push API allows you to open a web page in the context of the ThoughtSpot application.
+last_updated: 11/18/2019 summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The Data Push API allows you to open a web page in the context of the ThoughtSpot application.
 This third party web page will then have access to the results of the ThoughtSpot search from which it was invoked.
 This is useful when you want to initiate an action in another application based on the result of a search in ThoughtSpot.
 The Data Push API was introduced in ThoughtSpot 5.0.
@@ -33,17 +33,17 @@ This menu item will appear under the three dot menu of a search result.
  ** Window size: The size of the window that will display the external web page or application in ThoughtSpot.
 
 +
-image::create_custom_action.png[]
+image::{{ site.baseurl }}/images/create_custom_action.png[]
 . Now when a user is viewing a search result, they'll have the option to use the Custom Action you created.
-To initiate the action, they'll click the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Your Action Name*.
+To initiate the action, they'll click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Your Action Name*.
 Notice a *Custom* tag next to your action name;
 it indicates that this is something custom built, and not a ThoughtSpot action.
 +
-image::initiate_custom_action.png[]
+image::{{ site.baseurl }}/images/initiate_custom_action.png[]
 
 . When a user clicks your action, they'll see the web page you entered as the URL for your custom action.
 +
-image::custom_action_response.png[]
+image::{{ site.baseurl }}/images/custom_action_response.png[]
 
 {% include note.html content="In order for your action to work correctly, the answer from which the user selected the action needs to have the correct search terms which your application or web page is expecting to receive.
 There is no way to guarantee this, other to train your users on the purpose of your action, and what's required for it to run." %}

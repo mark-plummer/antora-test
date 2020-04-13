@@ -7,20 +7,20 @@ The main reason for needing to set up multiple ThoughtSpot ODBC data sources is 
 
 . Locate and open the *ODBC Data Source Administrator (64-bit)* application.
 +
-image:odbc-windows-search.png[]1
+image:{{ site.baseurl }}/images/odbc-windows-search.png[]1
 
 . Click the *System DSN* tab.
 . Select *Add*.
 +
 The system lists the available drivers.
 +
-image::ODBC_choose_new_data_source_to_add.png[]
+image::{{ site.baseurl }}/images/ODBC_choose_new_data_source_to_add.png[]
 
 . Choose the *ThoughtSpot ODBC Driver* and click *Finish*.
 +
 The system displays the *Client Configuration Dialog* dialog.
 +
-image::ODBC_config_dev_source_connect.png[]
+image::{{ site.baseurl }}/images/ODBC_config_dev_source_connect.png[]
 
 . Enter the your data source configuration.
 +
@@ -53,7 +53,7 @@ image::ODBC_config_dev_source_connect.png[]
 +
 The system displays the *Options* dialog.
 +
-image::ODBC_add_custom_property.png[]
+image::{{ site.baseurl }}/images/ODBC_add_custom_property.png[]
 
 . Add these properties using the *Add* to enter an option and click *OK* after to save an option.
 +
@@ -75,15 +75,15 @@ Seconds before an idle connection times out.
 The key must be defined exactly as it appear here, using all capital letters.
 You can find other supported properties in link:{{ site.baseurl }}/data-integrate/reference/simba-settings.html#[ODBC and JDBC configuration properties].
 +
-image::ODBC_add_custom_property_new_data_source.png[]
+image::{{ site.baseurl }}/images/ODBC_add_custom_property_new_data_source.png[]
 
 . When you are done, click *OK* to save your new configuration.
 +
-image::odbc-new-config.png[]
+image::{{ site.baseurl }}/images/odbc-new-config.png[]
 
 . Click *Test Connection* to test your database connection.
 +
-image::windows-odbc-success.png[]
+image::{{ site.baseurl }}/images/windows-odbc-success.png[]
 +
 If your test connection fails, link:{{ site.baseurl }}/data-integrate/troubleshooting/enable-ODBC-log.html#[enable ODBC logging] to troubleshoot.
 

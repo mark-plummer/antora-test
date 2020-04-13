@@ -1,5 +1,7 @@
-= ThoughtSpot browser access
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+= ["ThoughtSpot browser access"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to reach ThoughtSpot from a browser.
 
 {% include content/log_in_out.md %}

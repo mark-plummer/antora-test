@@ -1,8 +1,10 @@
-'''
+= ["Slack integration"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to configure ThoughtSpot's Slack integration.
 
-title: [Slack integration]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Working with ThoughtSpot, you can configure your installation to work with Slack.
+Working with ThoughtSpot, you can configure your installation to work with Slack.
 Users can use the integration, called *Spot*, to make queries or view charts.
 Any users with administrative rights can apply a `spot` sticker to specific objects.
 Then, the object is available through Slack.
@@ -16,7 +18,7 @@ Actions a user makes from Slack are tied to the user's permissions and authoriza
 Here are the high level steps:
 
 . Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html)  to install the Spot Slack bot on your cluster.
-. Log into ThoughtSpot.
+. Log in to ThoughtSpot.
 . Label answers, pinboards, and other objects with the spot sticker.
 . Start Spot Bot.
 . Register Spot bot with your company's Slack instance.

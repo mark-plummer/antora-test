@@ -10,17 +10,17 @@ You can use this capability in any of these ways:
 * Use the editor to type your SQL directly into the browser.
 * Use the browser SQL interface as an interactive SQL editor, for example to test an existing script or make changes to an existing schema.
 
-. Log into ThoughtSpot from a browser.
+. Log in to ThoughtSpot from a browser.
 . Click *Data*, on the top navigation bar.
-. Click the ellipses icon image:icon-ellipses.png[more options menu icon], and select *Upload schema*.
+. Click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon], and select *Upload schema*.
 +
-image::import_schema.png[]
+image::{{ site.baseurl }}/images/import_schema.png[]
 
 . Drag and drop your SQL file into the browser, or choose *Browse Your Files* to locate it.
 . You're now in the SQL editor.
 Use it to view your script and make any changes.
 +
-image::SQL_editor.png[]
+image::{{ site.baseurl }}/images/SQL_editor.png[]
 
 . When ready, run your script by clicking the *Execute* button.
 . If there are any errors, correct them and run the script again.

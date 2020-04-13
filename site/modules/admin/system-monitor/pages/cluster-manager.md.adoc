@@ -1,12 +1,13 @@
-'''
+= ["Cluster Manager board"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn about the Cluster Manager board.
+:toc: false
 
-title: [Cluster Manager board]
+The *Cluster Manager* section shows detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs.
 
-toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html --
-
-The *Cluster Manager* section show detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs.
-
-image::control_center_cluster_mgmt.png[]
+image::{{ site.baseurl }}/images/control_center_cluster_mgmt.png[]
 
 Only the *Average Latency Last 2 Weeks (sec)* panel contains a standard ThoughtSpot visualization.
 The other visualizations rely on internal queries that are not accessible.
@@ -14,7 +15,7 @@ You can, however, *Present* or *Copy link* on them.
 
 == Cluster Details
 
-The fields on this visualization has the following meaning:+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
+The fields on this visualization have the following meaning:+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
     +++<col style="width:65%">++++++</col>++++++</colgroup>+++
     +++<tr>++++++<th>+++Field+++</th>+++
        +++<th>+++Description+++</th>++++++</tr>+++
@@ -33,7 +34,7 @@ The fields on this visualization has the following meaning:+++<table>++++++<colg
 
 == Cluster Logs
 
-The fields on this visualization has the following meaning:+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
+The fields on this visualization have the following meaning:+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
    +++<col style="width:65%">++++++</col>++++++</colgroup>+++
    +++<tr>++++++<th>+++Field+++</th>+++
       +++<th>+++Description+++</th>++++++</tr>+++
@@ -49,7 +50,7 @@ You can also use the `tscli logs` command to review log data from your cluster.
 == List of Snapshots
 
 This visualization shows the snapshots _and the backups_ taken on the cluster.
-The fields on this visualization has the following meaning:+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
+The fields on this visualization have the following meaning:+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
    +++<col style="width:65%">++++++</col>++++++</colgroup>+++
    +++<tr>++++++<th>+++Field+++</th>+++
       +++<th>+++Description+++</th>++++++</tr>+++

@@ -1,8 +1,10 @@
-'''
+= ["Schema planning concepts"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn about creating a schema for the ThoughtSpot Loader.
 
-title: [Schema planning concepts]
-
-last_updated: tbd summary: "Considerations in creating a schema for the ThoughtSpot Loader." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Before you can load data with ThoughtSpot Loader, you must create a schema to receive it, using the SQL command line interface (TQL).
+Before you can load data with ThoughtSpot Loader, you must create a schema to receive it, using the SQL command line interface (TQL).
 
 The TQL syntax is similar to the SQL used in other relational databases, but with some important differences.
 Use DDL (data definition language) to create the schema into which you can load the data.
@@ -15,7 +17,7 @@ Before writing your TQL script, you need to understand some basic ThoughtSpot co
 ThoughtSpot organizes objects in a hierarchical namespace.
 Databases contain schemas, which contain tables.
 
-image::namespace.png[]
+image::{{ site.baseurl }}/images/namespace.png[]
 
 ThoughtSpot can contain one or more databases, and each database can have multiple schemas.
 If you do not specify a schema, the default schema (`falcon_default_schema`) is used automatically.

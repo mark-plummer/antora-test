@@ -1,8 +1,9 @@
-'''
+= ["VMware configuration overview"]
+:last_updated: 4/3/2020
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: You can host ThoughtSpot on VMware.
 
-title: [VMware configuration overview]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Congratulations on purchasing the ThoughtSpot instance.
 This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
 
 == About ThoughtSpot in VMware
@@ -11,10 +12,10 @@ The VMware virtualization platform provides highly scalable and efficient memory
 Additionally, the VMware virtualization environment is an easy transition between development and production environments.
 The following diagram shows the components of a VMware and ThoughtSpot architecture:
 
-image::vmware-components.png[]
+image::{{ site.baseurl }}/images/vmware-components.png[]
 
-{% include note.html content="This is a generic representation;
-Only CentOS-based virtual machines are supported with ThoughtSpot." %}
+{% include note.html content="This is a generic representation.
+ThoughtSpot supports deployment on its CentOS-based image, or an RHEL 7.7 image that your organization manages internally." %}
 
 Your database capacity will determine the number of ThoughtSpot instances and the instance network/storage requirements.
 In addition, you can scale your ThoughtSpot VMs as your dataset size grows.
@@ -24,17 +25,21 @@ In addition, you can scale your ThoughtSpot VMs as your dataset size grows.
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot platform in VMware for the best performance, load balancing, scalability, and reliability.
 Based on this testing, ThoughtSpot recommends the following _minimum specifications_ for an individual VMware ESXi host machine:+++<table width="100%" border="0">++++++<tbody>++++++<tr>++++++<th scope="col">+++Per VM user data capacity+++</th>+++
 	      +++<th scope="col">+++CPU/RAM+++</th>+++
-	      +++<th scope="col">+++Data disk+++</th>++++++</tr>+++
+	      +++<th scope="col">+++Data disk+++</th>+++
+				+++<th scope="col">+++Required root volume capacity+++</th>++++++</tr>+++
 	    +++<tr>++++++<td>+++20 GB+++</td>+++
 	      +++<td>+++16/128 GB+++</td>+++
-	      +++<td>+++800 GB+++</td>++++++</tr>+++
+	      +++<td>+++800 GB+++</td>+++
+				+++<td>+++200 GB for each node+++</td>++++++</tr>+++
 	    +++<tr>++++++<td>+++100 GB+++</td>+++
 	      +++<td>+++32/256 GB+++</td>+++
-	      +++<td>+++800 GB+++</td>++++++</tr>+++
+	      +++<td>+++800 GB+++</td>+++
+				+++<td>+++200 GB for each node+++</td>++++++</tr>+++
 	    +++<tr>++++++<td>+++256 GB+++</td>+++
 	      +++<td>+++72/512 GB+++</td>+++
-	      +++<td>+++6 TB+++</td>++++++</tr>+++
-		+++<tr>++++++<td colspan="3">++++++<b>+++Note:+++</b>+++ All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.+++</td>+++
+	      +++<td>+++6 TB+++</td>+++
+				+++<td>+++200 GB for each node+++</td>++++++</tr>+++
+		+++<tr>++++++<td colspan="4">++++++<b>+++Note:+++</b>+++ All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.+++</td>+++
 	      +++<td>++++++</td>+++
 	      +++<td>++++++</td>++++++</tr>++++++</tbody>++++++</table>+++
 
@@ -60,4 +65,4 @@ You can obtain these files from your ThoughtSpot Customer Success Engineer.
 
 We hope your experience with ThoughtSpot is excellent.
 Please let us know how it goes, and what we can do to make it better.
-You can link:{{ site.baseurl }}/appliance/contact.html[contact ThoughtSpot] by filing a support ticket, email or phone.
+You can link:{{ site.baseurl }}/appliance/contact.html[contact ThoughtSpot] by email, phone, or by filing a support ticket.

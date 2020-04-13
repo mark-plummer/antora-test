@@ -1,13 +1,15 @@
-'''
+= ["Allow users to request access"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to allow people in your organization to request access to ThoughtSpot.
 
-title: ["Allow users to request access"]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can allow people in your organization to request access to ThoughtSpot by clicking a button on the sign-in page.
+You can allow people in your organization to request access to ThoughtSpot by clicking a button on the sign-in page.
 
 You do this by providing them with the ThoughtSpot sign-up URL.
 When they go to this URL, they see the sign-up button.
 
-image::admin_sign-up.png[]
+image::{{ site.baseurl }}/images/admin_sign-up.png[]
 
 When a person clicks the sign-up button, they go to a sign-up page that you've already set up outside of ThoughtSpot.
 This can be any page you want to use for registering new users.

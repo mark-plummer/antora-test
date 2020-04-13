@@ -16,7 +16,7 @@ To refresh a view manually, follow these steps:
 . In the *Materialization* panel, notice that the *Status* is _Stale_.
 . Next to the _Stale_ status, click *Refresh Data*.
 +
-image::refresh-materialized-views.png[Refresh a stale view]
+image::{{ site.baseurl }}/images/refresh-materialized-views.png[Refresh a stale view]
 
 == Related Information
 

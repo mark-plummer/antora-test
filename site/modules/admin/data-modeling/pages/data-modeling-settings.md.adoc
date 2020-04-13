@@ -1,9 +1,10 @@
 = ["Overview of data modeling settings"]
-:last_updated: 09/23/2019
+:last_updated: 11/15/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
+:summary: Learn about data modeling settings.
 
-You can change these settings in two ways, both of which change the model.
+You can change data modeling settings in two ways, both of which change the model.
 If you want to make a few small changes, you should link:{{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html[make them in the ThoughtSpot application].
 If you want to make many changes link:{{ site.baseurl }}/admin/data-modeling/edit-model-file.html#[you should edit the modeling file].
 Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
@@ -94,5 +95,5 @@ For example, if you've changed the GeoMap setting from "None" to "Country", you 
 
 == Related information
 
-* link:semantic-modeling.html#[Model the data for searching]
+* link:{{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html[Model the data for searching]
 * link:{{ site.baseurl }}/admin/data-modeling/model-geo-data.html[Add a geographical data setting for a column]

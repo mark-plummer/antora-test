@@ -1,8 +1,10 @@
-'''
+= ["Characters not displaying correctly"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: If characters in your data do not display correctly in ThoughtSpot, make sure they are UTF-8 encoded.
 
-title: [Characters not displaying correctly]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Your CSV files are more likely to load smoothly if they are encoded with UTF-8.
+Your CSV files are more likely to load smoothly if they are encoded with UTF-8.
 If you're having problems with some characters rendering incorrectly, you can convert the files to UTF-8 encoding before loading the data.
 
 You might see unexpected characters in your data, especially characters whose ASCII values are at the high and low end of possible values.
@@ -10,11 +12,11 @@ Some examples of characters that can appear incorrectly are: æ, ñ, ä, í, ö.
 
 If this happens, your data will look like this:
 
-image::bad_chars.png[]
+image::{{ site.baseurl }}/images/bad_chars.png[]
 
 Instead of displaying correctly like this:
 
-image::good_chars.png[]
+image::{{ site.baseurl }}/images/good_chars.png[]
 
 To encode your data as UTF-8:
 

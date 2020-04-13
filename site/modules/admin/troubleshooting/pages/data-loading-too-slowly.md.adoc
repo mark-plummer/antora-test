@@ -1,8 +1,10 @@
-'''
+= ["Data loading too slowly"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: If your data is loading slowly, there are a few things you can do to fix it.
 
-title: [Data loading too slowly]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Some tables may take an unusually long time to load due to a high data version issue.
+Some tables may take an unusually long time to load due to a high data version issue.
 This issue normally arises when ThoughtSpot completes an upgrade or the system is recovering after a crash.
 
 The data version is the number of loads that have been historically applied to a table.

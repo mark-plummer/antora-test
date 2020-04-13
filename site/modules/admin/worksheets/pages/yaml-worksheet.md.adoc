@@ -5,6 +5,7 @@
 :summary: ThoughtSpot worksheet specification may be exported as a YAML file, modified, and imported into the same or different cluster.
 
 To work with Scriptable Worksheets in ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster.
+To learn how to export, change, and update Worksheets, see link:{{ site.baseurl }}/admin/worksheets/worksheet-export.html[Migrate or restore Worksheets].
 
 [#syntax]
 == Syntax of the Worksheet YAML file

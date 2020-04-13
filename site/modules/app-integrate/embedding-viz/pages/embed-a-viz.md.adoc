@@ -1,8 +1,11 @@
-'''
+= ["Embed pinboard or visualization"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to embed a visualization or pinboard in your own Web page.
+:toc: true
 
-title: [Embed pinboard or visualization]
-
-last_updated: tbd sidebar: mydoc_sidebar toc: true permalink: /:collection/:path.html -- This page explains, through an example, how to embed a visualization (table or chart) or pinboard from ThoughtSpot in your own static Web page, portal, or application.
+This page explains, through an example, how to embed a visualization (table or chart) or pinboard from ThoughtSpot in your own static Web page, portal, or application.
 
 To build this sample, you need to have access to a text editor and a ThoughtSpot instance with a visualization.
 You should also have some experience working with Javascript.
@@ -17,15 +20,15 @@ If the pinboard or visualization doesn't exist, create it now before continuing.
 . Open a pinboard.
 . Copy the URL for the entire pinboard and for a single visualization.
 +
-If the object is a pinboard, click the ellipses icon image:icon-ellipses.png[more options menu icon] >  *Copy Link*.
+If the object is a pinboard, click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] >  *Copy Link*.
 +
-image::embed-link-1.png[]
+image::{{ site.baseurl }}/images/embed-link-1.png[]
 +
 The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 +
-For a vizualization in a pinboard, click the ellipses icon image:icon-ellipses.png[more options menu icon] >  *Copy Link*.
+For a vizualization in a pinboard, click the ellipses icon image:{{ site.baseurl }}/images/icon-ellipses.png[more options menu icon] >  *Copy Link*.
 +
-image::embed-link-2.png[]
+image::{{ site.baseurl }}/images/embed-link-2.png[]
 +
 The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>/<vizualizationId>`
 
@@ -97,7 +100,7 @@ You are almost ready to view your embedded pinboard and visualization.
 The fastest way to run a webserver and test the code is using Python's `simplehttpserver`.
 If you have Python on your system you already have the `simplehttpserver`.
 
-. Log into ThoughtSpot.
+. Log in to ThoughtSpot.
 +
 In production, you would have added authentication code to your client.
 You haven't done that with this system.
@@ -119,7 +122,7 @@ Your browser has this information and so when you load the `test.html` page in a
 +
 You should see something similar to the following:
 +
-image::embed-3.png[]
+image::{{ site.baseurl }}/images/embed-3.png[]
 
 . Check the browser console.
 +

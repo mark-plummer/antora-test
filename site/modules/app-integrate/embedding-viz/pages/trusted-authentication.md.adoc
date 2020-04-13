@@ -1,8 +1,11 @@
-'''
+= ["Configure trusted authentication"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to configure trusted authentication.
+:toc: false
 
-title: [Configure trusted authentication]
-
-last_updated: tbd toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application.
+If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application.
 After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user's behalf.
 In this way, the user need only authenticate one time, with the trusted authentication server.
 
@@ -10,9 +13,9 @@ In this way, the user need only authenticate one time, with the trusted authenti
 
 In the following scenario, the trust authenticator forwards requests for ThoughtSpot data from client applications to ThoughtSpot.
 
-image::authentication.png[]
+image::{{ site.baseurl }}/images/authentication.png[]
 
-A user already logged into client-application interacts with a ThoughtSpot embed point which launches the following sequence:
+A user already logged into the client application interacts with a ThoughtSpot embed point which launches the following sequence:
 
 . The client-side application requests a user token from the trusted authenticator.
 +
@@ -20,13 +23,13 @@ This trusted authenticator server was previously configured as an authenticated 
 
 . The trusted server authenticates the user and requests a token from ThoughtSpot on the user's behalf.
 . ThoughtSpot verifies the authenticator server's request and returns a user token.
-. The authenticator returns the user token to the client which it uses to complete the user request.
-. The client forwards the request together with the user token to ThoughtSpot.
+. The authenticator returns the user token to the client, which it uses to complete the user request.
+. The client forwards the request and the user token to ThoughtSpot.
 . ThoughtSpot validates the token and returns information commensurate with that authenticated user's authorization.
 
 == Enable trusted authentication and get a token
 
-. Log into the ThoughtSpot server.
+. Log in to the ThoughtSpot server.
 . Enable trusted authentication and generate an authenticate token.
 (service secret)  -- used to identify the server to ThoughtSpot.
 +
@@ -42,7 +45,8 @@ This trusted authenticator server was previously configured as an authenticated 
  Override added successfully
 ----
 
-Tokens are like any other password, you should store them securely and protect knowledge of them.
+Tokens are like any other password.
+You should store them securely and protect knowledge of them.
 At any point in time, your installation can have a single authentication token.
 Repeated calls to enable overwrite the existing token and return a new one.
 To disable a token and not overwrite it:
@@ -55,7 +59,7 @@ Generated tokens do not expire.
 
 == Trusted authentication call
 
-. User in another application or web page requests access to embedded ThoughtSpot.
+. A user in another application or web page requests access to embedded ThoughtSpot.
 +
 This is a REST request for an embedded ThoughtSpot object, page, or the entire application.
 Your trusted authenticator server intercepts the request.
@@ -88,7 +92,7 @@ This post takes the following parameters:+++<table>++++++<tr>++++++<th>+++Parame
 The token can be managed in any way you see fit.
 Tokens expire in XXX minutes/hours/day.
 
-. The trusted authenticator server returns token to the original requestor.
+. The trusted authenticator server returns a token to the original requestor.
 . Client completes the user's request providing the token along with the request.
 +
 For example, if the customer was requesting a specific object:

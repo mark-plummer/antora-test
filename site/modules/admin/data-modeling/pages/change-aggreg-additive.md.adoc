@@ -2,7 +2,7 @@
 
 title: [Set ADDITIVE or AGGREGATION ]
 
-last_updated: tbd summary: "You can allow aggregate on MEASURE columns and some ATTRIBUTE columns." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Aggregation is grouping many units or parts into a new value.
+last_updated: 11/15/2019 summary: "You can allow aggregation on MEASURE columns and some ATTRIBUTE columns." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Aggregation is grouping many units or parts into a new value.
 In data, aggregation gathers multiple input values and calculates an summary value from them.
 You then use this aggregated value to do an analysis.
 
@@ -20,7 +20,7 @@ Within a search result that contains data from this column, the options for each
 * *UNIQUE COUNT OF*
 * *TOTAL COUNT OF*
 
-image::model_additive_model_false_options.png[]
+image::{{ site.baseurl }}/images/model_additive_model_false_options.png[]
 
 To display extended aggregate view options, you must set *ADDITIVE* to `YES` on these `ATTRIBUTE` columns.
 This option is only possible on columns that have a numeric data type (`FLOAT`, `DOUBLE` or `INTEGER`) or a date data type (`DATE`, `DATETIME`, `TIMESTAMP`, or `TIME`).
@@ -35,7 +35,7 @@ After you make this change, these additional view options area-charts offered:
 * *MIN OF*
 * *MAX OF*
 
-image::model_additive_model_true_options.png[]
+image::{{ site.baseurl }}/images/model_additive_model_true_options.png[]
 
 To change this setting:
 
@@ -107,4 +107,4 @@ If using the modeling file, use the *AggregationType* setting.
 
 == Related information
 
-link:semantic-modeling.html#[Model the data for searching]
+link:{{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html[Model the data for searching]

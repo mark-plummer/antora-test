@@ -1,9 +1,10 @@
-'''
+= ["About troubleshooting"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn the basics of troubleshooting for ThoughtSpot.
 
-title: [About troubleshooting]
-
-sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The information here provides very basic troubleshooting.
-For more detailed troubleshooting, link:{{ site.baseurl }}/admin/misc/contact.html#[Contact ThoughtSpot].
+The information here provides very basic troubleshooting.
 
 * *link:{{ site.baseurl }}/admin/troubleshooting/get-logs.html[Get your configuration and logs]* + For troubleshooting on specific incidents or cluster problems, getting a log bundle can help.
 * *link:{{ site.baseurl }}/admin/troubleshooting/upload-logs-egnyte.html[Upload logs to ThoughtSpot Support]*
@@ -19,3 +20,5 @@ In this case, clearing the browser cache and reloading the page should resolve t
 * *link:{{ site.baseurl }}/admin/troubleshooting/data-loading-too-slowly.html[Data loading too slowly]* + Some tables may take an unusually long time to load due to a high data version issue.
 This issue normally arises when ThoughtSpot completes an upgrade or the system is recovering after a crash.
 * *link:{{ site.baseurl }}/admin/troubleshooting/search-too-many-blanks.html[Search results contain too many blanks]* + If you find that your search results contain too many blanks when your data source is a worksheet, there is a simple adjustment you can make to fix this.
+
+For more detailed troubleshooting, link:{{ site.baseurl }}/admin/misc/contact.html#[Contact ThoughtSpot].

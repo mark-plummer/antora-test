@@ -1,5 +1,5 @@
 = ["Configure support services"]
-:last_updated: 10/11/2019
+:last_updated: 3/4/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: There are several configurations you can set up in your installation to ensure your company's support from ThoughtSpot works smoothly.
@@ -15,51 +15,17 @@ The remote tunnel enables SSH and HTTP access to your ThoughtSpot instance by Th
 This access can be granted and revoked easily, so you can enable it for a troubleshooting session, and then disable it again.
 Before doing this procedure, make sure your company's security policies allow reverse tunneling.
 
-{% include note.html content="Before you set up a reverse tunnel, open port `22` in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`." %} <!--### Using Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later.
-Please contact ThoughtSpot Support, if you want to try it." %}
-
-. Log into ThoughtSpot from a browser.
-. Click the *Admin* menu on the top navigation bar.
-+
-image::admin.png[]
-+
-This opens the ThoughtSpot Management Console.
-
-. Click *Settings* menu on the top navigation bar.
-+
-image::settings.png[]
-
-. In the Settings panel, click *Reverse SSH Tunnel* and then  *Edit* option.
-+
-image::ssh.png[]
-
-. Enter the reverse tunnel details:
-+
-image::ssh-configure.png[]+++<table>++++++<colgroup>++++++<col width="20%">++++++</col>+++
-   +++<col width="80%">++++++</col>++++++</colgroup>+++
-   +++<tr>++++++<th>+++Field+++</th>+++
-   +++<th>+++Description+++</th>++++++</tr>+++
-   +++<tr>++++++<th>+++Have you whitelisted tunnelrelay.thoughtspot.com?+++</th>+++
-   +++<td>+++Ensure that this has been done before you enable the SSH tunnel. Select +++<b>+++Yes +++</b>+++ to continue.+++</td>++++++</tr>+++
-   +++<tr>++++++<th>+++Reverse SSH Tunnel+++</th>+++
-   +++<td>+++Select +++<b>+++Enable+++</b>+++ to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.+++</td>++++++</tr>++++++</table>+++
-
-. Click *Save* to configure the SSH tunnel.
-
-You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.
--->
+{% include note.html content="Before you set up a reverse tunnel, open port `22` in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`." %}
 
 [#remote-support-tscli]
 == Using remote support with tscli
 
 To enable remote support, follow these steps:
 
-. Contact ThoughtSpot Support (https://docs.thoughtspot.com/6.0/admin/misc/contact.html) and open a support ticket for making the appropriate reverse tunnel settings on our end.
+. Contact link:{{ site.baseurl }}/admin/misc/contact.html[ThoughtSpot Support] and open a support ticket for making the appropriate reverse tunnel settings on our end.
 Provide the cluster name of the cluster for which you want to enable remote support.
 . After the ticket is completed, continue with the remaining steps in this procedure to make the settings on your side.
-. Log into the Linux shell using SSH.
+. Log in to the Linux shell using SSH.
 . Issue the command to configure the destination for the remote tunnel.
 +
 You only need to do this one time, when you are enabling the tunnel for the very  first time.
@@ -133,7 +99,7 @@ The data is encrypted at rest on the server.
 By default, call home is enabled on your cluster.
 You can disable call home in by doing the following:
 
-. Log into the ThoughtSpot server as `admin` user.
+. Log in to the ThoughtSpot server as `admin` user.
 . Use the `tscli` command to disable.
 +
 ----
@@ -149,7 +115,7 @@ The designated support contact should have an available email and phone number.
 
 To designate the custom support contact, follow these steps:
 
-. Log into the Linux shell using SSH.
+. Log in to the Linux shell using SSH.
 . Issue the `tscli` command to set the email address:
 +
 ----
@@ -180,7 +146,7 @@ Alternatively, and especially in cases of using ThoughtSpot in embedded mode, yo
 Your designated feedback contact should have an available email.
 To designate the custom feedback contact, follow these steps:
 
-. Log into the Linux shell using SSH.
+. Log in to the Linux shell using SSH.
 . To set the feedback email address, issue this command:
 +
 ----
@@ -209,8 +175,8 @@ After you set the custom support contact information, your users can see it in t
 
 * In the Help Center, when a user selects *Contact Support*.
 +
-image::help_center_support_contact.png[]
+image::{{ site.baseurl }}/images/help_center_support_contact.png[]
 
 * In error messages, when a user selects *What Happened?*
 +
-// [](trace_log.png "Error message support contact")
+// []({{ site.baseurl }}/images/trace_log.png "Error message support contact")

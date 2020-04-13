@@ -1,8 +1,8 @@
 = ["Node failure"]
-:last_updated: tbd
+:last_updated: 11/19/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
-:summary: ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
+:summary: ThoughtSpot uses replication of stored data. When a node fails, ThoughtSpot continues to operate.
 
 To support high availability, your ThoughtSpot instance must have at least three nodes.
 In a three or more node system, if one node fails, its services will be distributed to the other nodes.

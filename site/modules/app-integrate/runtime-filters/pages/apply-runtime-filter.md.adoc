@@ -1,8 +1,10 @@
-'''
+= ["Apply a Runtime Filter"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to apply a runtime filter.
 
-title: [Apply a Runtime Filter]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding.
+Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding.
 Before you apply a filter, make sure link:{{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#limitations-of-runtime-filters[understand their limitations].
 
 The filters are specified in the called URL as parameters.

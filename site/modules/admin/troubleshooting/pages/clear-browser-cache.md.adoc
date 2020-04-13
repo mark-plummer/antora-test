@@ -1,8 +1,10 @@
-'''
+= ["Clear the browser cache"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Clear the browser cache if you have unexpected network issues.
 
-title: [Clear the browser cache]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You might occasionally see unexpected behavior that is due to the Web browser caching information from ThoughtSpot.
+You might occasionally see unexpected behavior that is due to the Web browser caching information from ThoughtSpot.
 In this case, clearing the browser cache and reloading the page should resolve the problem.
 You can usually resolve these situations by clearing the browser cache:
 
@@ -22,7 +24,7 @@ For example, when using Chrome, to get to the browser cache settings, navigate t
  chrome://settings/clearBrowserData
 ----
 +
-image::chrome_clear_cache.png[]
+image::{{ site.baseurl }}/images/chrome_clear_cache.png[]
 
 . Click *Clear browsing data*.
 +
@@ -33,6 +35,6 @@ The name may vary slightly on other browsers.
 +
 For example, on Chrome you would click the *Reload* icon:
 +
-image::browser_reload.png[]
+image::{{ site.baseurl }}/images/browser_reload.png[]
 
 Now the problem should be fixed, and the page will appear as expected.

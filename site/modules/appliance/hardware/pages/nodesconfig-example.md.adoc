@@ -1,5 +1,5 @@
 = ["The nodes.config file"]
-:last_updated: ["12/19/2019"]
+:last_updated: ["1/13/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Learn how to use the get.config command and the nodes.config file to install  your hardware or cloud appliance.
@@ -16,6 +16,8 @@ As you install your appliance, you must configure the nodes.
 ----
 
 . Fill in the areas specified in link:{{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html[Parameters of the nodes.config file] with your specific network information, as shown in link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example[Autodiscovery of one node example].
+{% include note.html content="Some of the information in the `nodes.config` file may be pre-populated from earlier steps.
+For example, if you specified an IP address while creating VMs, that IP address might already be present in your `nodes.config` file." %}
 . If you have  additional nodes, complete each node within the `nodes.config` file as shown in the link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example[Autodiscovery of one node example].
 link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example#node-autodiscovery[Autodiscovery of one node] shows the `nodes.config` file before you fill in your specific information.
 
@@ -29,37 +31,37 @@ See link:{{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html[Param
 
  $ tscli cluster get-config |& tee nodes.config
  {
-  "ClusterId": ""
-  "ClusterName": ""
-  "DataNetmask": ""
-  "DataGateway": "",
-  "IPMINetmask": "",
-  "IPMIGateway": "",
-  "Timezone": "",
-  "NTPServers": "",
-  "DNS": “”,
-   "SearchDomains": "",
-   "Nodes": {  	
-      "ac:1f:6b:8a:77:f6": {
-    "NodeId": "ac:1f:6b:8a:77:f6",
-   "Hostname": "",
-    "DataIface": {
-    "Name": "eth2",
-     "IPv4": "",
-   },
-   "IPMI": {
-     "IPv4": ""
-   }
-   }
- }
- }
+   "ClusterId": "",
+    "ClusterName": "",
+    "DataNetmask": "",
+    "DataGateway": "",
+    "IPMINetmask": "",
+    "IPMIGateway": "",
+    "Timezone": "",
+    "NTPServers": ",
+    "DNS": "",
+    "SearchDomains": "",
+    "Nodes": {
+      "06:83:1f:f8:99:9e": {
+        "NodeId": "06:83:1f:f8:99:9e",
+        "Hostname": "",
+        "DataIface": {
+          "Name": "eth0",
+          "IPv4": ""
+        },
+        "IPMI": {
+          "IPv4": ""
+        }
+      }
+    }
+  }
 
 === Autodiscovery of one node example
 
  $ vim nodes.config
  {
- "ClusterId": "190905X0001",
-   "ClusterName": "TS-Company",
+ "ClusterId": "",
+   "ClusterName": "",
    "DataNetmask": "255.255.252.0",
    "DataGateway": "192.168.4.1",
    "IPMINetmask": "255.255.252.0",

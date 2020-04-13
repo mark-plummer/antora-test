@@ -1,5 +1,7 @@
-= Set your display language (locale)
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+= ["Set your display language (locale)"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: ThoughtSpot supports many languages. Learn how to set your display language.
 
 {% include content/set_locale.md %}

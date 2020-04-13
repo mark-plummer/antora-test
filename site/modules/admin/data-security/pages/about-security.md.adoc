@@ -1,8 +1,10 @@
-'''
+= ["Overview of security features"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn about ThoughtSpot's security features.
 
-title: [Overview of security features]
-
-summary: sidebar: mydoc_sidebar permalink: /:collection/:path.html -- There are several aspects of security, including access and permissions, data security and privacy, and security from an IT perspective.
+There are several aspects of security, including access and permissions, data security and privacy, and security from an IT perspective.
 
 * link:audit-logs.html#[System Security] refers to audit logs and security policies.
 * link:sharing-security-overview.html#[Data Security] refers to which users can see which data in the ThoughtSpot application, and includes:

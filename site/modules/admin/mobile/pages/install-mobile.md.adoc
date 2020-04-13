@@ -1,12 +1,14 @@
-'''
+= ["Install and set up mobile app"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to install and set up ThoughtSpot's mobile app.
 
-title: [Install and set up mobile app]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Before you install the mobile app, ask your ThoughtSpot administrator where you should get it, and which method of VPN (if any) you should use to access your ThoughtSpot cluster.
+Before you install the mobile app, ask your ThoughtSpot administrator where you should get it, and which method of VPN (if any) you should use to access your ThoughtSpot cluster.
 
 == Set up VPN
 
-Ask your ThoughtSpot administrator, which of the following methods you should use to securely sign into  the app and access your ThoughtSpot cluster:
+Ask your ThoughtSpot administrator, which of the following methods you should use to securely sign in to  the app and access your ThoughtSpot cluster:
 
 === Per-app VPN [Recommended]
 
@@ -32,7 +34,7 @@ Contact your ThoughtSpot administrator, to determine where to get the app.
 
 If your company allows you to download it from the App Store for iOS, download it from here:
 
-image::Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg[Download ThougtSpot app,link=https://apps.apple.com/app/id1437983463]
+image::{{ site.baseurl }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg[Download ThougtSpot app,link=https://apps.apple.com/app/id1437983463]
 
 === Your company's internal app store (if applicable)
 

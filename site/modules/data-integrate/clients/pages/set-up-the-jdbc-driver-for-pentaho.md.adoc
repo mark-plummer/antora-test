@@ -4,7 +4,7 @@
 
 title: [Set up the JDBC driver for Pentaho]
 
-last_updated: tbd summary: "JDBC to connect to the ThoughtSpot Simba server from Pentaho." sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+last_updated: 11/19/2019 summary: "Use Pentaho to create a JDBC connection to ThoughtSpot." sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 
 You can use the Pentaho Data Integration (PDI) to create a JDBC connection.
 The Pentaho Data Integration (PDI) suite is a comprehensive data integration and business analytics platform.
@@ -57,21 +57,21 @@ Do the following on your ETL workstation with the Pentaho client:
 . Right click menu:View[Transformations] tab.
 . Click *New* to create a new transformation.
 +
-image::new_transformation_pentaho.png[]
+image::{{ site.baseurl }}/images/new_transformation_pentaho.png[]
 
 . Click *Input* under the *Design* tab to expand it.
 . Drag and drop *CSV File Input* to the *Transformation* window.
 +
 This opens a new CSV file.
 +
-image::csv_file_input_pentaho.png[]
+image::{{ site.baseurl }}/images/csv_file_input_pentaho.png[]
 
 . Double-click the *CSV File Input* icon to open the *CSV Input* dialog .
 . Name the *Step*.
 . Click *Browse* next to the *Filename* field and provide the file you want to read from.
 . Click *OK*.
 +
-image::browse_filename_pentaho.png[]
+image::{{ site.baseurl }}/images/browse_filename_pentaho.png[]
 
 . In the CSV Input dialog, click *Get Fields*.
 . Enter the number of lines you would like to sample in the Sample size dialog.
@@ -80,11 +80,11 @@ The default setting is 100.
 
 . Click *OK* when you are ready.
 +
-image::sample_size_fields_pentaho.png[]
+image::{{ site.baseurl }}/images/sample_size_fields_pentaho.png[]
 +
 The tool reads the file and suggests the field name and type.
 +
-image::scan_results_pentaho.png[]
+image::{{ site.baseurl }}/images/scan_results_pentaho.png[]
 
 . Click *Preview* to preview the data.
 . Enter the number of rows to preview in the *Preview size* dialog.
@@ -92,13 +92,13 @@ image::scan_results_pentaho.png[]
 The default setting is 1000.
 Click *OK* to start the transformation in preview.
 +
-image::preview_size_pentaho.png[]
+image::{{ site.baseurl }}/images/preview_size_pentaho.png[]
 
 . Examine the preview data, then click *Close*.
 +
 You may want to verify that you are able to read the data using the SQL   query from ThoughtSpot.
 +
-image::examine_preview_data_pentaho.png[]
+image::{{ site.baseurl }}/images/examine_preview_data_pentaho.png[]
 
 . Click *OK* in the CSV Input dialog to confirm your CSV input settings.
 
@@ -107,13 +107,13 @@ image::examine_preview_data_pentaho.png[]
 . Click menu:Design[Output].
 . Drag and drop *Table output* to the *Transformation* window.
 +
-image::table_output_pentaho.png[]
+image::{{ site.baseurl }}/images/table_output_pentaho.png[]
 
 . Double click the *Table output* icon to open the Table output dialog.
 . Enter a *Step name*.
 . Click *New* to create a new connection.
 +
-image::new_connection_pentaho.png[]
+image::{{ site.baseurl }}/images/new_connection_pentaho.png[]
 
 . Enter or select the following information in the Database Connection dialog:+++<table>++++++<tr>++++++<th>+++Field+++</th>+++
     +++<th>+++Description+++</th>++++++</tr>+++
@@ -134,11 +134,11 @@ image::new_connection_pentaho.png[]
  +++<tr>++++++<th>+++Password+++</th>+++
     +++<td>+++The password for the **User Name**. If you leave this empty, you are prompted for it at connection time.+++</td>++++++</tr>++++++</table>+++
 +
-image::database_connection_pentaho.png[]
+image::{{ site.baseurl }}/images/database_connection_pentaho.png[]
 . Click *Test* to test your database connection.
 . If you are able to make a successful connection to the ThoughtSpot Simba Server, click *OK*.
 +
-image::database_connection_test_pentaho.png[]
+image::{{ site.baseurl }}/images/database_connection_test_pentaho.png[]
 
 . Click *OK* in the Database Connection dialog to create the new connection.
 
@@ -150,31 +150,31 @@ image::database_connection_test_pentaho.png[]
 . Connect the *Input CSV* icon to the *Table output* icon by clicking and dragging an arrow.
 . When prompted, choose *Main output of step*.
 +
-image::main_output_of_step_pentaho.png[]
+image::{{ site.baseurl }}/images/main_output_of_step_pentaho.png[]
 
 . Double click the *Table output* icon to reopen the *Table output* dialog.
 . Enter a *Target table name*.
 . Click *SQL*.
 +
-image::target_table_name_pentaho.png[]
+image::{{ site.baseurl }}/images/target_table_name_pentaho.png[]
 
 . In the *Simple SQL editor* dialog, click *Execute*.
 +
 The system processes and then displays the results of the SQL statements.
 +
-image::simple_sql_editor.png[]
+image::{{ site.baseurl }}/images/simple_sql_editor.png[]
 
 . Close all open dialogs.
 . Click the *Play* button at the top of the *Transformation* window to execute the transformation.
 +
-image::execute_the_transformation_pentaho.png[]
+image::{{ site.baseurl }}/images/execute_the_transformation_pentaho.png[]
 
 . Click *Launch* in the *Execute a transformation* dialog.
 +
-image::launch_a_transformation_pentaho.png[]
+image::{{ site.baseurl }}/images/launch_a_transformation_pentaho.png[]
 +
 The system prompts you to save it if you have not already.
 
 . View the *Execution Results*.
 +
-image::execution_results_pentaho.png[]
+image::{{ site.baseurl }}/images/execution_results_pentaho.png[]

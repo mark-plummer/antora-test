@@ -25,7 +25,7 @@ To enable SearchIQ on a ThoughtSpot instance:
 . Call ThoughtSpot Support and ask them to turn on SearchIQ for your ThoughtSpot instance.
 . Grant the *Can use experimental features* privilege to any group that should have access to the SearchIQ search experience.
 +
-image::searchiq_privilege.png[]
+image::{{ site.baseurl }}/images/searchiq_privilege.png[]
 
 {% include note.html content="Because the SearchIQ search experience is very different from the original ThoughtSpot search experience, you should give your new users some orientation on it, so they know what to expect." %}
 

@@ -1,8 +1,8 @@
 = ["Modify joins within a worksheet"]
-:last_updated: 11/2/2018
+:last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
-:summary: Learn how to change the join type between the tables within a worksheet
+:summary: Learn how to change the join type between the tables within a worksheet.
 :toc: true
 
 When you create a worksheet, you select a link:{{ site.baseurl }}/admin/worksheets/progressive-joins.html[join rule].
@@ -21,14 +21,14 @@ To modify the join types within a worksheet, follow these steps:
 
 . Click the *Data* tab in the top menu.
 +
-image::click-data.png[]
+image::{{ site.baseurl }}/images/click-data.png[]
 
 . Select *Table*, and then select *Worksheets*.
 . Click the name of the worksheet.
 Here, we selected the worksheet _West Regional Sales_.
 . At the top of the worksheet, click the *Schema* tab.
 +
-image::select-worksheet-schema.png[]
+image::{{ site.baseurl }}/images/select-worksheet-schema.png[]
 
 . The join information and the schema for the worksheet appear.
  ** The schema representation includes the join type.
@@ -36,7 +36,7 @@ image::select-worksheet-schema.png[]
  ** The fact table is always on the left side of the join, and it appears on the left side.
 
 +
-image::worksheet-join-schema-view.png[]
+image::{{ site.baseurl }}/images/worksheet-join-schema-view.png[]
 +
 Note the available actions for the join view.+++<table>++++++<tr>++++++<th>+++Legend+++</th>+++
     +++<th>+++Action+++</th>++++++</tr>+++
@@ -49,7 +49,7 @@ Note the available actions for the join view.+++<table>++++++<tr>++++++<th>+++Le
 . Select the join you plan to modify, and click the *Edit* (pencil) icon next to it.
 . In the *Edit Join* window modal, make the necessary changes:
 +
-image::change-join.png[]
+image::{{ site.baseurl }}/images/change-join.png[]
 
  ** Under *Join Type*, select one of _Inner Join_, _Left Outer Join_, _Right Outer Join_, or _Full Outer Join_.
  ** Under *Join Cardinality*, select either _Many to One_, or _One to One_.

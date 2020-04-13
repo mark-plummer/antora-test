@@ -16,6 +16,7 @@ In a custom calendar, you can set the following:
 
 * The starting date of a year
 * The starting dates of quarters
+* The starting day of the month
 * The starting day of the week
 * The words used for the days of the week, months and quarters
 
@@ -89,7 +90,7 @@ If adapting the calendar to different language, use the appropriate letter in pl
  ** Make any other changes needed to the calendar (like translating months or days into a different language.)
 
 +
-Example calendar with the fiscal year beginning on April 1:  image:custom_cal.png[]
+Example calendar with the fiscal year beginning on April 1:  image:{{ site.baseurl }}/images/custom_cal.png[]
 . Save your calendar template as a UTF-encoded .csv file with UNIX line breaks.
 +
 {% include note.html content="Saving the file with UNIX line breaks, ensures there are no carriage returns ({caret}M characters) in the file which prevent you from using your calendar in ThoughtSpot.

@@ -1,8 +1,8 @@
-'''
-
-title: [Metadata API]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+= ["Metadata API"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: The Metadata APIs allow you to fetch metadata for ThoughtSpot objects.
 
 The Metadata APIs enable you to fetch metadata details for various objects in the ThoughtSpot system.
 For example, you may want to see the visualization headers of a particular answer or a pinboard.

@@ -1,8 +1,11 @@
-'''
+= ["System worksheets"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn about the system worksheets that ThoughtSpot provides.
+:toc: false
 
-title: [System worksheets]
-
-toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Most of the monitoring information in *System Health* are sourced from system worksheet which administrators can view, but not modify.
+Most of the monitoring information in *System Health* comes from system worksheet which administrators can view, but not modify.
 The underlying tables are protected system tables that cannot be accessed directly.
 However, administrators can create new, custom monitoring reports from the worksheets.
 
@@ -14,7 +17,7 @@ To list the system worksheets:
 . Choose *All* and *Worksheets*.
 . Enter `TS: ` in the search field.
 +
-image::su-worksheets.png[]
+image::{{ site.baseurl }}/images/su-worksheets.png[]
 
 == Summary of the worksheets+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
    +++<col style="width:65%">++++++</col>++++++</colgroup>+++

@@ -1,8 +1,10 @@
-'''
+= ["Calling the Data REST API"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to call the Data REST API.
 
-title: [Calling the Data REST API]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- To call the Data REST API, you can specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
+To call the Data REST API, you can specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
 
 == Specify the pinboard or visualization example
 
@@ -26,7 +28,7 @@ The URL encoding for open bracket is `%5B`, and the URL encoding for close brack
 When you parse the returned JSON data you can see that there is one object for every viz on the pinboard.
 The objects are named according to the corresponding vizid.
 
-image::parsed_json_data.png[]
+image::{{ site.baseurl }}/images/parsed_json_data.png[]
 
 If you make a call to a specific viz on a pinboard, it will return just one object.
 The JSON object format for the data that is returned from ThoughtSpot is:
@@ -58,7 +60,7 @@ The `columnNames` array contains a list of all column headers.
 And the `data` array contains a list of other arrays.
 Each sub array represents a new row of data.
 
-image::columnnames_and_data_arrays.png[]
+image::{{ site.baseurl }}/images/columnnames_and_data_arrays.png[]
 
 The REST API supports filtering the data returned through parameters that you pass within the URL.
 These are called link:{{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#[Runtime Filters].

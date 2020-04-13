@@ -1,10 +1,12 @@
+= ["Overview board"]
 :experimental:
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: The Overview pinboard provides useful information about your cluster.
+:toc: true
 
-'''
-
-title: [Overview board]
-
-toc: true sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The *Overview* pinboard summarizes essential information about your cluster and its users.
+The *Overview* pinboard summarizes essential information about your cluster and its users.
 Choose menu:Admin[System Health > Overview] to see this pinboard.
 
 == Understand system boards and pinboards
@@ -26,13 +28,13 @@ To find out how a particular answer was created, do the following:
 
 . Select *Edit* from the panel menu.
 +
-image::panel-data.png[]
+image::{{ site.baseurl }}/images/panel-data.png[]
 +
 This displays a *Search* bar.
 
 . Investigate the components of the search as you would normally.
 +
-image::admin-panel-details.png[]
+image::{{ site.baseurl }}/images/admin-panel-details.png[]
 
 == Cluster Summary
 
@@ -76,7 +78,7 @@ When you show or enable the snapshot policy, you can see your `tscli` command re
 
 === Display the features used in a cluster configuration
 
-. Log into the ThoughtSpot cluster as the `admin` user.
+. Log in to the ThoughtSpot cluster as the `admin` user.
 . Use the `tscli feature` subcommand to display your current configuration.
 +
 ----
@@ -164,7 +166,7 @@ For a full reference, see the link:{{ site.baseurl }}/reference/alerts-reference
 The *Space Utilization* chart is one of the available charts for you to use when checking the cluster overview.
 This line chart displays the total capacity and estimated used capacity over time.
 
-image::memory_usage_chart.png[]
+image::{{ site.baseurl }}/images/memory_usage_chart.png[]
 
 The x-axis is by time and the y-axis measures the size in GB.
 You can zoom in and see daily or hourly utilization data.
@@ -303,7 +305,7 @@ This system answer displays recent events that changed the configuration of the 
 This panel displays configuration events related to:+++<table>++++++<colgroup>++++++<col width="25%">++++++</col>+++
     +++<col width="60%">++++++</col>++++++</colgroup>+++
       +++<tbody>++++++<tr>++++++<th>+++Cluster Configuration+++</th>+++
-        +++<td>+++Reports configuration actions from the `tscli` and `tql` commands.+++</td>++++++</tr>+++
+        +++<td>+++Reports configuration actions from the +++<code>+++tscli+++</code>+++ and +++<code>+++tql+++</code>+++ commands.+++</td>++++++</tr>+++
        +++<tr>++++++<th>+++Metadata Management+++</th>+++
         +++<td>+++Events related to metadata such as column names, column visibility, column and data definition, column rank and so forth.+++</td>++++++</tr>+++
        +++<tr>++++++<th>+++User Management+++</th>+++
@@ -331,8 +333,8 @@ Administrators can `ssh` into the cluster and specify a time period or even a ty
 
 There are a number of deprecated boards on this page.
 They are there to support older installations that relied on them.
-New installations, should not use or rely on deprecated boards.
-Older installations that have used these boards in some way, should use the new boards and remove any dependencies.
+New installations should not use or rely on deprecated boards.
+Older installations that have used these boards in some way should use the new boards and remove any dependencies.
 
 == Related information
 

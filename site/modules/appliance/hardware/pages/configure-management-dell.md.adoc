@@ -1,5 +1,5 @@
 = ["Configure the Dell Management Settings"]
-:last_updated: 12/16/2019
+:last_updated: 3/3/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Configure the management settings for Dell before you can deploy ThoughtSpot.
@@ -9,23 +9,29 @@ Refer to <<dell-idrac-config,Dell Management Configuration>>.
 If you need additional guidance, view https://www.dell.com/support/home/us/en/04/product-support/product/dell-xc6420/overview[Dell Support] for this product.
 
 . *Open the iDRAC settings modal* Before the node boots, a screen appears on your monitor with several options.
-Click F11 to enter the Boot Manager.
-. *Press F2* Click F2 when the option to do so appears on your screen.
+Click F2 to open the Bios setup menu.
 . *Select iDRAC* In the Bios setup screen, there are several options.
-Select *iDRAC* to configure your iDRAC management settings.
+Select *iDRAC settings* to configure your iDRAC management settings.
++
+image::{{ site.baseurl }}/images/dell-idracsettings.png[Select iDRAC settings]
+
 . *Select network configuration* From the iDRAC settings options, select *network*.
++
+image::{{ site.baseurl }}/images/dell-select-network.png[Select network]
+
 . *Fill out the iDRAC settings form* Add your specific network information for the IP address, Gateway, and Netmask in the empty boxes.
 DNS information is optional.
-Refer to your ThoughtSpot site survey for a quick reference, and ask your network administrator for help if you have not filled out the site survey yet.
+Download and fill out the ThoughtSpot link:{{ site.baseurl }}/site-survey.pdf[site survey] for a quick reference, and ask your network administrator for help if you have not filled out the site survey yet.
+{% include warning.html content="If you configure DNS servers, you must only configure two servers.
+ThoughtSpot does not support configuration of three DNS servers." %}
  ** For *Enable IPv4*, select *enabled*.
  ** For *Enable DHCP*, select *disabled*.
- ** For *Enable IPv6*, select *disabled*.
 . *Save changes and reboot* Follow the prompts on the monitor to save changes to the management settings form, exit, and reboot the system.
-. *Log into ThoughtSpot* After the system reboots, the login page appears.
+. *Log in to ThoughtSpot* After the system reboots, the login page appears.
 Log in as an administrator.
 Ask your network administrator if you do not know the admin credentials.
 
-{% include image.html file="dell-idrac-config.png" title="Dell iDRAC configuration" alt="Use the monitor and keyboard that you connected earlier to add your network information in the iDRAC network settings modal." caption="Dell Management Configuration" %}
+image::{{ site.baseurl }}/images/dell-idracconfig.png[Dell iDRAC configuration]
 
 == Configure nodes
 

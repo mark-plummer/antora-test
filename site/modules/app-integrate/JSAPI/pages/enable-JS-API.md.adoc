@@ -1,8 +1,10 @@
-'''
+= ["Authentication flow with embed"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: You can enable Single Sign On (SSO) with your embedded version of ThoughtSpot.
 
-title: [Authentication flow with embed]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- If your ThoughtSpot system is configured for Security Assertion Markup Language (SAML) you can enable Single Sign On (SSO) for your embed application.
+If your ThoughtSpot system is configured for Security Assertion Markup Language (SAML) you can enable Single Sign On (SSO) for your embed application.
 
 Place the JS API library in the `<head>` section of the HTML on your Web page.
 Ensure that the JS API script tag is the first script loaded in the page.
@@ -23,7 +25,7 @@ The `onAuthExpiration` is only available if you have at least one ThoughtSpot vi
 
 == Example of code flow
 
-To authenticate with SSO.
+To authenticate with SSO:
 
 . {blank}
 +

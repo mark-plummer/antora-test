@@ -1,5 +1,5 @@
 = ["Configure ThoughtSpot nodes in VMware"]
-:last_updated: 12/12/2019
+:last_updated: 3/3/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Prepare to install your ThoughtSpot cluster by configuring nodes.
@@ -25,19 +25,19 @@ Follow the steps in this checklist.
 [cols=2*]
 |===
 | &#10063;
-| link:installing-vmware#node-step-1[Step 1: Log into your cluster]
+| <<node-step-1,Step 1: Log in to your cluster>>
 
 | &#10063;
-| link:installing-vmware#node-step-2[Step 2: Get a template for network configuration]
+| <<node-step-2,Step 2: Get a template for network configuration>>
 
 | &#10063;
-| link:installing-vmware#node-step-3[Step 3: Prepare node configuration]
+| <<node-step-3,Step 3: Prepare node configuration>>
 
 | &#10063;
-| link:installing-vmware#node-step-4[Step 4: Configure the nodes]
+| <<node-step-4,Step 4: Configure the nodes>>
 
 | &#10063;
-| link:installing-vmware#node-step-5[Step 5: Confirm node configuration]
+| <<node-step-5,Step 5: Confirm node configuration>>
 |===
 
 {% include content/install/configure-nodes-steps1through5.md %}
@@ -54,7 +54,7 @@ Use these references for successful installation and administration of ThoughtSp
 
 * link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example[the nodes.config file]
 * link:{{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html[Parameters of the nodes.config file]
-* link:{{ site.baseurl }}/appliance/hardware/cluster-create.html[Using the cluster create command]
+* link:{{ site.baseurl }}/appliance/hardware/cluster-create.html[Using the tscli cluster create command]
 * link:{{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html[Parameters of the `cluster create` command]
 * https://docs.thoughtspot.com[ThoughtSpot Documentation]
 * link:{{ site.baseurl }}/appliance/contact.html[Contact Support]

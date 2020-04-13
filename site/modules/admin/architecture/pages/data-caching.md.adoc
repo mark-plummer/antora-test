@@ -6,7 +6,7 @@ last_updated: tbd summary: "ThoughtSpot does all analysis against data in memory
 The tables can be sourced from different data sources and joined together.
 ThoughtSpot has several approaches for getting data into the cluster.
 
-image::DataCaching.png[]
+image::{{ site.baseurl }}/images/DataCaching.png[]
 
 == JDBC and ODBC Drivers
 

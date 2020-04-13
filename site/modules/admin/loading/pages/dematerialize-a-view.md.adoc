@@ -15,7 +15,7 @@ To dematerialize a view:
 . Click *Schema*.
 . Under *Materialization*, click *Dematerialize*.
 +
-image::materialization-dialog-on.png[]
+image::{{ site.baseurl }}/images/materialization-dialog-on.png[]
 +
 You will see a warning message that the data in the view will be removed from memory.
 Click *Remove* to confirm.

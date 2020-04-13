@@ -1,13 +1,14 @@
-'''
+= ["Get your configuration and logs"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Two main troubleshooting tools are getting a log bundle and understanding your cluster configuration.
 
-title: [Get your configuration and logs]
-
-sidebar: mydoc_sidebar permalink: /:collection/:path.html -- For troubleshooting on specific incidents or cluster problems, two things are important.
-Understanding your current configuration and getting a log bundle.
+For troubleshooting on specific incidents or cluster problems, two things are important: understanding your current configuration and getting a log bundle.
 
 == Check your configuration
 
-. Log into the ThoughtSpot cluster as the `admin` user.
+. Log in to the ThoughtSpot cluster as the `admin` user.
 . Use the `tscli feature` subcommand to display your current configuration.
 +
 ----
@@ -38,7 +39,7 @@ To download related logs, click *Download Trace*.
 Send the logs as an email attachment to the support contact that is provided.
 Clicking *Report Problem* will also send the logs as an email attachment to your administrator.
 +
-image::trace_log.png[]
+image::{{ site.baseurl }}/images/trace_log.png[]
 
 * You can generate a log bundle using the `tscli` command `tscli logs collect` if you are comfortable with Linux.
 The command lets you specify which logs to collect and from what time periods.

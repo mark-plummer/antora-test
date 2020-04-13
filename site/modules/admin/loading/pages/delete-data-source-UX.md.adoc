@@ -21,7 +21,7 @@ To view dependent objects for a data source:
 You will see a list of the names of the dependent objects (worksheets and pinboards), and the columns they use from that data source.
 You can use this information to determine the impact of changing the structure of the data source or to see how widely it is used.
 +
-image::dependents.png[]
+image::{{ site.baseurl }}/images/dependents.png[]
 
 . Click a dependent object to modify or delete it.
 +
@@ -45,13 +45,13 @@ ThoughtSpot checks for dependencies whenever you try to delete a table or worksh
 . Check the box next to the name of the data source you want to delete.
 . Click the delete icon.
 +
-image::delete_data_worksheet.png[]
+image::{{ site.baseurl }}/images/delete_data_worksheet.png[]
 
 . If you attempt to delete a data source with dependent objects, the operation will be blocked.
 +
 You will see a list of dependent objects with links.
 +
-image::dependency_warning_with_links.png[]
+image::{{ site.baseurl }}/images/dependency_warning_with_links.png[]
 
 . Click a dependent object to modify or delete it.
 +

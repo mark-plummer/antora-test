@@ -1,7 +1,8 @@
 = ["About disaster recovery"]
-:last_updated: tbd
+:last_updated: 11/19/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
+:summary: ThoughtSpot's disaster recovery prevents data loss if there is a hardware or software failure.
 :toc: false
 
 Disaster recovery is the ability to recover from a hardware or software failure or a catastrophic event.

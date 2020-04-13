@@ -70,7 +70,7 @@ Below are some samples to help you:+++<table>++++++<tr>++++++<th colspan="2">+++
 +++<tr>++++++<th>+++NFS+++</th>+++
 +++<td>++++++<code>+++tscli nas mount-nfs --server 192.168.4.132 --path_on_server /data/toolchain --mount_point /mnt+++</code>++++++</td>++++++</tr>++++++</table>+++
 
-. Log into the target machine.
+. Log in to the target machine.
 . Ensure that the target machine is not running a ThoughtSpot cluster.
 +
 If a cluster is running on the target machine, contact please contact ThoughtSpot Support to delete the cluster.

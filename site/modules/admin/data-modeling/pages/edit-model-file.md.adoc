@@ -44,12 +44,12 @@ To obtain the model file:
 . Log in to ThoughtSpot from a browser as an Administrator user.
 . Click the *ADMIN* tab in the top navigation bar.
 +
-image::admin_icon.png[]
+image::{{ site.baseurl }}/images/admin_icon.png[]
 
 . Click *Data Management*, then click *Business Data Model*.
 . Click *Download*.
 +
-image::download_model.png[]
+image::{{ site.baseurl }}/images/download_model.png[]
 
 == Edit the file and change the settings
 
@@ -62,7 +62,7 @@ To make changes in the model file:
 +
 If you are using Excel, you may see a warning message.
 +
-image::warning_open_model_excel.png[]
+image::{{ site.baseurl }}/images/warning_open_model_excel.png[]
 +
 Click `YES` to proceed.
 
@@ -77,7 +77,7 @@ Descriptions of the meanings of the columns are listed in link:data-modeling-set
 If you are using Excel, you will see a message.
 Click `YES` to save the file.
 +
-image::warning_save_model_excel.png[]
+image::{{ site.baseurl }}/images/warning_save_model_excel.png[]
 +
 The model file must be saved as UTF-8 encoded.
 If your model file includes  multi-byte characters, edit the file using vi or vim to ensure the file is  saved in the correct format.
@@ -91,12 +91,12 @@ To upload the model file:
 . Log in to ThoughtSpot from a browser as an Administrator user.
 . Click *ADMIN*, on the top navigation bar.
 +
-image::admin_icon.png[]
+image::{{ site.baseurl }}/images/admin_icon.png[]
 
 . Click *Data Management*, then click *Business Data Model*.
 . Click *Browse your files* to upload the model.xls file, or drag and drop it in the zone.
 +
-image::upload_model.png[]
+image::{{ site.baseurl }}/images/upload_model.png[]
 +
 If you receive an error message upon uploading the file, check that it does  not include any multi-byte characters (for example, Japanese or other multi-byte  language characters).
 If it does, you must download the file again and  make your edits using vi or vim.

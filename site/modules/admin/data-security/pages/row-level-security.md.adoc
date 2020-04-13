@@ -66,7 +66,7 @@ Rules can also reference tables other than the table you are securing.
 Consider a simple RLS rule example.
 Your company has `vendor-purchase` table such as:
 
-image::rls-example0.png[]
+image::{{ site.baseurl }}/images/rls-example0.png[]
 
 You want to give your vendors the ability to see trends in company purchases.
 You give vendor personnel access to ThoughtSpot _and_ add them to self-titled vendor groups.

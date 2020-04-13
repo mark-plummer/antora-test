@@ -1,5 +1,5 @@
 = ["Configure Nodes"]
-:last_updated: 12/17/2019
+:last_updated: 3/3/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Configure ThoughtSpot nodes on your Dell appliance.
@@ -11,23 +11,23 @@ Follow the steps in this checklist.
 [cols=2*]
 |===
 | &#10063;
-| link:configure-nodes-dell#node-step-1[Step 1: Get a template for network configuration]
+| <<node-step-1,Step 1: Get a template for network configuration>>
 
 | &#10063;
-| link:configure-nodes-dell#node-step-2[Step 2: Prepare node configuration]
+| <<node-step-2,Step 2: Prepare node configuration>>
 
 | &#10063;
-| link:configure-nodes-dell#node-step-3[Step 3: Configure the nodes]
+| <<node-step-3,Step 3: Configure the nodes>>
 
 | &#10063;
-| link:configure-nodes-dell#node-step-4[Step 4: Confirm node configuration]
+| <<node-step-4,Step 4: Confirm node configuration>>
 |===
 
 [#node-step-1]
 == Step 1: Get a template for network configuration
 
 Make sure you have logged into your cluster.
-If you have not, use admin credentials to log into your cluster.
+If you have not, use admin credentials to log in to your cluster.
 
 Run the `tscli cluster get-config` command to get a template for network configuration.
 Redirect it to the file `nodes.config`.
@@ -39,6 +39,15 @@ Redirect it to the file `nodes.config`.
 == Step 2: Prepare node configuration
 
 . Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example[autodiscovery of one node example].
+Run `vim nodes.config` to edit the file.
++
+----
+ $ vim nodes.config
+----
++
+{% include note.html content="Some of the information in the `nodes.config` file may be pre-populated from earlier steps.
+For example, if you specified an IP address while creating VMs, that IP address might already be present in your `nodes.config` file." %}
+
 . Fill in the areas specified in link:{{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html[Parameters of the nodes.config file] with your specific network information.
 + If you have additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -51,7 +60,7 @@ If you delete quotation marks, commas, or other parts of the code, it may cause 
 Configure the nodes in the `nodes.config` file using the `set-config` command.
 
 Run `$ cat nodes.config | tscli cluster set-config` in your terminal.
-+ If the command returns an error, refer to link:{{ site.baseurl }}install-cluster-dell#set-config-error-recovery[set-config error recovery].
++ If the command returns an error, refer to link:{{ site.baseurl }}/appliance/hardware/install-cluster-dell#set-config-error-recovery[set-config error recovery].
 +
 
 [source,console]
@@ -62,7 +71,6 @@ Connecting to local node-scout
 Setting up hostnames for all nodes
 Setting up networking interfaces on all nodes
 Setting up hosts file on all nodes
-Setting up IPMI configuration
 Setting up NTP Servers
 Setting up Timezone
 Done setting up ThoughtSpot

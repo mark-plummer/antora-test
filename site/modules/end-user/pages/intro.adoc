@@ -1,6 +1,8 @@
-= Slack and Spot
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+= ["Slack and Spot"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn about Spot, a ThoughtSpot integration with Slack.
 
 Slack is an enterprise software platform that allows teams to communicate effectively through a messaging application.
 Slack also allows users to communicate with applications like ThoughtSpot through chat.
@@ -13,7 +15,7 @@ Spot has to be integrated with your Slack team before you can use it.
 Your team admin or ThoughtSpot admin can do this.
 To test if your Slack team has a Spot integration, mention *&#64;spot* and see if he barks back:
 
-image::slack-0.png[]
+image::{{ site.baseurl }}/images/slack-0.png[]
 
 In this particular channel, *&#64;spot* is there for you but like his brothers *&#64;spot-east-credit* is not in the channel.
 

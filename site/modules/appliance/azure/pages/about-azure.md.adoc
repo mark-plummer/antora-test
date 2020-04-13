@@ -1,8 +1,10 @@
-'''
+= ["Azure node overview"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: You can host ThoughtSpot on Microsoft Azure.
 
-title: [Azure node overview]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Microsoft Azure can provide lots of memory and CPU for your ThoughtSpot instance, and it can be easily updated from development instances.
+Microsoft Azure can provide lots of memory and CPU for your ThoughtSpot instance, and it can be easily updated from development instances.
 
 Your database capacity will determine the number of instances you'll need and the memory and storage requirements.
 Depending on the amount of data you want to load, you can use multiple nodes together in a single instance.
@@ -13,7 +15,7 @@ You can find more information about which ports to open in the link:{{ site.base
 == A little about Azure
 
 Azure is a secure cloud services platform offered by Microsoft.
-Using ThoughtSpot in Azure allows you to easily add instances as your dataset grows.
+Using ThoughtSpot on Azure allows you to easily add instances as your dataset grows.
 You can do everything you'd normally want to do in a traditional data center with Azure.
 It features an on-demand delivery of IT resources and applications through the Internet.
 When you are connected to an instance, you can use it just like you use any other server.

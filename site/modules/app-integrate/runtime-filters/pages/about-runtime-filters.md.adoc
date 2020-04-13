@@ -1,8 +1,10 @@
-'''
+= ["About Runtime Filters"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Use runtime filters to filter an embedded answer or pinboard.
 
-title: [About Runtime Filters]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Runtime filters allow you to filter an answer or pinboard through parameters you pass in the URL to filter the data that is returned.
+Runtime filters allow you to filter an answer or pinboard through parameters you pass in the URL to filter the data that is returned.
 You can use them with the data API or with embedding of answers or pinboards.
 
 == Capabilities of Runtime Filters

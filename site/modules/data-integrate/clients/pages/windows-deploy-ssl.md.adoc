@@ -1,8 +1,8 @@
-'''
-
-title: [Deploy SSL with ODBC on Windows]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+= ["Deploy SSL with ODBC on Windows"]
+:last_updated: 11/19/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Enable SSL for an ODBC connection.
 
 You can configure a secure ODBC connection between your ThoughtSpot cluster and a remote Windows Machine.
 This article explains the SSL resources and ODBC configuration options you need to enable SSL for an ODBC connection.
@@ -63,17 +63,17 @@ Choose a location where the certificate is unlikely to be deleted by mistake, fo
 . Click *Options*.
 . Check the *Require SSL* option and/or add SSL as a custom property.
 +
-image:windows-odbc-ssl-options.png[]  image:windows-odbc-custom-SSL-property.png[]  image:windows-odbc-custom-SSL-added.png[]
+image:{{ site.baseurl }}/images/windows-odbc-ssl-options.png[]  image:{{ site.baseurl }}/images/windows-odbc-custom-SSL-property.png[]  image:{{ site.baseurl }}/images/windows-odbc-custom-SSL-added.png[]
 
 . Enter the location of the CA certificate in the *SSL Certificate File* field and/or add the CA certificate as a custom property.
 Be sure to provide the full path to the certificate (`+{certificate_directory}\{CA_certificate}.pem+`).
 +
-image:windows-odbc-cert-add-custom.png[]  image:windows-odbc-custom-CACert-property.png[]  image:windows-odbc-cert-and-SSL.png[]
+image:{{ site.baseurl }}/images/windows-odbc-cert-add-custom.png[]  image:{{ site.baseurl }}/images/windows-odbc-custom-CACert-property.png[]  image:{{ site.baseurl }}/images/windows-odbc-cert-and-SSL.png[]
 
 . When you are done, click *OK* to save your new properties.
 . Click *Test Connection* to test your database connection.
 +
-image::windows-odbc-success.png[]
+image::{{ site.baseurl }}/images/windows-odbc-success.png[]
 
 . Click *Cancel* to close the configuration dialog.
 . Click *OK* to close the *Client Configuration Dialog* the dialog.

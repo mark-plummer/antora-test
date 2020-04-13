@@ -1,8 +1,11 @@
-'''
+= ["Public API reference"]
+:last_updated: 1/9/2020
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: ThoughtSpot has several public APIs.
+:toc: false
 
-title: [Public API reference]
-
-toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- This reference details all the public ThoughtSpot APIs.
+This reference details all the public ThoughtSpot APIs.
 The descriptions are aimed to help you solve specific use cases, such as syncing users and groups, or fetching visualization headers.
 The following public APIs are available:+++<table>++++++<colgroup>++++++<col style="width:15%">++++++</col>+++
       +++<col style="width:45%">++++++</col>+++
@@ -39,7 +42,10 @@ The following public APIs are available:+++<table>++++++<colgroup>++++++<col sty
          +++<td>+++Remove a privilege from a group+++</td>++++++</tr>+++
       +++<tr>++++++<td>++++++<a href="{{ site.baseurl }}/app-integrate/reference/materialization-api.html">+++Materialization+++</a>++++++</td>+++
          +++<td>++++++<code class="api-method-post">+++POST+++</code>+++ /tspublic/v1/materialization/refreshview/\{id}+++</td>+++
-         +++<td>+++Re-execute the query and load data into the materialized view+++</td>++++++</tr>++++++</tbody>++++++</table>+++
+         +++<td>+++Re-execute the query and load data into the materialized view+++</td>++++++</tr>+++
+      +++<tr>++++++<td>++++++<a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html">+++Search Data+++</a>++++++</td>+++
+         +++<td>++++++<code class="api-method-post">+++POST+++</code>+++ /tspublic/v1/searchdata+++</td>+++
+         +++<td>+++Search data from a specific data source in the ThoughtSpot system.+++</td>++++++</tr>++++++</tbody>++++++</table>+++
 
 See link:{{ site.baseurl }}/app-integrate/data-api/about-data-api.html#[About the REST API] for information on how to call and use the REST APIs.
 

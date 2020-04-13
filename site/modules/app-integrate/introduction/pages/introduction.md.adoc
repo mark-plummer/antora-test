@@ -1,8 +1,10 @@
-'''
+= ["Introduction to Embedding"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: You can embed ThoughtSpot in an external application, website, or portal.
 
-title: [Introduction to Embedding]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- ThoughtSpot Extended Enterprise Edition lets you give people outside of your company access to some ThoughtSpot capabilities within the context of an external application, website, or portal.
+ThoughtSpot Extended Enterprise Edition lets you give people outside of your company access to some ThoughtSpot capabilities within the context of an external application, website, or portal.
 We call these people "`external users`".
 For example, you could give external users access to data, search, search results, data visualizations, and/or pinboards.
 
@@ -22,7 +24,7 @@ ThoughtSpot Extended Enterprise Edition includes these capabilities:
 When you buy ThoughtSpot Extended Enterprise, the following rights and obligations apply:
 
 . External users may only access those elements that are exposed through ThoughtSpot public APIs.
-These include search, search results and data visualizations, saved pinboard and answers, SearchIQ (*Beta*), and SpotIQ.
+These include search, search results and data visualizations, saved pinboards and answers, SearchIQ (*Beta*), and SpotIQ.
 . External users may not be granted Administrator privileges such as the ability to create and modify users and groups.
 . External users are not permitted to copy or download the ThoughtSpot software.
 . You may not include external users in a group that has access to these privileges:
@@ -51,7 +53,7 @@ It is okay to remove the logo if you are embedding a single visualization.
 
 Here are the main topics for Embedding with Extended Enterprise:
 
-* link:{{ site.baseurl }}/app-integrate/introduction/login-console.html[Log into the Linux shell using SSH]
+* link:{{ site.baseurl }}/app-integrate/introduction/login-console.html[Log in to the Linux shell using SSH]
 * link:{{ site.baseurl }}/app-integrate/introduction/logins.html[Login credentials]
 * link:{{ site.baseurl }}/app-integrate/JSAPI/about-JS-API.html[Using the JavaScript API]
 * link:{{ site.baseurl }}/app-integrate/SAML/about-SAML-integrations.html[SAML]

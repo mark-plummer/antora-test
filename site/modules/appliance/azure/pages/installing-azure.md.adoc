@@ -1,5 +1,5 @@
 = ["Configure ThoughtSpot nodes in Azure"]
-:last_updated: ["12/12/2019"]
+:last_updated: ["2/27/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Prepare to install your ThoughtSpot cluster by configuring nodes.
@@ -24,29 +24,29 @@ Follow the steps in this checklist.
 [cols=2*]
 |===
 | &#10063;
-| link:installing-azure#node-step-1[Step 1: Log into your cluster]
+| <<node-step-1,Step 1: Log in to your cluster>>
 
 | &#10063;
-| link:installing-azure#node-step-2[Step 2: Get a template for network configuration]
+| <<node-step-2,Step 2: Get a template for network configuration>>
 
 | &#10063;
-| link:installing-azure#node-step-3[Step 3: Prepare node configuration]
+| <<node-step-3,Step 3: Prepare node configuration>>
 
 | &#10063;
-| link:installing-azure#node-step-4[Step 4: Configure the nodes]
+| <<node-step-4,Step 4: Configure the nodes>>
 
 | &#10063;
-| link:installing-azure#node-step-5[Step 5: Confirm node configuration]
+| <<node-step-5,Step 5: Confirm node configuration>>
 |===
 
 [#node-step-1]
-=== Step 1: Log into your cluster
+=== Step 1: Log in to your cluster
 
-Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster.
+Use Terminal on a Mac or a terminal emulator on Windows to log in to your cluster.
 Log in using the ssh private key provided by ThoughtSpot.
 + If you do not have a private key, contact link:{{ site.baseurl }}/appliance/contact.html[ThoughtSpot Support] by email or through the support portal.
 
-To log into your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
+To log in to your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
 
 ----
     $ ssh -i <private_key> admin@<public-vm-ip>
@@ -65,6 +65,15 @@ Redirect it to the file `nodes.config`.
 === Step 3: Prepare node configuration
 
 . Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example[autodiscovery of one node example].
+Run `vim nodes.config` to edit the file.
++
+----
+ $ vim nodes.config
+----
++
+{% include note.html content="Some of the information in the `nodes.config` file may be pre-populated from earlier steps.
+For example, if you specified an IP address while creating VMs, that IP address might already be present in your `nodes.config` file." %}
+
 . Fill in the areas specified in link:{{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html[Parameters of the nodes.config file] with your specific network information.
 + If you have additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -96,8 +105,8 @@ It may look something like the following:
 ----
 
 . Run the configuration command: `$ cat nodes.config | tscli cluster set-config`.
-+ If the command returns an error, refer to link:{{ site.baseurl }}#set-config-error-recovery[set-config error recovery].
-+ After you run the node configuration command, your output appears similar to the following:
++ If the command returns an error, refer to <<set-config-error-recovery,set-config error recovery>>.
++  After you run the node configuration command, your output appears similar to the following:
 +
 ----
  $ cat nodes.config | tscli cluster set-config
@@ -106,7 +115,6 @@ It may look something like the following:
  Setting up hostnames for all nodes
  Setting up networking interfaces on all nodes
  Setting up hosts file on all nodes
- Setting up IPMI configuration
  Setting up NTP Servers
  Setting up Timezone
  Done setting up ThoughtSpot
@@ -159,9 +167,8 @@ Next, link:{{ site.baseurl }}/appliance/azure/azure-cluster-install.html[install
 
 Use these references for successful installation and administration of ThoughtSpot.
 
-* link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example[the nodes.config file]
+* link:{{ site.baseurl }}/appliance/hardware/nodesconfig-example[The nodes.config file]
 * link:{{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html[Parameters of the nodes.config file]
-* link:{{ site.baseurl }}/appliance/hardware/cluster-create.html[Using the cluster create command]
-* link:{{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html[Parameters of the `cluster create` command]
-* https://docs.thoughtspot.com[ThoughtSpot Documentation]
+* link:{{ site.baseurl }}/appliance/hardware/cluster-create.html[Using the tscli cluster create command]
+* link:{{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html[Parameters of the cluster create command]
 * link:{{ site.baseurl }}/appliance/contact.html[Contact Support]

@@ -20,11 +20,11 @@ To materialize a view:
 . If needed, link:{{ site.baseurl }}/admin/data-modeling/create-new-relationship.html[add joins].
 . Under *Materialization*, click *Materialize*.
 +
-image::materialization_dialog_off.png[]
+image::{{ site.baseurl }}/images/materialization_dialog_off.png[]
 
 . Fill in the details for link:{{ site.baseurl }}/admin/loading/constraints.html[primary key], link:{{ site.baseurl }}/admin/loading/sharding.html[sharding key, and number of shards].
 +
-image::materialize-details.png[]
+image::{{ site.baseurl }}/images/materialize-details.png[]
 +
 {% include note.html content="If you do not fill in the sharding details, the view will be replicated on every node of your cluster.
 If you're not sure what to fill in, ask your ThoughtSpot administrator, or follow the links in this step to learn more about sharding." %}
@@ -32,23 +32,23 @@ If you're not sure what to fill in, ask your ThoughtSpot administrator, or follo
 . Click *Materialize*.
 . In the *Schedule data updates* dialog, select an option for *Repeats* (Monthly, Weekly, or Daily).
 +
-image::materialized-view-sched-weekly.png[]
+image::{{ site.baseurl }}/images/materialized-view-sched-weekly.png[]
 +
 If you don't want to set a schedule now, choose *Setup later* and skip to Step 11.
 
 . Fill in the schedule details:
 +
-image::schedule-data-updates-weekly.png[]
+image::{{ site.baseurl }}/images/schedule-data-updates-weekly.png[]
 
 . Click *Update*.
 . You can see the status of the materialization as it progresses.
 Click *Update status* to refresh it.
 +
-image::materialization-update-status.png[]
+image::{{ site.baseurl }}/images/materialization-update-status.png[]
 
 . When it says *Materialized* your materialized view is ready for search.
 +
-image::materialization-dialog-on.png[]
+image::{{ site.baseurl }}/images/materialization-dialog-on.png[]
 +
 If after some time, the status has not changed to *Materialized*, check the link:{{ site.baseurl }}/admin/loading/materialized-views.html#materialization-status[list of statuses] and corresponding actions to take.
 

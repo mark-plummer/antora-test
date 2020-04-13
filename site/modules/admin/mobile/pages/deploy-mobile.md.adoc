@@ -1,8 +1,10 @@
-'''
+= ["Deploy mobile app"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: You can deploy the ThoughtSpot mobile app through the iOS app store, or your MDM or MAM platform.
 
-title: [Deploy mobile app]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Deploying the ThoughtSpot mobile app to your users allows them to access their data and make decisions remotely from their Apple iOS device.
+Deploying the ThoughtSpot mobile app to your users allows them to access their data and make decisions remotely from their Apple iOS device.
 For more information about features in the mobile app, refer to link:{{ site.baseurl }}/admin/mobile/use-mobile.html#[ThoughtSpot mobile overview].
 
 == Deployment options

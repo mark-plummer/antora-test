@@ -1,8 +1,10 @@
-'''
+= ["Browser untrusted connection error"]
+:last_updated: 11/18/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: If you do not have an SSL certificate, users get an untrusted connection error.
 
-title: [Browser untrusted connection error]
-
-last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- If you are not using a SSL certificate for authentication, users will see an untrusted connection error in their browser when accessing ThoughtSpot.
+If you are not using an SSL certificate for authentication, users will see an untrusted connection error in their browser when accessing ThoughtSpot.
 The error looks slightly different depending upon the Web browser being used.
 
 ThoughtSpot uses secure HTTP (the HTTPS protocol) for communication between the browser and ThoughtSpot.

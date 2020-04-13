@@ -57,4 +57,4 @@ If you are using the model file, the list of synonyms must be enclosed in  squar
 
 == Related information
 
-link:semantic-modeling.html#[Model the data for searching]
+link:{{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html[Model the data for searching]

@@ -14,11 +14,11 @@ To schedule materialization of a view:
 . Under *Materialization*, click the link next to *Update Schedule*.
 . In the *Schedule Data Updates* dialog, select an option for *Repeats* (Monthly, Weekly, or Daily).
 +
-image::materialized-view-sched-weekly.png[]
+image::{{ site.baseurl }}/images/materialized-view-sched-weekly.png[]
 
 . Fill in the schedule details:
 +
-image::schedule-data-updates-weekly.png[]
+image::{{ site.baseurl }}/images/schedule-data-updates-weekly.png[]
 
 . Click *Schedule*.
 

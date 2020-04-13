@@ -1,8 +1,11 @@
-'''
+= ["Load and manage data"]
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn about loading and managing data.
+:toc: false
 
-title: [Load and manage data]
-
-last_updated: tbd toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The fastest and easiest way to load a new table is by importing it using the Web browser.
+The fastest and easiest way to load a new table is by importing it using the Web browser.
 This is best for one time data loads of small tables which do not have complex relationships to other tables.
 This method is limited to tables that are under 50 MB (megabytes) in size.
 

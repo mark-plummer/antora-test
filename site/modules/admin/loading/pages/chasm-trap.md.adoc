@@ -78,7 +78,7 @@ Both the sales and waste tables are facts that reference the apple dimension tab
 A chasm trap in a data schema can introduce problems of over counting if you join the two fact tables through their shared dimension table.
 This diagram shows a typical complex schema with several tables that are related over a chasm trap:
 
-image::chasm_trap_complex.png[]
+image::{{ site.baseurl }}/images/chasm_trap_complex.png[]
 
 Examples of use cases where a chasm trap could occur when attribution analysis compare campaign data with purchase data, where all they have in common is that both contain a customer identifier that is a foreign key to a customer dimension table.
 Chasm traps also occur, for example, in cost of sales analysis when wholesale orders data is only related to the retail sales data through a shared products dimension table.
