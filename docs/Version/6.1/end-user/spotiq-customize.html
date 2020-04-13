@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SpotIQ 101: Do more with SpotIQ | ThoughtSpot Demo Site</title>
+    <link rel="canonical" href="https://mark-plummer.github.io/antora-test/Version/6.1/end-user/spotiq-customize.html">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
+    <meta name="dcterms.subject" content="Version">
+    <meta name="dcterms.identifier" content="6.1">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar" id="topbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://mark-plummer.github.io/antora-test/"><img src="../../../_/img/logo.svg" SVG width="100%" alt="ThoughtSpot"></a>
+        <button class="navbar-burger" data-target="topbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div id="topbar-menu" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown">
+              <a class="navbar-link" href="https://mark-plummer.github.io/antora-test">Docs</a>
+            <div class="navbar-dropdown explore">
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link component" href="../index.html"><span class="title">Version</span> <span class="version">6.1</span></a>
+            <div class="navbar-dropdown versions">
+              <div class="cols">
+                <ul>
+                  <li class="current"><a class="navbar-item" href="spotiq-customize.html">Version 6.1</a></li>
+                  <li><a class="navbar-item" href="../../5.1/end-user/spotiq-customize.html">Version 5.1</a></li>
+                  <li><a class="navbar-item" href="../../5.0/end-user/spotiq-customize.html">Version 5.0</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="btn red-btn" href="https://www.couchbase.com/downloads">Downloads</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body container">
+<nav class="nav">
+<div class="nav-menu">
+<ul class="nav-list">
+  <li class="nav-item is-active" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">About this release</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../release/notes.html">Release notes</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../release/downloads.html">Downloads</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-path is-active" data-depth="1">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Users</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Getting Started</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-navigating-thoughtspot.html">Finding your way around</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="accessing.html">ThoughSpot browser access</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-user.html">Your user preferences</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-privileges-end-user.html">Understanding privileges</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="stickers.html">Use stickers to organize</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use Search</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-starting-a-new-search.html">What are searches and answers?</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Search basics</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="start-a-new-search.html">Start a new search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-choosing-sources.html">Choose a data source</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-the-search-bar.html">Search bar features</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="recent-searches.html">Search suggestions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-attributes-and-measures.html">Search results and column types</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="data-refresh-time.html">Last data refresh time</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="work-with-answers.html">Work with answers</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-tables.html">Results that are tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use keywords in search</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-keyword-searches.html">Overview of keyword searches</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="period-searches.html">Time series analysis</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="search-using-growth-over-time.html">Search using growth over time</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="proximity-search.html">Proximity searches "near" and "farther than"</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with filters</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-filters.html">Understand filters</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="filter-from-column-headers.html">Add a filter to a table</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="filter-from-chart-axes.html">Add a filter to a chart</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="create-bulk-filter.html">Create a bulk filter</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="delete-a-filter.html">Delete a filter</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-filters-for-null.html">Filter on null, blank, or empty values</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other search actions</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="change-the-view.html">Change result display options</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="show-underlying-data.html">Show underlying data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="drill-down.html">See the search behind the result</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="apply-conditional-formatting.html">Apply conditional formatting to a table</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="download-your-search.html">Download your search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="replay-search.html">Replay search</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with charts</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-charts.html">Understand charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Chart types</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-column-charts.html">Column charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-bar-charts.html">Bar charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-line-charts.html">Line charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="pie-charts.html">Pie charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="area-charts.html">Area charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-scatter-charts.html">Scatter charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-bubble-charts.html">Bubble charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-pareto-charts.html">Pareto charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-waterfall-charts.html">Waterfall charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-treemap-charts.html">Treemap charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="line-column-charts.html">Line column charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-funnel-charts.html">Funnel charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-geo-charts.html">Geo charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-pivoting-a-table.html">Pivot table</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Changing a chart</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="reorder-values-on-the-x-axis.html">Reorder the labels</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="set-the-y-axis-scale.html">Set the y-axis range</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="hide-and-show-values.html">Hide and show values</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="change-chart-colors.html">Change chart colors</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="show-data-labels.html">Additional chart options</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="zoom-into-a-chart.html">Zoom into a chart</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with formulas</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="add-formula-to-search.html">Understand formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="how-to-add-formula.html">Add a formula to a search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="edit-formula-in-answer.html">View or edit a formula in search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Aggregate formulas</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="aggregation-formulas.html">Overivew of aggregate formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-cumulative-formulas.html">Cumulative functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-pinned-measures.html">Grouping functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="about-moving-formulas.html">Moving functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="filtered-agg-forms.html">Filtered aggregation functions</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="conversion-formulas.html">Conversion functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="date-formulas.html">Date functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="percent-calculations.html">Percent (simple number) calculations</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="conditional-sum.html">Formula operators</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-nested-formulas.html">Nested formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with worksheets</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-query-on-query.html">Understand worksheets</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="create-aggregated-worksheet.html">Save a search as a worksheet</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="do-query-on-query.html">Create a search from a worksheet</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="more-example-scenarios.html">Worksheet example scenarios</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use pinboards</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-pinboards.html">Basic pinboard usage</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="edit-the-layout-of-a-pinboard.html">Edit a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="pinboard-filters.html">Pinboard filters</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="schedule-a-pinboard-job.html">Schedule a pinboard job</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="copy-a-pinboard.html">Copy a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="reset-a-visualization.html">Reset a pinboard or visualization</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="start-a-slideshow.html">Start a slideshow</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-path is-active" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with data</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="data-intro-end-user.html">Understand data sources</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="generate-flat-file.html">Create and load CSV files</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="append-data-from-a-web-browser.html">Append data through the UI</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="view-your-data-profile.html">View a data profile</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="locale.html">Date and currency format settings</a>
+    </span>
+  </li>
+  <li class="nav-item is-current-path is-active" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">SpotIQ</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="whatisspotiq.html">What is SpotIQ</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="overview.html">101:Load and analyze data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="work-with-insights.html">101:Review and save insights</a>
+    </span>
+  </li>
+  <li class="nav-item is-current-page is-active" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="spotiq-customize.html">101:Do more with SpotIQ</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="special-topics.html">Best SpotIQ Practices</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="customization.html">Custom SpotIQ analysis</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="adv-customize-withr.html">Advanced R Customizations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Share your work</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="sharing-for-end-users.html">About sharing</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="share-pinboards.html">Share pinboards</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="share-answers.html">Share answers</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="share-user-imported-data.html">Share uploaded data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="unshare.html">Revoke access (unshare)</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Slack and ThoughtSpot</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="intro.html">Slack and Spot</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="use-spot.html">How to use Spot</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="what-you-can-find-in-the-help-center.html">More help and support</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+</div>
+</nav>
+<aside class="toc sidebar">
+  <div class="toc-menu"></div>
+</aside>
+<main class="article" data-ceiling="topbar">
+  <div class="article-header">
+<button class="nav-control"></button>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Version</a></li>
+    <li class="crumb">Users</li>
+    <li class="crumb">Work with data</li>
+    <li class="crumb">SpotIQ</li>
+    <li class="crumb"><a href="spotiq-customize.html">101:Do more with SpotIQ</a></li>
+  </ul>
+</nav>
+<div class="tools" role="navigation">
+  <ul>
+    <li class="tool edit"><a href="https://github.com/mark-plummer/antora-test/edit/6.1/site/modules/end-user/pages/spotiq-customize.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+  </ul>
+</div>
+  </div>
+<article class="doc">
+<h1 class="page">SpotIQ 101: Do more with SpotIQ</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You&#8217;ve finished the <a href="work-with-insights.html">second part of the tutorial</a>.
+In this, the third and final part, you can learn how to modify a SpotIQ analysis to extend or customize the analysis.
+You can edit an insight to customize the chart it uses, or modify the <strong>Search</strong> syntax behind it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customize_an_analysis"><a class="anchor" href="#_customize_an_analysis"></a>Customize an analysis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the second part of the tutorial, you reviewed the first output from SpotIQ.
+The outlier insights weren&#8217;t really that useful.
+Let&#8217;s try to dig deeper into that.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Scroll down to the outlier section.</p>
+</li>
+<li>
+<p>Select the first insight.</p>
+</li>
+<li>
+<p>Choose the menu and select <strong>Auto Analyze</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-auto-again.png" alt="spotiq auto again">
+</div>
+</div>
+<div class="paragraph">
+<p>The system responds by starting a new insight run based on the single chart.
+Each time you request a change to the analysis settings, it starts another run.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-kickoff.png" alt="spotiq kickoff">
+</div>
+</div>
+</li>
+<li>
+<p>Return to the SpotIQ page and select your new analysis.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-new-analysis.png" alt="spotiq new analysis">
+</div>
+</div>
+</li>
+<li>
+<p>Open the analysis and review the analysis details.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-details-too.png" alt="spotiq details too">
+</div>
+</div>
+<div class="paragraph">
+<p>If you recall, the first run against this data SpotIQ ran through 20 combinations and discovered 14 insights.
+In this second run against one table, SpotIQ ran 49 combinations and developed 17 insights.
+Only 4 insights were discovered.</p>
+</div>
+<div class="paragraph">
+<p>Running SpotIQ again does not necessarily result in fewer runs or even, as in this case a reduced number of insights.
+It changes the analysis though, by selecting the single insight from your first run, you gave SpotIQ information it could use to focus the next run.</p>
+</div>
+<div class="paragraph">
+<p>Continue with the customization.</p>
+</div>
+</li>
+<li>
+<p>Choose <strong>Customize Analysis</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Customize Analysis</strong> dialog appears.</p>
+</div>
+</li>
+<li>
+<p>Select the <strong>Customize algorithms</strong> tab.</p>
+</li>
+<li>
+<p>Uncheck the <strong>Outlier Detection using Z-Score</strong> option.</p>
+</li>
+<li>
+<p>Click <strong>ANALYZE</strong>.</p>
+<div class="paragraph">
+<p>SpotIQ starts a new analysis.</p>
+</div>
+</li>
+<li>
+<p>Open the new analysis from the SpotIQ page.</p>
+<div class="paragraph">
+<p>Notice that the new analysis has the same name as the last one you ran.
+The new results include an outlier, and a cross-correlation.
+These new charts show a definite outlier, <code>6/30/2005</code>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-definite-outlier.png" alt="spotiq definite outlier">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The changes you make in this step persist on the underlying data for all your future analyses.
+You can unset these values by going back into the dialog and removing what you set.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_temporary_customization_for_a_single_insight"><a class="anchor" href="#_a_temporary_customization_for_a_single_insight"></a>A temporary customization for a single insight</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Finally, you might have noticed the thumbs at the bottom of each insight.
+Use the thumbs up to tell SpotIQ you like the data insight.
+Clicking thumb&#8217;s down display an <strong>Improve Analysis</strong> dialog:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-thumbs-down.png" alt="spotiq thumbs down">
+</div>
+</div>
+<div class="paragraph">
+<p>You can exclude a value from this individual analysis and rerun the analysis.
+Unlike the <strong>Customize Analysis</strong> action, this action works only on this analysis and does not persist.</p>
+</div>
+<div class="paragraph">
+<p>Try this for yourself later at some point.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modify_an_insight_search_and_visualization"><a class="anchor" href="#_modify_an_insight_search_and_visualization"></a>Modify an insight search and visualization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The lines used in the cross-correlation are somewhat ambiguous.
+A different visualization may help in this case.
+You can also modify the charts you see in your results.
+Try this now.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the menu on the <strong>Total imports, Total value_added by year</strong> chart.</p>
+</li>
+<li>
+<p>Click the chart menu and choose <strong>Edit</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-edit-chart.png" alt="spotiq edit chart">
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong>Edit Visualization</strong> appears.
+The layout is familiar to any user that has run a ThoughtSpot search or worked with a result.
+This is dialog reveals the <strong>Search</strong> syntax used to generate the insight.
+You can use this dialog to do all the things you would normally do with a search.</p>
+</div>
+</li>
+<li>
+<p>Edit the search bar and remove <code>table_num</code> from the search.</p>
+<div class="paragraph">
+<p>The <code>table_num</code> isn&#8217;t strictly necessary in the data.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-rm-tablenum.png" alt="spotiq rm tablenum">
+</div>
+</div>
+</li>
+<li>
+<p>Select the chart icon and choose <strong>Line Column</strong> to change the visualization.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-line-column.png" alt="spotiq line column">
+</div>
+</div>
+</li>
+<li>
+<p>Choose <span class="menuseq"><b class="menu">Actions</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Update</b></span>.</p>
+</li>
+<li>
+<p>Close the dialog by pressing the <strong>Close</strong>.</p>
+<div class="paragraph">
+<p>The chart with your changes now appears in the <strong>SpotIQ</strong> list.
+The outlier  stands out very clearly now in both charts.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-new-look.png" alt="spotiq new look">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_present_your_insights"><a class="anchor" href="#_present_your_insights"></a>Present your insights</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can present SpotIQ insights in several ways.
+You can present an individual result, or all of them.
+You can package all the insights in a PDF.
+This is useful for passing a packet of results.
+Since any insight reflects the data at a specific point in time, always consider saving the insight as a PDF.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Locate the <strong>Actions</strong> menu on the corner of the <strong>SpotIQ</strong> page.</p>
+</li>
+<li>
+<p>Choose <span class="menuseq"><b class="menu">Actions</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Download as PDF</b></span> from the menu.</p>
+<div class="paragraph">
+<p>The system downloads a file containing all the insights.
+Keep in mind this file can be very large if there are a lot of insights found in your data.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can use the <strong>Present</strong> action to view visualizations that appear in a carousel, and present them as a group.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Scroll down to the first carousel with your new charts.</p>
+</li>
+<li>
+<p>Roll over the right corner of the menu to reveal the menu.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-carousel.png" alt="spotiq carousel">
+</div>
+</div>
+</li>
+<li>
+<p>Choose <strong>Present</strong> from the menu.<video src="spotiq-present.mp4" width="600" controls="" preload=""></video></p>
+<div class="paragraph">
+<p>Click through the carousel with the next / previous arrow buttons, or use  the left side menu of chart names.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Also, each individual chart has a <strong>Download</strong>, <strong>Present</strong>, or <strong>Copy link</strong> action you can take.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schedule_a_recurring_analysis"><a class="anchor" href="#_schedule_a_recurring_analysis"></a>Schedule a recurring analysis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you find an analysis configuration that is useful.
+You can run that configuration periodically.
+This is a good thing to do of course as, in a business, data changes all the time.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to the <strong>SpotIQ</strong> page.</p>
+</li>
+<li>
+<p>Choose the <strong>Analysis</strong> tab.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-analysis-check.png" alt="spotiq analysis check">
+</div>
+</div>
+</li>
+<li>
+<p>Click the latest <strong>Total imports by CATEGORY_DESC</strong> analysis.</p>
+<div class="paragraph">
+<p>The <strong>Customize Analysis</strong> dialog appears.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-custom-analysis.png" alt="spotiq custom analysis">
+</div>
+</div>
+</li>
+<li>
+<p>Choose the <strong>Job Schedule</strong> option.</p>
+</li>
+<li>
+<p>Fill out the schedule to run the job <strong>Monthly</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-schedule.png" alt="spotiq schedule">
+</div>
+</div>
+<div class="paragraph">
+<p>Every month SpotIQ will update your analysis with new data.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Keep in mind that SpotIQ jobs take resources in your system.
+So, you really don&#8217;t want to leave casual jobs running in the system.
+Go ahead and delete this latest job.
+Now that you know how to schedule a job, it isn&#8217;t needed anymore.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the checkbox for the job you just scheduled.</p>
+</li>
+<li>
+<p>Click <strong>Delete</strong> to remove it.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spotiq-rm-job.png" alt="spotiq rm job">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_congratulations"><a class="anchor" href="#_congratulations"></a>Congratulations!</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Congratulations, at this point you&#8217;ve learned the basics of SpotIQ with ThoughtSpot.
+Throughout the application, you can find the SpotIQ icon on search answers, pinboards, visualizations, and data.
+Wherever you see this option, you can click to run suggested or custom analyses, and get new insights on the SpotIQ page.</p>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Product</span></li>
+          <li><a href="https://www.thoughtspot.com/product" target="_blank" rel="noopener">Product</a></li>
+          <li><a href="https://www.thoughtspot.com/spotiq" target="_blank" rel="noopener">SpotIQ</a></li>
+          <li><a href="https://www.thoughtspot.com/mobile" target="_blank" rel="noopener">Mobile</a></li>
+          <li><a href="https://www.thoughtspot.com/embedded-analytics" target="_blank" rel="noopener">Embedded Analytics</a></li>
+          <li><a href="https://www.thoughtspot.com/architecture" target="_blank" rel="noopener">Architecture</a></li>
+          <li><a href="https://www.thoughtspot.com/pricing" target="_blank" rel="noopener">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Solutions</span></li>
+          <li><a href="https://www.thoughtspot.com/solutions" target="_blank" rel="noopener">Overview</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/retail" target="_blank" rel="noopener">Retail</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/financial-services" target="_blank" rel="noopener">Fincancial Services</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/manufacturing">Manufacturing</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/communications" target="_blank" rel="noopener">Communications</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/healthcare-life-sciences" target="_blank" rel="noopener">Healthcare</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/embedded-analytics" target="_blank" rel="noopener">Embedded Analytics</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/procurement-analytics" target="_blank" rel="noopener">Procurement</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/government-analytics" target="_blank" rel="noopener">Government Analytics</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Resources</span></li>
+          <li><a href="https://www.thoughtspot.com/resources" target="_blank" rel="noopener">Overview</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/demo-video" target="_blank" rel="noopener">Demo Videos</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/analyst-report" target="_blank" rel="noopener">Analyst Report</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/webinar" target="_blank" rel="noopener">Webinars</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/case-study" target="_blank" rel="noopener">Case Studies</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/white-paper" target="_blank" rel="noopener">White Papers</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/datasheet" target="_blank" rel="noopener">Datasheets</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/solution-brief" target="_blank" rel="noopener">Solution Briefs</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">About Us</span></li>
+          <li><a href="https://www.thoughtspot.com/team" target="_blank" rel="noopener">Team</a></li>
+          <li><a href="https://www.thoughtspot.com/customers" target="_blank" rel="noopener">Customers</a></li>
+          <li><a href="https://www.thoughtspot.com/atlas-marketplace" target="_blank" rel="noopener">Atlas Marketplace</a></li>
+          <li><a href="https://www.thoughtspot.com/partners" target="_blank" rel="noopener">Partner Directory</a></li>
+          <li><a href="https://www.thoughtspot.com/events" target="_blank" rel="noopener">Events</a></li>
+          <li><a href="https://www.thoughtspot.com/news" target="_blank" rel="noopener">News</a></li>
+          <li><a href="https://www.thoughtspot.com/careers" target="_blank" rel="noopener">Careers</a></li>
+          <li><a href="https://www.thoughtspot.com/blog" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="https://www.thoughtspot.com/legal" target="_blank" rel="noopener">Legal</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Connect</span></li>
+          <li><a href="https://www.thoughtspot.com/demo" target="_blank" rel="noopener">Request Demo</a></li>
+          <li><a href="https://community.thoughtspot.com" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/support" target="_blank" rel="noopener">Support</a></li>
+          <li><a href="https://www.thoughtspot.com/contact" target="_blank" rel="noopener">Contact Us</a></li>
+        </ul>
+      </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Policy</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-terms-of-use">Terms of Use</a>
+      <a href="https://www.thoughtspot.com/cookies-policy">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
