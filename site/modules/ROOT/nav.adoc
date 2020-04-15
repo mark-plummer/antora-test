@@ -118,3 +118,5 @@
 *** xref:end-user:intro.adoc[Slack and Spot]
 *** xref:end-user:use-spot.adoc[How to use Spot]
 ** xref:end-user:what-you-can-find-in-the-help-center.adoc[More help and support]
+** Disaster Recovery
+*** xref:disaster-recovery:about-disaster-recovery.md.adoc[About Disaster Recovery]
