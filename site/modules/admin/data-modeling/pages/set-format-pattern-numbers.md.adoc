@@ -1,6 +1,4 @@
-'''
-
-title: [ "Set number, date, and currency formats" ]
+= Set number, date, and currency formats
 
 last_updated: 3/25/2020 summary: "Learn how to set key formats for column values." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can set number, date, and currency display formats.
 These formats define how these value types display in tables and charts.

@@ -1,10 +1,8 @@
-:experimental:
+= Set up the ODBC Driver for SSIS
 
-'''
-
-title: [Set up the ODBC Driver for SSIS]
-
-last_updated: tbd summary: "Use SSIS to set up the ODBC Driver." sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+:last_updated: tbd 
+:summary: "Use SSIS to set up the ODBC Driver." 
+:sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 
 Microsoft SSIS (SQL Server Integration Services) is a data integration and workflow applications platform you can use to connect to ThoughtSpot.
 The platform is a component of the Microsoft SQL Server database software.

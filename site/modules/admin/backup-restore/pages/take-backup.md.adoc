@@ -1,4 +1,4 @@
-= ["Create a manual backup"]
+= Create a manual backup
 :last_updated: 3/11/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

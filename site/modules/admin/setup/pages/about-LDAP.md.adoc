@@ -1,6 +1,4 @@
-'''
-
-title: [About LDAP integration]
+= About LDAP integration
 
 last_updated: tbd summary: "You authenticate users against an LDAP server.
 " sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Some companies use LDAP (Lightweight Directory Access Protocol) to manage user authentication.

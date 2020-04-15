@@ -1,4 +1,4 @@
-= ["Install and set up mobile app"]
+= Install and set up mobile app
 :last_updated: 11/15/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

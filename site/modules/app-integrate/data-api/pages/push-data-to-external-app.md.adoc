@@ -1,8 +1,10 @@
-'''
+= Use the Data Push API
 
-title: [Use the Data Push API]
-
-last_updated: 11/18/2019 summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- The Data Push API allows you to open a web page in the context of the ThoughtSpot application.
+:last_updated: 11/18/2019 
+:summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application." 
+:sidebar: mydoc_sidebar 
+:permalink: /:collection/:path.html -- 
+The Data Push API allows you to open a web page in the context of the ThoughtSpot application.
 This third party web page will then have access to the results of the ThoughtSpot search from which it was invoked.
 This is useful when you want to initiate an action in another application based on the result of a search in ThoughtSpot.
 The Data Push API was introduced in ThoughtSpot 5.0.

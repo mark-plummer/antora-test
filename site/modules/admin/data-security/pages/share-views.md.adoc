@@ -1,4 +1,4 @@
-= ["Share Views"]
+= Share Views
 :last_updated: 2/13/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

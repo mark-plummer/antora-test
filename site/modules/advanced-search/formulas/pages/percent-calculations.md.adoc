@@ -1,4 +1,4 @@
-= ["Percent (simple number) calculations"]
+= Percent (simple number) calculations
 :last_updated: 3/26/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

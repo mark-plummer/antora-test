@@ -1,4 +1,4 @@
-= ["How to improve throughput"]
+= How to improve throughput
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

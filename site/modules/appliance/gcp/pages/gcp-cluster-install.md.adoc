@@ -1,4 +1,4 @@
-= ["Install ThoughtSpot clusters in GCP"]
+= Install ThoughtSpot clusters in GCP
 :last_updated: ["2/27/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

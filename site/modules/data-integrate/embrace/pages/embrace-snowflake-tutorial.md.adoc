@@ -1,9 +1,8 @@
-= ["ThoughtSpot Tutorials for Snowflake Partner Connect"]
+= ThoughtSpot Tutorials for Snowflake Partner Connect
 :last_updated: 3/9/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Explore these tutorials to learn how to model your data after connecting to your Snowflake database.
-:toc: true
 
 When you create a connection to Snowflake in ThoughtSpot, any data modeling or table joins are inherited automatically.
 

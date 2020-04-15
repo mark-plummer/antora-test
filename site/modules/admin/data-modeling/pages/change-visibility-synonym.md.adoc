@@ -1,4 +1,4 @@
-= ["Hide a column or define a synonym"]
+= Hide a column or define a synonym
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

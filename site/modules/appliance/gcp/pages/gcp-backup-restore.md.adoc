@@ -1,4 +1,4 @@
-= ["Back up and Restore a GCP cluster using GCS"]
+= Back up and Restore a GCP cluster using GCS
 :last_updated: 3/13/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

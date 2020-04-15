@@ -1,9 +1,10 @@
-'''
+= Use the Data REST API to get data
 
-title: [Use the Data REST API to get data]
-
-last_updated: tbd summary: "This procedure shows how to use the REST API to get data out of ThoughtSpot, so you can use it in a Web page, portal, or application.
-" sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Data retrieved using the Data REST API is returned as JSON (JavaScript Object Notation).
+:last_updated: tbd 
+:summary: "This procedure shows how to use the REST API to get data out of ThoughtSpot, so you can use it in a Web page, portal, or application." 
+:sidebar: mydoc_sidebar 
+:permalink: /:collection/:path.html -- 
+Data retrieved using the Data REST API is returned as JSON (JavaScript Object Notation).
 
 Before you can use the Data REST API, you need to enable the link:{{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#[JavaScript API (JS API)] and authenticate to ThoughtSpot.
 

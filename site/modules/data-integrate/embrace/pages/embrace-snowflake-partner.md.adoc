@@ -1,9 +1,8 @@
-= ["ThoughtSpot in Snowflake Partner Connect"]
+= ThoughtSpot in Snowflake Partner Connect
 :last_updated: 2/19/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: With Snowflake Partner Connect you get a free trial of ThoughtSpot that allows you to try out ThoughtSpot Embrace to connect to Snowflake.
-:toc: true
 
 Snowflake Partner Connect allows you to quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Embrace.
 

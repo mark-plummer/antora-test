@@ -1,4 +1,4 @@
-= ["BigQuery connection reference"]
+= BigQuery connection reference
 :experimental:
 :last_updated: 01/30/2020
 :permalink: /:collection/:path.html

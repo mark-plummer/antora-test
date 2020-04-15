@@ -1,4 +1,4 @@
-= ["ODBC tracing on Windows"]
+= ODBC tracing on Windows
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Using logs to aid in troubleshooting.

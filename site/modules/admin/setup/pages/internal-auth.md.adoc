@@ -1,4 +1,4 @@
-= ["Configure internal authentication"]
+= Configure internal authentication
 :last_updated: 3/4/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

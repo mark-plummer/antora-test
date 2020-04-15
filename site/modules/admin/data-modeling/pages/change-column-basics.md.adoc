@@ -1,6 +1,4 @@
-'''
-
-title: ["Set column name, description, and type"]
+= Set column name, description, and type
 
 last_updated: 3/27/2020 summary: "Modeling includes setting basic information for a data column such as its name, description, and type." sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 

@@ -1,6 +1,4 @@
-'''
-
-title: [Materialize a view]
+= Materialize a view
 
 last_updated: 11/2/2018 summary: "Learn how to materialize a view to improve its performance." toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 

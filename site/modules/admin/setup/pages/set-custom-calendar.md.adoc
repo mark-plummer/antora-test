@@ -1,4 +1,4 @@
-= ["Set up custom calendars"]
+= Set up custom calendars
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords.

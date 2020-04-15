@@ -1,4 +1,4 @@
-= ["Installing Amazon Web Services"]
+= Installing Amazon Web Services
 :last_updated: ["12/10/2019"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

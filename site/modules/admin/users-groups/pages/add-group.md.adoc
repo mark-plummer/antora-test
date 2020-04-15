@@ -1,4 +1,4 @@
-= ["Create, edit, or delete a group"]
+= Create, edit, or delete a group
 :last_updated: 10/07/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

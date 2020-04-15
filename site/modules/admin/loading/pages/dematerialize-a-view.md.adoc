@@ -1,6 +1,4 @@
-'''
-
-title: [Dematerialize a view]
+= Dematerialize a view
 
 last_updated: 11/2/2018 summary: "Learn how to dematerialize a view to free up space." toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 

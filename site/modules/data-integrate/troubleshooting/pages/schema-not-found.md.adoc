@@ -1,8 +1,12 @@
-'''
+= Schema not found error with ODBC
 
-title: [Schema not found error with ODBC]
+:last_updated: tbd 
+:toc: false 
+:summary: "Correct schema not found errors." 
+:sidebar: mydoc_sidebar 
+:permalink: /:collection/:path.html -- 
 
-last_updated: tbd toc: false summary: "Correct schema not found errors." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- When connecting with ODBC, you need to specify both the `DATABASE` and `SCHEMA` parameters.
+When connecting with ODBC, you need to specify both the `DATABASE` and `SCHEMA` parameters.
 This is true even if you do not use schema names in ThoughtSpot.
 If you don't supply a `SCHEMA`, you get an error indicating that the schema could not be found.
 

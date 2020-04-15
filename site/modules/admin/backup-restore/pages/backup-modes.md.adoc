@@ -1,4 +1,4 @@
-= ["Understand backup modes"]
+= Understand backup modes
 :last_updated: 3/10/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

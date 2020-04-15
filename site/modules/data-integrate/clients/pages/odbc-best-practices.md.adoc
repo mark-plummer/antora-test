@@ -1,9 +1,9 @@
-= ["Best Practices for Using ODBC"]
+= Best Practices for Using ODBC
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: To successfully use ODBC, following these best practices is recommended.
-:toc: false
+
 
 When developing tools that use the ODBC driver, use these best practices:
 

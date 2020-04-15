@@ -1,4 +1,4 @@
-= ["Set up high availability for AWS"]
+= Set up high availability for AWS
 :last_updated: 12/10/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

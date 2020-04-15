@@ -1,4 +1,4 @@
-= ["Public API reference"]
+= Public API reference
 :last_updated: 1/9/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["The nodes.config file"]
+= The nodes.config file
 :last_updated: ["1/13/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

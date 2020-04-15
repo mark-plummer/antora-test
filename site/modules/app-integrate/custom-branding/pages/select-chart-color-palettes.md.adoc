@@ -1,4 +1,4 @@
-= ["Select chart color palettes"]
+= Select chart color palettes
 :experimental:
 :last_updated: 3/12/2020
 :permalink: /:collection/:path.html

@@ -1,4 +1,4 @@
-= ["Configure disaster recovery"]
+= Configure disaster recovery
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance.

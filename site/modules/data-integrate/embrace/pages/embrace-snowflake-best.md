@@ -1,10 +1,9 @@
----
-title: [Best practices for Embrace with Snowflake]
-last_updated: 01/15/2020
-summary: "You can connect to Snowflake using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."
-sidebar: mydoc_sidebar
-permalink: /:collection/:path.html
----
+= Best practices for Embrace with Snowflake
+:last_updated: 01/15/2020
+:summary: "You can connect to Snowflake using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."
+:sidebar: mydoc_sidebar
+:permalink: /:collection/:path.html
+
 After connecting to Snowflake through ThoughtSpot Embrace, you may notice that some things don’t work as you expect. This article lists best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.
 
 ## Change JSON to a relational schema in Snowflake

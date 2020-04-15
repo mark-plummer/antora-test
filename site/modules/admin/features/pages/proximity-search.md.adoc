@@ -1,6 +1,4 @@
-'''
-
-title: [Proximity searches "near" and "farther than"]
+= Proximity searches "near" and "farther than
 
 last_updated: tbd summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location." toc: false sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Proximity keywords allow you to search and show the results on a map.
 Using proximity keywords causes ThoughtSpot to display a circle that represents your set distance on the geo charts.

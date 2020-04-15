@@ -1,4 +1,4 @@
-= ["Job management (scheduled pinboards)"]
+= Job management (scheduled pinboards)
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

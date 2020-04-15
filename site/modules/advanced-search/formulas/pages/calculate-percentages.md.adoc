@@ -1,4 +1,4 @@
-= ["Calculate percentages"]
+= Calculate percentages
 :last_updated: 11/15/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

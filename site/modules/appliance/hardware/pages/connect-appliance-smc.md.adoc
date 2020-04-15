@@ -1,4 +1,4 @@
-= ["Connect the SMC appliance"]
+= Connect the SMC appliance
 :last_updated: ["1/31/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

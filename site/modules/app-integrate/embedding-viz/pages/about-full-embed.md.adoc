@@ -1,6 +1,4 @@
-'''
-
-title: [Full application embedding]
+= Full application embedding
 
 last_updated: tbd summary: "Full embedding allows users to create ThoughtSpot content in an embedded environment." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Fully embedding ThoughtSpot content gives your users the ability to:
 

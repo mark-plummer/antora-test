@@ -1,8 +1,9 @@
-'''
+= Install the ODBC Driver on Linux
 
-title: [Install the ODBC Driver on Linux]
-
-last_updated: tbd summary: "Use this procedure to obtain the Linux ODBC driver and install it." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- ThoughtSpot's ODBC connection relies on the https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm[SimbaEngine X SDK] to connect through ODBC or JDBC to ThoughtSpot's remote data stores.
+:last_updated: tbd 
+:summary: "Use this procedure to obtain the Linux ODBC driver and install it." sidebar: mydoc_sidebar 
+:permalink: /:collection/:path.html -- 
+ThoughtSpot's ODBC connection relies on the https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm[SimbaEngine X SDK] to connect through ODBC or JDBC to ThoughtSpot's remote data stores.
 The instructions on this page explain how to configure the Simba ODBC driver on a Linux workstation.
 
 Make sure you have read the overview material in the link:{{ site.baseurl }}/data-integrate/clients/about-odbc.html#[ODBC driver overview].

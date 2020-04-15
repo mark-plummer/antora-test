@@ -1,4 +1,4 @@
-= ["Search results contain too many blanks"]
+= Search results contain too many blanks
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["Configure NAS file system"]
+= Configure NAS file system
 :last_updated: 3/4/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["Contact ThoughtSpot support"]
+= Contact ThoughtSpot support
 :last_updated: 2/19/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

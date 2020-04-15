@@ -1,6 +1,4 @@
-'''
-
-title: [Configure CA SiteMinder]
+= Configure CA SiteMinder
 
 last_updated: tbd summary: "CA SiteMinder can be used as an Identity Provider for single sign on to ThoughtSpot." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Before configuring CA SiteMinder, you must link:configure-SAML-with-tscli#[configure SAML in ThoughtSpot].
 Use this procedure to set up CA SiteMinder for use with ThoughtSpot:

@@ -1,4 +1,4 @@
-= ["Sharding"]
+= Sharding
 :last_updated: 3/16/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

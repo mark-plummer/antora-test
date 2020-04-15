@@ -1,4 +1,4 @@
-= ["Embrace overview"]
+= Embrace overview
 :last_updated: 10/21/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["Pinboard Data API"]
+= Pinboard Data API
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

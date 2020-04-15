@@ -1,4 +1,4 @@
-= ["Set up ThoughtSpot in GCP"]
+= Set up ThoughtSpot in GCP
 :last_updated: 4/3/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

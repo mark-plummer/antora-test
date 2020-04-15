@@ -1,4 +1,4 @@
-= ["Enable ODBC Logs"]
+= Enable ODBC Logs
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Learn how to troubleshoot ODBC connections.

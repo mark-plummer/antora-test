@@ -1,4 +1,4 @@
-= ["Configure ThoughtSpot nodes in GCP"]
+= Configure ThoughtSpot nodes in GCP
 :last_updated: ["2/27/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

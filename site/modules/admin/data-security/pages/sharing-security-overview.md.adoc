@@ -1,6 +1,4 @@
-'''
-
-title: [Data security]
+= Data security
 
 last_updated: tbd
 

@@ -1,4 +1,4 @@
-= ["Add a Redshift connection"]
+= Add a Redshift connection
 :last_updated: 1/29/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

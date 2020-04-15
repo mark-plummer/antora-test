@@ -1,7 +1,4 @@
-'''
-
-title: [Authentication]
-
+= Authentication
 summary: "ThoughtSpot provides LDAP/AD, SAML, and ThoughtSpot login to authenticate users." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- ThoughtSpot provides three ways to authenticate users  LDAP/AD, SAML, and ThoughtSpot login.
 In general, ThoughtSpot recommends that you use LDAP/AD or SAML if possible since ThoughtSpot provides only basic authentication with no restrictions on passwords, timeouts, failed logins, etc.
 

@@ -1,4 +1,4 @@
-= ["Deploying on the Dell appliance"]
+= Deploying on the Dell appliance
 :last_updated: 4/3/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

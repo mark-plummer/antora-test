@@ -1,4 +1,4 @@
-= ["Migrate or restore Worksheets"]
+= Migrate or restore Worksheets
 :last_updated: 3/18/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

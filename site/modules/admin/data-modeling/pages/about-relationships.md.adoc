@@ -1,4 +1,4 @@
-= ["Link tables using relationships"]
+= Link tables using relationships
 :last_updated: 1/6/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,6 +1,4 @@
-'''
-
-title: [Data types]
+= Data types
 
 last_updated: 3/26/2020 summary: "ThoughtSpot supports the common data types." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Before you import data, compare the data types you want to load with these supported data types.
 Then, convert your data before loading it.

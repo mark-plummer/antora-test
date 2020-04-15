@@ -1,4 +1,4 @@
-= ["Configure ThoughtSpot nodes in AWS"]
+= Configure ThoughtSpot nodes in AWS
 :last_updated: ["2/27/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

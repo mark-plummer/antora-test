@@ -1,4 +1,4 @@
-= ["Upgrade a cluster"]
+= Upgrade a cluster
 :last_updated: 3/4/2020
 :permalink: /:collection/:path.html
 :pp: {plus}{plus}

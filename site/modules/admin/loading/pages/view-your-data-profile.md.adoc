@@ -1,4 +1,4 @@
-= ["View a data profile"]
+= View a data profile
 :last_updated: 11/15/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,6 +1,4 @@
-'''
-
-title: [Set ADDITIVE or AGGREGATION ]
+= Set ADDITIVE or AGGREGATION
 
 last_updated: 11/15/2019 summary: "You can allow aggregation on MEASURE columns and some ATTRIBUTE columns." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Aggregation is grouping many units or parts into a new value.
 In data, aggregation gathers multiple input values and calculates an summary value from them.

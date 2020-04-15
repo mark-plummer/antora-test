@@ -1,4 +1,4 @@
-= ["Enable SearchIQ"]
+= Enable SearchIQ
 :last_updated: 09/23/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

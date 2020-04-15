@@ -1,6 +1,4 @@
-'''
-
-title: [Customize look and feel]
+= Customize look and feel
 
 last_updated: tbd summary: "You can brand the ThoughtSpot application for your company." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can customize the look and feel of the ThoughtSpot application for your company.
 Configuring these settings sets system-wide defaults for all your users.

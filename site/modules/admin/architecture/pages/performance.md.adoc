@@ -1,4 +1,4 @@
-= ["Performance considerations"]
+= Performance considerations
 :last_updated: 03/11/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

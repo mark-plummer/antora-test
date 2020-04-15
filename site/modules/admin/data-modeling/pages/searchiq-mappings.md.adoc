@@ -1,4 +1,4 @@
-= ["Edit the SearchIQ mappings"]
+= Edit the SearchIQ mappings
 :experimental:
 :last_updated: 9/23/2019
 :permalink: /:collection/:path.html

@@ -1,6 +1,5 @@
----
-title: [Search Data API]
-last_updated: 4/8/2020
+= Search Data API
+:last_updated: 4/8/2020
 summary: "To use the data retrieved from a search query programmatically, you can first query this data using the ThoughtSpot Search Data API."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,6 +1,4 @@
-'''
-
-title: [Supported hardware]
+= Supported hardware
 
 last_updated: tbd summary: "Required and provided installation hardware." sidebar: mydoc_sidebar permalink: /:collection/:path.html --
 

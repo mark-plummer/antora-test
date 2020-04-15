@@ -1,4 +1,4 @@
-= ["Enable JDBC Logs"]
+= Enable JDBC Logs
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: Configure logging parameter strings.

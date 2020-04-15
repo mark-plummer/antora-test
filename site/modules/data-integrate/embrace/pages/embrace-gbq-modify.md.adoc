@@ -1,4 +1,4 @@
-= ["Modify a BigQuery connection"]
+= Modify a BigQuery connection
 :last_updated: 1/30/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

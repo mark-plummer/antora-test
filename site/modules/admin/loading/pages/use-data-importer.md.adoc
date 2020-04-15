@@ -1,4 +1,4 @@
-= ["Import CSV files with tsload"]
+= Import CSV files with tsload
 :last_updated: 03/07/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

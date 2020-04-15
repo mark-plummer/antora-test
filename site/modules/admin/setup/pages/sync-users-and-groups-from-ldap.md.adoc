@@ -1,4 +1,4 @@
-= ["Sync users and groups from LDAP"]
+= Sync users and groups from LDAP
 :last_updated: 04/11/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

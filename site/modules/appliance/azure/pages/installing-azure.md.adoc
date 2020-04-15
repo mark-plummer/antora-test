@@ -1,4 +1,4 @@
-= ["Configure ThoughtSpot nodes in Azure"]
+= Configure ThoughtSpot nodes in Azure
 :last_updated: ["2/27/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["Customize ThoughtSpot Help"]
+= Customize ThoughtSpot Help
 :last_updated: 1/17/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,6 +1,4 @@
-'''
-
-title: [Test network connectivity between nodes]
+= Test network connectivity between nodes
 
 last_updated: tbd summary: "Verify your network is properly configured for the application." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- This procedure tests the network connectivity between all ThoughtSpot nodes, and to the LAN.
 If you can perform these steps successfully, the network settings on ThoughtSpot are correct.

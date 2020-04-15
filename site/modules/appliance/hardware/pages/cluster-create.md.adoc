@@ -1,4 +1,4 @@
-= ["Using the tscli cluster create command"]
+= Using the tscli cluster create command
 :last_updated: ["1/8/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

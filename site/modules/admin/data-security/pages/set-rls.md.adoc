@@ -1,6 +1,4 @@
-'''
-
-title: [Set row level security rules]
+= Set row level security rules
 
 last_updated: 3/3/2020
 

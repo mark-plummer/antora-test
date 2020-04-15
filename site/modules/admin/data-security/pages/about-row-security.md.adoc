@@ -1,6 +1,4 @@
-'''
-
-title: ["About row level security (RLS)"]
+= About row level security (RLS)
 
 last_updated: tbd summary: "Using row level security, you can restrict data that appears in search results and pinboards by group." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Row level security (RLS) allows you to restrict a group's access to table row data.
 You do this by creating a _rule_ that associates a filter with a group.

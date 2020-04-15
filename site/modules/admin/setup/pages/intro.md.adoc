@@ -1,4 +1,4 @@
-= ["About installation and upgrades"]
+= About installation and upgrades
 :last_updated: 3/4/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

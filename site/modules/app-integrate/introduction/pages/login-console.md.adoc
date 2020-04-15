@@ -1,4 +1,4 @@
-= ["Log into the Linux shell using SSH"]
+= Log into the Linux shell using SSH
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

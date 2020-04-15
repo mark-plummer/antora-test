@@ -1,9 +1,9 @@
-'''
+= Use the JDBC Driver
 
-title: [Use the JDBC Driver]
-
-last_updated: tbd summary: "How to configure the JDBC driver.
-" sidebar: mydoc_sidebar permalink: /:collection/:path.html --
+:last_updated: tbd 
+:summary: "How to configure the JDBC driver." 
+:sidebar: mydoc_sidebar 
+:permalink: /:collection/:path.html --
 
 ThoughtSpot's ODBC connection relies on the https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm[SimbaEngine X SDK] to connect through ODBC or JDBC to ThoughtSpot's remote data stores.
 The instructions on this page explain how to configure the JDBC driver.

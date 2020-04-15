@@ -1,9 +1,9 @@
-= ["Understand embedding"]
+= Understand embedding
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: This page provides an explanation of what you must consider when embedding ThoughtSpot.
-:toc: true
+:toc:
 
 Embedding allows you to embed all or part of ThoughtSpot in another client application.
 
@@ -16,7 +16,9 @@ The first example could require modifying a single HTML page while the later exa
 Regardless of the simplicity or complexity of your client application, its infrastructure must allow for loading and calling the ThoughtSpot JS library.
 This library allows you to authenticate to ThoughtSpot and load specific objects.
 
-There are different methods for embedding ThoughtSpot into a client application:+++<table>++++++<colgroup>++++++<col style="width:25%">++++++</col>+++
+There are different methods for embedding ThoughtSpot into a client application:
+
++++<table>++++++<colgroup>++++++<col style="width:25%">++++++</col>+++
    +++<col style="width:75%">++++++</col>++++++</colgroup>+++
   +++<tr>++++++<th>+++Type+++</th>+++
     +++<th>+++Description+++</th>++++++</tr>+++
@@ -45,20 +47,14 @@ But there is a system-wide setting that can be changed to open the links within 
 
 Changing this setting opens the links:
 
-[cols=2*]
-|===
-| Link type
-| Opens in
 
-| Link in search result table in ThoughtSpot
-| Same browser tab as ThoughtSpot application
-
-| Link in table embedded in an iFrame
-| Same iFrame that contains the table
-
-| Link in full ThoughtSpot application embedded in an iFrame
-| Same iFrame that contains the application
-|===
+[width="100%",options="header,footer"]
+|====================
+|  Link type| Opens in 
+| Link in search result table in ThoughtSpot |  Same browser tab as ThoughtSpot application
+| Link in table embedded in an iFrame | Same iFrame that contains the table
+| Link in full ThoughtSpot application embedded in an iFrame | Same iFrame that contains the application 
+|====================
 
 == Choose an authentication methodology
 

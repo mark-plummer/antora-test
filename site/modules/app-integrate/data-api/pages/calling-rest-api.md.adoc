@@ -1,4 +1,4 @@
-= ["Calling the Data REST API"]
+= Calling the Data REST API
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["Node failure"]
+= Node failure
 :last_updated: 11/19/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,6 +1,4 @@
-'''
-
-title: ["Change the join rule or RLS setting for a worksheet"]
+= Change the join rule or RLS setting for a worksheet
 
 last_updated: tbd
 

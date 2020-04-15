@@ -1,6 +1,4 @@
-'''
-
-title: [About data modeling]
+= About data modeling
 
 last_updated: tbd summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Data modeling allows you to define metadata and other aspects of your data.
 For example, you can give data columns search friendly names or predefine how they can be explored and aggregated.

@@ -1,6 +1,4 @@
-'''
-
-title: [Overview of schema building]
+= Overview of schema building
 
 last_updated: tbd summary: "Before you can load data into ThoughtSpot, you must build a database schema to receive it.
 " sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can build a schema by writing a SQL script that creates the objects in your schema.

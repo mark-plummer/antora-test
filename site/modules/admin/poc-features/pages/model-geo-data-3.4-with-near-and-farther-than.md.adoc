@@ -1,4 +1,4 @@
-= ["Proximity keywords 'near' and 'farther than'"]
+= Proximity keywords 'near' and 'farther than'
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

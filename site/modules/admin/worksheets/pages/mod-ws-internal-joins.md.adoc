@@ -1,4 +1,4 @@
-= ["Modify joins within a worksheet"]
+= Modify joins within a worksheet
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

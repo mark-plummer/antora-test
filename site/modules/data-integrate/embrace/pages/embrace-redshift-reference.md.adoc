@@ -1,4 +1,4 @@
-= ["Redshift connection reference"]
+= Redshift connection reference
 :last_updated: 01/24/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

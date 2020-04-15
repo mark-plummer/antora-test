@@ -1,6 +1,4 @@
-'''
-
-title: [Initialize the Identity Provider Metadata]
+= Initialize the Identity Provider Metadata
 
 last_updated: tbd summary: "This procedure shows how to initialize the Identity Provider (IdP) metadata for AD FS." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- This is one part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication.
 You should also refer to the link:integrate-ADFS.html#[overview] of the entire process of integrating with AD FS.

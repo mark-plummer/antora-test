@@ -1,4 +1,4 @@
-= ["Configure authentication through Active Directory"]
+= Configure authentication through Active Directory
 :last_updated: 10/10/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

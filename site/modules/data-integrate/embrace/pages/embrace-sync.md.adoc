@@ -1,8 +1,7 @@
-= ["Sync Tables in Embrace"]
+= Sync Tables in Embrace
 :last_updated: tbd
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
-:toc: true
 
 When you create a connection to Snowflake, the selected tables and columns in your connection are linked to the Snowflake database.
 With linked data, ThoughtSpot queries the Snowflake database directly, which is convenient because you don't have to import the data into ThoughtSpot, but search is slower and you don't have access to all of ThoughtSpot's features.

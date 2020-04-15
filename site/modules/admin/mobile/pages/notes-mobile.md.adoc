@@ -1,6 +1,4 @@
-'''
-
-title: [ThoughtSpot mobile release notes]
+= ThoughtSpot mobile release notes
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- ThoughtSpot mobile 1.2 is now available.
 These release notes include information about new features, fixed issues from the previous releases, and any known issues.

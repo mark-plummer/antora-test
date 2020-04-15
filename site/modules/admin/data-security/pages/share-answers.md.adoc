@@ -1,4 +1,4 @@
-= ["Share answers"]
+= Share answers
 :last_updated: 2/12/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

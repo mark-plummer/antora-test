@@ -1,4 +1,4 @@
-= ["Work with snapshots"]
+= Work with snapshots
 :last_updated: 3/10/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

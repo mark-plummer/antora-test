@@ -1,6 +1,4 @@
-'''
-
-title: [Model the data for searching]
+= Model the data for searching
 
 last_updated: tbd sidebar: mydoc_sidebar permalink: /:collection/:path.html -- After loading data, you will create the semantic data model that makes the data easy to search.
 You can make these settings either through the Web interface or by using the model file.

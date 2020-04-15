@@ -1,6 +1,4 @@
-'''
-
-title: [Create and use worksheets]
+= Create and use worksheets
 
 last_updated: 3/20/2020 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets.
 " sidebar: mydoc_sidebar permalink: /:collection/:path.html --

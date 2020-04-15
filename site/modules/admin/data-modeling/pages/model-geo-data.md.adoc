@@ -1,4 +1,4 @@
-= ["Add a geographical data setting"]
+= Add a geographical data setting
 :last_updated: 3/26/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

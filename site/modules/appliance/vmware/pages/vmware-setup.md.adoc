@@ -1,4 +1,4 @@
-= ["Set up ThoughtSpot in VMware"]
+= Set up ThoughtSpot in VMware
 :experimental:
 :last_updated: 3/3/2020
 :permalink: /:collection/:path.html

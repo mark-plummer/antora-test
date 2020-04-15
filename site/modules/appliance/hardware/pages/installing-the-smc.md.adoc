@@ -1,4 +1,4 @@
-= ["Deploying on the SMC appliance"]
+= Deploying on the SMC appliance
 :last_updated: ["4/3/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

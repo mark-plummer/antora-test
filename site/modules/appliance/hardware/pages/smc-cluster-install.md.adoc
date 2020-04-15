@@ -1,4 +1,4 @@
-= ["Install ThoughtSpot Clusters on the SMC Appliance"]
+= Install ThoughtSpot Clusters on the SMC Appliance
 :last_updated: ["3/3/2020"]
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

@@ -1,4 +1,4 @@
-= ["Cannot open a saved answer that contains a formula"]
+= Cannot open a saved answer that contains a formula
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

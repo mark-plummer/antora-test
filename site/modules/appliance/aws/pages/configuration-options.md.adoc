@@ -1,4 +1,4 @@
-= ["AWS configuration options"]
+= AWS configuration options
 :last_updated: 3/17/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar

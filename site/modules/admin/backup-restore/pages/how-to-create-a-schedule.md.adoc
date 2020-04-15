@@ -1,6 +1,4 @@
-'''
-
-title: [Understand backup/snapshot schedules]
+= Understand backup/snapshot schedules
 
 last_updated: 3/10/2020 summary: "Learn about backup and snapshot schedules." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- You can schedule periodic snapshots and backups.
 ThoughtSpot comes configured with a default periodic snapshot policy.

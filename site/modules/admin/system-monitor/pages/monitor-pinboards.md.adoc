@@ -1,9 +1,9 @@
-= ["System pinboards"]
+= System pinboards
 :last_updated: 11/18/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: ThoughtSpot provides several pinboards that help with system monitoring.
-:toc: false
+
 
 There are several system monitoring pinboards in ThoughtSpot that provide answers for system status and resource usage questions.
 The information in these pinboards are updated hourly from internal data sources that collect monitoring statistics.
@@ -24,23 +24,18 @@ To list these system pinboards:
 +
 image::{{ site.baseurl }}/images/su-pinboards.png[]
 
-== Summary of system pinboards+++<table>++++++<colgroup>++++++<col style="width:35%">++++++</col>+++
-   +++<col style="width:65%">++++++</col>++++++</colgroup>+++
-   +++<tr>++++++<th>+++Pinboard+++</th>+++
-      +++<th>+++Description+++</th>++++++</tr>+++
-   +++<tr>++++++<td>++++++<code class="highlighter-rouge">+++Learn how to use ThoughtSpot+++</code>++++++</td>+++
-      +++<td>+++Contains search replays created in the system.+++</td>++++++</tr>+++
-   +++<tr>++++++<td>++++++<code class="highlighter-rouge">+++TS Stats: Alert Detail+++</code>++++++</td>+++
-      +++<td>+++Combines alerts, notification events, and configuration events boards.+++</td>++++++</tr>+++
-   +++<tr>++++++<td>++++++<code class="highlighter-rouge">+++TS Stats: Cluster Detail+++</code>++++++</td>+++
-      +++<td>+++Contains cluster details, logs, snapshots, and latency data.+++</td>++++++</tr>+++
-   +++<tr>++++++<td>++++++<code class="highlighter-rouge">+++TS Stats: System Information and Usage+++</code>++++++</td>+++
-      +++<td>+++Replicates the +++<strong>+++Admin > System Health > Overview+++</strong>+++ page.+++</td>++++++</tr>+++
-   +++<tr>++++++<td>++++++<code class="highlighter-rouge">+++TS Stats: Latency Visualizations+++</code>++++++</td>+++
-      +++<td>+++Latency on servers and +++<a href="#" data-toggle="tooltip" data-original-title="{% for entry in site.data.glossary.entries %}{% if entry.word == "impression" %}{{ entry.definition }}{% endif %}{% endfor %}
-">+++impression+++</a>+++ counts. This data comes from the +++<code>+++TS: BI Server+++</code>+++ worksheet.+++</td>++++++</tr>+++
-   +++<tr>++++++<td>++++++<code class="highlighter-rouge">+++TS Stats: Table Status+++</code>++++++</td>+++
-      +++<td>+++Replicates the +++<strong>+++Data+++</strong>+++ board.+++</td>++++++</tr>++++++</table>+++
+== Summary of system pinboards
+
+[width="100%",options="header,footer"]
+|====================
+| Pinboard |  Description
+| Learn how to use ThoughtSpot |  Contains search replays created in the system.
+| TS Stats: Alert Detail |  Combines alerts, notification events, and configuration events boards.
+| TS Stats: Cluster Detail |  Contains cluster details, logs, snapshots, and latency data.
+| TS Stats: System Information and Usage |  Replicates the *Admin > System Health > Overview* page.
+| TS Stats: Latency Visualizations | Latency on servers and ++++++impression++++++ counts. This data comes from the TS: *BI Server* worksheet. 
+| TS Stats: Table Status |  Replicates the *Data* board.
+|====================
 
 == About deprecated boards
 

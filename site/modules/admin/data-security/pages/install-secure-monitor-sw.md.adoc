@@ -1,4 +1,4 @@
-= ["Installing third-party security and monitoring software"]
+= Installing third-party security and monitoring software
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: You can install third-party software for security, governance, and monitoring of ThoughtSpot.
