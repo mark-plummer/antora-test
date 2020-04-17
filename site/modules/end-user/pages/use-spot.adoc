@@ -1,4 +1,4 @@
-= ["How to use Spot"]
+= How to use Spot
 :last_updated: 11/15/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
@@ -14,14 +14,14 @@ You can't ask Spot to do tricks until you after you invite him to a channel and 
 +
 Type *&#64;spot* and press `RETURN`.
 +
-image::{{ site.baseurl }}/images/slack-1.png[]
+image::/images/slack-1.png[]
 
 . Click invite them to join.
 . Ask him for help.
 +
 If this is the first time you've commanded him, Spot tells you:
 +
-image::{{ site.baseurl }}/images/spot-2.png[]
+image::/images/spot-2.png[]
 
 . Take the clicking here link.
 +
@@ -31,25 +31,25 @@ Spot takes you out of Slack and to the ThoughtSpot application.
 +
 If you do this successfully, the application tells you:
 +
-image::{{ site.baseurl }}/images/spot-3.png[]
+image::/images/spot-3.png[]
 
 . Go back to Slack and ask Spot to list what he does by typing *&#64;spot* help.
 +
-image::{{ site.baseurl }}/images/spot-4.png[]
+image::/images/spot-4.png[]
 +
 Spot can run a query directly that's the **1.
 +++<anything>+++** command.+++</anything>+++
 
 . Try simply listing your subscriptions.
 +
-image::{{ site.baseurl }}/images/spot-5.png[]
+image::/images/spot-5.png[]
 +
-{% include note.html content="Spot only looks for objects with the *spot* sticker on them.
-Work your way from a pinboard to asking for a particular chart." %}
+NOTE: Spot only looks for objects with the *spot* sticker on them.
+Work your way from a pinboard to asking for a particular chart.
 
 . Work your way from a pinboard to asking for a particular chart.
 +
-image::{{ site.baseurl }}/images/spot-6.png[]
+image::/images/spot-6.png[]
 
 At this point, you should go onto explore your Spot's talents on your own!
 

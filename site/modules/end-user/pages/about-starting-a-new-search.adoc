@@ -16,7 +16,7 @@ There are a few basic things you should understand before starting a new Thought
 
 You've probably seen one of these before:
 
-image::search_bar_blank.png[]
+image::/images/search_bar_blank.png[]
 
 Click in the box and start typing some letters.
 As soon as you begin typing, ThoughtSpot suggests some search terms Type slowly and use the suggestions to find what you're looking for.
@@ -68,7 +68,7 @@ So you can search by typing in any of these words:
 
 * The column name: like revenue, product name, or store
 * Any of the values in the columns: like 20000, kitten chow, or richmond
-* One of the special link:{{ site.baseurl }}/reference/keywords.html#[keywords] ThoughtSpot understands: like yesterday, >, or contains
+* One of the special xref:/reference/keywords.adoc[keywords] ThoughtSpot understands: like yesterday, >, or contains
 
 == Save an answer
 
@@ -79,9 +79,9 @@ The *Answers* tab is where you can view and then the your saved search results.
 
 == Related information
 
-* link:{{ site.baseurl }}/end-user/search/about-choosing-sources.html[Choose a data source]
-* link:{{ site.baseurl }}/end-user/search/about-the-search-bar.html[Search bar features]
-* link:{{ site.baseurl }}/end-user/search/recent-searches.html[Search suggestions]
-* link:{{ site.baseurl }}/end-user/search/about-attributes-and-measures.html[Search results and column types]
-* link:{{ site.baseurl }}/end-user/pinboards/share-answers.html[Share an answer]
-* *Beta* link:{{ site.baseurl }}/end-user/search/about-searchiq.html[About SearchIQ]
+* xref:/end-user/search/about-choosing-sources.adoc[Choose a data source]
+* xref:/end-user/search/about-the-search-bar.adoc[Search bar features]
+* xref:/end-user/search/recent-searches.adoc[Search suggestions]
+* xref:/end-user/search/about-attributes-and-measures.adoc[Search results and column types]
+* xref:/end-user/pinboards/share-answers.adoc[Share an answer]
+* *Beta* xref:/end-user/search/about-searchiq.adoc[About SearchIQ]

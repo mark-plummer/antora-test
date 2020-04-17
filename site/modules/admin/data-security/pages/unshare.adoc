@@ -1,0 +1,7 @@
+= Revoke access (unshare)
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn how to revoke access to an object.
+
+{% include content/revoke-access.adoc %}

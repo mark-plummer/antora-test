@@ -1,0 +1,93 @@
+= Answer Explorer
+:last_updated: 1/30/2020
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
+
+Answer Explorer, ThoughtSpot's AI-guided exploration of Answers within Pinboards, provides you with valuable suggestions on how to explore and understand your data, based on two main criteria.
+The Answer Explorer AI considers both popularity and personalization.
+The feature suggests ways to answer questions that are relevant to many other users, and it takes into account your own ThoughtSpot history.
+Answer Explorer helps you better understand your data and get to actionable insights faster with just a click.
+
+You can access Answer Explorer from any Answer in a Pinboard.
+Click the *Explore* button that appears when you hover over any Answer.
+
+image:/images/explore-button.png[The Explore button]
+// {% include image.html file="explore-button.png" title="The Explore button" alt="The Explore button appears when you hover over an Answer in a Pinboard." caption="The Explore button" %}
+
+The Answer expands to fill your screen, and the *Explore this data* menu appears.
+
+image:/images/explore-fullscreen.png[Explore this data]
+// {% include image.html file="explore-fullscreen.png" title="Explore this data" alt="After you click Explore, the Answer expands to full screen." caption="Explore this data" %}
+
+You can explore your data in several different ways, using <<explore-filters,filters>>, <<explore-breakdowns,breakdowns>>, <<explore-metrics,metrics>>, or <<explore-comparisons,comparisons>>.
+
+Answer Explorer's AI updates its suggestions every time you add something new to your visualization.
+If you add a suggested filter, Answer Explorer then suggests new filters, breakdowns, metrics, and comparisons, based on that new filter in your chart.
+In this way, Answer Explorer's suggestions become more relevant for you as you continue to use the feature.
+
+[#explore-filters]
+== Filters
+
+Use the *Filters* search bar to filter your data.
+Answer Explorer uses sophisticated technology to show only the most relevant suggestions.
+Click *Add* to add a suggested filter to your visualization.
+You can click *Show more* to see even more suggestions.
+
+If you want to filter on a column value that Answer Explorer did not suggest, you can search for it in the *Filters* search bar.
+Specify the column values you wish to see, such as _Age group=65+_, and press *Enter*.
+
+[#explore-breakdowns]
+== Breakdowns
+
+Use *Breakdowns* to visualize your data, separated by an attribute.
+For example, break by _Store State_ to see which states have the best sales.
+If your Answer has a time attribute, you can easily change from _daily_ to _quarterly_, and so on.
+
+image:/images/explore-breakdown.png[Break by store state]
+// {% include image.html file="explore-breakdown.png" title="Break by store state" alt="Visually separate your data by store state using the Breakdown feature" caption="Break by store state" %}
+
+After you make a change to your Answer, you may want to go back to an earlier version of your Answer.
+You can click the Back icon image:/images/icon-arrow-left-20px.png[] to go back one step, or the Reset icon image:/images/icon-reset-20px.png[] to go back to the original answer.
+
+[#explore-metrics]
+== Metrics
+
+Use *Metrics* to add other available measures.
+For example, you can add _gross profit margin_ to view both sales and gross profit margin by store region.
+
+image:/images/explore-metrics.png[Sales and gross profit margin]
+// {% include image.html file="explore-metrics.png" title="Sales and gross profit margin" alt="You can add another measure to your visualization." caption="Sales and gross profit margin" %}
+
+If you want to see _gross profit margin_ instead of _sales_, click *Show more* and select *Change sales to gross profit margin*.
+
+image:/images/explore-metricsprofit.png[Gross profit margin by store region]
+// {% include image.html file="explore-metricsprofit.png" title="Gross profit margin by store region" alt="You can replace one measure with another in your visualization." caption="Gross profit margin by store region" %}
+
+[#explore-comparisons]
+== Comparisons
+
+Use *Comparisons* to easily perform a _versus_ analysis.
+For example, Answer Explorer might suggest you compare your best- and worst-performing products.
+
+== Drill down with Answer Explorer
+
+You can Drill down from within Answer Explorer.
+When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon image:/images/icon-arrow-left-20px.png[].
+You cannot go back one step at a time if you Drill down on an Answer in a Pinboard, without using Answer Explorer.
+
+See xref:/complex-search/drill-down.adoc[Drill down].
+
+== Save your new answer
+
+When you find a valuable insight using Answer Explorer, you may want to save that Answer as it appears, instead of trying to recreate it in the *Search* bar.
+
+. Click the ellipsis icon image:/images/icon-more-10px.png[].
+. Select *copy and edit*.
+. *Save* your new Answer within ThoughtSpot and continue working with it.
+. Alternatively, select *Download* to download an image of your current visualization.
+
+You can also *pin* the current Answer to any Pinboard you have *edit* access to.
+Click the *pin* icon image:/images/icon-pin.png[] and select a Pinboard.
+
+Otherwise, the Answer returns to its original state when you exit the *Explore* menu by clicking the _X_ icon.

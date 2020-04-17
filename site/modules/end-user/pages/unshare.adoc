@@ -1,6 +1,7 @@
 = Revoke access (unshare)
-:last_updated: tbd
+:last_updated: 12/19/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
+:summary: You can revoke access to an object that you no longer want to share with someone.
 
-{% include content/revoke-access.md %}
+{% include content/revoke-access.adoc %}

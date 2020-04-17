@@ -1,4 +1,4 @@
-= ["Slack and Spot"]
+= Slack and Spot
 :last_updated: 11/15/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
@@ -15,7 +15,7 @@ Spot has to be integrated with your Slack team before you can use it.
 Your team admin or ThoughtSpot admin can do this.
 To test if your Slack team has a Spot integration, mention *&#64;spot* and see if he barks back:
 
-image::{{ site.baseurl }}/images/slack-0.png[]
+image::/images/slack-0.png[]
 
 In this particular channel, *&#64;spot* is there for you but like his brothers *&#64;spot-east-credit* is not in the channel.
 
@@ -24,5 +24,5 @@ Ask your administrator to see if you can get one.
 
 == Related Information
 
-* Go to link:use-spot.html[How to use Spot] to get started using Spot.
-* For information on setting up Spot, see link:{{ site.baseurl }}/admin/setup/slack-integration.html[Slack Integration] in the Administration Guide.
+* Go to link:use-spot.adoc[How to use Spot] to get started using Spot.
+* For information on setting up Spot, see xref:/admin/setup/slack-integration.adoc[Slack Integration] in the Administration Guide.

@@ -1,5 +1,5 @@
 = More help and support
-:last_updated: tbd
+:last_updated: 1/17/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: There are many locations on the web where you can find help for ThoughtSpot.
@@ -10,60 +10,77 @@ This page describes some of the ways to get more help inside or outside of the a
 Each version of ThoughtSpot has its own documentation set.
 ThoughtSpot releases new documentation sets for every major release version (`x.y`) of ThoughtSpot.
 Documentation features added with minor versions (`x.y.z`) are added to the corresponding major release.
-This means, for example, that new documentation for 4.4.1 minor release version appears in the 4.4 major version documentation.
+This means, for example, that new documentation for the 6.0.1 minor release version appears in the 6.0 major version documentation.
 
-{% include tip.html content="ThoughtSpot supplies release notes for every major release and every minor release version (`x.y.z`).
-" %}
+TIP: ThoughtSpot supplies release notes for every major release and every minor release version (`x.y.z`).
 
 == Help menu
 
-You can navigate directly to this site on the web by entering https://docs.thoughtspot.com[docs.thoughtSpot.com] in your browser's address bar.
-You can see the documentation for the latest version of the product.
+You can navigate directly to this documentation site on the web by entering https://docs.thoughtspot.com[docs.thoughtspot.com] in your browser's address bar.
+You can see the documentation for the latest version of the product, and for other versions.
 
 You can navigate to this documentation from inside the ThoughtSpot application as well.
 In this case, the application links directly to the documentation version that matches your product version.
+Click the help icon image:/images/icon-help-20px.png[] next to your profile, and select *Help*.
 
-image::help-menu.png[]
+image:/images/gettingstarted-helptohelp.png[The help menu]
+// {% include image.html file="gettingstarted-helptohelp.png" title="The help menu" alt="If you click on the help icon at the top right of your screen, you can click on Help and open the help menu." caption="The help menu" %}
 
-From this dialog you can get to the following:+++<table>++++++<colgroup>++++++<col style="width:25%">++++++</col>+++
-   +++<col style="width:75%">++++++</col>++++++</colgroup>+++
-  +++<tr>++++++<th>+++Link+++</th>+++
-    +++<th>+++Takes you to \...+++</th>++++++</tr>+++
-  +++<tr>++++++<th>+++How search works+++</th>+++
-    +++<td>+++a short video that explains how to use the +++<strong>+++Search+++</strong>+++ bar+++</td>++++++</tr>+++
-  +++<tr>++++++<th>+++Keywords+++</th>+++
-    +++<td>+++a product keyword reference+++</td>++++++</tr>+++
-  +++<tr>++++++<th>+++Release notes+++</th>+++
-    +++<td>+++The notes for the ThoughtSpot version.+++</td>++++++</tr>+++
-  +++<tr>++++++<th>+++Documentation+++</th>+++
-    +++<td>+++this documentation set+++</td>++++++</tr>+++
-  +++<tr>++++++<th>+++Downloads+++</th>+++
-    +++<td>+++a list of software downloads such as connectors+++</td>++++++</tr>++++++</table>+++
+The *Help* dialog box links you to the following:
+++++
+<table><colgroup><col style="width:25%"></col>
+   <col style="width:75%"></col></colgroup>
+  <tr><th>Link</th>
+    <th>Takes you to \...</th></tr>
+  <tr><th>How search works</th>
+    <td>A short video that explains how to use the <strong>Search</strong> bar.</td></tr>
+  <tr><th>Keywords</th>
+    <td>A product keyword reference.</td></tr>
+  <tr><th>Release notes</th>
+    <td>The release notes for your ThoughtSpot version.</td></tr>
+  <tr><th>Documentation</th>
+    <td>The documentation set for your ThoughtSpot version.</td></tr>
+  <tr><th>Downloads</th>
+    <td>A list of software downloads, such as connectors.</td></tr></table>
+++++
+At the bottom of the *Help* dialog box, you can see a link to contact Support as well as the version of ThoughtSpot you are using.
 
-Along the bottom of the *Help* dialog, you can see a link to contact Support as well as the version of ThoughtSpot you are using.
+== Getting started
+
+The *Getting Started* sidebar teaches you about ThoughtSpot through a navigation overview and a series of short videos.
+You can show or hide this sidebar from the help menu.
+To show or hide this sidebar for your whole organization, xref:/appliance/contact.adoc[contact ThoughtSpot Support].
+
+Refer to xref:/end-user/introduction/getting-started.adoc[Getting Started].
+
+== Community
+
+The *Community* link in the *Help* menu takes you to the https://community.thoughtspot.com[ThoughtSpot Community] website, where you can ask ThoughtSpot experts questions, share your own ideas and feedback, and meet others.
 
 == Learn
 
-Choosing *Learn* from the *Help* menu takes a you to the _Learn_ center.
-The center contains one or more example queries.
-You can only play replay on data that you have access to.
+Choosing *Learn* from the *Help* menu takes you to the _Learn_ center.
+The center contains example queries that you can replay to learn how to search in ThoughtSpot.
+Note that you can only replay queries if you have access to their data.
 
 Click an item in Learn to replay it in ThoughtSpot.
-During a reply, you can click `Pause` or `Resume` or click `ESC` to exit the replay.
+During a replay, you can click `Pause` or `Resume` or click `ESC` to exit the replay.
 
 Any administrator can add to the items in the *Learn* center.
 To add a replay, do the following:
 
 . Search in your search bar.
-. Choose the pin from the answer that results.
+. Select the pin icon image:/images/icon-pin-24px.png[].
 The system lists the pinboards you can pin to.
-. Select *Learn how to use ThoughtSpot* pinboard.
+. Select the *Learn how to use ThoughtSpot* pinboard.
 +
-image::learn-save.png[]
+image:/images/gettingstarted-learn.png[Add to the Learn pinboard]
+// {% include image.html file="gettingstarted-learn.png" title="Add to the Learn pinboard" alt="As an administrator, you can pin any answer to the Learn how to use ThoughtSpot pinboard, allowing users to watch a replay of that search." caption="Add to the Learn pinboard" %}
 
 . Navigate to the _Learn_ center to replay your search.
 +
-image::learn-replay.png[]
+image:/images/gettingstarted-learnpage.png[The Learn center]
+// {% include image.html file="gettingstarted-learnpage.png" title="The Learn center" alt="Navigate to the Learn center to replay a search." caption="The Learn center" %}
 
 ////
 ## Search the help in search bar
@@ -76,8 +93,18 @@ The `how to` keyword takes you into the documentation only. The `help` keyword
 allows you to jump directly into a product workflow.
 ////
 
+== Expert requests
+
+*Expert requests* takes you to the Expert Requests interface, where you can view your own questions or answer other users' questions.
+
+image:/images/expertrequests.png[Expert requests]
+// {% include image.html file="expertrequests.png" title="Expert requests" alt="View and answer ask an expert questions by clicking on Expert Requests from the Help menu." caption="Expert requests" %}
+
+Refer to xref:/end-user/search/ask-an-expert.adoc[Ask an Expert].
+
 == Support contact information
 
 If you still can't find what you're looking for, you can contact support.
 
-image::help_center_support_contact.png[]
+image:/images/gettingstarted-contactsupport.png[Contact support]
+// {% include image.html file="gettingstarted-contactsupport.png" title="Contact support" alt="You can contact support from the Help menu." caption="Contact support"%}

@@ -1,20 +1,21 @@
 = Hide and show values
+:last_updated: 2/25/2020
+:summary: "You can hide and show values on the chart using the legend."
+:sidebar: mydoc_sidebar
+:permalink: /:collection/:path.html --
 
-last_updated: tbd summary: "You can hide and show values on the chart using the legend." sidebar: mydoc_sidebar permalink: /:collection/:path.html -- Clicking on a legend item will hide it from the chart.
-You can click it again to show it.
+Clicking on a legend item will hide it from the chart, but does not delete it from your search.
+You can click the legend item again to show it.
+The legend appears when you have more than one column on an axis, or when you *slice with color*.
 To hide and show values:
 
-. While viewing your answer as a chart, click *Edit chart configuration* on the right.
-+
-image::edit_chart_configuration_bar.png[]
-
-. Make sure you have a column in the *Legend* field.
-+
-image::legend_field.png[]
-
-. On the chart, click the legend value you would like to hide.
+On the chart, click the legend value you would like to hide.
 Click the hidden legend value again to show it.
-+
-In the following example, we clicked `northwest` to hide it.
-+
-image::legend_hide_this_value.png[]
+
+*Hide or show a column* image:/images/chart-config-hide-value.gif[Click a legend value to hide or show it]
+
+*Hide or show a sliced value* image:/images/chart-config-hide-sliced-value.gif[Click a sliced value to hide or show it]
+
+To exclude an item from a chart, such as a column or a pie wedge, right-click on the item and click *Exclude "value"*.
+
+image::/images/chartconfig-excludevalue.png[Exclude a chart item]

@@ -6,11 +6,11 @@
 
 To view the user actions, click your user icon on the top right corner of the page.
 
-image::user-info.png[Click User icon]
+image::/images/user-info.png[Click User icon]
 
 Click *Profile* to navigate to your profile, where you can change your icon, password, email, locale, and other  preferences.
 
-image::user-profile.png[Click Profile]
+image::/images/user-profile.png[Click Profile]
 
 Notice that you can now see the *My Profile* interface.
 
@@ -22,11 +22,11 @@ You can change your profile picture clicking the user profile in the top right o
 You can use any a `*.png` or `*.jpg` file.
 Image files cannot exceed 4MB.
 
-image::user-upload-picture.png[Upload user profile image]
+image::/images/user-upload-picture.png[Upload user profile image]
 
 You can also make this change within the *User Profile*, under *Information*.
 
-image::user-upload-picture-alternative.png[Upload user profile image]
+image::/images/user-upload-picture-alternative.png[Upload user profile image]
 
 [#email]
 == Update your email
@@ -34,17 +34,12 @@ image::user-upload-picture-alternative.png[Upload user profile image]
 To change your email, navigate to *My Profile*.
 Under *Information*, enter an alternate email, and click Add.
 
-image::user-profile-email.png[Update email]
+image::/images/user-profile-email.png[Update email]
 
 [#language]
 == Change language and data format settings
 
-To change your language, navigate to *My Profile*.
-Under *Preferences*, see the *Language* option to set the language.
-
-image::profile-locale.png[Specify language]
-
-{% include content/set_locale.md %}
+{% include content/set_locale.adoc %}
 
 [#notifications]
 == Update sharing notification settings
@@ -53,7 +48,7 @@ Under *Preferences*, see the *Notifications* option.
 
 Select *Email me sharing notifications* to receive emails whenever another user shares pinboards with you.
 
-image::profile-email-notifications.png[]
+image::/images/profile-email-notifications.png[]
 
 [#onboarding]
 == Revisit user onboarding
@@ -64,7 +59,7 @@ Whenever you need a refresh, navigate to *My Profile*.
 Under *Preferences*, see the *New user onboarding* option.
 Click *Revisit*, and ThoughtSpot guides you through onboarding again.
 
-image::onboarding-revisit.png[]
+image::/images/onboarding-revisit.png[]
 
 [#password]
 == Change Password
@@ -75,16 +70,16 @@ When you need to change your password, navigate to *My Profile*, and under *Pref
 * New Password
 * Confirm Password
 
-{% include note.html content="Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9.
-Your password must be at least eight characters long." %}
+NOTE: Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9.
+Your password must be at least eight characters long.
 
 Click *Update*.
 
-image::update-password.png[]
+image::/images/update-password.png[]
 
 [#sign-out]
 == Signing out
 
 To sign out of your ThoughtSpot account, click the user profile in the top right of the interface, and choose *Sign out*.
 
-image::user-sign-out.png[Sign out]
+image::/images/user-sign-out.png[Sign out]

@@ -20,16 +20,16 @@ To create a pinboard:
 
 . Click *Pinboards*, on the top navigation bar.
 +
-image::click-pinboards.png[]
+image::/images/click-pinboards.png[]
 
 . Click *+ New Pinboard* on the pinboards list page.
 +
-image::add_new_pinboard.png[]
+image::/images/add_new_pinboard.png[]
 
 . In the *New Pinboard* dialog box, give your pinboard a name and description.
 Then click *Create*.
 +
-image::new_pinboard.png[]
+image::/images/new_pinboard.png[]
 
 == Add an answer to a pinboard
 
@@ -38,45 +38,45 @@ To add an answer to a pinboard:
 
 . While viewing your answer of interest, click the *Pin* icon at the top right of the answer.
 +
-image::add_to_pinboard.png[]
+image::/images/add_to_pinboard.png[]
 
 . In the *Add to pinboard* dialog box, click the *+* icons next to the pinboards you would like to add your answer to.
 +
-image::copy_to_pinboard.png[]
+image::/images/copy_to_pinboard.png[]
 +
 You can also select *Create new pinboard* at the top of the list to create a new pinboard, then add your answer to it.
 
 == Download a pinboard
 
 You can download a pinboard as a PDF file, without having to download each visualization separately.
-Downloading a pinboard works just as it would when downloading an answer: simply click the ellipses icon image:icon-ellipses.png[more options menu icon] and select *Download as PDF*.
+Downloading a pinboard works just as it would when downloading an answer: simply click the ellipses icon image:/images/icon-ellipses.png[more options menu icon] and select *Download as PDF*.
 
-  ![](pinboard-download-pdf.png "Download your pinboard")
+  image::/images/pinboard-download-pdf.png[Download your pinboard]
 
-For more details, see link:{{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html[Download a Pinboard as PDF].
+For more details, see xref:/end-user/pinboards/download-pinboard-pdf.adoc[Download a Pinboard as PDF].
 
 == Details about a pinboard
 
 You can see who authored a pinboard, when it was created, and when it was last modified by choosing menu:Actions[Pinboard Info].
 
-image::pinboard-info.png[]
+image::/images/pinboard-info.png[]
 
 == Other pinboard actions
 
 Other pinboard actions include actions you normally perform on your search as well as actions that you can only perform on a pinboard.
 Most of these actions are found under the *Actions* button.
 
-image::pinboard_actions.png[]
+image::/images/pinboard_actions.png[]
 
 Other actions are available on a pinboard display itself.
 Some actions always appear, while others appear only when you hover over specific locations of the pinboard.
 This diagram displays active action areas on a pinboard.
 
-image::pinboard-controls.png[]
+image::/images/pinboard-controls.png[]
 
 If you make a change to a pinboard, the system recognizes this and displays an alert message with a *Save changes* button at the top of the page.
 Click this button to make your changes permanent.
 
 == Related information
 
-link:{{ site.baseurl }}/pinboards/download-pinboard-url.html[Download a pinboard as PDF] link:{{ site.baseurl }}/pinboards/start-a-slideshow.html[Present a pinboard]
+xref:/pinboards/download-pinboard-url.adoc[Download a pinboard as PDF] xref:/pinboards/start-a-slideshow.adoc[Present a pinboard]

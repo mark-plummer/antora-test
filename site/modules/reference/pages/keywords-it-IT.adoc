@@ -1,0 +1,53 @@
+= Italiano Keyword reference
+:last_updated: 11/19/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Use keywords to help define a search.
+
+NOTE: This content is still under review, and might have incremental changes until this message is removed.
+
+You can use keywords when asking a question to help define your search.
+This reference lists the various keywords.
+You can also see this list of keywords and examples from within the help center.
+
+|===
+| xref:/reference/keywords.adoc[< Back to English Keywords page]
+|===
+
+== General
+
+{% include content/keywords-translate/it-IT/keywords-general-it-IT.adoc %}
+
+== Date
+
+{% include content/keywords-translate/it-IT/keywords-date-it-IT.adoc %}
+
+== Time
+
+{% include content/keywords-translate/it-IT/keywords-time-it-IT.adoc %}
+
+== Text
+
+{% include content/keywords-translate/it-IT/keywords-text-it-IT.adoc %}
+
+== Number
+
+{% include content/keywords-translate/it-IT/keywords-number-it-IT.adoc %}
+
+== Comparative
+
+{% include content/keywords-translate/it-IT/keywords-comparative-it-IT.adoc %}
+
+== Location
+
+{% include content/keywords-translate/it-IT/keywords-location-it-IT.adoc %}
+
+== Period
+
+{% include content/keywords-translate/it-IT/keywords-period-it-IT.adoc %}
+
+////
+## Help
+
+{% include content/keywords-translate/it-IT/keywords-help-it-IT.adoc %}
+////

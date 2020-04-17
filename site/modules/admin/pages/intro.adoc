@@ -1,0 +1,30 @@
+= Introduction to administration
+:last_updated: 09-23-2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: This guide covers all topics of special interest to application administrators.
+
+This guide provides information for application administrators, or users with xref:/admin/setup/logins.adoc[administrative access privileges].
+
+Before addressing the major components of this guide, we recommend that you familiarize yourself with the general top-level xref:/admin/architecture/components.adoc[architecture] of the ThoughtSpot service.
+
+Administrators are responsible for many facets of the ThoughtSpot service.
+They are most frequently in charge of these common processes:
+
+* xref:/admin/setup/intro.adoc[Installation and setup of ThoughtSpot]
+* xref:/admin/loading/loading-intro.adoc[Loading and managing data]
+* xref:/admin/users-groups/about-users-groups.adoc[Managing users and groups]
+* xref:/admin/data-security/about-security.adoc[Security]
+* xref:/admin/system-admin/sysadmin-overview.adoc[System administration]
+* xref:/admin/backup-restore/choose-strategy.adoc[Backup and Restore]
+
+Additionally, administrators are often involved in the following workflows:
+
+* xref:/admin/data-modeling/about-data-modeling-intro.adoc[Data modeling]
+* xref:/admin/worksheets/about-worksheets.adoc[Using worksheets] to simplify search
+* xref:/complex-search/about-query-on-query.adoc[Using views] for 'stacked' search;
+note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the `IN` keyword (See https://docs.thoughtspot.com/6.0/complex-search/in-keyword-searches.adoc).
+* *Beta* xref:/complex-search/about-query-on-query.adoc[Enabling SearchIQ], ThoughtSpot's natural language search.
+* xref:/admin/manage-jobs/about-scheduled-pinboards.adoc[Managing scheduled jobs]
+* xref:/admin/system-monitor/introduction.adoc[Monitoring system health]
+* xref:/admin/troubleshooting/troubleshooting-intro.adoc[Troubleshooting]

@@ -1,0 +1,7 @@
+= Configure NAS for backup storage
+:last_updated: tbd
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: You can use network attached storage to support backup/restore and data loading.
+
+{% include/content/mount-nas.adoc %}

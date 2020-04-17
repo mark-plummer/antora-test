@@ -1,0 +1,49 @@
+= BigQuery connection reference
+:experimental:
+:last_updated: 01/30/2020
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Learn about the fields used to create a BigQuery connection using ThoughtSpot Embrace.
+
+Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace.
+You need specific information to establish a seamless and secure connection.
+
+* *Connection name*: Mandatory.
+Enter a name for your BigQuery connection.
+* *Connection description*: Optional.
+Provide a short description about the connection.
+* *Project id*: Mandatory.
+Enter the project ID associated with the BigQuery database.
+* *Service account*: Mandatory.
+Enter the service account associated with the BigQuery database.
+See <<service-account,set up service account>>.
+
+[#service-account]
+== Set up service account
+
+You may already have a service account for GBQ with the proper permissions in place.
+If not, follow these steps to create a service account.
+
+. Navigate to https://console.cloud.google.com[console.cloud.google.com], and sign in.
+. Click the left menu button, if the menu is not already open.
+. Hover over *IAM & admin*.
+. Click on *Service accounts*.
++
+image::/images/gbq-serviceaccount.png[Click on Service accounts]
+
+. Click *+ CREATE SERVICE ACCOUNT* from the top menu.
+. Specify a name, and add an optional description.
+. Click *Create*.
++
+image::/images/gcp-createserviceaccount.png[Create your service account]
+
+. Specify permissions.
+Under *Select a role*, choose menu:BigQuery[BigQuery Data Viewer].
++
+image::/images/gbq-serviceaccountpermissions.png[Specify permissions]
+
+. On the next screen, click *+ CREATE KEY*.
+. For *Key type*, choose *JSON*.
+. Click *Create*.
+The key downloads to your computer.
++ Copy and paste this key under *Service account* when connecting to Google BigQuery in ThoughtSpot.

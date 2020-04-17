@@ -1,0 +1,53 @@
+= 日本語 Keyword reference
+:last_updated: 11/19/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Use keywords to help define a search.
+
+NOTE: This content is still under review, and might have incremental changes until this message is removed.
+
+You can use keywords when asking a question to help define your search.
+This reference lists the various keywords.
+You can also see this list of keywords and examples from within the help center.
+
+|===
+| xref:/reference/keywords.adoc[< Back to English Keywords page]
+|===
+
+== General
+
+{% include content/keywords-translate/JA/keywords-general-ja-JP.adoc %}
+
+== Date
+
+{% include content/keywords-translate/JA/keywords-date-ja-JP.adoc %}
+
+== Time
+
+{% include content/keywords-translate/JA/keywords-time-ja-JP.adoc %}
+
+== Text
+
+{% include content/keywords-translate/JA/keywords-text-ja-JP.adoc %}
+
+== Number
+
+{% include content/keywords-translate/JA/keywords-number-ja-JP.adoc %}
+
+== Comparative
+
+{% include content/keywords-translate/JA/keywords-comparative-ja-JP.adoc %}
+
+== Location
+
+{% include content/keywords-translate/JA/keywords-location-ja-JP.adoc %}
+
+== Period
+
+{% include content/keywords-translate/JA/keywords-period-ja-JP.adoc %}
+
+////
+## Help
+
+{% include content/keywords-translate/JA/keywords-help-ja-JP.adoc %}
+////

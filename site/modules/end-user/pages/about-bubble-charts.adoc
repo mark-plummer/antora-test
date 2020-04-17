@@ -7,10 +7,10 @@
 The bubble chart is a variation of the scatter chart, with the data points replaced with bubbles.
 These bubbles add a third data dimension to your answer.
 
-image::bubble_chart_example.png[]
+image::/images/bubble_chart_example.png[]
 
 The size of each bubble depends on the measure you choose under *Edit chart configuration*.
 
-image::bubble_chart_size.png[]
+image::/images/bubble_chart_size.png[]
 
 Your search needs at least one attribute and two measures to be represented as a bubble chart.

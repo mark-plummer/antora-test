@@ -13,24 +13,18 @@ To start a presentation, follow these steps:
 
 . Click *Pinboards* on the top navigation bar.
 +
-image::click-pinboards_icon.png[]
-
-
+image::/images/click-pinboards.png[]
 
 . Select a pinboard from the list of pinboards by clicking on its title.
-. In the open pinboard, click the *More Options* menu image:icon-ellipses.png[more options menu icon] (ellipses icon), and select *image:icon-present.png[present icon] Present*.
+. In the open pinboard, click the *More Options* menu image:/images/icon-ellipses.png[more options menu icon] (ellipses icon), and select *image:/images/icon-present.png[present icon] Present*.
 +
-image::present-a-pinboard.png[]
-
-
+image::/images/pinboard-present.png[]
 
 . ThoughtSpot displays the pinboard in full screen.
 +
 To navigate through the slides of the presentation, use the left and right arrow navigation keys on your keyboard.
 +
-image::pinboard-slideshow-view.png[]
-
-
+image::/images/pinboard-present-fullscreen.png[]
 
 == Presentation navigation controls
 
@@ -44,20 +38,16 @@ Hover over the top right corner of the presentation to see the navigation contro
 . Click the pencil symbol to edit the answer represented by the current slide.
 . Click the *x* to end the presentation.
 
-image::pinboard-present-controls.png[]
-
-
+image::/images/pinboard-present-controls.png[]
 
 == Presenting pinboards
 
 While in presentation mode, you can easily explore each visualization.
 
-image::pinboard-present-actions.png[]
-
-
+image::/images/pinboard-present-actions.png[]
 
 Consider the following actions on pinboards:
-
+[cols="5,95"]
 |===
 | Legend | Action
 

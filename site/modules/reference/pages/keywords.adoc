@@ -1,0 +1,84 @@
+= Keyword reference
+:last_updated: 11/19/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Use keywords to help define a search.
+
+You can use keywords when asking a question to help define your search.
+This reference lists the various keywords.
+You can also see this list of keywords and examples from within the help center.
+
+=== Keywords in Other Languages
+
+Currently, we offer the following keyword translations.
+
+////
+| [日本語](/reference/keywords-ja-JP.adoc) | [Deutsche](/reference/keywords-de-DE.adoc) |
+
+ | **[日本語](/reference/keywords-ja-JP.adoc)** |   | **[中文 (简体)](/reference/keywords-translate/keywords-zh-CN.adoc)** | **[Deutsche](/reference/keywords-de-DE.adoc)** | **[Español (latín)](/reference/keywords-es-US.adoc)** | **[Français (Canada)](/reference/keywords-fr-CA.adoc)** | **[Français (France)](/reference/keywords-fr-FR.adoc)** | **[Português (Brasil)](/reference/keywords-pt-BR.adoc)** |
+////
+
+[cols=5*]
+|===
+| xref:/reference/keywords-ja-JP.adoc[日本語]
+| xref:/reference/keywords-zh-CN.adoc[中文 (简体)]
+| xref:/reference/keywords-de-DE.adoc[Deutsche]
+| xref:/reference/keywords-es-US.adoc[Español (latín)]
+| xref:/reference/keywords-es-ES.adoc[Español (España)]
+
+| xref:/reference/keywords-fr-CA.adoc[Français (Canada)]
+| xref:/reference/keywords-fr-FR.adoc[Français (France)]
+| xref:/reference/keywords-pt-BR.adoc[Português (Brasil)]
+| xref:/reference/keywords-pt-PT.adoc[Português (Portugal)]
+| xref:/reference/keywords-it-IT.adoc[Italiano]
+
+| xref:/reference/keywords-da-DK.adoc[Dansk]
+| xref:/reference/keywords-fi-FI.adoc[Suomi]
+| xref:/reference/keywords-sv-SE.adoc[Svenska]
+| xref:/reference/keywords-nb-NO.adoc[Norsk]
+| xref:/reference/keywords-nl-NL.adoc[Nederland]
+|===
+
+Also, see the topic on how to set xref:/end-user/introduction/about-user.adoc[locale preferences in your user profile] to control language, date, and number formats on the ThoughtSpot UI.
+
+== General
+
+{% include content/keywords-general.adoc %}
+
+== Date
+
+{% include content/keywords-date.adoc %}
+
+== Time
+
+{% include content/keywords-time.adoc %}
+
+== Text
+
+{% include content/keywords-text.adoc %}
+
+== Number
+
+{% include content/keywords-number.adoc %}
+
+== Comparative
+
+{% include content/keywords-comparative.adoc %}
+
+== Location
+
+{% include content/keywords-location.adoc %}
+
+== Period
+
+{% include content/keywords-period.adoc %}
+
+== In
+
+{% include content/keywords-in.adoc %}
+
+////
+## Help
+
+{% include content/keywords-help.adoc %}
+////

@@ -1,0 +1,34 @@
+= RHEL Deployment Overview
+:last_updated: 3/20/2020
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Run ThoughtSpot on a RedHat Enterprise Linux (RHEL) 7.7 image that your organization manages internally.
+
+Starting with Release 6.0.4, you have the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally.
+ThoughtSpot certifies RHEL 7.7 on the following platforms:
+
+* ThoughtSpot-configured appliances, both xref:/appliance/hardware/installing-dell.adoc[DELL hardware] and xref:/appliance/hardware/installing-the-smc.adoc[SMC hardware]
+* Cloud deployments: xref:/appliance/aws/configuration-options.adoc[Amazon Web Services (AWS) EC2], xref:/appliance/azure/configuration-options.adoc[Microsoft Azure], and xref:/appliance/gcp/configuration-options.adoc[Google Cloud Platform (GCP)]
+* xref:/appliance/vmware/vmware-intro.adoc[VMware]
+
+Follow these steps to deploy ThoughtSpot through RHEL:
+
+[cols="5,95",frame=none,grid=none]
+|===
+| &#10063;
+| xref:/appliance/rhel/rhel-prerequisites.adoc[Complete installation prerequisites]
+
+| &#10063;
+| xref:/appliance/rhel/rhel-ts-artifacts.adoc[Get ThoughtSpot artifacts]
+
+| &#10063;
+| xref:/appliance/rhel/rhel-install-online.adoc[Install ThoughtSpot in RHEL online clusters], or
+xref:/appliance/rhel/rhel-install-offline.adoc[Install ThoughtSpot in RHEL offline clusters]
+|===
+
+Additionally, learn how you can:
+
+* xref:/appliance/rhel/rhel-upgrade.adoc[Upgrade ThoughtSpot for RHEL to a new release]
+* xref:/appliance/rhel/rhel-add-node.adoc[Add a new node to an existing ThoughtSpot cluster in RHEL]
+
+Finally, to see what additional 3rd-party RPM packages your ThoughtSpot installation includes by default, see xref:/appliance/rhel/rhel-packages.adoc[Packages installed with ThoughtSpot for RHEL]

@@ -7,8 +7,8 @@
 R is a popular open source programming language for statistical computing, machine learning, and AI.
 ThoughtSpot makes R analysis available as a fully integrated feature.
 
-{% include note.html content="Custom R is disabled by default.
-To turn on custom R scripting, contact your site administrator." %}
+NOTE: Custom R is disabled by default.
+To turn on custom R scripting, contact your site administrator.
 
 == Using R in ThoughtSpot
 
@@ -22,36 +22,36 @@ This topic explains how to use R in ThoughtSpot both from an end user and script
 
 == How to access R scripts
 
-Users with R script privileges can click the *R* icon image:r-icon-inline.png[R icon] on the toolbar for any search result (answer).
+Users with R script privileges can click the *R* icon image:/images/r-icon-inline.png[R icon] on the toolbar for any search result (answer).
 
-image::r-icon.png[]
+image::/images/r-icon.png[]
 
 From here, you have options to write a custom script, or load a pre-built or ThoughtSpot provided script.
 
-image::r-load-or-write-script.png[]
+image::/images/r-load-or-write-script.png[]
 
 == Run pre-built R scripts
 
 You don't have to have a background in statistics or be an R programmer to run R analyses in ThoughtSpot.
 You can use ThoughtSpot-provided scripts and share the R visualizations with others.
 
-For more on how to run provided scripts, skip to link:{{ site.baseurl }}/end-user/r-scripts/run-prebuilt-r-scripts.html[Run pre-built R scripts on answers]
+For more on how to run provided scripts, skip to xref:/end-user/r-scripts/run-prebuilt-r-scripts.adoc[Run pre-built R scripts on answers]
 
 == Write your own R scripts in ThoughtSpot
 
 If you know R, you can write your own custom scripts, share them as templates, test and run them on your data in ThoughtSpot, and build up a shared library of R analyses, scripts, visualizations, and pinboards.
 
-Start with the topic on how to link:{{ site.baseurl }}/end-user/r-scripts/create-r-scripts.html[Create and share R scripts] to learn more about writing R scripts in ThoughtSpot, including a few particulars on syntax and column bindings.
+Start with the topic on how to xref:/end-user/r-scripts/create-r-scripts.adoc[Create and share R scripts] to learn more about writing R scripts in ThoughtSpot, including a few particulars on syntax and column bindings.
 
 To learn more about R programming in general, a good place to start is https://www.r-project.org/[R Project for Statistical Computing].
 Also, Anthony Chen's blog post on https://www.thoughtspot.com/codex/using-r-analysis-thoughtspot-time-series-forecasting[Using R Analysis in ThoughtSpot for Time Series Forecasting] is a nice introduction to writing R scripts in ThoughtSpot.
 
-image::r-pinboard-examples.png[]
+image::/images/r-pinboard-examples.png[]
 
 == Related information
 
-* link:create-r-scripts.html#[Create and share R scripts]
-* link:run-prebuilt-r-scripts.html[Run pre-built R scripts on answers]
-* link:{{ site.baseurl}}/spotiq/adv-customize-withr.html[SpotIQ custom analysis]
-* link:{{ site.baseurl}}/admin/users-groups/about-users-groups.html[Understand groups and privileges]
-* link:{{ site.baseurl }}/reference/tscli-command-ref.html#rpackage[tscli rpackage]
+* xref:create-r-scripts.adoc[Create and share R scripts]
+* xref:run-prebuilt-r-scripts.adoc[Run pre-built R scripts on answers]
+* xref:/spotiq/adv-customize-withr.adoc[SpotIQ custom analysis]
+* xref:/admin/users-groups/about-users-groups.adoc[Understand groups and privileges]
+* xref:/reference/tscli-command-ref.adoc#rpackage[tscli rpackage]

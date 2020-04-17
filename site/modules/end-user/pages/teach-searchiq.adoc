@@ -1,13 +1,14 @@
 = Teach SearchIQ your language
-:last_updated: 09/23/2019
+:last_updated: 11/19/2019
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
 :summary: You can teach SearchIQ your language, to make its results more accurate.
 
 *SearchIQ is in Beta.*
 
-{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you.
-SearchIQ is only available in English." %}
+NOTE: SearchIQ is turned off by default.
+ThoughtSpot Support can enable it for you.
+SearchIQ is only available in English.
 
 Sometimes the results from SearchIQ won't be quite what you were expecting.
 You can easily teach SearchIQ your language as you use it.
@@ -28,17 +29,17 @@ Clicking on any term brings up the menu where you can change how ThoughtSpot und
 . Click any term you want SearchIQ to ignore in the future, and choose *Ignore*.
 . Click any term you wish SearchIQ had interpreted differently, and choose *Teach*.
 +
-image::searchiq_teach.png[]
+image::/images/searchiq_teach.png[]
 
 . When you see the teaching dialog box, 1) use the handles on the search diagram to select a term for which you want to change the mapping.
 Then 2) select a column name to map it to, or type your mapping in the search bar below the diagram.
 3) You may need to select what you mean from the search suggestions.
 +
-image::searchiq_teach_mapper.png[]
+image::/images/searchiq_teach_mapper.png[]
 
 . Choose *CONFIRM* to see the new search result.
 +
-image::searchiq_after_mapping.png[]
+image::/images/searchiq_after_mapping.png[]
 
 . Repeat these steps until SearchIQ understands how to interpret your search.
 +
@@ -67,13 +68,13 @@ If SearchIQ learns different search term mappings from different users, these ar
 The hierarchy of SearchIQ language learning is set up like this:
 
 . Language mappings the user taught SearchIQ
-. Language mappings the user's link:{{ site.baseurl }}/admin/users-groups/about-users-groups.html[Group members] taught SearchIQ
-. link:{{ site.baseurl }}/admin/data-modeling/searchiq-mappings.html[Language mappings set by the administrator]
+. Language mappings the user's xref:/admin/users-groups/about-users-groups.adoc[Group members] taught SearchIQ
+. xref:/admin/data-modeling/searchiq-mappings.adoc[Language mappings set by the administrator]
 
 In this way, SearchIQ provides the best and most customized search experience possible for all users, and your efforts to teach it are valuable to as many people as possible.
 
 == Related information
 
-* link:{{ site.baseurl }}/end-user/search/about-searchiq.html[About SearchIQ]
-* link:{{ site.baseurl }}/end-user/search/use-searchiq.html[Use SearchIQ]
-* link:{{ site.baseurl }}/admin/data-modeling/searchiq-mappings.html[Modify SearchIQ mappings]
+* xref:/end-user/search/about-searchiq.adoc[About SearchIQ]
+* xref:/end-user/search/use-searchiq.adoc[Use SearchIQ]
+* xref:/admin/data-modeling/searchiq-mappings.adoc[Modify SearchIQ mappings]

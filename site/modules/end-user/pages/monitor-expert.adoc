@@ -1,6 +1,8 @@
 = Manage expert requests
-
-last_updated: 08/01/2019 summary: "You can monitor and manage Ask and Expert requests, both as a requester and as an expert." sidebar: mydoc_sidebar toc: true permalink: /:collection/:path.html --
+:last_updated: 3/23/2020
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: You can monitor and manage Ask an Expert requests, both as a requester and as an expert.
 
 Within ThoughtSpot, you can keep track of your *Ask an Expert* requests.
 
@@ -8,10 +10,10 @@ Within ThoughtSpot, you can keep track of your *Ask an Expert* requests.
 
 Follow these steps to the request monitoring interface:
 
-. In the top right corner of the ThoughtSpot interface, click the image:icon-help-20px.png[help menu icon] (help) icon menu.
+. In the top right corner of the ThoughtSpot interface, click the image:/images/icon-help-20px.png[help menu icon] (help) icon menu.
 . In the drop-down, select *Expert Requests*.
 +
-image::ask-expert-requests.png[]
+image::/images/ask-an-expert.png[Click Expert requests]
 
 . The *Expert* interface appears, with information for you both as a *Requester*, and as an *Expert*.
 
@@ -19,18 +21,18 @@ image::ask-expert-requests.png[]
 
 This is what you see when you are a requester:
 
-image::ask-expert-manage-requester.png[]
+image::/images/ask-an-expert-request-list.png[Ask an Expert interface]
 
 Note these features of the interface:
-
+[cols="5,95"]
 |===
 | Legend | Feature
 
 | 1.
-| *I am Requester:* for all requests where you are a requester
+| *I am a requester:* for all requests where you are a requester
 
 | 2.
-| *I am Expert:* for all requests where you are an expert
+| *I am an expert:* for all requests where you are an expert
 
 | 3.
 | *All:* all requests, both _Resolved_ and _Unresolved_
@@ -54,28 +56,28 @@ Note these features of the interface:
 | *Status:* _Resolved_ or _Unresolved_
 
 | 10.
-| *Experts:* users who are experts for your requests
+| *Author:* the user who created the request
 |===
 
 == When you are an Expert
 
 This is what you see when you are an expert:
 
-image::ask-expert-manage-expert.png[]
+image::/images/ask-an-expert-expert-view.png[Ask an Expert interface]
 
 Note these features of the interface:
-
+[cols="5,95"]
 |===
 | Legend | Feature
 
 | 1.
-| *I am Requester:* for all requests where you are a requester
+| *I am a requester:* for all requests where you are a requester
 
 | 2.
-| *I am Expert:* for all requests where you are an expert
+| *I am an expert:* for all requests where you are an expert
 
 | 3.
-| *All:* all requests, both _Resolved</span> and _Unresolved__
+| *All:* all requests, both _Resolved_ and _Unresolved_
 
 | 4.
 | *Resolved:* all resolved requests
@@ -101,4 +103,4 @@ Note these features of the interface:
 
 == Related information
 
-* link:{{ site.baseurl }}/end-user/search/ask-an-expert.html[Ask an Expert]
+* xref:/end-user/search/ask-an-expert.adoc[Ask an Expert]
