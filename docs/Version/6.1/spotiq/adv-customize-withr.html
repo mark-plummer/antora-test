@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Advanced R Customizations | ThoughtSpot Demo Site</title>
+    <link rel="canonical" href="https://mark-plummer.github.io/antora-test/Version/6.1/spotiq/adv-customize-withr.html">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
+    <meta name="dcterms.subject" content="Version">
+    <meta name="dcterms.identifier" content="6.1">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar" id="topbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://mark-plummer.github.io/antora-test/"><img src="../../../_/img/logo.svg" SVG width="100%" alt="ThoughtSpot"></a>
+        <button class="navbar-burger" data-target="topbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div id="topbar-menu" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown">
+              <!-- <a class="navbar-link" href="https://mark-plummer.github.io/antora-test">Docs</a> -->
+            <div class="navbar-dropdown explore">
+              <div class="title">ThoughtSpot Documentation Overview</div>
+              <div class="cols">
+                <ul>
+                  <li class="heading"><a href="#">Server</a></li>
+                  <li><a href="../../../server//n1ql/n1ql-language-reference/index.html">N1QL</a></li>
+                  <li><a href="../../../server//fts/full-text-intro.html">Full Text Search</a></li>
+                  <li><a href="../../../server//analytics/introduction.html">Analytics</a></li>
+                  <li><a href="../../../server//eventing/eventing-overview.html">Eventing</a></li>
+                  <li><a href="#">Autonomous Operator</a></li>
+                </ul>
+                <ul>
+                  <li class="heading">Mobile</li>
+                  <li><a href="#">Lite</a></li>
+                  <li><a href="#">Sync Gateway</a></li>
+                </ul>
+                <ul class="two-cols">
+                  <li class="heading"><a href="../../../server//sdk/overview.html">SDKs</a></li>
+                  <li><a href="#">C</a></li>
+                  <li><a href="#">.NET</a></li>
+                  <li><a href="#">Go</a></li>
+                  <li><a href="#">Java</a></li>
+                  <li><a href="#">Node.js</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">Scala</a></li>
+                </ul>
+                <ul>
+                  <li class="heading"><a href="../../../server//connectors/intro.html">Connectors</a></li>
+                  <li><a href="#">Elasticsearch</a></li>
+                  <li><a href="../../../server//connectors/hadoop-1.2/hadoop.html">Hadoop</a></li>
+                  <li><a href="#">Kafka</a></li>
+                  <li><a href="#">Spark</a></li>
+                  <li><a href="../../../server//connectors/odbc-jdbc-drivers.html">ODBC/JDBC</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link component" href="../index.html"><span class="title">Version</span> <span class="version">6.1</span></a>
+            <div class="navbar-dropdown versions">
+              <div class="cols">
+                <ul>
+                  <li class="current"><a class="navbar-item" href="adv-customize-withr.html">Version 6.1</a></li>
+                  <li><a class="navbar-item" href="../../5.1/index.html">Version 5.1</a></li>
+                  <li><a class="navbar-item" href="../../5.0/index.html">Version 5.0</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="btn red-btn" href="https://www.couchbase.com/downloads">Downloads</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body container">
+<nav class="nav">
+<div class="nav-menu">
+<ul class="nav-list">
+  <li class="nav-item is-active" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">About this release</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../release/notes.html">Release notes</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../release/downloads.html">Downloads</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Users</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/introduction.html">Introduction</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Getting Started</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-navigating-thoughtspot.html">Finding your way around</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/accessing.html">ThoughSpot browser access</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-user.html">Your user preferences</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-privileges-end-user.html">Understanding privileges</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/stickers.html">Use stickers to organize</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use Search</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-starting-a-new-search.html">What are searches and answers?</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Search basics</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/start-a-new-search.html">Start a new search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-choosing-sources.html">Choose a data source</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-the-search-bar.html">Search bar features</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/recent-searches.html">Search suggestions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-attributes-and-measures.html">Search results and column types</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/data-refresh-time.html">Last data refresh time</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/work-with-answers.html">Work with answers</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-tables.html">Results that are tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use keywords in search</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-keyword-searches.html">Overview of keyword searches</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/period-searches.html">Time series analysis</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/search-using-growth-over-time.html">Search using growth over time</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/proximity-search.html">Proximity searches "near" and "farther than"</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with filters</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-filters.html">Understand filters</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/filter-from-column-headers.html">Add a filter to a table</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/filter-from-chart-axes.html">Add a filter to a chart</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/create-bulk-filter.html">Create a bulk filter</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/delete-a-filter.html">Delete a filter</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-filters-for-null.html">Filter on null, blank, or empty values</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other search actions</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/change-the-view.html">Change result display options</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/show-underlying-data.html">Show underlying data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/drill-down.html">See the search behind the result</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/apply-conditional-formatting.html">Apply conditional formatting to a table</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/download-your-search.html">Download your search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/replay-search.html">Replay search</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with charts</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-charts.html">Understand charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Chart types</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-column-charts.html">Column charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-bar-charts.html">Bar charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-line-charts.html">Line charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/pie-charts.html">Pie charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/area-charts.html">Area charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-scatter-charts.html">Scatter charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-bubble-charts.html">Bubble charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pareto-charts.html">Pareto charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-waterfall-charts.html">Waterfall charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-treemap-charts.html">Treemap charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/line-column-charts.html">Line column charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-funnel-charts.html">Funnel charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-geo-charts.html">Geo charts</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pivoting-a-table.html">Pivot table</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Changing a chart</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/reorder-values-on-the-x-axis.html">Reorder the labels</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/set-the-y-axis-scale.html">Set the y-axis range</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/hide-and-show-values.html">Hide and show values</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/change-chart-colors.html">Change chart colors</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/show-data-labels.html">Additional chart options</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/zoom-into-a-chart.html">Zoom into a chart</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with formulas</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/add-formula-to-search.html">Understand formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/how-to-add-formula.html">Add a formula to a search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/edit-formula-in-answer.html">View or edit a formula in search</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Aggregate formulas</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/aggregation-formulas.html">Overivew of aggregate formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-cumulative-formulas.html">Cumulative functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pinned-measures.html">Grouping functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-moving-formulas.html">Moving functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/filtered-agg-forms.html">Filtered aggregation functions</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/conversion-formulas.html">Conversion functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/date-formulas.html">Date functions</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/percent-calculations.html">Percent (simple number) calculations</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/conditional-sum.html">Formula operators</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-nested-formulas.html">Nested formulas</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with worksheets</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-query-on-query.html">Understand worksheets</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/create-aggregated-worksheet.html">Save a search as a worksheet</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/do-query-on-query.html">Create a search from a worksheet</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/more-example-scenarios.html">Worksheet example scenarios</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Use pinboards</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-pinboards.html">Basic pinboard usage</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/edit-the-layout-of-a-pinboard.html">Edit a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/pinboard-filters.html">Pinboard filters</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/schedule-a-pinboard-job.html">Schedule a pinboard job</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/copy-a-pinboard.html">Copy a pinboard</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/reset-a-visualization.html">Reset a pinboard or visualization</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/start-a-slideshow.html">Start a slideshow</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Work with data</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/data-intro-end-user.html">Understand data sources</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/generate-flat-file.html">Create and load CSV files</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/append-data-from-a-web-browser.html">Append data through the UI</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/view-your-data-profile.html">View a data profile</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/locale.html">Date and currency format settings</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">SpotIQ</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/whatisspotiq.html">What is SpotIQ</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/overview.html">101:Load and analyze data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/work-with-insights.html">101:Review and save insights</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/spotiq-customize.html">101:Do more with SpotIQ</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/special-topics.html">Best SpotIQ Practices</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/customization.html">Custom SpotIQ analysis</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/adv-customize-withr.html">Advanced R Customizations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Share your work</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/sharing-for-end-users.html">About sharing</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/share-pinboards.html">Share pinboards</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/share-answers.html">Share answers</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/share-user-imported-data.html">Share uploaded data</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/unshare.html">Revoke access (unshare)</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Slack and ThoughtSpot</span>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/intro.html">Slack and Spot</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/use-spot.html">How to use Spot</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <a class="nav-link" href="../end-user/what-you-can-find-in-the-help-center.html">More help and support</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-line">
+    <a class="nav-link" href="#disaster-recovery:about-disaster-recovery.md.adoc">Disaster Recovery</a>
+    </span>
+  </li>
+</ul>
+  </li>
+</ul>
+</div>
+</nav>
+<aside class="toc sidebar">
+  <div class="toc-menu"></div>
+</aside>
+<main class="article" data-ceiling="topbar">
+  <div class="article-header">
+<button class="nav-control"></button>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Version</a></li>
+    <li class="crumb"><a href="adv-customize-withr.html">Advanced R Customizations</a></li>
+  </ul>
+</nav>
+<div class="tools" role="navigation">
+  <ul>
+    <li class="tool edit"><a href="https://github.com/mark-plummer/antora-test/edit/6.1/site/modules/spotiq/pages/adv-customize-withr.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+  </ul>
+</div>
+  </div>
+<article class="doc">
+<h1 class="page">Advanced R Customizations</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Admins and users with the <strong>Has SpotIQ</strong> privilege can run an R script.</p>
+</div>
+<div class="paragraph">
+<p>The R language is an open source programming language used for statistical computing.
+As such, knowledgable users can use R to perform sophisticated analysis in a ThoughtSpot environment.</p>
+</div>
+<div class="paragraph">
+<p>This section explains the feature and how to use it.
+It is not meant as an R primer.
+To learn more about R and how to use it, visit the <a href="https://www.r-project.org/">R Project for Statistical Computing</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_understand_r_script_requirements_in_thoughtspot"><a class="anchor" href="#_understand_r_script_requirements_in_thoughtspot"></a>Understand R script requirements in ThoughtSpot</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ThoughtSpot provides R running as a service within a ThoughtSpot cluster.
+Permissions are restricted.
+This means the R script does not have permission to issue system commands.</p>
+</div>
+<div class="paragraph">
+<p>The ThoughtSpot cluster has pre-installed the basic R packages.
+If your script requires a specific package, you must request your ThoughtSpot cluster admin to install the package on your behalf.</p>
+</div>
+<div class="paragraph">
+<p>ThoughtSpot internally transforms and binds an R script prior to sending it to the cluster&#8217;s R service.
+The system expects each script to have a well-defined structure, following this format:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>####R SCRIPT####
+&lt;Fill script body&gt;
+####COLUMN BINDINGS (ONE PER LINE)####
+&lt;Fill column bindings here&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The scripts contains the column bindings with the answer results appearing as parameters in the R script.
+For each <code>.param</code> <em>n</em> in R your script, you must provide a corresponding binding.
+The following pseudo code illustrates an R script in a form suitable for ThoughtSpot:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>####R SCRIPT####
+df &lt;- data.frame(.param0,.param1, ...);
+...
+write.csv(..., file=#output_file#, ...);</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice that <code>.param0</code> refers to first column in column binding and <code>.param1</code> refers to the second.
+Should you need a third binding, you would use  <code>.param2</code> and so forth.</p>
+</div>
+<div class="paragraph">
+<p>The output of the script is either PNG or CSV.
+This example script uses <code><mark>output_csv</mark></code> to emit data in a CSV (tabular) format.
+Use <code><mark>output_png</mark></code> to emit data in PNG format.</p>
+</div>
+<div class="paragraph">
+<p>Presently, error reporting is limited for R scripts in SpotIQ.
+You should validate your R script independent of your ThoughtSpot environment.
+After you are sure it is free of syntax or other errors, you can try the script in ThoughtSpot.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_try_a_custom_analysis_with_r"><a class="anchor" href="#_try_a_custom_analysis_with_r"></a>Try a Custom Analysis with R</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This example illustrates how to run an R analysis on data that has a sales column and a zip code column.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Sign in to ThoughtSpot and go to the <strong>Search</strong> bar.</p>
+</li>
+<li>
+<p>Use <strong>Choose Sources</strong> to locate a source with sales and zip code data.
+This example uses <strong>Sporting Goods Retail Worksheet</strong> data.</p>
+</li>
+<li>
+<p>Enter <code>sales store zip code</code> in the search bar.</p>
+<div class="paragraph">
+<p>If your source contains the proper data, you should see something similar to the following:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-r1.png" alt="spotiq r1">
+</div>
+</div>
+</li>
+<li>
+<p>Click the <strong>View R analysis</strong> icon <span class="image"><img src="/images/r-icon-inline-2.png" alt="View R Analysis icon"></span>.</p>
+</li>
+<li>
+<p>Enter this sample script in the field.</p>
+<div class="listingblock">
+<div class="content">
+<pre> ####R SCRIPT####
+ library(ggplot2)
+ set.seed(20)
+ df &lt;- data.frame(.param0, .param1)
+ cluster &lt;- kmeans(df[1:2], 3, nstart = 20)
+ cluster$cluster &lt;- as.factor(cluster$cluster)
+ png(file=#output_file#,width=400,height=350,res=72)
+ print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This script binds <code>.param0</code> to <code>Sales</code> and <code>.param1</code> to the <code>Store Zip Code</code>  column.</p>
+</div>
+<div class="paragraph">
+<p>You can see from the script that the output should be PNG  (<code><mark>output_png</mark></code>).</p>
+</div>
+</li>
+<li>
+<p>For Select column(s) for R analysis, make sure that both <strong>Sales</strong> and <strong>Store Zip Code</strong> columns are selected.</p>
+</li>
+<li>
+<p>For Output Filetype, make sure <strong>PNG</strong> is selected as the output format.</p>
+</li>
+<li>
+<p>Click <strong>Run Analysis</strong>.</p>
+<div class="paragraph">
+<p>SpotIQ runs your analysis in the background.</p>
+</div>
+</li>
+<li>
+<p>When the analysis is completed, you should see the results in PNG format similar to the following:</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-r6.png" alt="spotiq r6">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can run another R script directly on this result to get CSV results.
+Try this on your own.
+Here is the script to give you CSV output:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>###R SCRIPT####
+set.seed(20);
+df &lt;- data.frame(.param0,.param1);
+cluster &lt;- kmeans(df[1:2], 3, nstart = 20);
+df$Cluster &lt;- as.factor(cluster$cluster);
+colnames(df)[1] &lt;- 'Sales';
+colnames(df)[2] &lt;- 'Zip Code';
+write.csv(df, file=#output_file#, row.names=FALSE);</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syntax_help_in_the_dialog"><a class="anchor" href="#_syntax_help_in_the_dialog"></a>Syntax help in the dialog</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use the <strong>i</strong> icon to see help for the R syntax.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-help.png" alt="spotiq help">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related_information"><a class="anchor" href="#_related_information"></a>Related information</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#/reference/tscli-command-ref.adoc#rpackage" class="page unresolved">tscli rpackage</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Product</span></li>
+          <li><a href="https://www.thoughtspot.com/product" target="_blank" rel="noopener">Product</a></li>
+          <li><a href="https://www.thoughtspot.com/spotiq" target="_blank" rel="noopener">SpotIQ</a></li>
+          <li><a href="https://www.thoughtspot.com/mobile" target="_blank" rel="noopener">Mobile</a></li>
+          <li><a href="https://www.thoughtspot.com/embedded-analytics" target="_blank" rel="noopener">Embedded Analytics</a></li>
+          <li><a href="https://www.thoughtspot.com/architecture" target="_blank" rel="noopener">Architecture</a></li>
+          <li><a href="https://www.thoughtspot.com/pricing" target="_blank" rel="noopener">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Solutions</span></li>
+          <li><a href="https://www.thoughtspot.com/solutions" target="_blank" rel="noopener">Overview</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/retail" target="_blank" rel="noopener">Retail</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/financial-services" target="_blank" rel="noopener">Fincancial Services</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/manufacturing">Manufacturing</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/communications" target="_blank" rel="noopener">Communications</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/healthcare-life-sciences" target="_blank" rel="noopener">Healthcare</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/embedded-analytics" target="_blank" rel="noopener">Embedded Analytics</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/procurement-analytics" target="_blank" rel="noopener">Procurement</a></li>
+          <li><a href="https://www.thoughtspot.com/solutions/government-analytics" target="_blank" rel="noopener">Government Analytics</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Resources</span></li>
+          <li><a href="https://www.thoughtspot.com/resources" target="_blank" rel="noopener">Overview</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/demo-video" target="_blank" rel="noopener">Demo Videos</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/analyst-report" target="_blank" rel="noopener">Analyst Report</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/webinar" target="_blank" rel="noopener">Webinars</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/case-study" target="_blank" rel="noopener">Case Studies</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/white-paper" target="_blank" rel="noopener">White Papers</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/datasheet" target="_blank" rel="noopener">Datasheets</a></li>
+          <li><a href="https://www.thoughtspot.com/resources/solution-brief" target="_blank" rel="noopener">Solution Briefs</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">About Us</span></li>
+          <li><a href="https://www.thoughtspot.com/team" target="_blank" rel="noopener">Team</a></li>
+          <li><a href="https://www.thoughtspot.com/customers" target="_blank" rel="noopener">Customers</a></li>
+          <li><a href="https://www.thoughtspot.com/atlas-marketplace" target="_blank" rel="noopener">Atlas Marketplace</a></li>
+          <li><a href="https://www.thoughtspot.com/partners" target="_blank" rel="noopener">Partner Directory</a></li>
+          <li><a href="https://www.thoughtspot.com/events" target="_blank" rel="noopener">Events</a></li>
+          <li><a href="https://www.thoughtspot.com/news" target="_blank" rel="noopener">News</a></li>
+          <li><a href="https://www.thoughtspot.com/careers" target="_blank" rel="noopener">Careers</a></li>
+          <li><a href="https://www.thoughtspot.com/blog" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="https://www.thoughtspot.com/legal" target="_blank" rel="noopener">Legal</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><span class="heading">Connect</span></li>
+          <li><a href="https://www.thoughtspot.com/demo" target="_blank" rel="noopener">Request Demo</a></li>
+          <li><a href="https://community.thoughtspot.com" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/support" target="_blank" rel="noopener">Support</a></li>
+          <li><a href="https://www.thoughtspot.com/contact" target="_blank" rel="noopener">Contact Us</a></li>
+        </ul>
+      </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Policy</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-terms-of-use">Terms of Use</a>
+      <a href="https://www.thoughtspot.com/cookies-policy">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
