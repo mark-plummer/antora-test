@@ -6,7 +6,9 @@
 ThoughtSpot provides three ways to authenticate users  LDAP/AD, SAML, and ThoughtSpot login.
 In general, ThoughtSpot recommends that you use LDAP/AD or SAML if possible since ThoughtSpot provides only basic authentication with no restrictions on passwords, timeouts, failed logins, etc.
 
-The following table shows each of the options and the items to consider for each.+++<table>++++++<tr>++++++<th>+++SAML+++</th>+++
+The following table shows each of the options and the items to consider for each.
+
++++<table>++++++<tr>++++++<th>+++SAML+++</th>+++
     +++<th>+++LDAP/AD+++</th>+++
     +++<th>+++ThoughtSpot+++</th>++++++</tr>+++
   +++<tr>++++++<td>++++++<ul>++++++<li>+++Use SAML for single sign-on authentication.+++</li>+++
