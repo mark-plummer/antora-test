@@ -1,6 +1,8 @@
-* About this release
-** xref:release:notes.adoc[Release notes]
-** xref:release:downloads.adoc[Downloads]
+* xref:enterprise:in-release.adoc[About this release]
+** xref:release-notes.adoc[Release notes]
+** xref:fixed-issues.adoc[Fixed issues]
+** xref:guides.adoc[Guides]
+** xref:downloads.adoc[Downloads]
 * Users
 ** xref:end-user:introduction.adoc[Introduction]
 ** Getting Started
