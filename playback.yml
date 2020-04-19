@@ -16,7 +16,7 @@ ui:
     contents: "static_files: [ .nojekyll ]"
     snapshot: true
 
-output:
+output: build/site/5.1
   clean: true
 runtime:
   fetch: true
