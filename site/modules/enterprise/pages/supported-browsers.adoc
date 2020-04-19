@@ -1,0 +1,11 @@
+= Supported web browsers
+:last_updated: 11/15/2019
+:permalink: /:collection/:path.html
+:sidebar: mydoc_sidebar
+
+We verified these Internet browsers to work well with ThoughtSpot:
+
+{% include content/browser-support.md %}
+
+TIP: ThoughtSpot supports the Internet Explorer, but we do not recommend it. Depending on your environment, you can experience performance
+and UI issues.

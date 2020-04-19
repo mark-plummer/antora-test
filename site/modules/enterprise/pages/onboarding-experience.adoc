@@ -1,4 +1,4 @@
-= User Onboarding Experience
+= The onboarding experience
 :experimental:
 :last_updated: 10/07/2019
 :permalink: /:collection/:path.html
