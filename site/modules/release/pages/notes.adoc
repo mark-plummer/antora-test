@@ -1,4 +1,4 @@
-= 5.1 Release Notes - YEAH, YEAH, YEAH!!
+= 5.1 Release Notes
 
 ThoughtSpot version 5.1 is now available.
 These release notes include information about new features, fixed issues from the previous releases, and any known issues.
@@ -37,7 +37,7 @@ ThoughtSpot Mobile works for releases 5.1 and later.
 
 Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
-See link:{{ site.baseurl }}/admin/mobile/use-mobile.html[Mobile].
+See xref:/admin/mobile/use-mobile.adoc[Mobile].
 
 === Embrace for Snowflake and Amazon Redshift
 
@@ -59,7 +59,7 @@ ThoughtSpot now supports the following features for linked tables:
 <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
 +++
 
-For more information, see link:{{ site.baseurl }}/data-integrate/embrace/embrace-intro.html[Embrace overview].
+For more information, see xref:/data-integrate/embrace/embrace-intro.adoc[Embrace overview].
 
 === Monitor headlines
 
@@ -71,7 +71,7 @@ For more information, see link:{{ site.baseurl }}/spotiq/monitor-headlines.html[
 
 * To monitor headlines, click the *Follow* icon in the top right corner of the insight.
 +
-image::follow.png[Monitor headlines with Follow]
+image::/images/follow.png[Monitor headlines with Follow]
 
 * The *SpotIQ Follow* interface lists all the headlines you follow, and the changes from last run.
 image:spotiq-monitor.png[SpotIQ Follow management interface]
