@@ -16,7 +16,8 @@ ui:
     contents: "static_files: [ .nojekyll ]"
     snapshot: true
 
-output: /docs
+output:
   clean: true
+  dir: docs
 runtime:
   fetch: true
