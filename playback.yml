@@ -16,7 +16,6 @@ ui:
     contents: "static_files: [ .nojekyll ]"
     snapshot: true
 
-output: build/site/ThoughtSpot/5.1
-  clean:
+ output: build/site/ThoughtSpot/5.1
 runtime:
   fetch: true
