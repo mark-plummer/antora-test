@@ -17,6 +17,5 @@ ui:
     snapshot: true
 
 output: build/site/ThoughtSpot/5.1
-  clean: true
 runtime:
   fetch: true
