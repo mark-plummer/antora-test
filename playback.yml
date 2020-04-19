@@ -20,4 +20,4 @@ output:
   clean: true
   dir: docs
 runtime:
-  fetch: true
+  fetch: false
