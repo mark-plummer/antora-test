@@ -18,6 +18,5 @@ ui:
 
 output:
   clean: true
-  dir: docs
 runtime:
   fetch: true
