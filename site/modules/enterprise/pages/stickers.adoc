@@ -1,4 +1,4 @@
-= Use stickers to organize
+= Organize with Stickers
 :last_updated: tbd
 :summary: "Stickers enable you to create categories for classification of objects, including pinboards, answers, data sources, and worksheets."
 :sidebar: mydoc_sidebar

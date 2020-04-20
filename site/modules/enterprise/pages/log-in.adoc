@@ -6,13 +6,13 @@
 
 
 To set up and explore your data, access the ThoughtSpot application from a
-standard Web browser, with your username and password. 
+standard Web browser, with your username and password.
 
 You need:
 
 * The web address (IP address or server name) for ThoughtSpot
 * A network connection
-* A web browser; see xref:browser-support.adoc[Error Handling]
+* A web browser; see xref:supported-browsers.adoc[Supported browsers]
 * A username and password for ThoughtSpot
 
 == Sign in

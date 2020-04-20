@@ -6,7 +6,7 @@
 ThoughtSpot version 6.1 is now available.
 These release notes include information about new and enhanced features.
 
-For a complete list of issues that we fixed in this release, see xref:/release/fixed.adoc[Fixed issues].
+For a complete list of issues that we fixed in this release, see xref:fixed-issues.adoc[Fixed issues].
 
 * <<6-1-new,6.1 New Features>>
 * <<early-access,Early Access Programs>>
