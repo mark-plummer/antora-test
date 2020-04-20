@@ -1,4 +1,4 @@
-= 5.1 Release Notes WOW!!!
+= 5.1 Release Notes
 
 ThoughtSpot version 5.1 is now available.
 These release notes include information about new features, fixed issues from the previous releases, and any known issues.
