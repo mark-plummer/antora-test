@@ -3,7 +3,7 @@ site:
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
-  - url: ./site
+  - url: ./
     branches: HEAD
     start_path: /site
 ui:
@@ -18,6 +18,4 @@ ui:
 
 output:
   clean: true
-  dir: docs
-runtime:
-  fetch: true
+  dir: build/site
