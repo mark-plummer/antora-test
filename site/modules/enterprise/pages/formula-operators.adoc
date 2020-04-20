@@ -1,0 +1,11 @@
+= Formula operators
+
+You can leverage operators in your formulas to have them return true, false, or a predetermined value.
+
+The operators include:
+
+{% include content/operators.md %}
+
+== Related information
+
+* link:{{ site.baseurl }}/reference/formula-reference.html#operators[Operators] in the link:{{ site.baseurl }}/reference/formula-reference.html#[Formula function reference]

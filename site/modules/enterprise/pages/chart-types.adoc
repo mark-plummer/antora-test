@@ -1,4 +1,4 @@
-= Understand charts
+= Chart types
 :last_updated: 2/25/2020
 :permalink: /:collection/:path.html
 :sidebar: mydoc_sidebar
@@ -17,8 +17,7 @@ You can also xref:/end-user/search/change-the-chart.adoc[adjust the axes, labels
 
 == About chart types
 
-You can choose from a large number of chart types in ThoughtSpot.
-Each chart type provides you with a different visualization for your answer.
+You can choose from a large number of chart types in ThoughtSpot. Each chart type provides you with a different visualization for your answer.
 
 To change the chart type of your answer:
 
