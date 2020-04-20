@@ -416,7 +416,7 @@ The default is `False`.</dlentry><dlentry>`--update_orion_only`::::  Only update
 A comma separated list of node IPs on which upgrade is not attempted in case they are found to be unhealthy.
 If a node outside of this list is found unhealthy, the upgrade is aborted.</dlentry></dlentry><dlentry>`tscli cluster update-hadoop`::::  Updates Hadoop/Zookeeper on the cluster.</dlentry>
 
-[#tscli-command]
+[#tscli-command-run]
 === command
 
 ----

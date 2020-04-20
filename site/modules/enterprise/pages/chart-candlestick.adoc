@@ -38,7 +38,7 @@ The search question can be expressed in the following form:
 * Alternatively, the red rectangles mean that the price is decreasing, and this pattern over time describes a bearish "sell" market for the instrument. | image::/images/candlestick_increase_decrease.png[]
 |====================
 
-= Interpreting candlestick charts
+== Interpreting candlestick charts
 
 The following excerpt shows candlestick data for only three dates, June 26 - 28, 2019.
 
