@@ -1,0 +1,23 @@
+site:
+  title: ThoughtSpot Demo Site
+content:
+  sources:
+  # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
+  - url: ./site
+    branches: HEAD
+    start_path: /site
+ui:
+  bundle:
+    # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: build/ui-bundle.zip
+  supplemental_files:
+  - path: .nojekyll
+  - path: ui.yml
+    contents: "static_files: [ .nojekyll ]"
+    snapshot: true
+
+output:
+  clean: true
+  dir: docs
+runtime:
+  fetch: true
