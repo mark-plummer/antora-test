@@ -1,4 +1,4 @@
-= 5.1 Release Notes WOWZA3!!
+= 5.1 Release Notes NOWOWZA3!!
 
 ThoughtSpot version 5.1 is now available.
 These release notes include information about new features, fixed issues from the previous releases, and any known issues.
@@ -71,7 +71,7 @@ For more information, see link:{{ site.baseurl }}/spotiq/monitor-headlines.html[
 
 * To monitor headlines, click the *Follow* icon in the top right corner of the insight.
 +
-image::/images/follow.png[Monitor headlines with Follow]
+image::follow.png[Monitor headlines with Follow]
 
 * The *SpotIQ Follow* interface lists all the headlines you follow, and the changes from last run.
 image:spotiq-monitor.png[SpotIQ Follow management interface]
