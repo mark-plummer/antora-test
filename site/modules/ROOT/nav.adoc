@@ -84,22 +84,25 @@
 
 ---
 
-** Work with formulas
-*** xref:end-user:add-formula-to-search.adoc[Understand formulas]
-*** xref:end-user:how-to-add-formula.adoc[Add a formula to a search]
-*** xref:end-user:edit-formula-in-answer.adoc[View or edit a formula in search]
-*** Aggregate formulas
-**** xref:end-user:aggregation-formulas.adoc[Overivew of aggregate formulas]
-**** xref:end-user:about-cumulative-formulas.adoc[Cumulative functions]
-**** xref:end-user:about-pinned-measures.adoc[Grouping functions]
-**** xref:end-user:about-moving-formulas.adoc[Moving functions]
-**** xref:end-user:filtered-agg-forms.adoc[Filtered aggregation functions]
-*** xref:end-user:conversion-formulas.adoc[Conversion functions]
-*** xref:end-user:date-formulas.adoc[Date functions]
-*** xref:end-user:percent-calculations.adoc[Percent (simple number) calculations]
-*** xref:end-user:conditional-sum.adoc[Formula operators]
-*** xref:end-user:about-nested-formulas.adoc[Nested formulas]
-*** xref:end-user:about-formula-support-for-chasm-trap-schemas.adoc[Formulas for chasm traps]
+* xref:enterprise:formula.adoc[Formulas]
+** xref:enterprise:formula-search-add.adoc[Add a formula to a search]
+** xref:enterprise:formula-search-edit.adoc[View or edit a formula in a search]
+** xref:enterprise:formula-operators.adoc[Formula operators]
+** xref:enterprise:formula-conversion.adoc[Conversion formulas]
+** xref:enterprise:formula-data.adoc[Date formulas]
+** xref:enterprise:formula-percent.adoc[Percent (simple number) formulas]
+** xref:enterprise:formula-conditional-sum.adoc[Formula operators]
+** xref:enterprise:formula-nested.adoc[Nested formulas]
+** xref:enterprise:formula-aggregate.adoc[Aggregate formulas]
+*** xref:enterprise:formula-aggregate-cumulative.adoc[Cumulative formulas]
+*** xref:enterprise:formula-aggregate-moving.adoc[Moving formulas]
+*** xref:enterprise:formula-aggregate-flexible.adoc[Flexible aggregation formulas]
+*** xref:enterprise:formula-aggregate-group.adoc[Group aggregation formulas]
+*** xref:enterprise:formula-aggregate-filtered.adoc[Filtered aggregation formulas]
+** xref:enterprise:formula-chasm-trap.adoc[Formulas for chasm traps]
+
+---
+
 ** Work with worksheets
 *** xref:end-user:about-query-on-query.adoc[Understand worksheets]
 *** xref:end-user:create-aggregated-worksheet.adoc[Save a search as a worksheet]
