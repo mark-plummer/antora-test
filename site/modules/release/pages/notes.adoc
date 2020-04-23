@@ -11,7 +11,7 @@ These release notes include information about new features, fixed issues from th
 * <<notes-for-older-versions,Notes from Older Versions>>
 
 [#5-0-1-fixed]
-== 5.0.1 Fixed Issues
+== 5.0.1 Fixed Issues 
 
 The following issues are fixed in the 5.0.1 release:
 
