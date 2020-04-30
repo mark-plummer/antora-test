@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+<!--     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Last data refresh time :: ThoughtSpot Demo Site</title>
     <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Last data refresh time | ThoughtSpot Demo Site</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
   </head>
   <body class="article">
 <header class="header">
@@ -21,8 +28,8 @@
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
         <!--<a class="navbar-item" href="#">Home</a>-->
-        <div class="navbar-item has-dropdown is-hoverable">
-        <!-- <a class="navbar-link" href="#">Products</a>-->
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="#">Product A</a>
             <a class="navbar-item" href="#">Product B</a>
@@ -30,7 +37,7 @@
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
-          <!-- <a class="navbar-link" href="#">Services</a> -->
+          <a class="navbar-link" href="#">Services</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="#">Service A</a>
             <a class="navbar-item" href="#">Service B</a>
@@ -38,13 +45,13 @@
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
-        <!--  <a class="navbar-link" href="#">Resources</a> -->
+        <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="#">Resource A</a>
             <a class="navbar-item" href="#">Resource B</a>
             <a class="navbar-item" href="#">Resource C</a>
           </div>
-        </div>
+        </div> -->
         <div class="navbar-item">
           <span class="control">
           <!--  <a class="button is-primary" href="#">Download</a> -->
@@ -505,7 +512,10 @@
     </div>
   </aside>
 </div>
-<main class="article">
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
@@ -517,7 +527,6 @@
     <li><a href="data-refresh-time.html">Last data refresh time</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///Users/mark.plummer/repos/antora-test/site/modules/end-user/pages/data-refresh-time.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <article class="doc">
