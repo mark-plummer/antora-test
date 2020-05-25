@@ -1,4 +1,4 @@
-= Welcome to ThoughtSpot Docs!
+= Welcome to ThoughtSpot Documentation
 :page-layout: home
 :!sectids:
 
