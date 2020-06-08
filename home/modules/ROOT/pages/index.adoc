@@ -47,30 +47,3 @@ If you are a ThoughtSpot user wanting to develop for applications on the edge
 
 [.tiles.browse]
 == Browse Documentation
-
-[.tile]
-.xref:server:introduction:intro.adoc[Server]
-* xref:server:n1ql:n1ql-language-reference/index.adoc[N1QL]
-* xref:server:fts:full-text-intro.adoc[Full Text Search]
-* xref:server:analytics:introduction.adoc[Analytics]
-* xref:server:eventing:eventing-overview.adoc[Eventing]
-* xref:server:sdk:overview.adoc[SDKs]
-
-[.tile]
-.Couchbase Mobile
-* xref:couchbase-lite::index.adoc[Lite]
-* xref:sync-gateway::index.adoc[Sync Gateway]
-
-[.tile]
-.Couchbase Cloud
-* https://resources.couchbase.com/quickstart-cb-in-the-cloud-id-zn-aj8[Public Cloud]
-* xref:operator::overview.adoc[Autonomous Operator]
-
-[.tile]
-.xref:server:connectors:intro.adoc[Connectors]
-* xref:elasticsearch-connector::index.adoc[Elasticsearch]
-* xref:server:connectors:hadoop-1.2/hadoop.adoc[Hadoop]
-* xref:kafka-connector::index.adoc[Kafka]
-* xref:spark-connector::index.adoc[Spark]
-* xref:talend-connector::index.adoc[Talend]
-* xref:server:connectors:odbc-jdbc-drivers.adoc[SQL (ODBC/JDBC)]
