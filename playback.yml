@@ -1,13 +1,13 @@
 site:
   title: ThoughtSpot Demo Site
   url: https://mark-plummer.github.io/antora-test/
-#  start_page: home::index.html
+  #start_page: home::index.html
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
-  #- url: .
-  #  branches: HEAD
-  #  start_path: home
+  - url: .
+    branches: HEAD
+    start_path: home
   - url: git@github.com:mark-plummer/antora-test.git
     branches: ['5.0', '5.1']
     start_path: /site

@@ -1,0 +1,49 @@
+= Welcome to ThoughtSpot Documentation
+:page-layout: home
+:!sectids:
+
+Welcome to the new home of ThoughtSpot documentation!
+We’d love to hear from you. Feel free to use the btn:[Feedback?] button on any page to share your feedback and concerns.
+
+[.cards.cards-4.personas.conceal-title]
+== {empty}
+
+[.card]
+=== IT Ops Engineer
+
+If you are a ThoughtSpot administrator wanting to configure, deploy, and manage the ThoughtSpot Platform
+
+* xref:5.1@Version:end-user:follow-pinboard.adoc[Deployment Options]
+* xref:5.1@Version:end-user:spotiq-customize.adoc[Security]
+* xref:5.1@Version:end-user:pinboard-filters.adoc[Backup and Restore]
+
+[.card]
+=== Data Engineer
+
+If you are a ThoughtSpot user wanting to develop an application using our SDKs
+
+* xref:java-sdk:hello-world:start-using-sdk.adoc[Quick Install]
+* xref:java-sdk:hello-world:sample-application.adoc[Sample Application]
+* xref:java-sdk:howtos:kv-operations.adoc[CRUD]
+* xref:tutorials::index.adoc[Tutorials]
+
+[.card]
+=== Business User
+
+If you are a ThoughtSpot user wanting to understand how to develop queries
+
+* xref:server:getting-started:do-a-quick-install.adoc[Quick Install]
+* xref:server:getting-started:try-a-query.adoc[Try a N1QL Query]
+* xref:server:n1ql:n1ql-language-reference/index.adoc[N1QL Language Reference]
+
+[.card]
+=== Analyst User
+
+If you are a ThoughtSpot user wanting to develop for applications on the edge
+
+* xref:sync-gateway::getting-started.adoc[Get Started: Sync Gateway]
+* xref:couchbase-lite::index.adoc[Get Started: Couchbase Lite]
+* xref:tutorials::index.adoc[Tutorials]
+
+[.tiles.browse]
+== Browse Documentation
