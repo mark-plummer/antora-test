@@ -1,7 +1,7 @@
 site:
   title: ThoughtSpot Demo Site
   url: https://mark-plummer.github.io/antora-test/
-  #start_page: home::index.html
+  start_page: home::index.adoc
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
