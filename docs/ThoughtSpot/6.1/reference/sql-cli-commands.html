@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TQL reference] :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.3.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>TQL reference] | ThoughtSpot Demo Site</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Demo Site--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Software</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div> -->
+        <!--<div class="navbar-item">
+          <span class="control"> -->
+          <!--  <a class="button is-primary" href="#">Download</a> -->
+<!--          </span>
+        </div>
+      </div>
+    </div> -->
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ThoughtSpot" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot Software</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#enterprise:in-release.adoc">About this release</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/release-notes.html">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/fixed-issues.html">Fixed issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/downloads.html">Downloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../enterprise/user-introduction.html">Users</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#enterprise:getting-started.">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/log-in.html">Log into ThoughtSpot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/getting-started-sidebar.html">Getting Started sidebar</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/navigating-thoughtspot.html">Finding your way around</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/user-profile.html">Your user profile and preferences</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/understanding-privileges.html">Understanding privileges</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/onboarding-experience.html">The onboarding experience</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/stickers.html">Organizing with Stickers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/search.html">Search</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/search-answers.html">Searches and Answers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/start-search.html">Start a new search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/choosing-sources.html">Choose a data source</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-bar.html">Search bar features</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-recent.html">Search suggestions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#enterprise:seaerch-change-answers">Work with Answers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/attributes-and-measures.html">Search results and column types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-data-refresh-time.html">Last data refresh time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/table-visuals.html">Results that are tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-keyword.html">Use keywords in search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-period.html">Time series analysis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-growth-over-time.html">Search using growth over time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-subquery.html">Subquery or nested searches</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:search-proximity.adoc">Proximity search</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/filters.html">Filtering search results</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:filters-column-headers.adoc">Filters in tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-chart-axes.html">Filters in charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-bulk.html">Bulk filters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-delete.html">Deleting filters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-null.html">Filtering on null, blank, or empty values</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/search-actions.html">More search actions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:search-change-display.adoc">Change result display options</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:search-show-data.adoc">Show underlying data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-drill-down.html">See the search behind a result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-conditional-formatting.html">Apply conditional formatting to a table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-download.html">Download your search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-replay.html">Replay search</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/expert-ask.html">Ask an Expert</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/expert-requests-manage.html">Manage Ask an Expert requests</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/expert-answer-retrieve.html">Retrieve Ask an Expert answers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/expert-question-answer.html">Answer an Ask an Expert question</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/charts.html">Charts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/chart-types.html">Chart types</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-column.html">Column charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-bar.html">Bar charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-line.html">Line charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-pie.html">Pie charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-area.html">Area charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-scatter.html">Scatter charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-bubble.html">Bubble charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-pareto.html">Pareto charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-waterfall.html">Waterfall charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-treemap.html">Treemap charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-line-column.adoc">Line column charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-funnel.html">Funnel charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-geo.html">Geo charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-pivot-table.html">Pivot table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-sankey.html">Sankey charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-radar.html">Radar charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-candlestick.html">Candlestick charts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/chart-configure.html">Changing charts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-axes.html">Change axes options</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-columns.html">Configure the columns</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-rename.html">Rename columns and axes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-reorder.html">Reorder labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-axes-scale.html">Set the y-axis range</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-values.adoc">Display values</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-colors.html">Change chart colors</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-labels.adoc">Display data labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-markers.adoc">Display data markers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-regression-lines.adoc">Display regression lines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-gridlines.adoc">Display gridlines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-type-selection.html">Disable automatic chart type selection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-zoom.html">Zoom into a chart</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/formula.html">Formulas</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-search-add.html">Add a formula to a search</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-search-edit.html">View or edit a formula in a search</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-operators.html">Formula operators</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-conversion.html">Conversion formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#enterprise:formula-data.adoc">Date formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-percent.html">Percent (simple number) formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-conditional-sum.html">Formula operators</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-nested.html">Nested formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/formula-aggregate.html">Aggregate formulas</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-cumulative.html">Cumulative formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-moving.html">Moving formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-flexible.html">Flexible aggregation formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-group.html">Group aggregation formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-filtered.html">Filtered aggregation formulas</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-chasm-trap.html">Formulas for chasm traps</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with worksheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/about-query-on-query.html">Understand worksheets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/create-aggregated-worksheet.html">Save a search as a worksheet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/do-query-on-query.html">Create a search from a worksheet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/more-example-scenarios.html">Worksheet example scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use pinboards</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/about-pinboards.html">Basic pinboard usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/edit-the-layout-of-a-pinboard.html">Edit a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/pinboard-filters.html">Pinboard filters</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/schedule-a-pinboard-job.html">Schedule a pinboard job</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/copy-a-pinboard.html">Copy a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/reset-a-visualization.html">Reset a pinboard or visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/start-a-slideshow.html">Start a slideshow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/data-intro-end-user.html">Understand data sources</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/generate-flat-file.html">Create and load CSV files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/append-data-from-a-web-browser.html">Append data through the UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/view-your-data-profile.html">View a data profile</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/locale.html">Date and currency format settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SpotIQ</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/whatisspotiq.html">What is SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/overview.html">101:Load and analyze data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/work-with-insights.html">101:Review and save insights</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/spotiq-customize.html">101:Do more with SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/special-topics.html">Best SpotIQ Practices</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/customization.html">Custom SpotIQ analysis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/adv-customize-withr.html">Advanced R Customizations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Share your work</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/sharing-for-end-users.html">About sharing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/share-pinboards.html">Share pinboards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/share-answers.html">Share answers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/share-user-imported-data.html">Share uploaded data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/unshare.html">Revoke access (unshare)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Slack and ThoughtSpot</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/intro.html">Slack and Spot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/use-spot.html">How to use Spot</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../end-user/what-you-can-find-in-the-help-center.html">More help and support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#disaster-recovery:about-disaster-recovery.md.adoc">Disaster Recovery</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">References</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#enterprise:supported-browsers">Supported web browsers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Software</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ThoughtSpot Software</a></li>
+    <li><a href="sql-cli-commands.html">TQL reference]</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">TQL reference]</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>TQL is the ThoughtSpot language for entering SQL commands. This reference lists
+TQL commands you can use to do things like creating a schema or verifying a data
+load.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_using_tql"><a class="anchor" href="#_about_using_tql"></a>About using TQL</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use TQL either <a href="#/admin/loading/upload-sql-script.adoc" class="page unresolved">through the ThoughtSpot application&#8217;s web interface</a> or the <a href="#/reference/sql-cli-commands.adoc" class="page unresolved">command line
+interface</a> in the Linux shell.</p>
+</div>
+<div class="paragraph">
+<p>Use  <code>--query_results_apply_top_row_count &lt;number&gt;</code> flag to limit the number of
+result rows returned by a query. For example:</p>
+</div>
+<div class="paragraph">
+<p><code>$ tql --query_results_apply_top_row_count 100</code></p>
+</div>
+<div class="paragraph">
+<p>As a best practice, you should enclose object names (database, schema, table,
+and column) in double quotes, and column values in single quotes.
+ When referring to objects using fully qualified object names, the syntax is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>"database"."schema"."table"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To get help on SQL when using TQL,  enter <code>help</code> on the command line.</p>
+</div>
+<div class="paragraph">
+<p>You can use TQL to view and modify schemas and data in tables. Remember to add a
+semicolon after each command. Commands are not case sensitive but are
+capitalized here for readability.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Worksheets and pinboards in ThoughtSpot are dependent upon the data in the underlying tables. Use caution when modifying
+tables directly. If you change or remove a schema on which those objects rely,
+the objects could become invalid.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_view_schemas_and_data"><a class="anchor" href="#_view_schemas_and_data"></a>View schemas and data</h2>
+<div class="sectionbody">
+<table>
+   <colgroup>
+      <col style="width:25%">
+      <col style="width:75%">
+   </colgroup>
+   <thead >
+      <tr>
+         <th>Syntax</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <code>SHOW DATABASES</code>
+         </td>
+         <td>Lists all available databases.
+
+         <p>Examples:</p>
+            <p><code>SHOW DATABASES;</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>USE &lt;database&gt;</code></p>
+         </td>
+         <td>Switches the context to the specified database. This is required if queries
+            do not use fully qualified names (database.schema.table) for specifying
+            tables.
+         <p>Examples:</p>
+            <p><code>USE "fruit_database";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <code>SHOW SCHEMAS</code>
+         </td>
+         <td><p>Lists all schemas within the current database. For example:</p>
+            <p><code>SHOW SCHEMAS;</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>SHOW TABLES</code></p>
+         </td>
+         <td><p>Lists all tables within the current database by schema. For example:</p>
+            <p><code>SHOW TABLES;</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>SHOW TABLE &lt;table&gt;</code></p>
+         </td>
+         <td><p>Lists all the columns for a table. For example:</p>
+            <p><code>SHOW TABLE "locations";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>SCRIPT SERVER</code></p>
+         </td>
+         <td><p>Generates the TQL schema for all tables in all databases on the
+            server. For example:</p>
+            <p><code>SCRIPT SERVER;</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>SCRIPT DATABASE &lt;database&gt;</code></p>
+         </td>
+         <td><p>Generates the TQL schema for all tables in a database. For example:</p>
+            <p><code>SCRIPT DATABASE "fruit_database";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>SCRIPT TABLE &lt;table&gt;</code></p>
+         </td>
+         <td><p>Generates the TQL schema for a table. For example:</p>
+            <p><code>SCRIPT TABLE "vendor";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>SELECT
+   &lt;cols_or_expr&gt;
+   FROM &lt;table_list&gt;
+   [WHERE &lt;predicates&gt;]
+   [GROUP BY &lt;expr&gt;]
+   [ORDER BY &lt;expr&gt;]</code></p>
+         </td>
+         <td>
+            Shows specified set of table data.
+            <p>If you do not specify the TOP number of
+               rows to select, the top 50 rows will be returned by default. The number of rows
+               to return can be set using the <span class="ph">TQL</span> command line flag:
+            </p>
+            <p><code>--query_results apply_top_row_count</code></p>
+            <p>You can use the following aggregation functions:</p>
+            <ul>
+               <li><code>sum</code></li>
+               <li><code>count</code></li>
+               <li><code>count distinct</code></li>
+               <li><code>stddev</code></li>
+               <li><code>avg</code></li>
+               <li><code>variance</code></li>
+               <li><code>min</code></li>
+               <li><code>max</code></li>
+            </ul>
+            <div>
+               You can use the following date functions:
+               <ul>
+                  <li><code>absyear</code></li>
+                  <li><code>absmonth</code></li>
+                  <li><code>absday</code></li>
+                  <li><code>absquarter</code></li>
+                  <li><code>date</code></li>
+                  <li><code>time</code></li>
+               </ul>
+            </div>
+          <p>For example:</p>
+<p><code>SELECT TOP 10 "quantity" FROM "sales_fact";</code></p>
+<p><code>SELECT COUNT(&#42;) FROM "vendor";</code></p>
+<p><code>SELECT "vendor", SUM("quantity") FROM "sales_fact" GROUP BY "vendor";</code></p>
+<p><code>SELECT "vendor", SUM("amount") FROM "vendor", "sales_fact"
+     WHERE "sales_fact"."vendorid" = "vendor"."vendorid"
+     AND "amount" &gt; 100 GROUP BY "vendor" ORDER BY "amount" DESC;</code></p>
+<p><code>SELECT "vendor", SUM("quantity") FROM "sales_fact"
+GROUP BY "vendor" LIMIT 10;</code></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schema_creation"><a class="anchor" href="#_schema_creation"></a>Schema creation</h2>
+<div class="sectionbody">
+<table>
+   <colgroup>
+      <col style="width:25%">
+      <col style="width:75%">
+   </colgroup>
+   <thead >
+      <tr>
+         <th>Syntax</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>CREATE DATABASE
+            &lt;database&gt;</code></p>
+         </td>
+         <td>
+            <p>Creates a database. For example:</p>
+            <p><code>CREATE DATABASE "fruit_database";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>CREATE SCHEMA &lt;schema&gt;</code></p>
+         </td>
+         <td>
+            <p>Creates a schema within the current database. For example:</p>
+            <p><code>CREATE SCHEMA "fruit_schema";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>CREATE TABLE &lt;table&gt; (&lt;column_definitions&gt;
+            [&lt;constraints&gt;]) [PARTITION BY HASH (&lt;number&gt;) [KEY
+            ("&lt;column&gt;")]])</code></p>
+         </td>
+         <td>
+            <p>Creates a table with the specified column definitions and constraints.</p>
+            <p>
+            Use <code>PARTITION BY HASH</code> to shard a table across all nodes. If no <code>KEY</code> is specified, the table will be randomly sharded.
+            </p>
+            <p>
+               Do not specify relationship constraints (<code>FOREIGN KEY</code>
+               or <code>RELATIONSHIP</code>) in the <code>CREATE TABLE</code>
+               statement. Instead, define these using <code>ALTER TABLE</code>
+               statements at the end of your TQL script, after
+               creating your tables. This method guarantees that tables are created
+               before they are referenced in the constraint definitions. For example:
+            </p>
+            <p><code>CREATE TABLE "vendor" ("vendorid" int, "name" varchar(255));</code></p>
+<p><code>CREATE TABLE "sales_fact" ("saleid" int, "locationid" int, "vendorid" int,
+"quantity" int, "sale_amount" double, "fruitid" int,
+CONSTRAINT PRIMARY KEY("saleid")) PARTITION BY HASH(96) KEY ("saleid");</code></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schema_modification"><a class="anchor" href="#_schema_modification"></a>Schema modification</h2>
+<div class="sectionbody">
+<table>
+   <colgroup>
+      <col style="width:25%">
+      <col style="width:75%">
+   </colgroup>
+   <thead>
+      <tr>
+         <th>Syntax</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+   <tr>
+      <td>
+         <p><code>DROP DATABASE
+         &lt;database&gt;</code></p>
+      </td>
+      <td><p>Drops a database and all of its schemas and tables. For example:</p>
+         <p><code>DROP DATABASE "fruit_database";</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>DROP SCHEMA &lt;schema&gt;</code></p>
+      </td>
+      <td><p>Drops a schema within the current database, and drops all of the tables in
+         the schema. For example:</p>
+         <p><code>DROP SCHEMA "fruit_schema";</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>DROP TABLE &lt;table&gt;</code></p>
+      </td>
+      <td><p>Drops a table. For example:</p>
+         <p><code>DROP TABLE "location";</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <code>TRUNCATE TABLE
+         &lt;table&gt;</code>
+      </td>
+      <td>
+         <p>Removes all data from a table, but preserves its metadata, including all
+         GUIDs, relationships, etc. This can be used to force a new schema for a table
+         without losing the metadata.</p>
+         <p>However, this operation removes all existing data
+            from the table and must be used with caution. You must reload the data following
+            a <code>TRUNCATE</code>, or all dependent objects (worksheets and pinboards) in <span class="ph">ThoughtSpot</span> will become invalid. For example:
+         </p>
+         <p><code>TRUNCATE TABLE "location";</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>ALTER TABLE &lt;table&gt; ADD|DROP|RENAME COLUMN
+         &lt;column&gt;</code></p>
+      </td>
+      <td>
+         Alters a table to add, drop, or rename a column.
+         <p>When you add a column to
+            an existing table, you must provide a default value to use for existing
+            rows. For example:</p>
+<p><code>ALTER TABLE "cart" ADD COLUMN "nickname" varchar(255) DEFAULT 'no
+nickname';</code></p>
+<p><code>ALTER TABLE "cart" DROP COLUMN "nickname";</code></p>
+<p><code>ALTER TABLE "cart" RENAME COLUMN "nickname" TO "shortname";</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>ALTER TABLE &lt;table&gt; DROP CONSTRAINT PRIMARY KEY;</code></p>
+      </td>
+      <td>
+        <p> Drops the primary key from a table.</p>
+         <p>Note that if you then add a new
+            primary key, the same upsert behavior will be applied as with adding any primary
+            key. This can result in data deletion, so make sure you understand how the
+            upsert will affect your data ahead of time.
+            For example:
+         </p>
+         <p><code>ALTER TABLE "sales" DROP CONSTRAINT PRIMARY KEY;</code></p>
+         <p><code>ALTER TABLE "sales" ADD CONSTRAINT PRIMARY KEY ("PO_number");</code></p>
+
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>ALTER TABLE &lt;table&gt; DROP CONSTRAINT [FOREIGN KEY| RELATIONSHIP]
+       &lt;name&gt;;</code></p>
+      </td>
+      <td><p>Drops the named foreign key or relationship between two tables. For example:</p>
+         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT FOREIGN KEY "FK_PO_number";</code></p>
+        <p><code>ALTER TABLE "fruit_dim" DROP RELATIONSHIP "REL_dates";</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>ALTER TABLE &lt;table&gt; DROP [CONSTRAINT FOREIGN KEY
+         [&lt;table_name&gt;] | RELATIONSHIP [WITH &lt;table_name&gt;];</code></p>
+      </td>
+      <td>
+         You must use this syntax when dropping relationships between tables created
+         before ThoughtSpot version 3.2. This is because relationships could not be named
+         in older versions.
+         <div>
+            Drops the foreign key or relationship between two tables
+            where you cannot reference it by relationship name. If the relationship was
+            created without a name, use:
+            <ul class="ul" id="reference_cbc_fx4_j4__ul_qzq_wyn_cv">
+               <li>the name of the referenced table, for a foreign key.</li>
+               <li>the name of the related table, for a relationship.</li>
+            </ul>
+         </div>
+         <p>If you drop a foreign key without specifying the referenced table,
+            all foreign keys from the table you are altering will be dropped.
+         </p>
+         <p>Examples:</p>
+         <p><code>ALTER TABLE "shipments" DROP CONSTRAINT FOREIGN KEY "orders";</code></p>
+         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP WITH "retail_sales";</code></p>
+         <p>Drops all relationships that have wholesale_buys as a source.</p>
+         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP;</code></p>
+          <p>Drops all foreign keys from wholesale_buys. </p>
+         <p><code>ALTER TABLE "wholesale_buys" DROP CONSTRAINT FOREIGN KEY;</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>ALTER TABLE &lt;table&gt; [SET DIMENSION | SET FACT [PARTITION BY
+         HASH [(&lt;shards&gt;)] [KEY(&lt;column&gt;)]]]</code></p>
+      </td>
+      <td>
+         <div>
+            <p>Changes the partitioning on a table by doing one of:</p>
+            <ul class="ul" id="reference_cbc_fx4_j4__ul_egx_4jg_wv">
+               <li>re-sharding a sharded table</li>
+               <li>changing a replicated table to a sharded table</li>
+               <li>changing a sharded table to a replicated (unsharded) table</li>
+            </ul>
+            <p>By default, ThoughtSpot does not shard dimension tables.</p>
+         </div>
+         <p>To change the partitioning on a table, or to change a dimension table to a
+            sharded table, use <code>ALTER TABLE...SET FACT PARTITION BY HASH...;</code>
+         </p>
+         <p>To make a sharded table into a dimension table (replicated on every node),  use
+            <code>ALTER TABLE...SET DIMENSION;</code> command.
+         </p>
+         <p>Examples of this statement:</p>
+         <p><code>ALTER TABLE "sales_fact" SET FACT PARTITION BY HASH (96) KEY
+         ("PO_number");
+         ALTER TABLE "fruit_dim" SET DIMENSION;</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code align="left">ALTER TABLE &lt;table&gt; MODIFY COLUMN &lt;column&gt;
+&lt;new_data_type&gt;;</code></p>
+      </td>
+      <td>
+         <p>Changes the data type of a column. This can have implications on sharding and
+            primary key behavior. See <a href="https://docs.thoughtspot.com/admin/loading/about-data-type-conversion.html#concept_u2t_clg_wv>About data type conversion</a>. For example:
+         </p>
+         <p><code>ALTER TABLE fact100 MODIFY COLUMN product_id int;</code></p>
+      </td>
+   </tr>
+
+   </tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modify_data"><a class="anchor" href="#_modify_data"></a>Modify data</h2>
+<div class="sectionbody">
+<table>
+   <colgroup>
+      <col style="width:25%">
+      <col style="width:75%">
+   </colgroup>
+   <thead >
+      <tr>
+         <th>Syntax</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>INSERT INTO &lt;table&gt; VALUES ...</code></p>
+         </td>
+         <td><p>Inserts values into a table. Only use this for testing. Do not use <code>INSERT</code> on
+            a production system. For example:</p>
+
+            <p><code>INSERT INTO "vendor" VALUES ('helen rose', 'jacob norse', 'eileen ruff',
+'manny gates');</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code align="left">ALTER TABLE &lt;table&gt; SET LOAD PRIORITY &lt;value&gt;
+   &lt;new_data_type&gt;;</code></p>
+         </td>
+         <td>
+            <p>Sets the load priority for a table. Load priority determines the order in which a table is loaded on a cluster restart. You can set any value from <code>1-100</code>. The system default for all tables is <code>50</code>. For example:
+            </p>
+            <p><code>ALTER TABLE 'sales_facts' SET LOAD PRIORITY 1;</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>UPDATE &lt;table&gt; ... SET ... [WHERE ...]</code></p>
+         </td>
+         <td><p>Updates rows in a table that match optionally provided predicates. Predicates
+            have the form <code>column = value</code> connected by the <code>AND</code> keyword. Sets the column values
+            to the specified values. For example:</p>
+            <p><code>
+UPDATE "location" SET "borough" = 'staten island', "city" = 'new york'
+WHERE "borough" = 'staten isl' AND city = 'NY';</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><code>DELETE FROM &lt;table&gt; [WHERE...]</code></p>
+         </td>
+         <td><p>Deletes rows from a table that match optionally provided predicates.
+            Predicates have the form <code>column = value</code> connected by the <code>AND</code> keyword. When specifying dates, use <a href="https://www.epochconverter.com/">epoch values</a>. Other date formats can result in error and unwanted deletion of data from the table.
+         For example.</p>
+
+<p><code>DELETE FROM "vendor" WHERE "name" = 'Joey Smith' AND "vendorid" =
+'19463';</code></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_constraints_and_relationships"><a class="anchor" href="#_constraints_and_relationships"></a>Constraints and relationships</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Constraints and relationships in ThoughtSpot are used to define the
+relationships between tables (how they can be joined). However, constraints
+are not enforced, as they would be in a transactional database. You can define
+the following constraints when creating a table with &lt;code&gt;CREATE TABLE&lt;/code&gt;, or add them
+to an existing table using the &lt;code&gt;ADD CONSTRAINT&lt;/code&gt; syntax:</p>
+</div>
+<table>
+   <colgroup>
+      <col style="width:25%">
+      <col style="width:75%">
+   </colgroup>
+   <thead >
+      <tr>
+         <th>Syntax</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>PRIMARY KEY</td>
+         <td>
+            Designates a unique, non-null value as the primary key for a table. This can
+            be one column or a combination of columns. If values are not unique, an upsert
+               will be performed if a row includes a primary key that is already present in the
+               data. Some examples:
+            </p>
+<p><code>CREATE TABLE "schools" ( "schoolID" varchar(15), "schoolName"
+varchar(255), "schoolCity" varchar(55), "schoolState" varchar(55), "schoolNick"
+varchar(55), CONSTRAINT PRIMARY KEY ("schoolID") ) ;</code></p>
+<p><code>ALTER TABLE "cart" ADD CONSTRAINT PRIMARY KEY ("cart_id");</code></p>
+<p><code>ALTER TABLE "cart" DROP CONSTRAINT PRIMARY KEY "cart_id";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>FOREIGN KEY</td>
+         <td>
+            <p>Defines a relationship where the value(s) in the table are used to join to a
+            second table. Uses an equality operator. The foreign key must match the primary
+            key of the table that is referenced in number, column type, and order of
+            columns.</p>
+            <p>When creating a foreign key, give it a name. You can reference the
+               foreign key name later, if you want to remove it.
+            </p>
+<p>Examples of this statement:</p>
+<p><code>ALTER TABLE "batting" ADD CONSTRAINT "FK_player" FOREIGN KEY ("playerID")
+REFERENCES "players" ("playerID");</code></p>
+
+<p><code>ALTER TABLE "batting" ADD CONSTRAINT "FK_lg_team" FOREIGN KEY ("lgID" ,"teamID")
+REFERENCES "teams" ("lgID" ,"teamID");</code></p>
+
+<p><code>ALTER TABLE "shipment" ADD CONSTRAINT "FK_PO_vendor" FOREIGN KEY ("po_number",
+"vendor") REFERENCES "orders" ("po_number", "vendor");</code></p>
+
+<p><code>ALTER TABLE "shipment" DROP CONSTRAINT "FK_PO_vendor";</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>RELATIONSHIP</td>
+         <td>
+            <p>Defines a relationship where the value(s) in the table can be used to join to
+            a second table, using an equality condition (required) and one or more range
+            conditions (optional). These conditions act like a WHERE clause when the two
+            tables are joined. They are applied using AND logic, such that all conditions must
+            be met for a row to be included.</p>
+            <p>You may add multiple relationships between
+               tables. When creating a relationship, give it a name. You can reference
+               the relationship name later, if you want to remove it.
+            </p>
+            <p>Examples of this statement:</p>
+            <p><code>ALTER TABLE "wholesale_buys" ADD RELATIONSHIP "REL_fruit" WITH
+"retail_sales" AS "wholesale_buys"."fruit" = "retail_sales"."fruit" AND
+("wholesale_buys"."date_order" &lt; "retail_sales"."date_sold" AND
+"retail_sales"."date_sold" &lt; "wholesale_buys"."expire_date");</code></p>
+
+<p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP "REL_fruit";</code></p>
+         </td>
+      </tr>
+      <tr>
+      <td>
+
+      </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_types"><a class="anchor" href="#_data_types"></a>Data types</h2>
+<div class="sectionbody">
+ThoughtSpot supports a simplified list of data types:
+
+<table>
+   <colgroup>
+      <col style="width:25%">
+      <col style="width:25%">
+      <col style="width:50%">
+   </colgroup>
+   <thead >
+      <tr>
+         <th>Syntax</th>
+         <th>Description</th>
+         <th>Examples</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Character</td>
+         <td>
+            <ul class="ul" id="reference_cbc_fx4_j4__d109e35">
+               <li>VARCHAR(<em class="ph i">n</em>)</li>
+            </ul>
+         </td>
+         <td>Specify the maximum number of characters, as in VARCHAR(255). The size limit is 64MB for
+            VARCHAR values.
+         </td>
+      </tr>
+      <tr>
+         <td>Floating point</td>
+         <td>
+            <ul class="ul" id="reference_cbc_fx4_j4__d109e47">
+               <li>DOUBLE</li>
+               <li>FLOAT</li>
+            </ul>
+         </td>
+         <td>DOUBLE is recommended.</td>
+      </tr>
+      <tr>
+         <td>Boolean</td>
+         <td>
+            <ul class="ul" id="reference_cbc_fx4_j4__d109e58">
+               <li>BOOL</li>
+            </ul>
+         </td>
+         <td>Can be <code class="ph codeph">true</code> or <code class="ph codeph">false</code>.</td>
+      </tr>
+      <tr>
+         <td>Integer</td>
+         <td>
+            <ul class="ul" id="reference_cbc_fx4_j4__d109e73">
+               <li>INT</li>
+               <li>BIGINT</li>
+            </ul>
+         </td>
+         <td>
+            INT holds 32 bits.
+            <p>BIGINT holds 64 bits.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Date or time</td>
+         <td>
+            <ul class="ul" id="reference_cbc_fx4_j4__d109e86">
+               <li>DATE</li>
+               <li>DATETIME</li>
+               <li>TIMESTAMP</li>
+               <li>TIME</li>
+            </ul>
+         </td>
+         <td>
+            <p>DATETIME, TIMESTAMP, and TIME are stored at the granularity of seconds</p>.
+            <p>TIMESTAMP is
+               identical to DATETIME, but is included for syntax
+               compatibility.
+            </p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

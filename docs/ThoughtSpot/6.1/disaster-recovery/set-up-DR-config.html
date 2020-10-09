@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configure disaster recovery :: ThoughtSpot Demo Site</title>
+    <meta name="generator" content="Antora 2.3.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Configure disaster recovery | ThoughtSpot Demo Site</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Demo Site--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Software</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div> -->
+        <!--<div class="navbar-item">
+          <span class="control"> -->
+          <!--  <a class="button is-primary" href="#">Download</a> -->
+<!--          </span>
+        </div>
+      </div>
+    </div> -->
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ThoughtSpot" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ThoughtSpot Software</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#enterprise:in-release.adoc">About this release</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/release-notes.html">Release notes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/fixed-issues.html">Fixed issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/downloads.html">Downloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../enterprise/user-introduction.html">Users</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#enterprise:getting-started.">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/log-in.html">Log into ThoughtSpot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/getting-started-sidebar.html">Getting Started sidebar</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/navigating-thoughtspot.html">Finding your way around</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/user-profile.html">Your user profile and preferences</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/understanding-privileges.html">Understanding privileges</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/onboarding-experience.html">The onboarding experience</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/stickers.html">Organizing with Stickers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/search.html">Search</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/search-answers.html">Searches and Answers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/start-search.html">Start a new search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/choosing-sources.html">Choose a data source</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-bar.html">Search bar features</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-recent.html">Search suggestions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#enterprise:seaerch-change-answers">Work with Answers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/attributes-and-measures.html">Search results and column types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-data-refresh-time.html">Last data refresh time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/table-visuals.html">Results that are tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-keyword.html">Use keywords in search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-period.html">Time series analysis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-growth-over-time.html">Search using growth over time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-subquery.html">Subquery or nested searches</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:search-proximity.adoc">Proximity search</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/filters.html">Filtering search results</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:filters-column-headers.adoc">Filters in tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-chart-axes.html">Filters in charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-bulk.html">Bulk filters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-delete.html">Deleting filters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/filter-null.html">Filtering on null, blank, or empty values</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/search-actions.html">More search actions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:search-change-display.adoc">Change result display options</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:search-show-data.adoc">Show underlying data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-drill-down.html">See the search behind a result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-conditional-formatting.html">Apply conditional formatting to a table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-download.html">Download your search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/search-replay.html">Replay search</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/expert-ask.html">Ask an Expert</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/expert-requests-manage.html">Manage Ask an Expert requests</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/expert-answer-retrieve.html">Retrieve Ask an Expert answers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/expert-question-answer.html">Answer an Ask an Expert question</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/charts.html">Charts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/chart-types.html">Chart types</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-column.html">Column charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-bar.html">Bar charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-line.html">Line charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-pie.html">Pie charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-area.html">Area charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-scatter.html">Scatter charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-bubble.html">Bubble charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-pareto.html">Pareto charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-waterfall.html">Waterfall charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-treemap.html">Treemap charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-line-column.adoc">Line column charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-funnel.html">Funnel charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-geo.html">Geo charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-pivot-table.html">Pivot table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-sankey.html">Sankey charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-radar.html">Radar charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-candlestick.html">Candlestick charts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/chart-configure.html">Changing charts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-axes.html">Change axes options</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-columns.html">Configure the columns</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-rename.html">Rename columns and axes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-reorder.html">Reorder labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-axes-scale.html">Set the y-axis range</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-values.adoc">Display values</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-colors.html">Change chart colors</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-labels.adoc">Display data labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-markers.adoc">Display data markers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-regression-lines.adoc">Display regression lines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#enterprise:chart-configure-dsplay-gridlines.adoc">Display gridlines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-type-selection.html">Disable automatic chart type selection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/chart-configure-zoom.html">Zoom into a chart</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/formula.html">Formulas</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-search-add.html">Add a formula to a search</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-search-edit.html">View or edit a formula in a search</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-operators.html">Formula operators</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-conversion.html">Conversion formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#enterprise:formula-data.adoc">Date formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-percent.html">Percent (simple number) formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-conditional-sum.html">Formula operators</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-nested.html">Nested formulas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../enterprise/formula-aggregate.html">Aggregate formulas</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-cumulative.html">Cumulative formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-moving.html">Moving formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-flexible.html">Flexible aggregation formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-group.html">Group aggregation formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enterprise/formula-aggregate-filtered.html">Filtered aggregation formulas</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../enterprise/formula-chasm-trap.html">Formulas for chasm traps</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with worksheets</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/about-query-on-query.html">Understand worksheets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/create-aggregated-worksheet.html">Save a search as a worksheet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/do-query-on-query.html">Create a search from a worksheet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/more-example-scenarios.html">Worksheet example scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Use pinboards</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/about-pinboards.html">Basic pinboard usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/edit-the-layout-of-a-pinboard.html">Edit a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/pinboard-filters.html">Pinboard filters</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/schedule-a-pinboard-job.html">Schedule a pinboard job</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/copy-a-pinboard.html">Copy a pinboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/reset-a-visualization.html">Reset a pinboard or visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/start-a-slideshow.html">Start a slideshow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Work with data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/data-intro-end-user.html">Understand data sources</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/generate-flat-file.html">Create and load CSV files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/append-data-from-a-web-browser.html">Append data through the UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/view-your-data-profile.html">View a data profile</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/locale.html">Date and currency format settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SpotIQ</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/whatisspotiq.html">What is SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/overview.html">101:Load and analyze data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/work-with-insights.html">101:Review and save insights</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/spotiq-customize.html">101:Do more with SpotIQ</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/special-topics.html">Best SpotIQ Practices</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/customization.html">Custom SpotIQ analysis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/adv-customize-withr.html">Advanced R Customizations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Share your work</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/sharing-for-end-users.html">About sharing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/share-pinboards.html">Share pinboards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/share-answers.html">Share answers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/share-user-imported-data.html">Share uploaded data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../end-user/unshare.html">Revoke access (unshare)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Slack and ThoughtSpot</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/intro.html">Slack and Spot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../end-user/use-spot.html">How to use Spot</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../end-user/what-you-can-find-in-the-help-center.html">More help and support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#disaster-recovery:about-disaster-recovery.md.adoc">Disaster Recovery</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">References</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#enterprise:supported-browsers">Supported web browsers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Software</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ThoughtSpot Software</a></li>
+    <li><a href="set-up-DR-config.html">Configure disaster recovery</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Configure disaster recovery</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume.
+If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention.</p>
+</div>
+<div class="paragraph">
+<p>Should the production cluster be destroyed, monitoring and alerting notifies the administrator.
+The administrator can then make the secondary appliance into the new primary, by starting it and recovering from  backups generated by the primary.</p>
+</div>
+<div class="paragraph">
+<p>This system makes it possible for you to restore the last backed up state from the primary to the secondary sever.
+If you configure daily backups, any metadata or data loaded/created after the last backup is not included in restore.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisite"><a class="anchor" href="#_prerequisite"></a>Prerequisite</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Both primary and secondary appliances must use a shared storage volume.
+You can use an NAS or Samba volume for your share.
+If you choose NAS, keep in mind that too slow a volume potentially break backups or significantly slow restore performance.
+The following are good guidelines for choosing storage:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Provision dedicated a storage volume for periodic backups.</p>
+</li>
+<li>
+<p>Do not use the backup volume for loading data or any other purposes.
+If backups fill up this storage, other components will suffer.</p>
+</li>
+<li>
+<p>To ensure better supportability and continuity in case local hard disks go bad, the shared storage volume should be network based.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Thoughtspot supports shared storage by mounting NFS or CIFS/Samba based volumes.
+Before you begin, make sure you know if the shared volume is Samba or NAS volume.
+To find out, use the <code>telnet</code> command.</p>
+</div>
+<table><tr><td>Telnet confirms NFS</td>
+    <td>Telnet confirms  Samba</td></tr>
+  <tr><td><pre><font color=white>$ telnet,2049
+    Trying 192.168.2.216\...
+    Connected to 192.168.2.216.
+    Escape character is '{caret}]'.</pre></td>
+    <td><pre><font color=white>$ telnet,445
+    Trying 192.168.2.216\...
+    Connected to 192.168.2.216.
+    Escape character is '{caret}]'.</pre></td></tr></table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_and_test_your_shared_volume"><a class="anchor" href="#_configure_and_test_your_shared_volume"></a>Configure and test your shared volume</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your shared volume should have a minimum of 15GB free and at least 20GB for a full backup.
+Do the following to configure and mount the shared volume.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>SSH into the primary appliance.</p>
+</li>
+<li>
+<p>Ensure that the primary appliance has a ThoughtSpot cluster up and running.</p>
+<div class="paragraph">
+<p>The primary appliance contains the cluster you are protecting with the recovery plan.</p>
+</div>
+</li>
+<li>
+<p>Create a directory to act as your  <em>&lt;mount_point&gt;</em>.&lt;/mount_point&gt;</p>
+<div class="listingblock">
+<div class="content">
+<pre>sudo mkdir &lt;mount_point&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Set the directory owner to <code>admin</code>.</p>
+<div class="listingblock">
+<div class="content">
+<pre>sudo chown -R admin:admin &lt;mount_point&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the <code>tscli nas</code> subcommand to create a NAS is mount on all of the cluster nodes.</p>
+<div class="paragraph">
+<p>Use the command-line help or the documentation to view all the <a href="#/reference/tscli-command-ref.adoc#nas" class="page unresolved">nas subcommand</a> options.
+Below are some samples to help you:</p>
+</div>
+</li>
+</ol>
+</div>
+<table><tr><th colspan="2">Example invocations</th></tr>
+<tr><th>Samba share:</th>
+<td><code>tscli nas mount-cifs --server 192.168.4.216 --path_on_server /bigstore_share --mount_point /mnt --username admin --password sambashare --uid 1001 --gid 1001</code></td></tr>
+<tr><th>Samba share with Windows AD authentication</th>
+<td><code>tscli nas mount-cifs --server 172.27.1.75 --path_on_server /elc --mount_point /home/admin/etl/external_datadir --username COMPANYCO/thoughtspot_svc --password 'ts123PDI!' --uid 1001 --gid 1001</code></td></tr>
+<tr><th>NFS</th>
+<td><code>tscli nas mount-nfs --server 192.168.4.132 --path_on_server /data/toolchain --mount_point /mnt</code></td></tr></table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log in to the target machine.</p>
+</li>
+<li>
+<p>Ensure that the target machine is not running a ThoughtSpot cluster.</p>
+<div class="paragraph">
+<p>If a cluster is running on the target machine, contact please contact ThoughtSpot Support to delete the cluster.</p>
+</div>
+</li>
+<li>
+<p>Ensure you have the <code>tscli</code> command on the target appliance.</p>
+</li>
+<li>
+<p>Repeat steps 3-5 on the target machine.</p>
+<div class="paragraph">
+<p>The target machine and the primary machine should both be accessing the shared volume.
+The configuration of the mount point should be identical on both machines.</p>
+</div>
+</li>
+<li>
+<p>Test the configuration by creating a file as the <code>admin</code> user.</p>
+<div class="listingblock">
+<div class="content">
+<pre>touch &lt;mount_point&gt;/testfile</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Return to the primary server and make sure you can edit the file.</p>
+<div class="listingblock">
+<div class="content">
+<pre>touch &lt;mount_point&gt;/testfile</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_the_backup_and_start_the_mirror"><a class="anchor" href="#_configure_the_backup_and_start_the_mirror"></a>Configure the backup and start the mirror</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If you haven&#8217;t already done so, SSH into the primary server.</p>
+</li>
+<li>
+<p>Use the <code>tscli backup-policy create</code> command.</p>
+<div class="paragraph">
+<p>The command opens a <code>vi</code> editor for you to configure the backup policy.
+Make sure your policy points to the NAS mount in the primary appliance.</p>
+</div>
+<div class="paragraph">
+<p>When choosing times and frequencies for periodic backups, you should choose a reasonable frequency.
+Do not schedule backups too close together, since a backup cannot start when another backup is still running.
+Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load.</p>
+</div>
+<div class="paragraph">
+<p>If you are unfamiliar with the policy format, see <a href="#/admin/backup-restore/configure-backup.adoc" class="page unresolved">Configure periodic backups</a>.</p>
+</div>
+</li>
+<li>
+<p>Write and save the file to store your configuration.</p>
+<div class="paragraph">
+<p>By default, newly created policies are automatically enabled.</p>
+</div>
+</li>
+<li>
+<p>Verify the policy using the <code>tscli backup periodic-config &lt;name&gt;</code> command.</p>
+<div class="paragraph">
+<p>Use the <code>&lt;name&gt;</code> from the policy you created in the previous step.</p>
+</div>
+</li>
+<li>
+<p>SSH into the secondary recovery appliance.</p>
+</li>
+<li>
+<p>Use the <code>tscli dr-mirror</code> subcommand to start the mirror cluster.</p>
+<div class="listingblock">
+<div class="content">
+<pre>tscli dr-mirror start</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Verify that the cluster has started running in mirror mode</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>   tscli dr-mirror status</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It may take some time for the cluster to begin acting as a mirror.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recovery_operations"><a class="anchor" href="#_recovery_operations"></a>Recovery operations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If the primary cluster fails, the secondary cluster can take over its operations after a small manual intervention.
+The manual procedure makes the secondary instance into the primary.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+You should perform this procedure under the supervision of ThoughtSpot customer support.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Contact ThoughtSpot customer support.</p>
+</li>
+<li>
+<p>If the primary ThoughtSpot cluster is still running, stop it and disconnect it from the network.</p>
+</li>
+<li>
+<p>SSH into the secondary cluster.</p>
+</li>
+<li>
+<p>Stop the mirror cluster.</p>
+<div class="listingblock">
+<div class="content">
+<pre>tscli dr-mirror stop</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Verify the mirror has stopped.</p>
+<div class="listingblock">
+<div class="content">
+<pre>tscli dr-mirror status</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Start the new primary cluster.</p>
+<div class="listingblock">
+<div class="content">
+<pre>tscli cluster start</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Deploy a new mirror.</p>
+</li>
+<li>
+<p>Set up a backup policy on your new primary cluster.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
