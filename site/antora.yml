@@ -1,5 +1,5 @@
 name: ThoughtSpot
 version: '6.1'
-title:
+title: ThoughtSpot Software
 nav:
 - modules/ROOT/nav.adoc

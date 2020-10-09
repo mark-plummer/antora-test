@@ -1,5 +1,5 @@
 site:
-  title: ThoughtSpot Demo Site
+  title: ThoughtSpot Software
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
