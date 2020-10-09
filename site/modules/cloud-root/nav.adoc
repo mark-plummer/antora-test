@@ -1,0 +1,16 @@
+* xref:enterprise:in-release.adoc[NOT about this release]
+** xref:enterprise:release-notes.adoc[Release notes]
+** xref:enterprise:fixed-issues.adoc[Fixed issues]
+** xref:enterprise:guides.adoc[Guides]
+** xref:enterprise:downloads.adoc[Downloads]
+
+---
+* xref:enterprise:user-introduction.adoc[Users]
+* xref:enterprise:getting-started.[Getting Started]
+** xref:enterprise:log-in.adoc[Log into ThoughtSpot]
+** xref:enterprise:getting-started-sidebar.adoc[Getting Started sidebar]
+** xref:enterprise:navigating-thoughtspot.adoc[Finding your way around]
+** xref:enterprise:user-profile.adoc[Your user profile and preferences]
+** xref:enterprise:understanding-privileges.adoc[Understanding privileges]
+** xref:enterprise:onboarding-experience.adoc[The onboarding experience]
+** xref:enterprise:stickers.adoc[Organizing with Stickers]
