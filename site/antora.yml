@@ -1,6 +1,0 @@
-name: software
-version: '6.1'
-title: ThoughtSpot Software
-nav:
-- modules/ROOT/nav.adoc
-- modules/cloud-root/nav.adoc

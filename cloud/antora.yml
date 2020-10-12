@@ -1,0 +1,5 @@
+name: cloud
+version: '6.1'
+title: ThoughtSpot Cloud
+nav:
+- modules/ROOT/nav.adoc
