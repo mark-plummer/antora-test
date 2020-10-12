@@ -1,0 +1,3 @@
+:doctype: book
+
+include::shared:enterprise:page$chart-radar.adoc[]
