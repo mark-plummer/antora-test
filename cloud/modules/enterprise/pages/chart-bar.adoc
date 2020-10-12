@@ -1,5 +1,3 @@
-= Bar charts
-:last_updated: 3/9/2020
-:permalink: /:collection/:path.html
+:doctype: book
 
 include::shared:enterprise:page$chart-bar.adoc[]
