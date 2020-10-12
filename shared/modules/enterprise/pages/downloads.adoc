@@ -1,6 +1,6 @@
 = Downloads for ThoughtSpot
 :last_updated: 07/12/2019
-:permalink: /:collection/:path.html
+:page-partial:
 :sidebar: mydoc_sidebar
 
 If you are looking for ThoughtSpot clients or API files, you've come to the right place.

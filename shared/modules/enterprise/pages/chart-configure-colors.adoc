@@ -1,7 +1,7 @@
 = Change chart colors
 :last_updated: 2/13/2020
 :summary: "You can change the colors used in a chart."
-:sidebar: mydoc_sidebar
+:page-partial:
 :permalink: /:collection/:path.html --
 
 To change the colors used in a chart, use the *Customize* menu to dive into the chip for the column or value you would like to change.
@@ -22,7 +22,7 @@ For example, when doing a search on revenue by state, each state will keep its c
 
 . While viewing your search or answer as a chart, click the *chart configuration* icon image:/images/icon-gear-10px.png[chart configuration icon] to open the chart configuration menu.
 +
-image::/images/chartconfig-customizemenu.png[Edit chart configuration menu]
+image::shared:enterprise:chartconfig-customizemenu.png[Edit chart configuration menu]
 
 . Click on the color chip for the column or value you would like to change.
 Editable chips have a *more* icon: *>*.
@@ -34,4 +34,4 @@ Your changes are saved immediately.
 
 . Click the *X* at top right to dismiss the styles panel.
 +
-image::/images/chart-config.gif[Change the chart color]
+image::shared:enterprise:chart-config.gif[Change the chart color]

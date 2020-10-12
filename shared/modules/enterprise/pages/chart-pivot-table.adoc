@@ -10,19 +10,19 @@ image::pivot_chart_example.png[]
 If a *Pivot Table* is available for your answer, you see this type of visualization as an option under the visualization.
 Add rows, measures, and columns to the search bar:
 
-image::pivot_table_rows_measures_columns.png[]
+image::shared:enterprise:pivot_table_rows_measures_columns.png[]
 
 You can restructure your pivot table by moving these values under *Configure Chart* or by dragging and dropping column headings on the table itself.
 If you right-click a row heading, the system displays a contextual sort menu:
 
-image::pivot-context-menu.png[]
+image::shared:enterprise:pivot-context-menu.png[]
 
 == Expanding or contract columns and rows
 
 Click a column or row to expand it.
 Additionally, you can expand or collapse all by right clicking the arrow on the top left of a cell.
 
-image::pivot_table_expand_collapse_all.png[]
+image::shared:enterprise:pivot_table_expand_collapse_all.png[]
 
 When you pin a pivot table to a pinboard, it will retain your expansion settings.
 
@@ -32,7 +32,7 @@ You can show *% Row Grand Total* and, *% of Column Grand Total*, or *% of Grand 
 Grand  totals aggregate data of the entire pivot grid.
 They show values summarized across all available data.
 
-image::pivot-grand-total.png[]
+image::shared:enterprise:pivot-grand-total.png[]
 
 You only see 100% value when grand total rows is enabled.
 This is because when it is disabled, the rows and columns they have no parental total column and the percentage cannot be calculated.
@@ -41,17 +41,17 @@ For each inner summary (column or row) the parental total values are assumed to 
 
 To see the total column make sure you also have *Pivot Summaries* checked.
 
-image::pivot-summaries.png[]
+image::shared:enterprise:pivot-summaries.png[]
 
 == Format row headers
 
 For row headers, you can switch between the default view and a more compact (tree) layout:
 
-image::pivot_table_rows_measures_columns.png[]
+image::shared:enterprise:pivot_table_rows_measures_columns.png[]
 
 From the header menu users, change the type of total shown for an aggregated measure:
 
-image::pivot-table-agg-totals.png[]
+image::shared:enterprise:pivot-table-agg-totals.png[]
 
 You can also *Remove* a headline.
 
@@ -59,7 +59,7 @@ You can also *Remove* a headline.
 
 The heatmap functionality allows you to see which measures contribute more than others (heat) within the table.
 
-image::pivot_table_heatmap_mode.png[]
+image::shared:enterprise:pivot_table_heatmap_mode.png[]
 
 Toggle on the *Heatmap mode* found under *Configuration Options* to add color coordination to your data.
 

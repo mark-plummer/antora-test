@@ -10,6 +10,6 @@ More often than not the line chart will be chosen as your default chart type.
 Line charts displays your data as a series of data points connected by straight line segments.
 The measurement points are ordered by the x-axis value.
 
-image::/images/line_chart_example.png[]
+image::shared:enterprise:line_chart_example.png[]
 
 Your search needs at least one attribute and one measure to be represented as a line chart.

@@ -1,5 +1,3 @@
-= Sankey charts
-:last_updated: tbd
-:summary: "The Sankey chart is a type of chart that contains both columns and a special type of line chart."
+:doctype: book
 
 include::shared:enterprise:page$chart-sankey.adoc[]

@@ -1,7 +1,7 @@
 = Disable automatic selection of chart type
 :last_updated: 2/25/2020
 :permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
+:page-partial:
 :summary: You can turn off 'automatically select my chart' if you want a specific chart type to persist throughout a search.
 
 You can prevent ThoughtSpot from recommending other chart options or configurations while you search.
@@ -14,4 +14,4 @@ To disable auto-selection of chart types:
 . Click the *change visualization* icon image:/images/icon-chart-type-10px.png[] at the top right to open the *chart catalog*.
 . In the bottom right corner of the *Chart* menu, turn off *automatically select my chart*.
 +
-image::/images/chart-config-autoselect.png[Turn off auto-selection of chart type]
+image::shared:enterprise:chart-config-autoselect.png[Turn off auto-selection of chart type]

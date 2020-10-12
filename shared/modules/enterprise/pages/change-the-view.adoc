@@ -11,7 +11,7 @@ To change the view of your answer:
 . View your answer.
 . Select either table or a chart type.
 +
-image::toggle_between_views.png[]
+image::shared:enterprise:toggle_between_views.png[]
 
 == Sort your search
 
@@ -34,11 +34,11 @@ You can change the date _bucketing_ on tables and charts for columns with date v
 Bucketing is a method for grouping a column in your data.
 For example, if you have a column of orders, you can use the date of each order (*NO_BUCKET*).
 
-image::bucket_none.png[]
+image::shared:enterprise:bucket_none.png[]
 
 Alternatively, you can group these *MONTHLY*:
 
-image::bucket_monthly.png[]
+image::shared:enterprise:bucket_monthly.png[]
 
 ThoughtSpot chooses a default date bucket for you when you search.
 This default takes the entire search result into account.
@@ -47,7 +47,7 @@ For example, if your search includes last month, dates are bucketed daily instea
 * In a table view, use the date bucket drop-down, under the column header.
 * On a chart, you can change the change the axis label.
 
-image::bucket_change.png[]
+image::shared:enterprise:bucket_change.png[]
 
 The bucket values are a subset of date and time-period keywords.
 To change the date bucketing, follow these steps:
@@ -66,4 +66,4 @@ To exclude or include row values:
 . Right-click the visualization or table cell of interest
 . Select *Exclude "value"* or *Include "value"* if available.
 +
-image::exclude.png[]
+image::shared:enterprise:exclude.png[]

@@ -1,5 +1,3 @@
-= Bubble charts
-:last_updated: tbd
-:permalink: /:collection/:path.html
+:doctype: book
 
 include::shared:enterprise:page$chart-bubble.adoc[]
