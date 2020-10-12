@@ -25,7 +25,8 @@ Pie in pie charts show two concentric pie charts comparing different measures.
 To see a pie in pie chart, assign two different measures to the y-axis under *Configure Chart*.
 
 image::shared:enterprise:pie_in_pie_chart_example.png[]
-ifndef::site-cloud[]
+
+ifdef::site-software[]
 == Color customization of pie in pie charts
 
 You can customize the colors of each pie in a pie chart using the Style widget.
