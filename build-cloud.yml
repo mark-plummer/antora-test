@@ -18,6 +18,10 @@ ui:
     contents: "static_files: [ .nojekyll ]"
     snapshot: true
 
+asciidoc:
+  attributes:
+    site-cloud:
+
 output:
   clean: true
   dir: build/cloud-site
