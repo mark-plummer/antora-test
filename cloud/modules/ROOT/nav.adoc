@@ -1,8 +1,8 @@
-* xref:enterprise:in-release.adoc[About this release]
-** xref:enterprise:release-notes.adoc[Release notes]
-** xref:enterprise:fixed-issues.adoc[Fixed issues]
-** xref:enterprise:guides.adoc[Guides]
-** xref:enterprise:downloads.adoc[Downloads]
+* xref:shared:enterprise:in-release.adoc[About this release]
+** xref:shared:enterprise:release-notes.adoc[Release notes]
+** xref:shared:enterprise:fixed-issues.adoc[Fixed issues]
+** xref:shared:enterprise:guides.adoc[Guides]
+** xref:shared:enterprise:downloads.adoc[Downloads]
 
 ---
 * xref:enterprise:user-introduction.adoc[Users]
