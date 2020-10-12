@@ -26,7 +26,7 @@ To see a pie in pie chart, assign two different measures to the y-axis under *Co
 
 image::shared:enterprise:pie_in_pie_chart_example.png[]
 
-ifndef::cloud[]
+ifdef::software[]
 == Color customization of pie in pie charts
 
 You can customize the colors of each pie in a pie chart using the Style widget.
@@ -37,4 +37,4 @@ You can customize the colors of each pie in a pie chart using the Style widget.
 . Click *...* and choose *Update* to save the changes.
 . Click *Close*.
 . Optionally, you can click *Reset* to use the default color.
-endif::cloud[]
+endif::software[]
