@@ -1,7 +1,7 @@
 = Area Charts
 :last_updated: tbd
 :permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
+:page-partial:
 :summary: The area chart is based on the line chart, but has filled in regions.
 
 == Understand area charts

@@ -1,7 +1,7 @@
 = Line charts
 :last_updated: tbd :
 summary: "Line charts are good at showing trends over intervals of time."
-:sidebar: mydoc_sidebar
+:page-partial:
 :permalink: /:collection/:path.html --
 
 Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most versatile chart type.

@@ -1,7 +1,7 @@
 = Geo charts
 :last_updated: 09/23/2019
 :permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
+:page-partial:
 :summary: There are three geo charts that let you visualize geographical data in ThoughtSpot.
 
 Geo charts show data on a map by location.
