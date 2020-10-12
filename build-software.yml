@@ -20,7 +20,7 @@ ui:
 
 asciidoc:
   attributes:
-    site-software:
+    software:
 
 output:
   clean: true
