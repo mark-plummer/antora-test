@@ -20,8 +20,8 @@ ui:
 
 asciidoc:
   attributes:
-    software:
-
+    software: true
+    cloud: false
 output:
   clean: true
   dir: build/software-site
