@@ -1,0 +1,5 @@
+= Chart types
+:last_updated: 2/25/2020
+:permalink: /:collection/:path.html
+
+include::shared:enterprise:page$chart-types.adoc[]

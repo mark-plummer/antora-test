@@ -1,0 +1,5 @@
+= Bubble charts
+:last_updated: tbd
+:permalink: /:collection/:path.html
+
+include::shared:enterprise:page$chart-bubble.adoc[]

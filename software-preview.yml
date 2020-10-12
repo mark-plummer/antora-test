@@ -18,4 +18,4 @@ ui:
 
 output:
   clean: true
-  dir: build/site
+  dir: build/software-site

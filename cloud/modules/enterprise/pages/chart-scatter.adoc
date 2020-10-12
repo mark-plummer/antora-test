@@ -1,0 +1,5 @@
+= Scatter charts
+:last_updated: tbd
+:summary: "The scatter chart is useful for finding correlations or outliers in your data."
+
+include::shared:enterprise:page$chart-scatter.adoc[]

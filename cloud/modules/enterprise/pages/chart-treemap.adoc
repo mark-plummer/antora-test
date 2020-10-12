@@ -1,0 +1,5 @@
+= Treemap charts
+:last_updated: tbd
+:summary: "The treemap chart displays hierarchical data as a set of nested rectangles."
+
+include::shared:enterprise:page$chart-treemap.adoc[]

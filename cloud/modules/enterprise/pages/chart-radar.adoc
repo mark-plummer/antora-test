@@ -1,0 +1,5 @@
+= Radar charts; spiderweb charts
+:last_updated: 3/9/2020
+:summary: "The Radar (or spiderweb) chart contains both columns and a special type of line chart."
+
+include::shared:enterprise:page$chart-radar.adoc[]

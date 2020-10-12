@@ -1,0 +1,4 @@
+= Pivot table
+:last_updated: tbd
+
+include::shared:enterprise:page$chart-pivot-table.adoc[]

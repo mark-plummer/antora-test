@@ -1,5 +1,4 @@
 = Area Charts
-:last_updated: tbd
 :permalink: /:collection/:path.html
 :page-partial:
 :summary: The area chart is based on the line chart, but has filled in regions.

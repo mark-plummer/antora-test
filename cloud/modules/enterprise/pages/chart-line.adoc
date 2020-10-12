@@ -1,0 +1,5 @@
+= Line charts
+:last_updated: tbd :
+summary: "Line charts are good at showing trends over intervals of time."
+
+include::shared:enterprise:page$chart-line.adoc[]

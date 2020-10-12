@@ -20,4 +20,4 @@ ui:
 
 output:
   clean: true
-  dir: build/site
+  dir: build/cloud-site

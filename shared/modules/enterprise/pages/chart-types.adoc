@@ -1,7 +1,7 @@
 = Chart types
 :last_updated: 2/25/2020
 :permalink: /:collection/:path.html
-:sidebar: mydoc_sidebar
+:page-partial:
 :summary: Charts display your search answer in a visual way.
 
 Your search needs at least link:about-attributes-and-measures.adoc[one attribute and one measure] to be presented as a chart.

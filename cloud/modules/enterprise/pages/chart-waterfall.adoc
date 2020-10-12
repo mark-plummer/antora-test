@@ -1,0 +1,5 @@
+= Waterfall charts
+:last_updated: 11/19/2019
+:summary: "The waterfall chart shows how an initial value is affected by a series of intermediate positive or negative values."
+
+include::shared:enterprise:page$chart-waterfall.adoc[]
