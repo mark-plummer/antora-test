@@ -16,11 +16,7 @@ ui:
   - path: .nojekyll
   - path: ui.yml
     contents: "static_files: [ .nojekyll ]"
-    snapshot: true
-
-asciidoc:
-  attributes:
-    site-software:      
+    snapshot: true  
 
 output:
   clean: true
