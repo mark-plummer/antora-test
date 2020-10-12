@@ -17,7 +17,7 @@ ui:
   - path: ui.yml
     contents: "static_files: [ .nojekyll ]"
     snapshot: true
-
+      
 asciidoc:
   attributes:
     cloud:
