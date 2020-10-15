@@ -38,3 +38,9 @@ You can customize the colors of each pie in a pie chart using the Style widget.
 . Click *Close*.
 . Optionally, you can click *Reset* to use the default color.
 endif::software[]
+
+ifdef::cloud[]
+== Color customization of pie in pie charts
+
+No customization available.
+endif::cloud[]
