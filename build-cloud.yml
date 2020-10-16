@@ -1,5 +1,6 @@
 site:
   title: ThoughtSpot Cloud
+  start_page: cloud:ROOT:index.adoc
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
