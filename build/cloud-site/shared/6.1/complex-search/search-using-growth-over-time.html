@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Search using growth over time :: ThoughtSpot Cloud</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Search using growth over time | ThoughtSpot Cloud</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Cloud--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Shared</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://antora-software.netlify.app/">Software</a>
+            <a class="navbar-item" href="#">Mobile</a>
+          </div>
+        </div>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
+          <span class="control">
+          <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
+</span>  -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shared" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ThoughtSpot Cloud</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud/6.1/index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Shared</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <!-- <a href="../../../cloud/6.1/index.html" class="home-link"></a> -->
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Search using growth over time</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>growth of</code> keyword compares the data from different date periods, and returns a percentage of growth.
+Enter <code>growth of</code> at the beginning of your query.
+You can only use the <code>growth of</code> keyword once in your query.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_growth_of_measure_by_year"><a class="anchor" href="#_growth_of_measure_by_year"></a>Growth of measure by year</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To search using growth over time:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Type <code>growth of</code> into the search bar, and choose a measure you&#8217;re interested in seeing the growth of.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/growthofkeyword.png" alt="Suggestions for the 'growth of' keyword">
+</div>
+</div>
+<div class="paragraph">
+<p>You see a list of suggestions to choose from, based on your data sources.
+You  can also type a different column name containing numeric data to compare.</p>
+</div>
+</li>
+<li>
+<p>Type <code>by</code>, followed by a date column name.</p>
+<div class="paragraph">
+<p>ThoughtSpot calculates growth of a measure as a positive or negative percentage, for each  period relative to the last period in the series.
+The difference between the value of a measure at two dates is divided by the value of the earlier date, and then multipled by 100 to get a percentage.</p>
+</div>
+<div class="paragraph">
+<p>A line chart is a good way to display your data, but the waterfall chart is especially effective to show growth.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/growthof-waterfall.png" alt="Growth of total sales by monthly date waterfall chart">
+</div>
+</div>
+</li>
+<li>
+<p>You can also do year-over-year analysis, which compares each time period to the corresponding time period in the prior year.</p>
+<div class="paragraph">
+<p>This type of growth analysis is more common in retail and other seasonal  businesses.
+To do this, type <code>monthly year-over-year</code> after your <code>growth of</code> phrase  in the search bar.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/growthof-yearoveryear.png" alt="Growth of sales by monthly year-over-year">
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>year-over-year</code> keyword compares data between the same time period from different years.
+For example, it will allow you to compare sales from June of this year to the sales from  June of last year.
+Note that for the first year, values are labeled as "{Blank}" in the Data View since there are no previous data to compare them to.</p>
+</div>
+</li>
+<li>
+<p>Add an attribute to your search to see the breakdown of how each grouping of the attribute contributed to the overall growth of your measure.</p>
+<div class="paragraph">
+<p>Click <strong>Configure Chart</strong> and drag your attribute to <strong>Slice with color</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/growthof-addattribute.png" alt="Growth of sales broken up by department">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_display_periods_daily_over_time_year_over_year"><a class="anchor" href="#_display_periods_daily_over_time_year_over_year"></a>Display periods (daily) over time (year-over-year)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>growth of</code> keyword also supports more hierarchical date buckets and period calculations.
+The growth query syntax is as follows:</p>
+</div>
+<div class="paragraph">
+<p><code>growth of &lt;measure_column&gt; by &lt;date_column&gt; &lt;bucket&gt; &lt;period-over-period&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>This table shows the possible buckets and the period-over keywords you can combine:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quarterly</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>monthly</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>weekly</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>daily</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hourly</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>year-over-year</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>year-over-year</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>year-over-year</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>year-over-year</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quarter-over-quarter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quarter-over-quarter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quarter-over-quarter</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>month-over-month</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>month-over-month</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>week-over-week</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>day-over-day</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For example, see the query <code>growth of sales by date daily month-over-month</code>:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/growthof-monthovermonth.png" alt="Growth of sales by date daily month-over-month">
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

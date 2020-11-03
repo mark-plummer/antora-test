@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Geo charts :: ThoughtSpot Software</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Geo charts | ThoughtSpot Software</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Software--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Shared</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://antora-cloud.netlify.app/">Cloud</a>
+            <a class="navbar-item" href="#">Mobile</a>
+          </div>
+        </div>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
+          <span class="control">
+          <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
+</span>  -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shared" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Shared</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ThoughtSpot Software</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../software/6.1/index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <!-- <a href="../../../software/6.1/index.html" class="home-link"></a> -->
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Geo charts</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Geo charts show data on a map by location.
+They are geo area, geo bubble, and geo heatmap charts.
+And these geo charts can display six types of geographical data, depending on territory:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Country</p>
+</li>
+<li>
+<p>State</p>
+</li>
+<li>
+<p>County</p>
+</li>
+<li>
+<p>Zip code</p>
+</li>
+<li>
+<p>Point (latitude/longitude)</p>
+</li>
+<li>
+<p>Other sub-nation regions (for international countries)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ThoughtSpot supports maps many countries.
+Please see the complete list in <a href="#/reference/geomap-reference.adoc" class="page unresolved">Geo Map Reference</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_displayed_geo_data"><a class="anchor" href="#_displayed_geo_data"></a>Displayed Geo data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is a table that shows which GeoType data can be displayed using which geo chart type.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">GeoType</th>
+<th class="tableblock halign-left valign-top">Geo chart type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geo area (default), geo bubble, geo heatmap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can also be regions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">County</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geo area (default), geo bubble, geo heatmap</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only for counties in the United States.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Point</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geo bubble (default), geo heatmap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must use both latitude and longitude columns.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geo area (default), geo bubble, geo heatmap</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only for states in the United States.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zipcode</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geo bubble (default), geo heatmap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zip codes in the United States.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other sub-nation regions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geo area (default), geo bubble, geo heatmap</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For data to display in geo charts, your administrator must configure it as geographical data.
+If you you don&#8217;t get an expected map visualization, contact your administrator so they can configure the system correctly.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_area_charts"><a class="anchor" href="#_area_charts"></a>Area charts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Geo area charts highlight the regions of interest, and display boundaries for various regions.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/state_level_geo_area_chart.png" alt="state level geo area chart">
+</div>
+</div>
+<div class="paragraph">
+<p>To paint a geo area chart, your search must include a geographical column with appropriate granularity.
+See <a href="#/reference/geomap-reference.adoc" class="page unresolved">Geo Map Reference</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_geo_bubble_charts"><a class="anchor" href="#_geo_bubble_charts"></a>Geo bubble charts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Geo bubble charts, like bubble charts, display the value of the measure through the relative size of the bubble.
+Zip code data is a good choice for geo bubble charts.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/geo_bubble_chart_example.png" alt="geo bubble chart example">
+</div>
+</div>
+<div class="paragraph">
+<p>To paint a geo bubble chart, your search must include a geographical column, or a  latitude and longitude pair.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_heatmap_charts"><a class="anchor" href="#_heatmap_charts"></a>Heatmap charts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Heatmap charts are similar to treemap charts: they both use a similar system of color-coding to represent data values.
+However, the heatmap does not use size to measure data, and instead requires an additional attribute.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/new_heatmap_look.png" alt="new heatmap look">
+</div>
+</div>
+<div class="paragraph">
+<p>The value of each cell depends on the measure you choose under <strong>Edit chart configuration</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/heatmap_value.png" alt="heatmap value">
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

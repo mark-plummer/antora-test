@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Best SpotIQ Practices :: ThoughtSpot Cloud</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Best SpotIQ Practices | ThoughtSpot Cloud</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Cloud--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Shared</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://antora-software.netlify.app/">Software</a>
+            <a class="navbar-item" href="#">Mobile</a>
+          </div>
+        </div>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
+          <span class="control">
+          <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
+</span>  -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shared" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ThoughtSpot Cloud</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud/6.1/index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Shared</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <!-- <a href="../../../cloud/6.1/index.html" class="home-link"></a> -->
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Best SpotIQ Practices</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The SpotIQ feature works without you having to do anything but pushing a button.
+However, like any other feature, there things you can do to optimize the feature.
+This page contains some best practices you can use to make SpotIQ more effective when you use it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_when_to_invoke_spotiq"><a class="anchor" href="#_when_to_invoke_spotiq"></a>When to invoke SpotIQ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you followed the tutorial, you know that right after uploading data is a good time to run <strong>Auto Analyze</strong>.
+SpotIQ can very quickly help you find insights in your data.</p>
+</div>
+<div class="paragraph">
+<p>Start from a <strong>Search</strong>.
+Enter a single measure in the bar;
+one you want to explore of course!
+Then, choose <span class="menuseq"><b class="menu">Actions</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Auto Analyze</b></span> on the results.
+Choosing the single measure focuses SpotIQ.</p>
+</div>
+<div class="paragraph">
+<p>Use <strong>Custom Analyze</strong> to focus or tweak the SpotIQ results.
+While you are tempted to keep all the columns, eliminating some can also result in a better analysis.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_do_your_data_modeling"><a class="anchor" href="#_do_your_data_modeling"></a>Do your data modeling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can increase the SpotIQ&#8217;s effectiveness by ensuring you are practicing good data modeling.
+This is true if you are user uploading the occasional data file or a data management professional.
+Modeling data requires that you can:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>Data</strong> to get to the data management listing.</p>
+</li>
+<li>
+<p>Click a data source you own or can edit.</p>
+<div class="paragraph">
+<p>This brings up the <strong>Columns</strong> screen, where you can make your modeling settings.</p>
+</div>
+</li>
+<li>
+<p>Modify one or more column settings.</p>
+</li>
+<li>
+<p>Save your changes.</p>
+<div class="paragraph">
+<p>If you worked through the SpotIQ tutorial, you can try experiment on the  <strong>FoodDollarDataReal</strong> data you uploaded.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Make sure you set the <strong>INDEX PRIORITY</strong> for columns in your data source.
+Use a value between 8-10 for important columns to improve their search ranking.
+Use 1-3 for low priority columns.
+<strong>INDEX PRIORITY</strong> impacts user-based ranking which helps SpotIQ focus its analysis.</p>
+</div>
+<div class="paragraph">
+<p>SpotIQ uses measures for correlations.
+For trendlines and outliers, if SpotIQ has a measure, it then drills by attributes in turn.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/atts-measurs.png" alt="atts measurs">
+</div>
+</div>
+<div class="paragraph">
+<p>You should also set <strong>AGGREGATION</strong> on your columns.
+SpotIQ applies the default aggregations from your data when it pulls measures for analysis.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_situations_to_avoid"><a class="anchor" href="#_situations_to_avoid"></a>Situations to avoid</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Like any AI, some situations SpotIQ is not yet equip to handle.
+You should know what these are so you can avoid them.
+If your data contains a measure that uses a <code>MOVING_*</code> or <code>GROUP_*</code> formula, SpotIQ may return results that simply aren&#8217;t meaningful.
+When doing a correlation analysis, SpotIQ may not find meaningful data if you have a measure with anything other than <code>SUM</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_spotiq_preferences"><a class="anchor" href="#_set_spotiq_preferences"></a>Set SpotIQ preferences</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can set preferences for SpotIQ in your user profile.
+These preferences allow you to control how you receive analysis notifications.
+They also allow you to exclude nulls or zero value measures from analysis.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-prefs.png" alt="spotiq prefs">
+</div>
+</div>
+<div class="paragraph">
+<p>The exclusions impact each SpotIQ analysis.
+It eliminates points with such values during statistical calculations for example, for mean, standard deviation SpotIQ excludes values from any equation and uses only the remaining points.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prioritizing_analyses_types"><a class="anchor" href="#_prioritizing_analyses_types"></a>Prioritizing analyses types</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can prioritize highlighting changes in data over time instead of other changes, such as  outliers or anomalies.</p>
+</div>
+<div class="sect2">
+<h3 id="_columns"><a class="anchor" href="#_columns"></a>Columns</h3>
+<div class="paragraph">
+<p>When you trigger a SpotIQ analysis on an answer, you can select alternate data columns.
+To trigger more time-related insights, pick more date-time columns.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_advanced"><a class="anchor" href="#_advanced"></a>Advanced</h3>
+<div class="paragraph">
+<p>In the advanced tab of the SpotIQ dialog, increase the maximum number of trend and correlation insights, and reduce the number of anomaly insights.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

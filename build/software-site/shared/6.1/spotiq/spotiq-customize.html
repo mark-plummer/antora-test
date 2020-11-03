@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SpotIQ 101: Do more with SpotIQ :: ThoughtSpot Software</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SpotIQ 101: Do more with SpotIQ | ThoughtSpot Software</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Software--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Shared</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://antora-cloud.netlify.app/">Cloud</a>
+            <a class="navbar-item" href="#">Mobile</a>
+          </div>
+        </div>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
+          <span class="control">
+          <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
+</span>  -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shared" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Shared</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ThoughtSpot Software</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../software/6.1/index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <!-- <a href="../../../software/6.1/index.html" class="home-link"></a> -->
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">SpotIQ 101: Do more with SpotIQ</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You&#8217;ve finished the <a href="work-with-insights.html" class="page">second part of the tutorial</a>.
+In this, the third and final part, you can learn how to modify a SpotIQ analysis to extend or customize the analysis.
+You can edit an insight to customize the chart it uses, or modify the <strong>Search</strong> syntax behind it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customize_an_analysis"><a class="anchor" href="#_customize_an_analysis"></a>Customize an analysis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the second part of the tutorial, you reviewed the first output from SpotIQ.
+The outlier insights weren&#8217;t really that useful.
+Let&#8217;s try to dig deeper into that.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Scroll down to the outlier section.</p>
+</li>
+<li>
+<p>Select the first insight.</p>
+</li>
+<li>
+<p>Choose the menu and select <strong>Auto Analyze</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-auto-again.png" alt="spotiq auto again">
+</div>
+</div>
+<div class="paragraph">
+<p>The system responds by starting a new insight run based on the single chart.
+Each time you request a change to the analysis settings, it starts another run.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-kickoff.png" alt="spotiq kickoff">
+</div>
+</div>
+</li>
+<li>
+<p>Return to the SpotIQ page and select your new analysis.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-new-analysis.png" alt="spotiq new analysis">
+</div>
+</div>
+</li>
+<li>
+<p>Open the analysis and review the analysis details.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-details-too.png" alt="spotiq details too">
+</div>
+</div>
+<div class="paragraph">
+<p>If you recall, the first run against this data SpotIQ ran through 20 combinations and discovered 14 insights.
+In this second run against one table, SpotIQ ran 49 combinations and developed 17 insights.
+Only 4 insights were discovered.</p>
+</div>
+<div class="paragraph">
+<p>Running SpotIQ again does not necessarily result in fewer runs or even, as in this case a reduced number of insights.
+It changes the analysis though, by selecting the single insight from your first run, you gave SpotIQ information it could use to focus the next run.</p>
+</div>
+<div class="paragraph">
+<p>Continue with the customization.</p>
+</div>
+</li>
+<li>
+<p>Choose <strong>Customize Analysis</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Customize Analysis</strong> dialog appears.</p>
+</div>
+</li>
+<li>
+<p>Select the <strong>Customize algorithms</strong> tab.</p>
+</li>
+<li>
+<p>Uncheck the <strong>Outlier Detection using Z-Score</strong> option.</p>
+</li>
+<li>
+<p>Click <strong>ANALYZE</strong>.</p>
+<div class="paragraph">
+<p>SpotIQ starts a new analysis.</p>
+</div>
+</li>
+<li>
+<p>Open the new analysis from the SpotIQ page.</p>
+<div class="paragraph">
+<p>Notice that the new analysis has the same name as the last one you ran.
+The new results include an outlier, and a cross-correlation.
+These new charts show a definite outlier, <code>6/30/2005</code>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-definite-outlier.png" alt="spotiq definite outlier">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The changes you make in this step persist on the underlying data for all your future analyses.
+You can unset these values by going back into the dialog and removing what you set.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_temporary_customization_for_a_single_insight"><a class="anchor" href="#_a_temporary_customization_for_a_single_insight"></a>A temporary customization for a single insight</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Finally, you might have noticed the thumbs at the bottom of each insight.
+Use the thumbs up to tell SpotIQ you like the data insight.
+Clicking thumb&#8217;s down display an <strong>Improve Analysis</strong> dialog:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-thumbs-down.png" alt="spotiq thumbs down">
+</div>
+</div>
+<div class="paragraph">
+<p>You can exclude a value from this individual analysis and rerun the analysis.
+Unlike the <strong>Customize Analysis</strong> action, this action works only on this analysis and does not persist.</p>
+</div>
+<div class="paragraph">
+<p>Try this for yourself later at some point.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modify_an_insight_search_and_visualization"><a class="anchor" href="#_modify_an_insight_search_and_visualization"></a>Modify an insight search and visualization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The lines used in the cross-correlation are somewhat ambiguous.
+A different visualization may help in this case.
+You can also modify the charts you see in your results.
+Try this now.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the menu on the <strong>Total imports, Total value_added by year</strong> chart.</p>
+</li>
+<li>
+<p>Click the chart menu and choose <strong>Edit</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-edit-chart.png" alt="spotiq edit chart">
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong>Edit Visualization</strong> appears.
+The layout is familiar to any user that has run a ThoughtSpot search or worked with a result.
+This is dialog reveals the <strong>Search</strong> syntax used to generate the insight.
+You can use this dialog to do all the things you would normally do with a search.</p>
+</div>
+</li>
+<li>
+<p>Edit the search bar and remove <code>table_num</code> from the search.</p>
+<div class="paragraph">
+<p>The <code>table_num</code> isn&#8217;t strictly necessary in the data.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-rm-tablenum.png" alt="spotiq rm tablenum">
+</div>
+</div>
+</li>
+<li>
+<p>Select the chart icon and choose <strong>Line Column</strong> to change the visualization.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-line-column.png" alt="spotiq line column">
+</div>
+</div>
+</li>
+<li>
+<p>Choose <span class="menuseq"><b class="menu">Actions</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Update</b></span>.</p>
+</li>
+<li>
+<p>Close the dialog by pressing the <strong>Close</strong>.</p>
+<div class="paragraph">
+<p>The chart with your changes now appears in the <strong>SpotIQ</strong> list.
+The outlier  stands out very clearly now in both charts.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-new-look.png" alt="spotiq new look">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_present_your_insights"><a class="anchor" href="#_present_your_insights"></a>Present your insights</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can present SpotIQ insights in several ways.
+You can present an individual result, or all of them.
+You can package all the insights in a PDF.
+This is useful for passing a packet of results.
+Since any insight reflects the data at a specific point in time, always consider saving the insight as a PDF.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Locate the <strong>Actions</strong> menu on the corner of the <strong>SpotIQ</strong> page.</p>
+</li>
+<li>
+<p>Choose <span class="menuseq"><b class="menu">Actions</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Download as PDF</b></span> from the menu.</p>
+<div class="paragraph">
+<p>The system downloads a file containing all the insights.
+Keep in mind this file can be very large if there are a lot of insights found in your data.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can use the <strong>Present</strong> action to view visualizations that appear in a carousel, and present them as a group.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Scroll down to the first carousel with your new charts.</p>
+</li>
+<li>
+<p>Roll over the right corner of the menu to reveal the menu.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-carousel.png" alt="spotiq carousel">
+</div>
+</div>
+</li>
+<li>
+<p>Choose <strong>Present</strong> from the menu.<video src="/images/spotiq-present.mp4" width="600" controls="" preload=""></video></p>
+<div class="paragraph">
+<p>Click through the carousel with the next / previous arrow buttons, or use  the left side menu of chart names.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Also, each individual chart has a <strong>Download</strong>, <strong>Present</strong>, or <strong>Copy link</strong> action you can take.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schedule_a_recurring_analysis"><a class="anchor" href="#_schedule_a_recurring_analysis"></a>Schedule a recurring analysis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you find an analysis configuration that is useful.
+You can run that configuration periodically.
+This is a good thing to do of course as, in a business, data changes all the time.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to the <strong>SpotIQ</strong> page.</p>
+</li>
+<li>
+<p>Choose the <strong>Analysis</strong> tab.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-analysis-check.png" alt="spotiq analysis check">
+</div>
+</div>
+</li>
+<li>
+<p>Click the latest <strong>Total imports by CATEGORY_DESC</strong> analysis.</p>
+<div class="paragraph">
+<p>The <strong>Customize Analysis</strong> dialog appears.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-custom-analysis.png" alt="spotiq custom analysis">
+</div>
+</div>
+</li>
+<li>
+<p>Choose the <strong>Job Schedule</strong> option.</p>
+</li>
+<li>
+<p>Fill out the schedule to run the job <strong>Monthly</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-schedule.png" alt="spotiq schedule">
+</div>
+</div>
+<div class="paragraph">
+<p>Every month SpotIQ will update your analysis with new data.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Keep in mind that SpotIQ jobs take resources in your system.
+So, you really don&#8217;t want to leave casual jobs running in the system.
+Go ahead and delete this latest job.
+Now that you know how to schedule a job, it isn&#8217;t needed anymore.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the checkbox for the job you just scheduled.</p>
+</li>
+<li>
+<p>Click <strong>Delete</strong> to remove it.</p>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-rm-job.png" alt="spotiq rm job">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_congratulations"><a class="anchor" href="#_congratulations"></a>Congratulations!</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Congratulations, at this point you&#8217;ve learned the basics of SpotIQ with ThoughtSpot.
+Throughout the application, you can find the SpotIQ icon on search answers, pinboards, visualizations, and data.
+Wherever you see this option, you can click to run suggested or custom analyses, and get new insights on the SpotIQ page.</p>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

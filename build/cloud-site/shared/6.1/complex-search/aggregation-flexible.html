@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: ThoughtSpot Cloud</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Untitled | ThoughtSpot Cloud</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Cloud--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Shared</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://antora-software.netlify.app/">Software</a>
+            <a class="navbar-item" href="#">Mobile</a>
+          </div>
+        </div>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
+          <span class="control">
+          <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
+</span>  -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shared" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ThoughtSpot Cloud</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud/6.1/index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Shared</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <!-- <a href="../../../cloud/6.1/index.html" class="home-link"></a> -->
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<div class="paragraph">
+<p>adoc= Flexible aggregation functions
+:last_updated: 11/05/2019
+:permaxref: /:collection/:path.html
+:sidebar: mydoc_sidebar
+:summary: Use the group_aggregate function in ThoughtSpot to aggregate measures at different granularities than the dimensions used in the search columns.</p>
+</div>
+<div class="sect1">
+<h2 id="_how_aggregation_formulas_work"><a class="anchor" href="#_how_aggregation_formulas_work"></a>How aggregation formulas work</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Typically, the groupings and filters used in a formula use the same fields as columns returned in the search results.
+The concept of a grouping equates to an attribute column.</p>
+</div>
+<div class="paragraph">
+<p>For example, in the search <code>revenue ship mode</code>, <code>revenue</code> is the measure, and <code>ship mode</code> is the attribute, or grouping.
+The result of this search shows total revenue for each ship mode:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">revenue</th>
+<th class="tableblock halign-left valign-top">ship mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$ <em>a</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">air</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$ <em>r</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rail</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$ <em>t</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">truck</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$ <em>s</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sea transport</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The aggregation formulas are described in <a href="aggregation-formulas.html" class="page">Overview of aggregate formulas</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_flexible_aggregation"><a class="anchor" href="#_about_flexible_aggregation"></a>About flexible aggregation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ThoughtSpot provides flexible aggregation with the <code>group_aggregate</code> function.
+You can use this formula to group and filter query results on different dimensions and granularities from the columns already used in the search bar query.</p>
+</div>
+<div class="paragraph">
+<p>The <code>group_aggregate</code> formula uses a sub-query to perform these custom aggregations.
+If the sub-query is at a higher detailed level, ThoughtSpot adds the result column to the result of original query.
+When the sub-query is at a finer detail level than the original query, ThoughtSpot uses <em>roll-up</em>, or <em>reaggregation</em>.</p>
+</div>
+<div class="paragraph">
+<p>This is particularly useful for comparison analysis.</p>
+</div>
+<div class="paragraph">
+<p>To use the groups and filters, specify them using the <code>query_groups</code> and <code>query_filters</code> keywords, respectively.
+You can also add or exclude groups or filters.</p>
+</div>
+<div class="paragraph">
+<p>{% include content/flexible-aggregation-best-practices.md %}</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For a search on <code>revenue monthly ship mode</code>, you can add a formula to calculate yearly revenue by ship mode:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>group_aggregate(sum(revenue), {ship mode, year(commit date)}, {})</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The same formula can also be written using <code>query_groups()</code> and <code>query_filters()</code> as following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>group_aggregate(sum(revenue), query_groups() - {commit date} + {year(commit date)}, {})</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is helpful to include the main query groups that are not known at formula creation time.
+You can use <code>+/-</code> to modify the set of groups included from the query.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<code>+/-</code> is currently supported only for <code>query_groups</code>, not <code>query_filters</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_when_group_formula_results_are_finer_grained_than_the_search"><a class="anchor" href="#_when_group_formula_results_are_finer_grained_than_the_search"></a>When group formula results are finer-grained than the search</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With the flexibility of groupings for group formulas, the computed column created by a formula can be finer or courser grained than the search itself.</p>
+</div>
+<div class="paragraph">
+<p>For example, you can have a search that shows <strong>total yearly sales</strong> and a formula that computes total sales <em>for each month</em> (a finer-grained calculation than the search).</p>
+</div>
+<div class="paragraph">
+<p>In such cases, if an additional aggregation is specified by the formula, the results get <em>reaggregated</em>.</p>
+</div>
+<div class="paragraph">
+<p>Reaggregation can be applied in either of these ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You can add an aggregation keyword just before a formula column in a search.
+For example, in this search we&#8217;ve added the keyword <strong>min</strong> just before our formula for <code>monthly_sales</code>:</p>
+<div class="paragraph">
+<p><strong>sum revenue yearly min monthly_sales</strong></p>
+</div>
+<div class="paragraph">
+<p>where, the <code>monthly_sales</code> formula is written as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>   group_aggregate(sum(revenue), {start_of_month(date)}, {})</pre>
+</div>
+</div>
+</li>
+<li>
+<p>You can create a separate formula, such as in this search for:</p>
+<div class="paragraph">
+<p><strong>sum revenue yearly min_monthly_sales</strong></p>
+</div>
+<div class="paragraph">
+<p>where, the <code>min_monthly_sales</code> formula is written as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>min(monthly_sales)</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Alternatively, if no aggregation is specified, then the search query also inherits the formula groupings, as in this search:</p>
+</div>
+<div class="paragraph">
+<p><strong>sum revenue yearly monthly_sales</strong></p>
+</div>
+<div class="paragraph">
+<p>where, the original query is computed at a monthly grain instead of yearly.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reaggregation_scenarios"><a class="anchor" href="#_reaggregation_scenarios"></a>Reaggregation scenarios</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some scenarios require aggregation on an already aggregated result.</p>
+</div>
+<div class="paragraph">
+<p>For example, computing minimum monthly sales per ship mode, requires two aggregations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the first aggregation of <strong>sum</strong> to compute total monthly sales per ship mode.</p>
+</li>
+<li>
+<p>the second aggregation of <strong>min</strong> to compute minimum sale that happened for any given month for that ship mode.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>An example of this is this search:</p>
+</div>
+<div class="paragraph">
+<p><strong>ship mode min monthly_sales</strong></p>
+</div>
+<div class="paragraph">
+<p>where the formula <code>monthly_sales</code> is written as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>group_aggregate(sum(revenue), query_groups() + {start_of_month(date)}, {})</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For more extensive examples of using the <code>group-aggregate</code> function, we encourage you to see <a href="#/reference/practice/reaggregation-scenarios.adoc" class="page unresolved">Reaggreggation scenarios in practice</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_groups_and_filters"><a class="anchor" href="#_groups_and_filters"></a>Groups and filters</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Flexible group aggregate formulas allow for flexibility in both <a href="about-pinned-measures.html" class="page">groupings</a> and <a href="filtered-agg-forms.html" class="page">filters</a>.
+The formulas give you the ability to specify only groupings or only filters.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related_information"><a class="anchor" href="#_related_information"></a>Related information</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>For more examples of flexible aggregation, see the <a href="#/reference/practice/formula-reference.adocgroup_aggregate">group_aggregate</a> function in the <a href="#/reference/formula-reference.adoc" class="page unresolved">Formula function reference</a>.</p>
+</li>
+<li>
+<p>To learn about aggregation formulas in general, see <a href="aggregation-formulas.html" class="page">Overview of aggregate formulas</a> and <a href="about-pinned-measures.html" class="page">Group aggregation functions</a></p>
+</li>
+<li>
+<p>To learn about how the <code>group-aggregate</code> function can be used within your business practice, we encourage you to see <a href="#reference/practice/reaggregation-scenarios.adoc" class="page unresolved">Reaggregation scenarios in practice</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

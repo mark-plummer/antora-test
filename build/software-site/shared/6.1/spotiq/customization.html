@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Custom SpotIQ analysis :: ThoughtSpot Software</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Custom SpotIQ analysis | ThoughtSpot Software</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Software--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Shared</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://antora-cloud.netlify.app/">Cloud</a>
+            <a class="navbar-item" href="#">Mobile</a>
+          </div>
+        </div>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
+          <span class="control">
+          <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
+</span>  -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shared" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Shared</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ThoughtSpot Software</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../software/6.1/index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <!-- <a href="../../../software/6.1/index.html" class="home-link"></a> -->
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Custom SpotIQ analysis</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Everywhere in ThoughtSpot where you can run <strong>SpotIQ analyze</strong>, you can configure a customized SpotIQ analysis.
+The customized analysis can be a one-time customization or can apply to all future analysis of that particular data source.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_finding_customization_controls"><a class="anchor" href="#_finding_customization_controls"></a>Finding customization controls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every menu or location where you can run <strong>SpotIQ analyze</strong>, you can customize your analysis.
+You access it using the lightbulb button <span class="image"><img src="/images/icon-lightbulb.png" alt="more options menu icon"></span> or the ellipses menu <span class="image"><img src="/images/icon-ellipses.png" alt="SpotIQ analyze icon"></span>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-where-customize.png" alt="spotiq where customize">
+</div>
+</div>
+<div class="paragraph">
+<p>Regardless of where you run <strong>SpotIQ analyze</strong> in ThoughtSpot, the <strong>SpotIQ</strong> window has the same layout.
+The columns displayed, though, are specific to the data from which you run <strong>SpotIQ analyze</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-customize-analysis-include.png" alt="spotiq customize analysis include">
+</div>
+</div>
+<div class="paragraph">
+<p>This window has two tabs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Columns</strong>, where you can explicitly indicate which columns to include in a SpotIQ analysis.
+(You can select all, some, or none.)</p>
+</li>
+<li>
+<p><strong>Advanced</strong>, where you can run custom analyses and incorporate R scripts into SpotIQ.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong>Advanced</strong> tab has many options.
+The panel scrolls, so more algorithms are available than appear in the following image</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-customize-algorithms.png" alt="spotiq customize algorithms">
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong>SpotIQ</strong> insights page has an option to open this window to customize a single analysis.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-customize-locations.png" alt="spotiq customize locations">
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong>Tell us more</strong> window provides information on how to exclude a value from all future analysis.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-customize-improve-analysis.png" alt="spotiq customize improve analysis">
+</div>
+</div>
+<div class="paragraph">
+<p>You can set SpotIQ customization parameters in your <a href="#/_spotiq/spotiq-preferences.adoc" class="page unresolved">SpotIQ preferences</a>, along with options for email notifications when analyses run.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_eliminate_null_values"><a class="anchor" href="#_eliminate_null_values"></a>Eliminate null values</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Null values should be eliminated from your analysis.<table><tr><th>From next analysis</th>
+    <th>From future analyses</th></tr>
+  <tr><td>// next
+    <p>In the Search bar, add a filter <code><i>column</i>!= Null</code> to the search bar. Or choose <b>Exclude null values from current analysis</b>, using the <b>Advanced</b> panel.</p></td>
+    <td>// future
+    Set <b>Exclude null values from my analysis</b> on your user <b>Profile</b> to exclude them from any future  SpotIQ analyses you do.</td></tr></table></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exclude_uninteresting_columns_in_insight"><a class="anchor" href="#_exclude_uninteresting_columns_in_insight"></a>Exclude uninteresting column(s) in insight</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You should always exclude columns you are not interested from your analysis.<table><tr><th>From next analysis</th>
+    <th>From future analyses</th></tr>
+  <tr><td>// next
+    <p>Use the <b>EXCLUDE</b> option of <b>SPOTIQ PREFERENCE</b> under the <b>DATA</b> tab to exclude any column permanently from all future analysis.</p></td></tr></table></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_include_an_interesting_column"><a class="anchor" href="#_include_an_interesting_column"></a>Include an interesting column</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can always include columns that interest you in your analysis.<table><tr><th>From next analysis</th>
+    <th>From future analyses</th></tr>
+  <tr><td>// next
+    <p>Choose <b>Customize analysis</b> and select columns that you want to include.</p></td>
+    <td>// future
+    Ensure <b>Index Priority</b> is between 8-10 on the column under the <b>DATA</b> tab.</td></tr></table></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_remove_known_date_outliers"><a class="anchor" href="#_remove_known_date_outliers"></a>Remove known date outliers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your data may contain known outliers.
+For example, you are in the middle of a quarter and only want to analyze the previous quarter.
+Anything from the present quarter could contain an outlier.<table><tr><th>From next analysis</th>
+    <th>From future analyses</th></tr>
+  <tr><td>// next
+    <p>In the Search bar, add a filter <code><i>date</i>&lt; last time period</code> to the search bar.</p></td>
+    <td>// future
+    Not applicable.</td></tr></table></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_too_few_insights"><a class="anchor" href="#_too_few_insights"></a>Too few insights</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your SpotIQ analysis may not provide you as many insights as you think it should.<table style="border:1px;"><tr><th>From next analysis</th>
+    <th>From future analyses</th></tr>
+  <tr><td>// next
+    <p>Choose <b>Customize analysis</b>, select the <b>Advanced</b> tab, and decrease the <b>Multiplier for Outlier Detection</b> to a value closer to zero.</p></td>
+    <td>// future
+    Not applicable.</td></tr></table></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_explaining_anomaly_insights"><a class="anchor" href="#_explaining_anomaly_insights"></a>Explaining Anomaly Insights</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When SpotIQ finds insights with anomaly points, you have the option to run the Explain Insight command to have SpotIQ do further analysis on the anomaly points.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-explain-insight-1.png" alt="spotiq explain insight 1">
+</div>
+</div>
+<div class="paragraph">
+<p>To explain an insight, do the following:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the ellipses icon <span class="image"><img src="/images/icon-ellipses.png" alt="more options menu icon"></span> for the insight you want to explain and select <strong>Explain insight</strong>.</p>
+</li>
+<li>
+<p>In the SpotIQ window, click <strong>Analyze</strong>.</p>
+<div class="paragraph">
+<p>Analysis begins.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>SpotIQ</strong> in the top navigation bar.</p>
+</li>
+<li>
+<p>Click the <strong>Analyses</strong> tab.</p>
+</li>
+<li>
+<p>Find the name of the insight that you analyzed and click <strong>View Results</strong>.</p>
+<div class="paragraph">
+<p>The results of your insight analysis explaining your anomaly points appear.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/spotiq-explain-insight-2.png" alt="spotiq explain insight 2">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>Explain insight</strong> does not work with Trend Analysis or Cross Correlation Analysis.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Change axis options :: ThoughtSpot Cloud</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+ -->
+<!-- begin couchbase banner logic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Change axis options | ThoughtSpot Cloud</title>
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<!-- end couchbase banner logic -->
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="../../../_/img/company_logo_white.svg" alt="ThoughtSpot logo" height="47.42" width="158"/><!--ThoughtSpot Cloud--></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <!--<a class="navbar-link component" href="../index.html"><span class="title">ThoughtSpot Shared</span> <span class="version">6.1</span></a> -->
+          <div class="navbar-dropdown navbar-item">
+            <div class="cols">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://antora-software.netlify.app/">Software</a>
+            <a class="navbar-item" href="#">Mobile</a>
+          </div>
+        </div>
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
+          <span class="control">
+          <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
+</span>  -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shared" data-version="6.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ThoughtSpot Cloud</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud/6.1/index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">ThoughtSpot Shared</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">6.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article"  data-ceiling="topbar">
+  <!--   <div class="article-header"> -->
+<!-- <button class="nav-control"></button>
+ -->
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <!-- <a href="../../../cloud/6.1/index.html" class="home-link"></a> -->
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Change axis options</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>To change axis, you can click the axis itself.
+This opens the detail axis customization menu in the chart.</p>
+</div>
+<div class="paragraph">
+<p>You can make the following changes to the axis:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#aggregate">Aggregate</a></p>
+</li>
+<li>
+<p><a href="#filter">Filter</a></p>
+</li>
+<li>
+<p><a href="#conditional-formatting">Conditional formatting</a></p>
+</li>
+<li>
+<p><a href="#sort">Sort</a></p>
+</li>
+<li>
+<p><a href="#grouping">Grouping</a></p>
+</li>
+<li>
+<p><a href="#position">Position</a></p>
+</li>
+<li>
+<p><a href="#rename">Rename</a></p>
+</li>
+<li>
+<p><a href="#edit">Edit</a></p>
+</li>
+<li>
+<p><a href="#remove">Remove</a></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis.gif" alt="Change axis">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="aggregate"><a class="anchor" href="#aggregate"></a>Change the axis aggregate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To change the axis aggregation, click the <strong>Aggregate</strong> option in the axis menu, and select an alternative from the list of options.</p>
+</div>
+<div class="paragraph">
+<p>Depending on the type of data type and other settings, the aggregation options include <em>Total</em>, <em>Avg</em>, <em>Min</em>, <em>Max</em>, <em>Total Count</em>, <em>Unique Count</em>, <em>Std Deviation</em>, and <em>Variance</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-aggregate.png" alt="Change axis aggregate">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="filter"><a class="anchor" href="#filter"></a>Add, Change, and Remove Filters</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To manage the filters applied to the axis (in this example, <em>Total Sales</em>), follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <strong>Filters</strong> option in the axis menu.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter.png" alt="Change axis filter">
+</div>
+</div>
+</li>
+<li>
+<p>In the window modal, click <strong>+ add a condition</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter-1.png" alt="Add a condition to axis">
+</div>
+</div>
+</li>
+<li>
+<p>Select the comparison option.</p>
+<div class="paragraph">
+<p>Here, the options include <em>is greater than</em>, <em>is greater than or equal to</em>, <em>is less than</em>, <em>is less than or equal to</em>, <em>is between</em>, <em>is in</em>, and <em>is not in</em>.</p>
+</div>
+<div class="paragraph">
+<p>In this example, select <em>is greater than or equal to</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter-2.png" alt="Set filter comparison operation">
+</div>
+</div>
+</li>
+<li>
+<p>Set the relevant numerical limits.</p>
+<div class="paragraph">
+<p>Here, enter the maximum of <code>1000000</code>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/edit-axis-filter-3.png" alt="Set filter numerical limit">
+</div>
+</div>
+<div class="paragraph">
+<p>Note that if you select the <em>is between</em> comparison operator, you must set two limits: minimum and maximum.
+Similarly, <em>is in</em> and <em>is not in</em> operators require a list of values separated by ";".</p>
+</div>
+</li>
+<li>
+<p>To add another filter condition, click <strong>+add another</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter-4.png" alt="Add another filter condition">
+</div>
+</div>
+</li>
+<li>
+<p>To remove a filter condition, click the delete icon (<strong>x</strong>) next to its definition.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter-5.png" alt="Remove filter condition">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong>Done</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter-6.png" alt="Complete filter on axis">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Here, you can see differences between the original chart and the one with the filter applied: Three (3) of the departments had sales under $1,000,000, and they don&#8217;t appear on the newer chart.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter-applied.png" alt="Chart with filter applied">
+</div>
+</div>
+<div class="paragraph">
+<p>To remove a filter from the chart, click the <strong>x</strong> icon on the filter tile.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-filter-remove.png" alt="Remove filter from a chart">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="conditional-formatting"><a class="anchor" href="#conditional-formatting"></a>Apply conditional formatting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To apply conditional formatting to the axis (in this example, <em>Total Sales</em>), follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <strong>Conditional formatting</strong> option in the axis menu.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting.png" alt="Add conditional formatting">
+</div>
+</div>
+</li>
+<li>
+<p>The <strong>Conditional formatting</strong> window modal appears.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-1.png" alt="Conditional formatting interface">
+</div>
+</div>
+</li>
+<li>
+<p>In the window modal, click <strong>+ add formatting</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-2.png" alt="Add a format">
+</div>
+</div>
+</li>
+<li>
+<p>Select the conditional range.</p>
+<div class="paragraph">
+<p>The text area on the left specifies the lower limit of the condition, so the condition applies to all values that are greater or equal to it.
+And the text area on the right specifies the upper limit of the condition, so the condition applies to all lower values.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To show show values with a lower limit, enter a value in the left text box.</p>
+</li>
+<li>
+<p>To show values with an upper limit, enter a value in the right text box.</p>
+</li>
+<li>
+<p>To show values in a specified range, enter the appropriate values in both text boxes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here, we apply conditional formatting to values between <code>5,500,000</code> and <code>8,000,000</code>.</p>
+</div>
+<div class="paragraph">
+<p>+
+image::shared:enterprise:edit-axis-conditional-formatting-3.png[Add conditional format range]</p>
+</div>
+</li>
+<li>
+<p>To specify a different color of the conditional format, select the new color from the color selector.</p>
+<div class="paragraph">
+<p>This option draws upper and lower limit lines on the chart, and colors the chart elements that meet the conditional requirements.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-4.png" alt="Change conditional format color">
+</div>
+</div>
+<div class="paragraph">
+<p>Alternatively, you can place a range band on the chart.
+Select the <strong>Fill chart</strong> option.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-8.png" alt="Add conditional format band">
+</div>
+</div>
+</li>
+<li>
+<p>To add another condition, click <strong>+add formatting</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-5.png" alt="Add another conditional format">
+</div>
+</div>
+</li>
+<li>
+<p>To remove a defined conditional format, click the delete icon (<strong>x</strong>) next to its definition.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-6.png" alt="Remove conditional format">
+</div>
+</div>
+</li>
+<li>
+<p>Click <strong>Done</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-7.png" alt="Complete conditional format">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Here, you can see a chart that highlights elements with conditional  formatting on some elements.
+You can also see how the same chart appears with a background chart band.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-conditional-formatting-applied-comparison.png" alt="Conditional formatting applied" width="two options">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sort"><a class="anchor" href="#sort"></a>Change the Sort</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To change the sorting of a measurement on an axis, click the <strong>Sort</strong> option in the axis menu, and select an alternative from the list of options: <em>Ascending</em> or <em>Descending</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-sort.png" alt="Change axis sort">
+</div>
+</div>
+<div class="paragraph">
+<p>Here, you can compare the original chart that was not sorted on the <em>Total Sales</em> axis with the chart that uses descending sort.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-sort-applied.png" alt="Compare unsorted chart and chart sorted in Descending order">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="position"><a class="anchor" href="#position"></a>Change the postion of the axis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It is generally easier to interpret a chart if axes that use the same units of measurement or scale appear on the same side of the chart.
+In our example, we can best visualize <em>Item Cost</em> and <em>Item Price</em> on the same side of chart.</p>
+</div>
+<div class="paragraph">
+<p>To change the position of an axis, select the <strong>Position</strong> option in the axis menu, and then select an alternative from the list of options: <em>Left</em> or <em>Right</em>.</p>
+</div>
+<div class="paragraph">
+<p>Here, we move the <em>Item Price</em> axis from the right side of the chart to the left side.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-position.png" alt="Change axis position">
+</div>
+</div>
+<div class="paragraph">
+<p>You can compare the original chart with the one where the <em>Total Sales</em> axis is on the right, while <em>Item Cost</em> and <em>Item Price</em> both appear on the left.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-position-applied.png" alt="Compare charts with different position assignments">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="grouping"><a class="anchor" href="#grouping"></a>Change the Grouping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When two axis use the same unit of measure and a similar scale, we can group them together.</p>
+</div>
+<div class="paragraph">
+<p>To change the grouping on an axis, click the <strong>Group</strong> option in the axis menu, and select an alternative from the list of options, which are the measurements on the other axes.</p>
+</div>
+<div class="paragraph">
+<p>Here, we change the <em>Item Price</em> axis by grouping it with <em>Item Cost</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-group.png" alt="Group two axes">
+</div>
+</div>
+<div class="paragraph">
+<p>Compare the original chart with one that groups <em>Item Price</em> and <em>Item Cost</em> as <em>Item Price &amp; Item Cost</em>.
+The chart looks cleaner, and clearly communicates the distinct information on each of the two measurements.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-group-applied.png" alt="Compare ungrouped chart and chart that groups similar measures">
+</div>
+</div>
+<div class="paragraph">
+<p>Notice that the <strong>Customize</strong> menu shows a linkage between the two grouped axes.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-group-menu.png" alt="Grouped axes">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="rename"><a class="anchor" href="#rename"></a>Rename the axis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can always rename an axis for clarity, brevity, format, and so on.</p>
+</div>
+<div class="paragraph">
+<p>In our example, it makes sense to rename the axis created from grouping as <em>Item Price &amp; Item Cost</em> to something shorter, like <em>Item Price and Cost</em>.</p>
+</div>
+<div class="paragraph">
+<p>To rename an axis, select the <strong>Rename</strong> option in the axis menu, type the new name, and either click out or hit <strong>Enter/Return</strong> on your keyboard.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-rename.png" alt="Rename axis">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="edit"><a class="anchor" href="#edit"></a>Edit the axis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you choose to edit the axis, you get the comprehensive view of everything that can be changed on the axis: you can <strong>Configure</strong> the axis name, position (left or right), and the minimum and maximum values, and you can <strong>Format</strong> the category of the column, its units, and the representation of negative values.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/edit-axis-options.gif" alt="Edit the axis">
+</div>
+</div>
+<div class="paragraph">
+<p>To edit this axis (in this example, <em>Item Price</em>), follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <strong>Item Price</strong> axis.</p>
+</li>
+<li>
+<p>In the drop-down, select <strong>Edit</strong>.</p>
+</li>
+<li>
+<p>The <strong>Edit Axis</strong> menu appears.</p>
+</li>
+<li>
+<p>In the <strong>Edit Axis</strong> menu, make the changes to the axis configuration and number format:</p>
+</li>
+</ol>
+</div>
+<dl>
+<dlentry>
+  <dt>Configure</dt>
+  <dd>
+    <dl>
+      <dlentry>
+        <dt>Name</dt>
+        <dd>Change the name of the axis. Also see <a href="#rename">Rename the axis</a>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Position</dt>
+        <dd>Change the position of the axis relative to the chart. The options are <em>Right</em> and <em>Left</em>. Also see <a href="#position">Change the position of the axis</a>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Min</dt>
+        <dd>Change the minimum value on the axis. For example, most charts default to 0-based axis representation for numerical values; this setting overrides it.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Max</dt>
+        <dd>Change the maximum value on the axis. Similar to <em>Min</em> limit. </dd>
+      </dlentry>
+    </dl>
+  </dd>
+</dlentry>
+<dlentry>
+  <dt>Format</dt>
+  <dd>
+    <dl>
+      <dlentry>
+        <dt>Category</dt>
+        <dd>This specifies the format of the axis measurements. Options include <em>Number</em>, <em>Percentage</em>, and <em>Currency</em>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Unit</dt>
+        <dd>Unit choice specifies the representation of numbers on the axis. Options include <em>Auto</em> (ThoughtSpot uses abbreviations for really large numbers only), <em>None</em>, <em>Thousand (K)</em>, <em>Million (M)</em>, <em>Billion (B)</em>, and <em>Trillion (T)</em>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Negative values</dt>
+        <dd>Specify the representation of negative numbers in one of these formats: <em>-1234</em>, <em>1234-</em>, or <em>(1234)</em>.</dd>
+      </dlentry>
+    </dl>
+  </dd>
+</dlentry>
+</dl>
+</div>
+</div>
+<div class="sect1">
+<h2 id="remove"><a class="anchor" href="#remove"></a>Remove the axis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Removing the axis removes the data from the display, but not from the answer entirely.
+Instead, the column that the axis represents appears in the <strong>Not visualized</strong> section of the <strong>Customize</strong> menu.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/remove-axis.gif" alt="Remove the axis">
+</div>
+</div>
+<div class="paragraph">
+<p>To remove an axis (in this example, <em>Item Price</em>), follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the <strong>Item Price</strong> axis.</p>
+</li>
+<li>
+<p>In the drop-down, select <strong>x Remove</strong>.</p>
+</li>
+<li>
+<p>The <strong>Customize</strong> menu appears.</p>
+<div class="paragraph">
+<p>Notice that the <strong>Item Price</strong> <em>axis</em> and the corresponding data no longer appear on the visual.
+However, the <strong>Item Price</strong> <em>column</em> appears in the <strong>Not visualized</strong> section of the <strong>Customize</strong> menu.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+	</ul>
+      </div>
+      <div class="col">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="26.363 116.363 560.215 560.215"><path d="m586.58 209.58c0-48.96-44.252-93.212-93.212-93.212h-373.79c-48.96 0-93.212 44.252-93.212 93.212v373.79c0 48.96 44.252 93.212 93.212 93.212h186.42v-211.85h-68.732v-93.212h68.732v-36.72c0-63.083 47.077-119.58 105.45-119.58h75.323v93.212h-75.323c-8.474 0-17.889 10.357-17.889 25.422v37.662h93.212v93.212h-93.212v211.85h99.803c48.96 0 93.212-44.252 93.212-93.212v-373.79z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ThoughtSpot/" class="icon">
+              <svg width="50px" height="50px" viewBox="32.012 176.622 542.326 437.815"><path d="m574.34 227.46c-19.772 8.474-41.428 15.065-64.025 17.889 22.597-14.123 40.486-35.778 48.96-61.2-21.655 13.182-45.194 21.655-70.615 27.305-20.714-21.655-48.96-34.837-80.972-34.837-61.2 0-111.1 49.902-111.1 111.1 0 8.474 0.942 16.948 2.825 25.422-92.271-5.649-174.18-49.902-229.74-117.69-9.415 16.006-15.065 35.778-15.065 55.551 0 38.603 19.772 72.498 49.902 92.271-17.889-0.942-35.778-5.649-50.843-14.123v0.942c0 53.668 38.603 98.862 89.446 109.22-9.415 2.825-18.831 3.766-29.188 3.766-7.532 0-14.123-0.942-20.714-1.883 14.123 44.252 55.551 76.265 103.57 77.206-37.662 30.129-85.68 48.018-138.41 48.018-9.415 0-17.889-0.941-26.363-1.883 48.96 32.012 107.34 49.902 170.42 49.902 204.31 0 316.36-169.48 316.36-316.36v-14.123c21.656-14.125 40.487-33.897 55.551-56.494z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/thoughtspot/" class="icon">
+              <svg width="50px" height="50px" viewBox="31.071 119.188 539.537 540.443"><path d="m531.97 119.19h-461.35c-21.655 0-39.545 16.948-39.545 38.603v463.24c0 21.655 17.889 38.603 39.545 38.603h460.41c21.655 0 39.545-16.948 39.545-38.603v-463.24c0.942-21.656-16.947-38.603-38.603-38.603zm-337.07 451.94h-81.914v-243.86h81.914v243.86zm-40.486-276.81c-28.246 0-46.135-18.831-46.135-42.369s17.889-42.369 46.135-42.369 45.194 17.889 45.194 42.369c0.942 23.538-16.948 42.369-45.194 42.369zm335.19 276.81h-81.914v-129.93c0-32.954-12.24-55.551-41.428-55.551-22.597 0-35.778 15.065-41.428 30.129-1.883 5.649-2.825 12.24-2.825 19.772v136.52h-81.914s0.942-221.26 0-243.86h81.914v34.837c11.298-16.948 30.129-40.486 73.44-40.486 53.668 0 94.154 34.837 94.154 110.16l1e-3 138.41zm-168.54-208.08s0.941-0.941 0 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
