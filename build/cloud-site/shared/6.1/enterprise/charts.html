@@ -3,15 +3,19 @@
   <head>
 <!--     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
     <title>Working with charts :: ThoughtSpot Cloud</title>
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
  -->
 <!-- begin couchbase banner logic -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Working with charts | ThoughtSpot Cloud</title>
     <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
 <!-- end couchbase banner logic -->
   </head>
   <body class="article">
@@ -68,6 +72,16 @@
       </div>
     </div>
   </nav>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: '56SYO9D81N',
+      apiKey: '0e8e3283d497629efe978f104a265e6f',
+      siteId: 'da2c98c2-73c9-41a9-a094-3310c050f655',
+      branch: '6.1',
+    });
+  </script>
 </header>
 <div class="body">
 <div class="nav-container" data-component="shared" data-version="6.1">
@@ -105,7 +119,7 @@
  -->
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <!-- <a href="../../../cloud/6.1/index.html" class="home-link"></a> -->
+<!--  <a href="../../../cloud/6.1/index.html" class="home-link"></a> -->
 <nav class="breadcrumbs" aria-label="breadcrumbs">
 </nav>
 </div>
@@ -124,7 +138,7 @@ When you choose to display your answer as a chart, ThoughtSpot will assign it th
 </td>
 <td class="content">
 Colors are maintained across searches within a session.
-For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type.
+why?! For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type.
 </td>
 </tr>
 </table>
@@ -138,7 +152,30 @@ For example, when doing a search on revenue by state, each state will keep its c
 <li>
 <p><strong><a href="chart-configure.html" class="page">Changing charts</a></strong></p>
 <div class="paragraph">
-<p>You can change colors, set gridlines, reorder lables, adjust the axes, change number formatting, and configure other options on your charts.</p>
+<p> <span class="badge badge-danger">Danger</span> You can change colors, set gridlines, reorder lables, adjust the axes, change number formatting, and configure other options on your charts.
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+  </ul>
+</p>
 </div>
 </li>
 </ul>
