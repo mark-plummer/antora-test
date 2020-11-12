@@ -6,14 +6,14 @@
 
 ---
 * xref:enterprise:user-introduction.adoc[Users]
-* xref:enterprise:getting-started.[Getting Started]
+* xref:enterprise:getting-started.adoc[Getting Started]
 ** xref:enterprise:log-in.adoc[Log into ThoughtSpot]
 ** xref:enterprise:getting-started-sidebar.adoc[Getting Started sidebar]
 ** xref:enterprise:navigating-thoughtspot.adoc[Finding your way around]
 ** xref:enterprise:user-profile.adoc[Your user profile and preferences]
 ** xref:enterprise:understanding-privileges.adoc[Understanding privileges]
 ** xref:enterprise:onboarding-experience.adoc[The onboarding experience]
-** xref:enterprise:stickers.adoc[Organizing with Stickers]
+** xref:enterprise:stickers.adoc[Organizing with Stickers +++<span class="badge badge-primary">New!</span>+++]
 * xref:enterprise:search.adoc[Search]
 ** xref:enterprise:search-answers.adoc[Searches and Answers]
 *** xref:enterprise:start-search.adoc[Start a new search]
