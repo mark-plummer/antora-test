@@ -3,7 +3,14 @@
 :permalink: /:collection/:path.html
 :page-partial:
 :summary: Charts display your search answer in a visual way.
-
++++
+<script>
+tippy('.tip', {
+  arrow: true,
+  content: document.getElementById('tippy-template')
+})
+</script>
++++
 Your search needs at least link:about-attributes-and-measures.adoc[one attribute and one measure] to be presented as a chart.
 When you choose to display your answer as a chart, ThoughtSpot will assign it the best fit chart type.
 
@@ -15,27 +22,25 @@ why?! For example, when doing a search on revenue by state, each state will keep
 
 * *xref:chart-configure.adoc[Changing charts]*
 +
-+++ <span class="badge badge-danger">Danger</span>+++ You can change colors, set gridlines, reorder lables, adjust the axes, change number formatting, and configure other options on your charts.
++++ <span class="badge badge-warning">Don't forget!</span>+++ You can change colors, set gridlines, reorder lables, adjust the axes, change number formatting, and configure other options on your charts.
+
+Tooltip with button
 +++
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
+<br>
+<button id="myButton" data-tippy-content="Hello world!">Default</button>
++++
+
++++
+Tooltip with text: <div class="tooltip" href="https://www.apple.com" target="_blank">Admin Console
+  <span class="tooltiptext">You're hovering! Great job!</span>
 </div>
 +++
+
+
+Tooltip with link
 +++
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-  </ul>
+<br>
+<a class="tooltip" href="https://www.apple.com" target="_blank">Admin Console
+  <span class="tooltiptext">You're hovering! Great job! Click for complete details.</span>
+</a>
 +++

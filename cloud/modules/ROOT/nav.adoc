@@ -48,7 +48,7 @@
 *** xref:enterprise:expert-question-answer.adoc[Answer an Ask an Expert question]
 
 ---
-* xref:enterprise:charts.adoc[Charts]
+* xref:enterprise:charts.adoc[Charts +++<span class="badge badge-primary">New!</span>+++]
 ** xref:enterprise:chart-types.adoc[Chart types]
 *** xref:enterprise:chart-column.adoc[Column charts]
 *** xref:enterprise:chart-bar.adoc[Bar charts]
