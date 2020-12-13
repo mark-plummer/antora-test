@@ -44,7 +44,7 @@ It changes the analysis though, by selecting the single insight from your first 
 Continue with the customization.
 
 . Choose *Customize Analysis*.
-+
++5  ffhhvnn
 The *Customize Analysis* dialog appears.
 
 . Select the *Customize algorithms* tab.
