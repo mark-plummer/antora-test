@@ -624,7 +624,13 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Your search needs at least <a href="about-attributes-and-measures.adoc">one attribute and one measure</a> to be presented as a chart.
+<p>tippy('.tip', {
+  arrow: true,
+  content: document.getElementById('tippy-template')
+})
+&lt;/script&gt;
++
+Your search needs at least <a href="about-attributes-and-measures.adoc">one attribute and one measure</a> to be presented as a chart.
 When you choose to display your answer as a chart, ThoughtSpot will assign it the best fit chart type.</p>
 </div>
 <div class="admonitionblock note">
@@ -635,7 +641,7 @@ When you choose to display your answer as a chart, ThoughtSpot will assign it th
 </td>
 <td class="content">
 Colors are maintained across searches within a session.
-why not?! For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type.
+why?! For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type.
 </td>
 </tr>
 </table>
@@ -649,10 +655,33 @@ why not?! For example, when doing a search on revenue by state, each state will 
 <li>
 <p><strong><a href="chart-configure.html" class="page">Changing charts</a></strong></p>
 <div class="paragraph">
-<p>You can change colors, set gridlines, reorder lables, adjust the axes, change number formatting, and configure other options on your charts.</p>
+<p> <span class="badge badge-warning">Don't forget!</span> You can change colors, set gridlines, reorder lables, adjust the axes, change number formatting, and configure other options on your charts.</p>
 </div>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>Tooltip with button
+
+<br>
+<button id="myButton" data-tippy-content="Hello world!">Default</button>
+</p>
+</div>
+<div class="paragraph">
+<p>
+Tooltip with text: <div class="tooltip" href="https://www.apple.com" target="_blank">Admin Console
+  <span class="tooltiptext">You're hovering! Great job!</span>
+</div>
+</p>
+</div>
+<div class="paragraph">
+<p>Tooltip with link
+
+<br>
+<a class="tooltip" href="https://www.apple.com" target="_blank">Admin Console
+  <span class="tooltiptext">You're hovering! Great job! Click for complete details.</span>
+</a>
+</p>
 </div>
 </div>
 </div>
@@ -694,7 +723,7 @@ why not?! For example, when doing a search on revenue by state, each state will 
       </div>
     </div>
     <div class="footer-terms">
-      <span>&copy;2020 ThoughtSpot, Inc. All rights reserved.</span>
+      <span>&copy;2021 ThoughtSpot, Inc. All rights reserved.</span>
       <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
       <a href="https://www.thoughtspot.com/support">Support</a>
       <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>

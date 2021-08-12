@@ -1,3 +1,3 @@
 :doctype: book
 
-include::shared:enterprise:page$chart-pareto.adoc[]
+include::shared:page$chart-pareto.adoc[]

@@ -1,0 +1,46 @@
+= Working with charts
+:last_updated: 2/25/2020
+:permalink: /:collection/:path.html
+:page-partial:
+:summary: Charts display your search answer in a visual way.
++++
+<script>
+tippy('.tip', {
+  arrow: true,
+  content: document.getElementById('tippy-template')
+})
+</script>
++++
+Your search needs at least link:about-attributes-and-measures.adoc[one attribute and one measure] to be presented as a chart.
+When you choose to display your answer as a chart, ThoughtSpot will assign it the best fit chart type.
+
+NOTE: Colors are maintained across searches within a session.
+why?! For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type.
+
+* *xref:chart-types.adoc[Chart types]*
++You can choose from a large number of chart types in ThoughtSpot. Each chart type provides you with a different visualization for your answer.
+
+* *xref:chart-configure.adoc[Changing charts]*
++
++++ <span class="badge badge-warning">Don't forget!</span>+++ You can change colors, set gridlines, reorder lables, adjust the axes, change number formatting, and configure other options on your charts.
+
+Tooltip with button
++++
+<br>
+<button id="myButton" data-tippy-content="Hello world!">Default</button>
++++
+
++++
+Tooltip with text: <div class="tooltip" href="https://www.apple.com" target="_blank">Admin Console
+  <span class="tooltiptext">You're hovering! Great job!</span>
+</div>
++++
+
+
+Tooltip with link
++++
+<br>
+<a class="tooltip" href="https://www.apple.com" target="_blank">Admin Console
+  <span class="tooltiptext">You're hovering! Great job! Click for complete details.</span>
+</a>
++++
