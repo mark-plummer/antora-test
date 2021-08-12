@@ -24,6 +24,7 @@ asciidoc:
   attributes:
     cloud: true
     software: false
+    page-partial:
 
 output:
   clean: true
