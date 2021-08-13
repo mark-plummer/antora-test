@@ -6,16 +6,16 @@
 
 To make changes to the chart configuration, click the gear icon in the top right corner of the visualization.
 
-image::shared:enterprise:edit-chart-configuration.png[Edit chart configuration]
+image::shared::edit-chart-configuration.png[Edit chart configuration]
 
-// image::shared:enterprise:configure_chart_icons.png [Configure chart icons]
+// image::shared::configure_chart_icons.png [Configure chart icons]
 
 This opens the *Customize* menu for the chart.
 Using this menu, you can drag and drop measure and attribute chips to or from an axis.
 Click on any measure or attribute chip that has a *more* icon (*>*) to customize it.
 In the image below, both *Total sales* and *Store Region* are customizable.
 
-image::shared:enterprise:chartconfig-customize.png[Customize chart configuration]
+image::shared::chartconfig-customize.png[Customize chart configuration]
 
 You can edit some of the elements of the chart directly, by clicking on them.
 For example, you can change the appearance of a chart xref:/end-user/search/chart-axes-options.adoc[axis] by clicking it and making selections in the available options.

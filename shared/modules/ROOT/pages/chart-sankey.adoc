@@ -14,7 +14,7 @@ Your x-axis attributes can contain at most 13 values, any more and you cannot vi
 ThoughtSpot Sankey charts are read from left to right.
 The width of the flow represents the measure, the attributes or "steps" appear as solid bars:
 
-image::shared:enterprise:sankey.png[]
+image::shared::sankey.png[]
 
 The xref:/downloads/Austin_Animal_Center_Outcomes.csv[Austin Animal Center Outcomes] data shows the outcome of processing for different breeds of animal.
 The measure is the count of total animals.

@@ -18,4 +18,4 @@ Click the hidden legend value again to show it.
 
 To exclude an item from a chart, such as a column or a pie wedge, right-click on the item and click *Exclude "value"*.
 
-image::shared:enterprise:chartconfig-excludevalue.png[Exclude a chart item]
+image::shared::chartconfig-excludevalue.png[Exclude a chart item]

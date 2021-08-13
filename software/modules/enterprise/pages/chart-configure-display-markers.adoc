@@ -8,7 +8,7 @@ For some charts, like line charts, you can show data markers.
 
 To show data markers, follow these steps:
 
-image::shared:enterprise:chart-config-data-markers.gif[Show data markers]
+image::shared::chart-config-data-markers.gif[Show data markers]
 
 . While viewing your search or answer as a chart, click the *chart configuration* icon image:/images/icon-gear-10px.png[] on the top right.
 . Click *Settings* at the bottom of the *Customize* menu.

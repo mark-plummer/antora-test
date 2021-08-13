@@ -19,7 +19,7 @@ You can make the following changes to the axis:
 * <<edit,Edit>>
 * <<remove,Remove>>
 
-image::shared:enterprise:edit-axis.gif[Change axis]
+image::shared::edit-axis.gif[Change axis]
 
 [#aggregate]
 == Change the axis aggregate
@@ -28,7 +28,7 @@ To change the axis aggregation, click the *Aggregate* option in the axis menu, a
 
 Depending on the type of data type and other settings, the aggregation options include _Total_, _Avg_, _Min_, _Max_, _Total Count_, _Unique Count_, _Std Deviation_, and _Variance_.
 
-image::shared:enterprise:edit-axis-aggregate.png[Change axis aggregate]
+image::shared::edit-axis-aggregate.png[Change axis aggregate]
 
 [#filter]
 == Add, Change, and Remove Filters
@@ -37,11 +37,11 @@ To manage the filters applied to the axis (in this example, _Total Sales_), foll
 
 . Click the *Filters* option in the axis menu.
 +
-image::shared:enterprise:edit-axis-filter.png[Change axis filter]
+image::shared::edit-axis-filter.png[Change axis filter]
 
 . In the window modal, click *+ add a condition*.
 +
-image::shared:enterprise:edit-axis-filter-1.png[Add a condition to axis]
+image::shared::edit-axis-filter-1.png[Add a condition to axis]
 
 . Select the comparison option.
 +
@@ -49,7 +49,7 @@ Here, the options include _is greater than_, _is greater than or equal to_, _is 
 +
 In this example, select _is greater than or equal to_.
 +
-image::shared:enterprise:edit-axis-filter-2.png[Set filter comparison operation]
+image::shared::edit-axis-filter-2.png[Set filter comparison operation]
 
 . Set the relevant numerical limits.
 +
@@ -62,23 +62,23 @@ Similarly, _is in_ and _is not in_ operators require a list of values separated 
 
 . To add another filter condition, click *+add another*.
 +
-image::shared:enterprise:edit-axis-filter-4.png[Add another filter condition]
+image::shared::edit-axis-filter-4.png[Add another filter condition]
 
 . To remove a filter condition, click the delete icon (*x*) next to its definition.
 +
-image::shared:enterprise:edit-axis-filter-5.png[Remove filter condition]
+image::shared::edit-axis-filter-5.png[Remove filter condition]
 
 . Click *Done*.
 +
-image::shared:enterprise:edit-axis-filter-6.png[Complete filter on axis]
+image::shared::edit-axis-filter-6.png[Complete filter on axis]
 
 Here, you can see differences between the original chart and the one with the filter applied: Three (3) of the departments had sales under $1,000,000, and they don't appear on the newer chart.
 
-image::shared:enterprise:edit-axis-filter-applied.png[Chart with filter applied]
+image::shared::edit-axis-filter-applied.png[Chart with filter applied]
 
 To remove a filter from the chart, click the *x* icon on the filter tile.
 
-image::shared:enterprise:edit-axis-filter-remove.png[Remove filter from a chart]
+image::shared::edit-axis-filter-remove.png[Remove filter from a chart]
 
 [#conditional-formatting]
 == Apply conditional formatting
@@ -87,15 +87,15 @@ To apply conditional formatting to the axis (in this example, _Total Sales_), fo
 
 . Click the *Conditional formatting* option in the axis menu.
 +
-image::shared:enterprise:edit-axis-conditional-formatting.png[Add conditional formatting]
+image::shared::edit-axis-conditional-formatting.png[Add conditional formatting]
 
 . The *Conditional formatting* window modal appears.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-1.png[Conditional formatting interface]
+image::shared::edit-axis-conditional-formatting-1.png[Conditional formatting interface]
 
 . In the window modal, click *+ add formatting*.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-2.png[Add a format]
+image::shared::edit-axis-conditional-formatting-2.png[Add a format]
 
 . Select the conditional range.
 +
@@ -109,46 +109,46 @@ And the text area on the right specifies the upper limit of the condition, so th
 +
 Here, we apply conditional formatting to values between `5,500,000` and `8,000,000`.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-3.png[Add conditional format range]
+image::shared::edit-axis-conditional-formatting-3.png[Add conditional format range]
 
 . To specify a different color of the conditional format, select the new color from the color selector.
 +
 This option draws upper and lower limit lines on the chart, and colors the chart elements that meet the conditional requirements.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-4.png[Change conditional format color]
+image::shared::edit-axis-conditional-formatting-4.png[Change conditional format color]
 +
 Alternatively, you can place a range band on the chart.
 Select the *Fill chart* option.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-8.png[Add conditional format band]
+image::shared::edit-axis-conditional-formatting-8.png[Add conditional format band]
 
 . To add another condition, click *+add formatting*.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-5.png[Add another conditional format]
+image::shared::edit-axis-conditional-formatting-5.png[Add another conditional format]
 
 . To remove a defined conditional format, click the delete icon (*x*) next to its definition.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-6.png[Remove conditional format]
+image::shared::edit-axis-conditional-formatting-6.png[Remove conditional format]
 
 . Click *Done*.
 +
-image::shared:enterprise:edit-axis-conditional-formatting-7.png[Complete conditional format]
+image::shared::edit-axis-conditional-formatting-7.png[Complete conditional format]
 
 Here, you can see a chart that highlights elements with conditional  formatting on some elements.
 You can also see how the same chart appears with a background chart band.
 
-image::shared:enterprise:edit-axis-conditional-formatting-applied-comparison.png[Conditional formatting applied, two options]
+image::shared::edit-axis-conditional-formatting-applied-comparison.png[Conditional formatting applied, two options]
 
 [#sort]
 == Change the Sort
 
 To change the sorting of a measurement on an axis, click the *Sort* option in the axis menu, and select an alternative from the list of options: _Ascending_ or _Descending_.
 
-image::shared:enterprise:edit-axis-sort.png[Change axis sort]
+image::shared::edit-axis-sort.png[Change axis sort]
 
 Here, you can compare the original chart that was not sorted on the _Total Sales_ axis with the chart that uses descending sort.
 
-image::shared:enterprise:edit-axis-sort-applied.png[Compare unsorted chart and chart sorted in Descending order]
+image::shared::edit-axis-sort-applied.png[Compare unsorted chart and chart sorted in Descending order]
 
 [#position]
 == Change the postion of the axis
@@ -160,11 +160,11 @@ To change the position of an axis, select the *Position* option in the axis menu
 
 Here, we move the _Item Price_ axis from the right side of the chart to the left side.
 
-image::shared:enterprise:edit-axis-position.png[Change axis position]
+image::shared::edit-axis-position.png[Change axis position]
 
 You can compare the original chart with the one where the _Total Sales_ axis is on the right, while _Item Cost_ and _Item Price_ both appear on the left.
 
-image::shared:enterprise:edit-axis-position-applied.png[Compare charts with different position assignments]
+image::shared::edit-axis-position-applied.png[Compare charts with different position assignments]
 
 [#grouping]
 == Change the Grouping
@@ -175,16 +175,16 @@ To change the grouping on an axis, click the *Group* option in the axis menu, an
 
 Here, we change the _Item Price_ axis by grouping it with _Item Cost_.
 
-image::shared:enterprise:edit-axis-group.png[Group two axes]
+image::shared::edit-axis-group.png[Group two axes]
 
 Compare the original chart with one that groups _Item Price_ and _Item Cost_ as _Item Price & Item Cost_.
 The chart looks cleaner, and clearly communicates the distinct information on each of the two measurements.
 
-image::shared:enterprise:edit-axis-group-applied.png[Compare ungrouped chart and chart that groups similar measures]
+image::shared::edit-axis-group-applied.png[Compare ungrouped chart and chart that groups similar measures]
 
 Notice that the *Customize* menu shows a linkage between the two grouped axes.
 
-image::shared:enterprise:edit-axis-group-menu.png[Grouped axes]
+image::shared::edit-axis-group-menu.png[Grouped axes]
 
 [#rename]
 == Rename the axis
@@ -195,14 +195,14 @@ In our example, it makes sense to rename the axis created from grouping as _Item
 
 To rename an axis, select the *Rename* option in the axis menu, type the new name, and either click out or hit *Enter/Return* on your keyboard.
 
-image::shared:enterprise:edit-axis-rename.png[Rename axis]
+image::shared::edit-axis-rename.png[Rename axis]
 
 [#edit]
 == Edit the axis
 
 When you choose to edit the axis, you get the comprehensive view of everything that can be changed on the axis: you can *Configure* the axis name, position (left or right), and the minimum and maximum values, and you can *Format* the category of the column, its units, and the representation of negative values.
 
-image::shared:enterprise:edit-axis-options.gif[Edit the axis]
+image::shared::edit-axis-options.gif[Edit the axis]
 
 To edit this axis (in this example, _Item Price_), follow these steps:
 
@@ -262,7 +262,7 @@ To edit this axis (in this example, _Item Price_), follow these steps:
 Removing the axis removes the data from the display, but not from the answer entirely.
 Instead, the column that the axis represents appears in the *Not visualized* section of the *Customize* menu.
 
-image::shared:enterprise:remove-axis.gif[Remove the axis]
+image::shared::remove-axis.gif[Remove the axis]
 
 To remove an axis (in this example, _Item Price_), follow these steps:
 

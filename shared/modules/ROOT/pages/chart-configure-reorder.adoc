@@ -16,8 +16,8 @@ This example shows you how to reorder the y-axis columns.
 . While viewing your answer as a chart, click the *chart configuration* icon image:/images/icon-gear-10px.png[chart configuration icon] near the top right.
 . Under *Y-axis*, drag and drop the column chips into your preferred order.
 +
-image::shared:enterprise:chartconfig-reordervalues.png[Drag and drop columns]
+image::shared::chartconfig-reordervalues.png[Drag and drop columns]
 +
 Your chart reorganizes itself to reflect the new label order.
 +
-image::shared:enterprise:chart-config-reorder-values.gif[Reorder labels on your chart]
+image::shared::chart-config-reorder-values.gif[Reorder labels on your chart]

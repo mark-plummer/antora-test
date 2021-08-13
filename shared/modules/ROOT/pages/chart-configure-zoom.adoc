@@ -6,31 +6,31 @@
 
 Learn how to zoom into a chart.
 
-image::shared:enterprise:chart-config-zoom.gif[Zoom into a chart]
+image::shared::chart-config-zoom.gif[Zoom into a chart]
 
 You can zoom into your chart by selecting an area with your mouse.
 To zoom into a chart:
 
 . While viewing your answer as a chart, click the *chart configuration* icon image:/images/icon-gear-10px.png[] on the right.
 +
-image::shared:enterprise:chartconfig-zoom-customizemenu.png[]
+image::shared::chartconfig-zoom-customizemenu.png[]
 
 . Click *Settings* on the bottom right.
 +
-image::shared:enterprise:chartconfig-zoom-settings.png[Click settings]
+image::shared::chartconfig-zoom-settings.png[Click settings]
 
 . Click *Select an area*.
 +
-image::shared:enterprise:chartconfig-zoom-select.png[Click select an area]
+image::shared::chartconfig-zoom-select.png[Click select an area]
 
 . Select an area to zoom in on.
 +
-image::shared:enterprise:chartconfig-zoom-selectarea.png[Select an area]
+image::shared::chartconfig-zoom-selectarea.png[Select an area]
 +
 ThoughtSpot reconfigures your chart to only show the selected area.
 +
-image::shared:enterprise:chartconfig-zoomed.png[Zoomed in chart area]
+image::shared::chartconfig-zoomed.png[Zoomed in chart area]
 
 . If you would like to return to the original chart view, click *Reset zoom*.
 +
-image::shared:enterprise:chartconfig-zoom-reset.png[Reset zoom]
+image::shared::chartconfig-zoom-reset.png[Reset zoom]

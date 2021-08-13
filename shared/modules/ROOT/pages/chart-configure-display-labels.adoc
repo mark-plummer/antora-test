@@ -12,11 +12,11 @@ You can show data labels for <<labels-all,every measure>> in your chart, or conf
 . While viewing your search or answer as a chart, click the *chart configuration* icon image:/images/icon-gear-10px.png[] on the top right.
 . Select *Settings* on the bottom right.
 +
-image::shared:enterprise:chartconfig-zoom-settings.png[Click settings]
+image::shared::chartconfig-zoom-settings.png[Click settings]
 
 . Check the *all labels* box.
 +
-image::shared:enterprise:chartconfig-labels-all.png[Check the all labels box]
+image::shared::chartconfig-labels-all.png[Check the all labels box]
 +
 To further configure the labels, by showing unrounded numbers for example, <<labels-one,configure labels individually>>.
 
@@ -26,21 +26,21 @@ To further configure the labels, by showing unrounded numbers for example, <<lab
 . While viewing your search or answer as a chart, click the *chart configuration* icon image:/images/icon-gear-10px.png[] on the top right.
 . Click on the measure you want to add labels to.
 +
-image::shared:enterprise:chartconfig-reordervalues.png[Select a measure]
+image::shared::chartconfig-reordervalues.png[Select a measure]
 
 . Check the *data labels* box.
 +  Note that only the *total sales* data has labels.
 +
-image::shared:enterprise:chartconfig-datalabels.png[Check the data labels box]
+image::shared::chartconfig-datalabels.png[Check the data labels box]
 
 . You can specify a *category*, like _number_, _percentage_, or _currency_.
 Otherwise, ThoughtSpot automatically picks the best category for your data.
 +
-image::shared:enterprise:chartconfig-labelcategory.png[Specify a label category]
+image::shared::chartconfig-labelcategory.png[Specify a label category]
 
 . When you specify a category, you can also specify *units*.
 Select _none_ to see your data down to two decimal points, for example, or select _millions_ to see labels rounded to the millions.
 +
 You can also specify the number of decimal places.
 +
-image::shared:enterprise:chartconfig-decimals.png[Decimal specifications]
+image::shared::chartconfig-decimals.png[Decimal specifications]

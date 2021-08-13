@@ -22,7 +22,7 @@ For example, when doing a search on revenue by state, each state will keep its c
 
 . While viewing your search or answer as a chart, click the *chart configuration* icon image:/images/icon-gear-10px.png[chart configuration icon] to open the chart configuration menu.
 +
-image::shared:enterprise:chartconfig-customizemenu.png[Edit chart configuration menu]
+image::shared::chartconfig-customizemenu.png[Edit chart configuration menu]
 
 . Click on the color chip for the column or value you would like to change.
 Editable chips have a *more* icon: *>*.
@@ -34,4 +34,4 @@ Your changes are saved immediately.
 
 . Click the *X* at top right to dismiss the styles panel.
 +
-image::shared:enterprise:chart-config.gif[Change the chart color]
+image::shared::chart-config.gif[Change the chart color]

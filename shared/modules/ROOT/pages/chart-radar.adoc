@@ -13,7 +13,7 @@ The measure values move from smallest to the outer edge of the web.
 Each spoke of the web is reserved for one of the variables.
 The points where each value lies on the web are connected.
 
-image::shared:enterprise:chartconfig-spiderweb.png[Radar chart example]
+image::shared::chartconfig-spiderweb.png[Radar chart example]
 
 You may notice that sales of both *gifts* and *medical* items might be outliers.
 Gift and medical sales are minimal compared to the average.

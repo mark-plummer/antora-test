@@ -57,7 +57,7 @@ If you you don't get an expected map visualization, contact your administrator s
 
 Geo area charts highlight the regions of interest, and display boundaries for various regions.
 
-image::shared:enterprise:state_level_geo_area_chart.png[]
+image::shared::state_level_geo_area_chart.png[]
 
 To paint a geo area chart, your search must include a geographical column with appropriate granularity.
 See xref:/reference/geomap-reference.adoc[Geo Map Reference].
@@ -67,7 +67,7 @@ See xref:/reference/geomap-reference.adoc[Geo Map Reference].
 Geo bubble charts, like bubble charts, display the value of the measure through the relative size of the bubble.
 Zip code data is a good choice for geo bubble charts.
 
-image::shared:enterprise:geo_bubble_chart_example.png[]
+image::shared::geo_bubble_chart_example.png[]
 
 To paint a geo bubble chart, your search must include a geographical column, or a  latitude and longitude pair.
 
@@ -76,8 +76,8 @@ To paint a geo bubble chart, your search must include a geographical column, or 
 Heatmap charts are similar to treemap charts: they both use a similar system of color-coding to represent data values.
 However, the heatmap does not use size to measure data, and instead requires an additional attribute.
 
-image::shared:enterprise:new_heatmap_look.png[]
+image::shared::new_heatmap_look.png[]
 
 The value of each cell depends on the measure you choose under *Edit chart configuration*.
 
-image::shared:enterprise:heatmap_value.png[]
+image::shared::heatmap_value.png[]

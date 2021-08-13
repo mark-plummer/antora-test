@@ -7,7 +7,7 @@
 
 Candlestick charts enable fast decision making in stock, foreign exchange, commodity, and option trading because they describe price movements over time in terms of OHLC measurements: _open_, _high_, _low_, and _close_ prices. Each "candlestick" shows data for one day, so a monthly chart shows approximately 20 candlesticks, one for each trading day. The date is on the horizontal (X) axis, and it accounts for non-trading days. This chart type can accommodate intervals shorter or longer than one day, provided each interval clearly identifies the four measurements.
 
-image::shared:enterprise:candlestick_visualization.png[Candlestick chart for June 2019"]
+image::shared::candlestick_visualization.png[Candlestick chart for June 2019"]
 
 == How candlestick charts represent data
 
@@ -75,7 +75,7 @@ Notice the following features of this chart:
 ThoughtSpot uses Green and Red, respectively, as default.
 
 Each candlestick renders in one of the two options, depending on the relative values of `open` and `close` measurements.
- | image::shared:enterprise:candlestick_color.png[]
+ | image::shared::candlestick_color.png[]
 |====================
 
 

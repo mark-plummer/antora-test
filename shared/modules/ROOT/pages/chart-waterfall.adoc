@@ -7,6 +7,6 @@
 Waterfall charts are good for visualizing positive and negative growth, and therefore work well with the growth over time keyword.
 The columns are color-coded to distinguish between positive and negative values.
 
-image::shared:enterprise:waterfall_chart_example.png[]
+image::shared::waterfall_chart_example.png[]
 
 Your search needs at least one attribute and one measure to be represented as a waterfall chart.

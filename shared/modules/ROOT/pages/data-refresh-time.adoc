@@ -7,13 +7,13 @@
 Hover over the data when choosing a data source to see the last time it was updated.
 You will also see when it was created and by whom.
 
-image::shared:enterprise:data_refresh_time_source.png[]
+image::shared::data_refresh_time_source.png[]
 
 You can also hover over a column in the *Data* column to see when it was last refreshed.
 This popup will also show sample values from that column.
 
-image::shared:enterprise:data_refresh_time_choose.png[]
+image::shared::data_refresh_time_choose.png[]
 
 And lastly, you can hover over a column or column name in an answer to see last updated information.
 
-image::shared:enterprise:data_refresh_time.png[]
+image::shared::data_refresh_time.png[]

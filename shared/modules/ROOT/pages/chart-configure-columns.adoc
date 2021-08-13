@@ -21,7 +21,7 @@ This removes them from the visualization, but not from your search.
 . Click the *chart configuration* icon image:/images/icon-gear-10px.png[] on the top right.
 . Drag and drop a measure or attribute from the *not visualized* section to the correct axis, or from an axis to the *not visualized* section.
 +
-image::shared:enterprise:chart-config-not-visualized.gif[Configure x and y axis]
+image::shared::chart-config-not-visualized.gif[Configure x and y axis]
 
 In some cases, the y-axis labels appear on either side of the chart (left and right) instead of stacked on the same side, depending on the parameters of the analysis.
 Refer to  xref:/end-user/search/chart-axes-options.adoc#position[change the position of the axis] and xref:/end-user/search/chart-axes-options.adoc#grouping[change the grouping].

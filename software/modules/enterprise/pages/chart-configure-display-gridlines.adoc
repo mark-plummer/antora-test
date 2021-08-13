@@ -13,10 +13,10 @@ To display gridlines, follow these steps:
 . Click *Settings* at the bottom of the *Customize* menu.
 . Select one or both of the gridline options.
 +
-image::shared:enterprise:chartconfig-yaxisgrid.png[Y axis gridlines]
+image::shared::chartconfig-yaxisgrid.png[Y axis gridlines]
 
 X-axis gridlines are useful when you have a more complicated chart.
 For example, if you view a column chart for *sales* by *department* and *store region*, you might want to use gridlines to more easily visualize the column groups.
 You might also use gridlines when your chart includes a *time* element.
 
-image::shared:enterprise:chartconfig-xaxisgrid.png[X axis gridlines]
+image::shared::chartconfig-xaxisgrid.png[X axis gridlines]
