@@ -1,3 +1,3 @@
 :doctype: book
 
-include::shared:page$charts.adoc[]
+include::shared::page$charts.adoc[]
