@@ -1,3 +1,0 @@
-:doctype: book
-
-include::shared:page$chart-funnel.adoc[]
